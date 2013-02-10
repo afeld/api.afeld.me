@@ -4,7 +4,7 @@ require 'sinatra/respond_to'
 Sinatra::Application.register Sinatra::RespondTo
 enable :logging
 
-PROFILE_STR = File.read('./views/index.json')
+PROFILE_STR = File.read('./views/index.json').freeze
 
 get %r{/(index)?} do
   respond_to do |wants|
