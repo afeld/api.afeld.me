@@ -54,6 +54,16 @@
     }
   }
 
+  li {
+    // commas after every non-nested link item
+    .val:after {
+      content: ",";
+    }
+    &:last-child .val:after {
+      display: none;
+    }
+  }
+
   .selected {
     position: relative;
 
