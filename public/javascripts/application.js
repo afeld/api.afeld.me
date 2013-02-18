@@ -1,34 +1,7 @@
 (function($){
-  var PanelContainer = function($el, data){
-    this.$el = $el;
-    this.data = data;
-    this.panels = [];
-  };
-
-  PanelContainer.prototype.render = function(){
-    this.createPanel(this.data);
-
-    var self = this;
-    this.$el.on('click', 'a.key', function(){
-      var nestedData = $(this).data('obj');
-      self.createPanel(nestedData);
-    });
-  };
-
-  PanelContainer.prototype.createPanel = function(data){
-    var panel = new Panel(data);
-    this.addPanel(panel);
-  };
-
-  PanelContainer.prototype.addPanel = function(panel){
-    this.panels.push(panel);
-    panel.render();
-    this.$el.append(panel.$el);
-  };
-
-
   var Panel = function(data){
     this.data = data;
+    this.nextPanel = null;
   };
 
   Panel.prototype.render = function(){
@@ -50,6 +23,16 @@
       $li.appendTo($list);
     });
 
+    var self = this;
+    $list.on('click', 'a.key', function(){
+      var nestedData = $(this).data('obj'),
+        nextPanel = new Panel(nestedData);
+
+      nextPanel.render();
+      nextPanel.$el.insertAfter(self.$el);
+      self.nextPanel = nextPanel;
+    });
+
     this.$el = $list;
     return this;
   };
@@ -57,7 +40,8 @@
 
 
   $.fn.jsonPanes = function(data){
-    var panels = new PanelContainer($(this), data);
-    panels.render();
+    var panel = new Panel(data);
+    panel.render();
+    $(this).html(panel.$el);
   };
 })(jQuery);
