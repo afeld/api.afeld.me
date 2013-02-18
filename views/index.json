@@ -2,5 +2,9 @@
   "name": {
     "first": "Aidan",
     "last": "Feldman"
-  }
+  },
+  "profiles": [
+    "twitter",
+    "github"
+  ]
 }

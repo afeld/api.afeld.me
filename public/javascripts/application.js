@@ -16,14 +16,7 @@
   };
 
   PanelContainer.prototype.createPanel = function(data){
-    var panel;
-
-    if ($.isPlainObject(data)){
-      panel = new Panel(data);
-    } else if ($.isArray(data)){
-      // renderArray(data, $el);
-    }
-
+    var panel = new Panel(data);
     this.addPanel(panel);
   };
 
@@ -43,7 +36,7 @@
 
     $.each(this.data, function(key, val){
       var $li = $('<li></li>');
-      if ($.isPlainObject(val)){
+      if ($.isPlainObject(val) || $.isArray(val)){
         var $objName = $('<a class="key" href="#' + key + '">' + key + '</a>');
         $objName.data('obj', val);
         $li.html($objName);
