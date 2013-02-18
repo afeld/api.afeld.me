@@ -33,7 +33,8 @@
   };
 
   Panel.prototype.onKeyClicked = function(e){
-    var nestedData = $(e.currentTarget).data('obj'),
+    var $key = $(e.currentTarget),
+      nestedData = $key.data('obj'),
       childPanel = this.childPanel;
 
     // remove any existing child panel
@@ -42,12 +43,16 @@
       this.childPanel = null;
     }
 
-    // only open if an existing panel wasn't being toggled off
-    if (!childPanel || childPanel.data !== nestedData){
+    if (childPanel && childPanel.data === nestedData){
+      // toggle off
+      $key.removeClass('selected');
+    } else {
+      // open new panel
       childPanel = new Panel(nestedData);
       childPanel.render();
       childPanel.$el.insertAfter(this.$el);
       this.childPanel = childPanel;
+      $key.addClass('selected');
     }
   };
 

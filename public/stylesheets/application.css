@@ -1,3 +1,9 @@
 .jsonpanes ol .key-inner {
   display: none;
 }
+.jsonpanes a.key {
+  display: block;
+}
+.jsonpanes .selected {
+  background-color: #ccc;
+}
