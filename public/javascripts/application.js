@@ -1,31 +1,67 @@
 (function($){
-  function renderHash(hash, $el){
+  var PanelContainer = function($el, data){
+    this.$el = $el;
+    this.data = data;
+    this.panels = [];
+  };
+
+  PanelContainer.prototype.render = function(){
+    this.createPanel(this.data);
+
+    var self = this;
+    this.$el.on('click', '.key', function(){
+      var nestedData = $(this).data('obj');
+      self.createPanel(nestedData);
+    });
+  };
+
+  PanelContainer.prototype.createPanel = function(data){
+    var panel;
+
+    if ($.isPlainObject(data)){
+      panel = new Panel(data);
+    } else if ($.isArray(data)){
+      // renderArray(data, $el);
+    }
+
+    this.addPanel(panel);
+  };
+
+  PanelContainer.prototype.addPanel = function(panel){
+    this.panels.push(panel);
+    panel.render();
+    this.$el.append(panel.$el);
+  };
+
+
+  var Panel = function(data){
+    this.data = data;
+  };
+
+  Panel.prototype.render = function(){
     var $ul = $('<ul>');
-    $ul.appendTo($el);
 
-    $.each(hash, function(key, val){
-      var li = '<li>';
+    $.each(this.data, function(key, val){
+      var $li = $('<li></li>');
       if ($.isPlainObject(val)){
-        li += '<a class="key" href="#' + key + '">' + key + '</a>';
+        var $objName = $('<a class="key" href="#' + key + '">' + key + '</a>');
+        $objName.data('obj', val);
+        $li.html($objName);
       } else {
-        li += '<span class="key">' + key + '</span>: <span class="val">' + val + '</span>';
+        $li.html('<span class="key">' + key + '</span>: <span class="val">' + val + '</span>');
       }
-      li += '</li>';
 
-      var $li = $(li);
       $li.appendTo($ul);
     });
-  }
 
-  function renderArray(ary, $el){
+    this.$el = $ul;
+    return this;
+  };
 
-  }
 
-  function renderData(data, $el){
-    renderHash(data, $el);
-  }
 
   $.fn.jsonPanes = function(data){
-    renderData(data, $(this));
+    var panels = new PanelContainer($(this), data);
+    panels.render();
   };
 })(jQuery);
