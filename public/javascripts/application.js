@@ -5,9 +5,13 @@
   };
 
   Panel.prototype.render = function(){
-    var data = this.data,
-      listType = $.isArray(data) ? 'ol' : 'ul',
-      $list = $('<' + listType + '>');
+    var data = this.data;
+
+    if ($.isArray(data)){
+      $list = $('<ol start="0">');
+    } else {
+      $list = $('<ul>');
+    }
 
     $.each(data, function(key, val){
       var $item;
