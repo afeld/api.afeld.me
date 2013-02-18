@@ -1,6 +1,7 @@
 .jsonpanes {
   overflow-x: scroll;
   white-space: nowrap;
+  font-family: monospace;
 
   * {
     // reset
@@ -11,7 +12,7 @@
   .panel {
     display: inline-block;
     vertical-align: top;
-    margin-right: 4em;
+    margin-right: 2em;
     list-style-type: none;
   }
 
@@ -35,9 +36,22 @@
 
   .key {
     margin-left: 1em;
+    font-weight: bold;
   }
   a.key {
     display: block;
+    text-decoration: none;
+
+    // expander
+    &:before {
+      content: "+";
+      margin-right: 0.5em;
+    }
+
+    // collapser
+    &.selected:before {
+      content: "-";
+    }
   }
 
   .selected {
@@ -47,6 +61,7 @@
     &:after {
       position: absolute;
       left: 100%;
+      top: 16%;
       content: " ";
       height: 0;
       width: 0;
