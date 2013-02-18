@@ -5,7 +5,13 @@ Sinatra::Application.register Sinatra::RespondTo
 enable :logging
 
 # use scss for stylesheets
-Sass::Plugin.options[:style] = :compressed
+configure :development do
+  Sass::Plugin.options[:trace_selectors] = :true
+  Sass::Plugin.options[:style] = :expanded
+end
+configure :production do
+  Sass::Plugin.options[:style] = :compressed
+end
 use Sass::Plugin::Rack
 
 PROFILE_STR = File.read('./views/index.json').freeze
