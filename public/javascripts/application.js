@@ -10,17 +10,16 @@
       $list = $('<' + listType + '>');
 
     $.each(data, function(key, val){
-      var $li = $('<li></li>');
+      var $item;
       if ($.isPlainObject(val) || $.isArray(val)){
         // nested data
-        var $key = $('<a class="key" href="#' + key + '">' + key + '</a>');
-        $key.data('obj', val);
-        $li.html($key);
+        $item = $('<a class="key" href="#' + key + '"><li><span class="key-inner">' + key + '</span></li></a>');
+        $item.data('obj', val);
       } else {
-        $li.html('<span class="key">' + key + ':</span> <span class="val">' + val + '</span>');
+        $item = $('<li><span class="key">' + key + ':</span> <span class="val">' + val + '</span></li>');
       }
 
-      $li.appendTo($list);
+      $list.append($item);
     });
 
     $list.on('click', 'a.key', $.proxy(this.onKeyClicked, this));
@@ -30,7 +29,7 @@
   };
 
   Panel.prototype.onKeyClicked = function(e){
-    var nestedData = $(e.target).data('obj'),
+    var nestedData = $(e.currentTarget).data('obj'),
       childPanel = this.childPanel;
 
     // remove any existing child panel

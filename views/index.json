@@ -4,7 +4,15 @@
     "last": "Feldman"
   },
   "profiles": [
-    "twitter",
-    "github"
+    {
+      "service": "twitter",
+      "username": "aidanfeldman",
+      "profile_url": "https://twitter.com/aidanfeldman"
+    },
+    {
+      "service": "github",
+      "username": "afeld",
+      "profile_url": "https://github.com/afeld"
+    }
   ]
 }
