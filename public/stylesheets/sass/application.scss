@@ -39,19 +39,12 @@
     font-weight: bold;
   }
   a.key {
-    display: block;
-    padding-right: 0.5em;
     text-decoration: none;
 
     // expander
     &:before {
       content: "+";
       margin-right: 0.5em;
-    }
-
-    // collapser
-    &.selected:before {
-      content: "-";
     }
   }
 
@@ -67,6 +60,16 @@
 
   .selected {
     position: relative;
+
+    // collapser
+    a.key:before {
+      content: "-";
+    }
+
+    .val {
+      // hide the Array/Object indicator
+      display: none;
+    }
 
     // CSS arrow
     &:after {

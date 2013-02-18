@@ -16,19 +16,28 @@
 
     $.each(data, function(key, val){
       var $li = $('<li>'),
-        $key;
+        isObj = $.isPlainObject(val),
+        $key, $val;
 
-      if ($.isPlainObject(val) || $.isArray(val)){
+      if (isObj || $.isArray(val)){
         // nested data
-        $key = $('<a class="key" href="#' + key + '">' + key + ':</a>');
+        $key = $('<a class="key" href="#' + key + '">' + key + '</a>');
         $key.data('obj', val);
+
+        if (isObj){
+          $val = $('<span class="val object">{…}</span>');
+        } else {
+          // can assume it's an Array
+          $val = $('<span class="val array">[…]</span>');
+        }
       } else {
         // normal key-value
         var valType = typeof val;
-        $key = $('<span class="key">' + key + ':</span> <span class="val ' + valType + '">' + JSON.stringify(val) + '</span>');
+        $key = $('<span class="key">' + key + '</span>');
+        $val = $('<span class="val ' + valType + '">' + JSON.stringify(val) + '</span>');
       }
 
-      $li.html($key);
+      $li.append($key, ': ', $val);
       $list.append($li);
     });
 
@@ -60,8 +69,9 @@
       childPanel.$el.insertAfter(this.$el);
       this.childPanel = childPanel;
 
-      $key.addClass('selected');
-      this.$selected = $key;
+      var $selected = $key.closest('li');
+      $selected.addClass('selected');
+      this.$selected = $selected;
     }
   };
 
