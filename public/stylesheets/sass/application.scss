@@ -1,0 +1,59 @@
+.jsonpanes {
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  * {
+    // reset
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4em;
+    list-style-type: none;
+  }
+
+  ul {
+    &:before {
+      content: '{';
+    }
+    &:after {
+      content: '}';
+    }
+  }
+
+  ol {
+    &:before {
+      content: '[';
+    }
+    &:after {
+      content: ']';
+    }
+  }
+
+  .key {
+    margin-left: 1em;
+  }
+  a.key {
+    display: block;
+  }
+
+  .selected {
+    position: relative;
+
+    // CSS arrow
+    &:after {
+      position: absolute;
+      left: 100%;
+      content: " ";
+      height: 0;
+      width: 0;
+      border: solid transparent;
+      border-color: rgba(0, 0, 0, 0);
+      border-width: 0.5em;
+      border-right-color: #ccc;
+    }
+  }
+}
