@@ -1,5 +1,30 @@
-.jsonpanes ol .key-inner {
-  display: none;
+.jsonpanes * {
+  margin: 0;
+  padding: 0;
+}
+.jsonpanes .panel {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4em;
+  list-style-type: none;
+}
+
+.jsonpanes ul:before {
+  content: '{';
+}
+.jsonpanes ul:after {
+  content: '}';
+}
+
+.jsonpanes ol:before {
+  content: '[';
+}
+.jsonpanes ol:after {
+  content: ']';
+}
+
+.jsonpanes .key {
+  margin-left: 1em;
 }
 .jsonpanes a.key {
   display: block;

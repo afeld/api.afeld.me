@@ -8,22 +8,25 @@
     var data = this.data;
 
     if ($.isArray(data)){
-      $list = $('<ol start="0">');
+      $list = $('<ol class="panel" start="0">');
     } else {
-      $list = $('<ul>');
+      $list = $('<ul class="panel">');
     }
 
     $.each(data, function(key, val){
-      var $item;
+      var $li = $('<li>'),
+        $key;
+
       if ($.isPlainObject(val) || $.isArray(val)){
         // nested data
-        $item = $('<a class="key" href="#' + key + '"><li><span class="key-inner">' + key + '</span></li></a>');
-        $item.data('obj', val);
+        $key = $('<a class="key" href="#' + key + '">' + key + '</a>');
+        $key.data('obj', val);
       } else {
-        $item = $('<li><span class="key">' + key + ':</span> <span class="val">' + val + '</span></li>');
+        $key = $('<span class="key">' + key + ':</span> <span class="val">' + val + '</span>');
       }
 
-      $list.append($item);
+      $li.html($key);
+      $list.append($li);
     });
 
     $list.on('click', 'a.key', $.proxy(this.onKeyClicked, this));
