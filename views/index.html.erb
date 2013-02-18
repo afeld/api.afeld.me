@@ -6,10 +6,11 @@
     <script src="javascripts/application.js"></script>
     <script>
       $(function(){
-        $('body').jsonPanes(<%= PROFILE_STR %>);
+        $('.jsonpanes').jsonPanes(<%= PROFILE_STR %>);
       });
     </script>
   </head>
   <body>
+    <div class="jsonpanes"></div>
   </body>
 </html>

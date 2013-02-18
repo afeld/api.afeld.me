@@ -9,7 +9,7 @@
     this.createPanel(this.data);
 
     var self = this;
-    this.$el.on('click', '.key', function(){
+    this.$el.on('click', 'a.key', function(){
       var nestedData = $(this).data('obj');
       self.createPanel(nestedData);
     });
@@ -32,22 +32,25 @@
   };
 
   Panel.prototype.render = function(){
-    var $ul = $('<ul>');
+    var data = this.data,
+      listType = $.isArray(data) ? 'ol' : 'ul',
+      $list = $('<' + listType + '>');
 
-    $.each(this.data, function(key, val){
+    $.each(data, function(key, val){
       var $li = $('<li></li>');
       if ($.isPlainObject(val) || $.isArray(val)){
-        var $objName = $('<a class="key" href="#' + key + '">' + key + '</a>');
-        $objName.data('obj', val);
-        $li.html($objName);
+        // nested data
+        var $key = $('<a class="key" href="#' + key + '">' + key + '</a>');
+        $key.data('obj', val);
+        $li.html($key);
       } else {
-        $li.html('<span class="key">' + key + '</span>: <span class="val">' + val + '</span>');
+        $li.html('<span class="key">' + key + ':</span> <span class="val">' + val + '</span>');
       }
 
-      $li.appendTo($ul);
+      $li.appendTo($list);
     });
 
-    this.$el = $ul;
+    this.$el = $list;
     return this;
   };
 
