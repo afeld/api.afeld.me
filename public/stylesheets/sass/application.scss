@@ -40,6 +40,7 @@
   }
   a.key {
     display: block;
+    padding-right: 0.5em;
     text-decoration: none;
 
     // expander
@@ -80,5 +81,15 @@
       border-width: 0.5em;
       border-right-color: #ccc;
     }
+  }
+
+  .boolean {
+    color: red;
+  }
+  .string {
+    color: green;
+  }
+  .number {
+    color: blue;
   }
 }

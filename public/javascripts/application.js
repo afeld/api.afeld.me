@@ -24,7 +24,8 @@
         $key.data('obj', val);
       } else {
         // normal key-value
-        $key = $('<span class="key">' + key + ':</span> <span class="val">' + val + '</span>');
+        var valType = typeof val;
+        $key = $('<span class="key">' + key + ':</span> <span class="val ' + valType + '">' + JSON.stringify(val) + '</span>');
       }
 
       $li.html($key);
