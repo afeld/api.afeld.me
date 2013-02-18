@@ -1,6 +1,7 @@
 (function($){
   var Panel = function(data){
     this.data = data;
+    this.$selected = null;
     this.childPanel = null;
   };
 
@@ -19,9 +20,10 @@
 
       if ($.isPlainObject(val) || $.isArray(val)){
         // nested data
-        $key = $('<a class="key" href="#' + key + '">' + key + '</a>');
+        $key = $('<a class="key" href="#' + key + '">' + key + ':</a>');
         $key.data('obj', val);
       } else {
+        // normal key-value
         $key = $('<span class="key">' + key + ':</span> <span class="val">' + val + '</span>');
       }
 
@@ -35,6 +37,7 @@
     return this;
   };
 
+  // private
   Panel.prototype.onKeyClicked = function(e){
     var $key = $(e.currentTarget),
       nestedData = $key.data('obj'),
@@ -44,18 +47,20 @@
     if (childPanel){
       this.childPanel.remove();
       this.childPanel = null;
+      this.$selected.removeClass('selected');
+      this.$selected = null;
     }
 
-    if (childPanel && childPanel.data === nestedData){
-      // toggle off
-      $key.removeClass('selected');
-    } else {
+    // only open if an existing panel wasn't being toggled off
+    if (!childPanel || childPanel.data !== nestedData){
       // open new panel
       childPanel = new Panel(nestedData);
       childPanel.render();
       childPanel.$el.insertAfter(this.$el);
       this.childPanel = childPanel;
+
       $key.addClass('selected');
+      this.$selected = $key;
     }
   };
 

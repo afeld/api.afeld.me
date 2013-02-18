@@ -1,4 +1,9 @@
+.jsonpanes {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
 .jsonpanes * {
+  /* reset */
   margin: 0;
   padding: 0;
 }
@@ -30,5 +35,17 @@
   display: block;
 }
 .jsonpanes .selected {
-  background-color: #ccc;
+  position: relative;
+}
+/* CSS arrow */
+.jsonpanes .selected:after {
+  position: absolute;
+  left: 100%;
+  content: " ";
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0.5em;
+  border-right-color: #ccc;
 }
