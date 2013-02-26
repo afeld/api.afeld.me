@@ -3,16 +3,149 @@
     "first": "Aidan",
     "last": "Feldman"
   },
-  "profiles": [
-    {
-      "service": "twitter",
-      "username": "aidanfeldman",
-      "profile_url": "https://twitter.com/aidanfeldman"
+  "projects": {
+    "facebook": {
+      "username": "aidan.feldman",
+      "profile_url": "https://facebook.com/aidan.feldman"
     },
-    {
-      "service": "github",
+    "github": {
       "username": "afeld",
       "profile_url": "https://github.com/afeld"
+    },
+    "jux": {
+      "username": "aidan",
+      "profile_url": "http://afeld.me"
+    },
+    "twitter": {
+      "username": "aidanfeldman",
+      "profile_url": "https://twitter.com/aidanfeldman"
+    }
+  },
+  "employment": [
+    {
+      "employer": "General Assembly",
+      "title": "Instructor",
+      "description": "Teaching JavaScript as part of the Front-End Web Development curriculum.",
+      "start_date": "02/2013",
+      "end_date": null
+    },
+    {
+      "employer": "New York University",
+      "title": "Adjunct Instructor",
+      "description": "Teaching Advanced JavaScript.",
+      "start_date": "06/2012",
+      "end_date": null
+    },
+    {
+      "employer": "Jux",
+      "title": "Senior Web Developer",
+      "description": "Working on full-stack Ruby and JavaScript.",
+      "start_date": "01/2011",
+      "end_date": null
+    },
+    {
+      "employer": "American Express Publishing",
+      "title": "Contract Web Developer",
+      "description": "Building CMS tools and microsites for FoodAndWine.com.",
+      "start_date": "08/2010",
+      "end_date": "01/2011"
+    }
+  ],
+  "creations": [
+    {
+      "title": "Advanced JavaScript",
+      "description": "Interactive slides, course outline and resources for teach Advanced JS.",
+      "url": "https://github.com/afeld/advanced_js"
+    },
+    {
+      "title": "Backbone-Nested",
+      "description": "A plugin to make Backbone.js keep track of nested attributes.",
+      "url": "http://afeld.github.com/backbone-nested/"
+    },
+    {
+      "title": "Coolest Thing All Week",
+      "description": "Mailing list for people to share the coolest thing they've seen in the past seven days.",
+      "url": "https://groups.google.com/forum/?fromgroups#!forum/coolest-thing-all-week"
+    },
+    {
+      "title": "github-find",
+      "description": "Chrome extension for searching code within a particular repo.",
+      "url": "https://chrome.google.com/webstore/detail/github-find/blocadmfchabihonegcgjjikbbmpliph"
+    },
+    {
+      "title": "JSONProxy",
+      "description": "Simple proxy and client library for doing cross-domain requests.",
+      "url": "http://jsonp.jit.su/"
+    },
+    {
+      "title": "Hacker Hours",
+      "description": "Free office hours for programming help, running weekly+ since 09/2011.",
+      "url": "http://hackerhours.org/"
+    },
+    {
+      "title": "Magickly",
+      "description": "Image manipulation API as a service/gem.",
+      "url": "http://magickly.jux.com/"
+    },
+    {
+      "title": "Mongoid-Locker",
+      "description": "Gem for document-level locking in MongoDB.",
+      "url": "https://github.com/afeld/mongoid-locker"
+    },
+    {
+      "title": "mustachify.me",
+      "description": "Automatic mustachifying of any image.",
+      "url": "http://mustachify.me"
+    },
+    {
+      "title": "Stringer",
+      "description": "Virtual stringed instrument, played with a Kinect.  3rd place at NYC Music Hackday 2011.",
+      "url": "http://afeld.github.com/stringer/"
+    }
+  ],
+  "writing": [
+    {
+      "title": "Developing a Backbone.js Edge",
+      "type": "book",
+      "publisher": "Backstop Media",
+      "publish_date": null,
+      "url": "http://bleedingedgepress.com/our-books/"
+    },
+    {
+      "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
+      "type": "interview",
+      "publisher": "The Next Web",
+      "publish_date": "05/14/2012",
+      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
+    },
+    {
+      "title": "Hacker Olympics, the Un-Hackathon",
+      "type": "blog",
+      "publisher": "Twilio",
+      "publish_date": "03/15/2012",
+      "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
+    }
+  ],
+  "talks": [
+    {
+      "title": "What Developers Want",
+      "description": "Talk and panelist on how to make APIs developer-friendly.  I did a slow jam.",
+      "event": "Business of APIs Conference 2012",
+      "date": "10/17/2012",
+      "url": "http://afeld.me/nerdery/816975"
+    },
+    {
+      "title": "Junior Developer panel",
+      "description": "Organizer and moderator of panel on how to get your first job as a programmer.",
+      "event": "NYC on Rails meetup",
+      "date": "9/19/2012",
+      "url": "http://afeld.me/nerdery/522101"
+    },
+    {
+      "title": "Learn2Code",
+      "event": "Hacking for Hustlers meetup",
+      "date": "11/14/2011",
+      "url": "http://afeld.me/nerdery/38274"
     }
   ]
 }
