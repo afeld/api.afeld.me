@@ -1,0 +1,111 @@
+// base jsonpanes styles
+.jsonpanes {
+  box-sizing: border-box;
+  overflow-x: scroll;
+  white-space: nowrap;
+  font-family: monospace;
+  padding: 1em;
+
+  * {
+    // reset
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1em;
+    list-style-type: none;
+
+    $verticalPadding: 1em;
+    padding: $verticalPadding 0 $verticalPadding 0.8em;
+    // align with the top of the first class
+    margin-top: $verticalPadding;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    &:before {
+      content: '{';
+    }
+    &:after {
+      content: '}';
+    }
+  }
+
+  ol {
+    &:before {
+      content: '[';
+    }
+    &:after {
+      content: ']';
+    }
+  }
+
+  .key {
+    margin-left: 1em;
+    font-weight: bold;
+  }
+  a.key {
+    text-decoration: none;
+    color: black;
+
+    // expander
+    &:before {
+      content: "+";
+      margin-right: 0.5em;
+    }
+  }
+
+  li {
+    // commas after every non-nested link item
+    .val:after {
+      content: ",";
+    }
+    &:last-child .val:after {
+      display: none;
+    }
+  }
+
+  .selected {
+    position: relative;
+
+    // collapser
+    a.key:before {
+      content: "-";
+    }
+
+    .val {
+      // hide the Array/Object indicator
+      display: none;
+    }
+
+    // CSS arrow
+    &:after {
+      position: absolute;
+      left: 100%;
+      top: 16%;
+      content: " ";
+      height: 0;
+      width: 0;
+      border: solid transparent;
+      border-color: rgba(0, 0, 0, 0);
+      border-width: 0.5em;
+      border-right-color: #999;
+    }
+  }
+
+  .boolean {
+    color: red;
+  }
+  .string {
+    color: green;
+  }
+  .number {
+    color: blue;
+  }
+}
