@@ -2,6 +2,7 @@
   overflow-x: scroll;
   white-space: nowrap;
   font-family: monospace;
+  padding: 1em;
 
   * {
     // reset
@@ -12,8 +13,19 @@
   .panel {
     display: inline-block;
     vertical-align: top;
-    margin-right: 2em;
+    margin-right: 1em;
     list-style-type: none;
+    border-left: 1px solid #ccc;
+    box-shadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
+
+    padding: 0.5em;
+    padding-right: 0;
+
+    &:first-child {
+      border-left: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
   }
 
   ul {
@@ -40,6 +52,7 @@
   }
   a.key {
     text-decoration: none;
+    color: black;
 
     // expander
     &:before {
@@ -82,7 +95,7 @@
       border: solid transparent;
       border-color: rgba(0, 0, 0, 0);
       border-width: 0.5em;
-      border-right-color: #ccc;
+      border-right-color: #999;
     }
   }
 
