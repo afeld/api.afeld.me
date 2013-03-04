@@ -27,7 +27,6 @@
     return this;
   };
 
-
   // private
   Panel.prototype.createListItem = function(key, val){
     var $li = $('<li>'),
@@ -60,38 +59,48 @@
   Panel.prototype.onKeyClicked = function(e){
     var $key = $(e.currentTarget),
       nestedData = $key.data('obj'),
-      childPanel = this.childPanel;
-
-    // remove any existing child panel
-    if (childPanel){
-      this.childPanel.remove();
-      this.childPanel = null;
-      this.$selected.removeClass('selected');
-      this.$selected = null;
-    }
+      oldChildPanel = this.removeChildPanel();
 
     // only open if an existing panel wasn't being toggled off
-    if (!childPanel || childPanel.data !== nestedData){
-      // open new panel
-      childPanel = new Panel(nestedData);
-      childPanel.render();
-      childPanel.$el.insertAfter(this.$el);
-      this.childPanel = childPanel;
-
+    if (!oldChildPanel || oldChildPanel.data !== nestedData){
       var $selected = $key.closest('li');
-      $selected.addClass('selected');
-      this.$selected = $selected;
+      this.addChildPanel($selected, nestedData);
     }
 
     e.preventDefault();
   };
 
+  // private
+  Panel.prototype.removeChildPanel = function(){
+    var childPanel = this.childPanel;
+
+    // remove any existing child panel
+    if (childPanel){
+      childPanel.remove();
+      this.childPanel = null;
+      this.$selected.removeClass('selected');
+      this.$selected = null;
+    }
+
+    return childPanel;
+  };
+
+  // private
+  Panel.prototype.addChildPanel = function($selected, data){
+    // open new panel
+    var childPanel = new Panel(data);
+    childPanel.render();
+    childPanel.$el.insertAfter(this.$el);
+    this.childPanel = childPanel;
+
+    $selected.addClass('selected');
+    this.$selected = $selected;
+  };
+
   // recursively remove this and all child panels
   Panel.prototype.remove = function(){
+    this.removeChildPanel();
     this.$el.remove();
-    if (this.childPanel){
-      this.childPanel.remove();
-    }
   };
 
 
