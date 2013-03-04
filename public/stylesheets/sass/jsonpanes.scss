@@ -15,17 +15,10 @@
   .panel {
     display: inline-block;
     vertical-align: top;
-    margin-right: 1em;
     list-style-type: none;
 
     $verticalPadding: 1em;
     padding: $verticalPadding 0 $verticalPadding 0.8em;
-    // align with the top of the first class
-    margin-top: $verticalPadding;
-
-    &:first-child {
-      margin-top: 0;
-    }
   }
 
   ul {
@@ -75,27 +68,36 @@
     position: relative;
 
     // collapser
-    a.key:before {
+    & > a.key:before {
       content: "-";
     }
 
-    .val {
+    & > .val {
       // hide the Array/Object indicator
       display: none;
     }
 
-    // CSS arrow
-    &:after {
+    & > .panel {
       position: absolute;
       left: 100%;
-      top: 16%;
-      content: " ";
-      height: 0;
-      width: 0;
-      border: solid transparent;
-      border-color: rgba(0, 0, 0, 0);
-      border-width: 0.5em;
-      border-right-color: #999;
+      margin-left: 15px;
+
+      $arrowVerticalOffset: 15px;
+      top: -1 * $arrowVerticalOffset;
+
+      // CSS arrow
+      &:before {
+        position: absolute;
+        left: -1em;
+        top: $arrowVerticalOffset;
+        content: " ";
+        height: 0;
+        width: 0;
+        border: solid transparent;
+        border-color: rgba(0, 0, 0, 0);
+        border-width: 0.5em;
+        border-right-color: #999;
+      }
     }
   }
 
