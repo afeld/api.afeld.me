@@ -3,7 +3,8 @@
     <title>Aidan Feldman API</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="javascripts/application.js"></script>
+    <script src="javascripts/autolinker.js"></script>
+    <script src="javascripts/jsonpanes.js"></script>
     <script>
       $(function(){
         $('.jsonpanes').jsonPanes(<%= PROFILE_STR %>);
@@ -11,6 +12,7 @@
     </script>
   </head>
   <body>
+    <a id="original-link" href="index.json">View original</a>
     <div class="jsonpanes"></div>
   </body>
 </html>
