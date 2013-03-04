@@ -36,7 +36,7 @@
 
     if (isObj || $.isArray(val)){
       // nested data
-      $key = $('<a class="key" href="#' + key + '">' + key + '</a>');
+      $key = $('<a class="key" href="#">' + key + '</a>');
       $key.data('obj', val);
 
       if (isObj){
@@ -82,6 +82,8 @@
       $selected.addClass('selected');
       this.$selected = $selected;
     }
+
+    e.preventDefault();
   };
 
   // recursively remove this and all child panels
