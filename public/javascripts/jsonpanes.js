@@ -9,9 +9,9 @@
     var data = this.data;
 
     if ($.isArray(data)){
-      $list = $('<ol class="panel" start="0">');
+      $list = $('<ol class="list" start="0">');
     } else {
-      $list = $('<ul class="panel">');
+      $list = $('<ul class="list">');
     }
 
     var self = this;
@@ -22,8 +22,10 @@
 
     // handle expand/collapse
     $list.on('click', 'a.key', $.proxy(this.onKeyClicked, this));
+    var $listWrap = $('<div class="panel">');
+    $listWrap.html($list);
 
-    this.$el = $list;
+    this.$el = $listWrap;
     return this;
   };
 
