@@ -91,7 +91,7 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
 
   .val {
     opacity: 1;
-    -webkit-transition: opacity 0.6s ease;
+    -webkit-transition: opacity 0.4s ease $shadowDelay;
   }
 
   // the arrow
