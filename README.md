@@ -2,8 +2,10 @@
 
 To run locally:
 
-```
-$ python -m SimpleHTTPServer
+```bash
+bundle install
+rackup
+open http://localhost:9292
 ```
 
 ## See Also
