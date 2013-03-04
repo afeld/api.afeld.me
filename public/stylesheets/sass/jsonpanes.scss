@@ -15,13 +15,13 @@
   .panel {
     display: inline-block;
     vertical-align: top;
-
-    $verticalPadding: 1em;
-    padding: $verticalPadding 0 $verticalPadding 0.8em;
   }
 
   .list {
     list-style-type: none;
+
+    $verticalPadding: 1em;
+    padding: $verticalPadding 0 $verticalPadding 0.8em;
   }
 
   ul {

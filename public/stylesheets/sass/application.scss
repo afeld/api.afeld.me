@@ -24,13 +24,7 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
 }
 @-webkit-keyframes fadeInShadow {
   0% {
-    opacity: 0;
-  }
-  40% {
     @include box-shadow(none);
-  }
-  60% {
-    opacity: 1;
   }
   100% {
     border-left: $finalBorder;
@@ -38,14 +32,23 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
 }
 
+@-webkit-keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slideArrow {
   0% {
     visibility: visible;
-    left: 110%;
+    left: 0;
   }
   100% {
     visibility: visible;
-    left: 100%;
+    left: -1em;
   }
 }
 
@@ -53,20 +56,22 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   font-size: 1.25em;
   height: 100%;
 
-  $fadeInDuration: 0.4s;
+  $shadowDelay: 0.2s;
   .panel {
     background-color: white;
 
     -webkit-animation-name: fadeInShadow;
     -webkit-animation-iteration-count: once;
     -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: $fadeInDuration;
+    -webkit-animation-delay: $shadowDelay;
+    -webkit-animation-duration: 0.4s;
     -webkit-animation-fill-mode: forwards;
 
     animation-name: fadeInShadow;
     animation-iteration-count: once;
     animation-timing-function: ease-in;
-    animation-duration: $fadeInDuration;
+    animation-delay: $shadowDelay;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 
     &:first-child {
@@ -76,16 +81,24 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
     }
   }
 
+  .list {
+    -webkit-animation-name: fadeInText;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
   // the arrow
-  .selected:after {
+  .selected > .panel:before {
     visibility: hidden; // TODO only if animations are supported?
     z-index: -1;
 
     -webkit-animation-name: slideArrow;
     -webkit-animation-iteration-count: once;
     -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: $shadowDelay;
     -webkit-animation-duration: 0.2s;
-    -webkit-animation-delay: 0.6 * $fadeInDuration; // need to wait for the opacity of the panel to be 1
     -webkit-animation-fill-mode: forwards;
   }
 }
