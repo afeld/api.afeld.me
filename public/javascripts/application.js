@@ -46,9 +46,12 @@
       }
     } else {
       // normal key-value
-      var valType = typeof val;
       $key = $('<span class="key">' + key + '</span>');
-      $val = $('<span class="val ' + valType + '">' + JSON.stringify(val) + '</span>');
+
+      var valType = typeof val,
+        valStr = JSON.stringify(val);
+
+      $val = $('<span class="val ' + valType + '">' + Autolinker.link( valStr ) + '</span>');
     }
 
     $li.append($key, ': ', $val);
