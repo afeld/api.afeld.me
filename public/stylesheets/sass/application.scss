@@ -38,21 +38,35 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
 }
 
+@-webkit-keyframes slideArrow {
+  0% {
+    visibility: visible;
+    left: 110%;
+  }
+  100% {
+    visibility: visible;
+    left: 100%;
+  }
+}
+
 .jsonpanes {
   font-size: 1.25em;
   height: 100%;
 
+  $fadeInDuration: 0.4s;
   .panel {
+    background-color: white;
+
     -webkit-animation-name: fadeInShadow;
     -webkit-animation-iteration-count: once;
     -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: $fadeInDuration;
     -webkit-animation-fill-mode: forwards;
 
     animation-name: fadeInShadow;
     animation-iteration-count: once;
     animation-timing-function: ease-in;
-    animation-duration: 0.4s;
+    animation-duration: $fadeInDuration;
     animation-fill-mode: forwards;
 
     &:first-child {
@@ -60,5 +74,18 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
       -webkit-animation-name: none;
       animation-name: none;
     }
+  }
+
+  // the arrow
+  .selected:after {
+    visibility: hidden; // TODO only if animations are supported?
+    z-index: -1;
+
+    -webkit-animation-name: slideArrow;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-delay: 0.6 * $fadeInDuration; // need to wait for the opacity of the panel to be 1
+    -webkit-animation-fill-mode: forwards;
   }
 }
