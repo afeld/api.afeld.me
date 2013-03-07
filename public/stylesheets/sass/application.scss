@@ -108,16 +108,21 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
 }
 
-#original-link {
+.meta-links {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 0.25em;
-  font-family: sans-serif;
-  font-size: 0.7em;
-  color: #aaa;
+  padding: 0.25em 0.5em;
+  text-align: right;
 
-  &:hover {
-    color: black;
+  a {
+    display: block;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    color: #aaa;
+
+    &:hover {
+      color: black;
+    }
   }
 }
