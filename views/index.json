@@ -130,6 +130,11 @@
   ],
   "talks": [
     {
+      "title": "Single-Page App Architecture",
+      "date": "3/7/2013",
+      "url": "https://github.com/afeld/spaa"
+    },
+    {
       "title": "What Developers Want",
       "description": "Talk and panelist on how to make APIs developer-friendly.  I did a slow jam.",
       "event": "Business of APIs Conference 2012",
