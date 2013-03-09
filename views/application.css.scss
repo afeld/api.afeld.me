@@ -97,10 +97,12 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
     display: block;
     font-family: sans-serif;
     font-size: 0.7em;
-    color: #aaa;
+    color: black;
+    opacity: 0.6;
+    @include transition(opacity 0.2s ease);
 
     &:hover {
-      color: black;
+      opacity: 1;
     }
   }
 }
