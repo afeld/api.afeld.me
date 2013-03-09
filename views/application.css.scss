@@ -1,26 +1,13 @@
+@import "animation";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transition";
 
 @import "./jsonpanes";
 
 
 $finalBorder: 1px solid #ccc;
 $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
-@-moz-keyframes fadeInShadow {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    box-shadow: none;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    border-left: $finalBorder;
-    box-shadow: $finalShadow;
-  }
-}
-@-webkit-keyframes fadeInShadow {
+@include keyframes(fadeInShadow) {
   0% {
     @include box-shadow(none);
   }
@@ -30,7 +17,7 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
 }
 
-@-webkit-keyframes fadeInText {
+@include keyframes(fadeInText) {
   0% {
     opacity: 0;
   }
@@ -39,7 +26,7 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
 }
 
-@-webkit-keyframes slideArrow {
+@include keyframes(slideArrow) {
   0% {
     visibility: visible;
     left: 0;
@@ -50,6 +37,7 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
 }
 
+
 .jsonpanes {
   font-size: 1.25em;
   height: 100%;
@@ -58,38 +46,30 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   .panel {
     background-color: white;
 
-    -webkit-animation-name: fadeInShadow;
-    -webkit-animation-iteration-count: once;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-delay: $shadowDelay;
-    -webkit-animation-duration: 0.4s;
-    -webkit-animation-fill-mode: forwards;
-
-    animation-name: fadeInShadow;
-    animation-iteration-count: once;
-    animation-timing-function: ease-in;
-    animation-delay: $shadowDelay;
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
+    @include animation-name(fadeInShadow);
+    @include animation-iteration-count(once);
+    @include animation-timing-function(ease-in);
+    @include animation-delay($shadowDelay);
+    @include animation-duration(0.4s);
+    @include animation-fill-mode(forwards);
 
     &:first-child {
       // don't show the outline
-      -webkit-animation-name: none;
-      animation-name: none;
+      @include animation-name(none);
     }
   }
 
   .list {
-    -webkit-animation-name: fadeInText;
-    -webkit-animation-iteration-count: once;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 0.4s;
-    -webkit-animation-fill-mode: forwards;
+    @include animation-name(fadeInText);
+    @include animation-iteration-count(once);
+    @include animation-timing-function(ease-in);
+    @include animation-duration(0.4s);
+    @include animation-fill-mode(forwards);
   }
 
   .val {
     opacity: 1;
-    -webkit-transition: opacity 0.4s ease $shadowDelay;
+    @include transition(opacity 0.4s ease $shadowDelay);
   }
 
   // the arrow
@@ -97,12 +77,12 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
     visibility: hidden; // TODO only if animations are supported?
     z-index: -1;
 
-    -webkit-animation-name: slideArrow;
-    -webkit-animation-iteration-count: once;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-delay: $shadowDelay;
-    -webkit-animation-duration: 0.2s;
-    -webkit-animation-fill-mode: forwards;
+    @include animation-name(slideArrow);
+    @include animation-iteration-count(once);
+    @include animation-timing-function(ease-out);
+    @include animation-delay($shadowDelay);
+    @include animation-duration(0.2s);
+    @include animation-fill-mode(forwards);
   }
 }
 
