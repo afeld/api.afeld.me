@@ -1,9 +1,7 @@
+@import "compass/css3/box-shadow";
+
 @import "./jsonpanes";
 
-@mixin box-shadow($shadow){
-  -webkit-box-shadow: $shadow;
-  box-shadow: $shadow;
-}
 
 $finalBorder: 1px solid #ccc;
 $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);

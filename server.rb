@@ -4,17 +4,24 @@ require 'sinatra/respond_to'
 Sinatra::Application.register Sinatra::RespondTo
 enable :logging
 
-# use scss for stylesheets
-configure :development do
-  Sass::Plugin.options[:trace_selectors] = :true
-  Sass::Plugin.options[:style] = :expanded
+configure do
+  # copied from https://github.com/chriseppstein/compass/wiki/Sinatra-Integration
+  Compass.configuration do |config|
+    config.project_path = File.dirname(__FILE__)
+    config.sass_dir = 'views'
+  end
+
+  set :haml, format: :html5
+  set :sass, Compass.sass_engine_options
+  set :scss, Compass.sass_engine_options
 end
-configure :production do
-  Sass::Plugin.options[:style] = :compressed
-end
-use Sass::Plugin::Rack
 
 PROFILE_STR = File.read('./views/index.json').freeze
+
+
+get '/stylesheets/application' do
+  scss :application
+end
 
 get %r{/(index)?} do
   respond_to do |wants|
