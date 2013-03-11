@@ -33,26 +33,22 @@
   Panel.prototype.createListItem = function(key, val){
     var $li = $('<li>'),
       isObj = $.isPlainObject(val),
-      $key, $val;
+      valStr = JSON.stringify(val),
+      $key, valType, $val;
 
     if (isObj || $.isArray(val)){
       // nested data
       $key = $('<a class="key" href="#">' + key + '</a>');
       $key.data('obj', val);
 
-      if (isObj){
-        $val = $('<span class="val object">{…}</span>');
-      } else {
-        // can assume it's an Array
-        $val = $('<span class="val array">[…]</span>');
-      }
+      valType = isObj ? 'object' : 'array';
+      var condensedVal = valStr.replace(/^([\{\[].{0,30})(.*)([\}\]])$/, '$1...$3');
+      $val = $('<span class="val ' + valType + '">' + condensedVal +'</span>');
     } else {
       // normal key-value
       $key = $('<span class="key">' + key + '</span>');
 
-      var valType = typeof val,
-        valStr = JSON.stringify(val);
-
+      valType = typeof val;
       $val = $('<span class="val ' + valType + '">' + Autolinker.link( valStr ) + '</span>');
     }
 
