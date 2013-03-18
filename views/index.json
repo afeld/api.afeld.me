@@ -1,6 +1,6 @@
 {
   "name": "Aidan Feldman",
-  "url": "http://api.afeld.me/",
+  "url": "http://api.afeld.me",
   "profiles": {
     "facebook": {
       "username": "aidan.feldman",
@@ -114,7 +114,7 @@
     {
       "title": "Backbone-Nested",
       "description": "A plugin to make Backbone.js keep track of nested attributes.",
-      "url": "http://afeld.github.com/backbone-nested/"
+      "url": "http://afeld.github.com/backbone-nested"
     },
     {
       "title": "Coolest Thing All Week",
@@ -129,17 +129,17 @@
     {
       "title": "JSONProxy",
       "description": "Simple proxy and client library for doing cross-domain requests.",
-      "url": "http://jsonp.jit.su/"
+      "url": "http://jsonp.jit.su"
     },
     {
       "title": "Hacker Hours",
       "description": "Free office hours for programming help, running weekly+ since 09/2011.",
-      "url": "http://hackerhours.org/"
+      "url": "http://hackerhours.org"
     },
     {
       "title": "Magickly",
       "description": "Image manipulation API as a service/gem.",
-      "url": "http://magickly.jux.com/"
+      "url": "http://magickly.jux.com"
     },
     {
       "title": "Mongoid-Locker",
@@ -154,7 +154,7 @@
     {
       "title": "Stringer",
       "description": "Virtual stringed instrument, played with a Kinect.  3rd place at NYC Music Hackday 2011.",
-      "url": "http://afeld.github.com/stringer/"
+      "url": "http://afeld.github.com/stringer"
     }
   ],
   "writing": [
@@ -163,14 +163,14 @@
       "type": "book",
       "publisher": "Backstop Media",
       "publish_date": null,
-      "url": "http://bleedingedgepress.com/our-books/"
+      "url": "http://bleedingedgepress.com/our-books"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
       "type": "interview",
       "publisher": "The Next Web",
       "publish_date": "05/14/2012",
-      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
+      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
     },
     {
       "title": "Hacker Olympics, the Un-Hackathon",
@@ -184,7 +184,7 @@
     {
       "title": "Introduction to Backbone.js",
       "date": "03/11/2013",
-      "url": "http://www.meetup.com/NYC-Tech-Skillshares/events/105257562/"
+      "url": "http://www.meetup.com/NYC-Tech-Skillshares/events/105257562"
     },
     {
       "title": "Single-Page App Architecture",
