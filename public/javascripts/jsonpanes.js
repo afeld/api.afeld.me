@@ -34,31 +34,32 @@
     var $li = $('<li>'),
       isObj = $.isPlainObject(val),
       valStr = JSON.stringify(val),
-      $key, valType, $val;
+      $rowContainer, $key, valType, valMarkup;
 
     if (isObj || $.isArray(val)){
       // nested data
       var $expandable = $('<a class="expandable" href="#">');
       $expandable.data('obj', val);
+      $li.append($expandable);
+      $rowContainer = $expandable;
+
       $key = $('<span class="key">' + key + '</span>');
       valType = isObj ? 'object' : 'array';
 
       // truncate the array/object preview
       var valMatch = valStr.match(/^([\{\[])(.{0,30})(?:.*)([\}\]])$/);
-      $val = $('<span class="val ' + valType + '">' + valMatch[1] + '<span class="val-inner">' + valMatch[2] +'…</span>' + valMatch[3] + '</span>');
-
-      $expandable.append($key, ': ', $val);
-      $li.append($expandable);
+      valMarkup = valMatch[1] + '<span class="val-inner">' + valMatch[2] +'…</span>' + valMatch[3];
 
     } else {
       // normal key-value
+      $rowContainer = $li;
+
       $key = $('<span class="key">' + key + '</span>');
       valType = typeof val;
-      $val = $('<span class="val ' + valType + '">' + Autolinker.link( valStr ) + '</span>');
-
-      $li.append($key, ': ', $val);
+      valMarkup = Autolinker.link( valStr );
     }
 
+    $rowContainer.append($key, ': <span class="val ' + valType + '">' + valMarkup + '</span>');
     return $li;
   };
 
