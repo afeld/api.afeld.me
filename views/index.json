@@ -23,34 +23,86 @@
       "profile_url": "https://twitter.com/aidanfeldman"
     }
   },
-  "employment": [
+  "employment": {
+    "coding": [
+      {
+        "employer": "Jux",
+        "title": "Senior Web Developer",
+        "description": "Working on full-stack Ruby and JavaScript.",
+        "start_date": "01/2011",
+        "end_date": null
+      },
+      {
+        "employer": "American Express Publishing",
+        "title": "Contract Web Developer",
+        "description": "Building CMS tools and microsites for FoodAndWine.com.",
+        "start_date": "08/2010",
+        "end_date": "01/2011"
+      }
+    ],
+    "teaching": [
+      {
+        "employer": "General Assembly",
+        "title": "Instructor",
+        "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
+        "start_date": "02/2013",
+        "end_date": null
+      },
+      {
+        "employer": "New York University",
+        "title": "Adjunct Instructor",
+        "description": "Teaching Advanced JavaScript.",
+        "profile_url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
+        "start_date": "06/2012",
+        "end_date": null
+      }
+    ],
+    "dance": [
+      {
+        "employer": "danceTactics Performance Group",
+        "choreographer": "Keith Thompson",
+        "url": "http://dancetactics.org",
+        "start_date": "05/2012",
+        "end_date": null
+      },
+      {
+        "employer": "Artichoke Dance Company",
+        "choreographer": "Lynn Neuman",
+        "url": "http://artichokedance.org",
+        "start_date": "10/2010",
+        "end_date": null
+      },
+      {
+        "employer": "Chavasse Dance & Performance",
+        "choreographer": "Amy Chavasse",
+        "url": "http://chavassedanceandperformance.com",
+        "start_date": "06/2010",
+        "end_date": null
+      }
+    ]
+  },
+  "education": [
     {
-      "employer": "General Assembly",
-      "title": "Instructor",
-      "description": "Teaching JavaScript as part of the Front-End Web Development curriculum.",
-      "start_date": "02/2013",
-      "end_date": null
+      "school": "University of Michigan",
+      "location": "Ann Arbor, MI",
+      "start_date": "08/2005",
+      "end_date": "08/2010",
+      "degrees": [
+        {
+          "title": "BSE",
+          "major": "Computer Science Engineering"
+        },
+        {
+          "title": "BFA",
+          "major": "Dance"
+        }
+      ]
     },
     {
-      "employer": "New York University",
-      "title": "Adjunct Instructor",
-      "description": "Teaching Advanced JavaScript.",
-      "start_date": "06/2012",
-      "end_date": null
-    },
-    {
-      "employer": "Jux",
-      "title": "Senior Web Developer",
-      "description": "Working on full-stack Ruby and JavaScript.",
-      "start_date": "01/2011",
-      "end_date": null
-    },
-    {
-      "employer": "American Express Publishing",
-      "title": "Contract Web Developer",
-      "description": "Building CMS tools and microsites for FoodAndWine.com.",
-      "start_date": "08/2010",
-      "end_date": "01/2011"
+      "school": "Oak Park and River Forest High School",
+      "location": "Oak Park, IL",
+      "start_date": "08/2001",
+      "end_date": "06/2005"
     }
   ],
   "projects": [
@@ -130,8 +182,13 @@
   ],
   "talks": [
     {
+      "title": "Introduction to Backbone.js",
+      "date": "03/11/2013",
+      "url": "http://www.meetup.com/NYC-Tech-Skillshares/events/105257562/"
+    },
+    {
       "title": "Single-Page App Architecture",
-      "date": "3/7/2013",
+      "date": "03/07/2013",
       "url": "https://github.com/afeld/spaa"
     },
     {
