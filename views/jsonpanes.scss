@@ -71,14 +71,16 @@
   .selected {
     position: relative;
 
-    // collapser
-    & > a.key:before {
-      content: "-";
-    }
+    & > .expandable {
+      // collapser
+      & .key:before {
+        content: "-";
+      }
 
-    & > .val {
-      // hide the Array/Object indicator
-      opacity: 0;
+      & .val {
+        // hide the Array/Object indicator
+        opacity: 0;
+      }
     }
 
     & > .panel {
