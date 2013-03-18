@@ -47,7 +47,7 @@
       valType = isObj ? 'object' : 'array';
 
       // truncate the array/object preview
-      var valMatch = valStr.match(/^([\{\[])(.{0,28})(?:.*)([\}\]])$/);
+      var valMatch = valStr.match(/^([\{\[])(.{0,27})(?:.*)([\}\]])$/);
       valMarkup = valMatch[1] + '<span class="val-inner">' + valMatch[2] +'…</span>' + valMatch[3];
 
     } else {
