@@ -42,7 +42,7 @@
       $key.data('obj', val);
 
       valType = isObj ? 'object' : 'array';
-      var condensedVal = valStr.replace(/^([\{\[].{0,30})(.*)([\}\]])$/, '$1...$3');
+      var condensedVal = valStr.replace(/^([\{\[].{0,30})(.*)([\}\]])$/, '$1… $3');
       $val = $('<span class="val ' + valType + '">' + condensedVal +'</span>');
     } else {
       // normal key-value
