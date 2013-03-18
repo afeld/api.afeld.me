@@ -46,16 +46,6 @@
     margin-left: 1em;
     font-weight: bold;
   }
-  a.key {
-    text-decoration: none;
-    color: black;
-
-    // expander
-    &:before {
-      content: "+";
-      margin-right: 0.5em;
-    }
-  }
 
   li {
     // commas after every non-nested link item
@@ -64,6 +54,17 @@
     }
     &:last-child .val:after {
       display: none;
+    }
+  }
+
+  .expandable {
+    text-decoration: none;
+    color: black;
+
+    // expander
+    & .key:before {
+      content: "+";
+      margin-right: 0.5em;
     }
   }
 

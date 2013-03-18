@@ -21,7 +21,7 @@
     });
 
     // handle expand/collapse
-    $list.on('click', 'a.key', $.proxy(this.onKeyClicked, this));
+    $list.on('click', '.expandable', $.proxy(this.onKeyClicked, this));
     var $listWrap = $('<div class="panel">');
     $listWrap.html($list);
 
@@ -38,34 +38,39 @@
 
     if (isObj || $.isArray(val)){
       // nested data
-      $key = $('<a class="key" href="#">' + key + '</a>');
-      $key.data('obj', val);
+      var $expandable = $('<a class="expandable" href="#">');
+      $expandable.data('obj', val);
+      $key = $('<span class="key">' + key + '</span>');
       valType = isObj ? 'object' : 'array';
 
       // truncate the array/object preview
       var valMatch = valStr.match(/^([\{\[])(.{0,30})(?:.*)([\}\]])$/);
       $val = $('<span class="val ' + valType + '">' + valMatch[1] + '<span class="val-inner">' + valMatch[2] +'…</span>' + valMatch[3] + '</span>');
 
+      $expandable.append($key, ': ', $val);
+      $li.append($expandable);
+
     } else {
       // normal key-value
       $key = $('<span class="key">' + key + '</span>');
       valType = typeof val;
       $val = $('<span class="val ' + valType + '">' + Autolinker.link( valStr ) + '</span>');
+
+      $li.append($key, ': ', $val);
     }
 
-    $li.append($key, ': ', $val);
     return $li;
   };
 
   // private
   Panel.prototype.onKeyClicked = function(e){
-    var $key = $(e.currentTarget),
-      nestedData = $key.data('obj'),
+    var $expandable = $(e.currentTarget),
+      nestedData = $expandable.data('obj'),
       oldChildPanel = this.removeChildPanel();
 
     // only open if an existing panel wasn't being toggled off
     if (!oldChildPanel || oldChildPanel.data !== nestedData){
-      var $selected = $key.closest('li');
+      var $selected = $expandable.closest('li');
       this.addChildPanel($selected, nestedData);
     }
 
