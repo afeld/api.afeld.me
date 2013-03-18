@@ -115,6 +115,8 @@
   }
   .array,
   .object {
-    color: #a5a5a5;
+    .val-inner {
+      color: #a5a5a5;
+    }
   }
 }

@@ -40,14 +40,15 @@
       // nested data
       $key = $('<a class="key" href="#">' + key + '</a>');
       $key.data('obj', val);
-
       valType = isObj ? 'object' : 'array';
-      var condensedVal = valStr.replace(/^([\{\[].{0,30})(.*)([\}\]])$/, '$1… $3');
-      $val = $('<span class="val ' + valType + '">' + condensedVal +'</span>');
+
+      // truncate the array/object preview
+      var valMatch = valStr.match(/^([\{\[])(.{0,30})(?:.*)([\}\]])$/);
+      $val = $('<span class="val ' + valType + '">' + valMatch[1] + '<span class="val-inner">' + valMatch[2] +'…</span>' + valMatch[3] + '</span>');
+
     } else {
       // normal key-value
       $key = $('<span class="key">' + key + '</span>');
-
       valType = typeof val;
       $val = $('<span class="val ' + valType + '">' + Autolinker.link( valStr ) + '</span>');
     }
