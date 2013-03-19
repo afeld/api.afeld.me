@@ -41,49 +41,49 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
 .jsonpanes {
   font-size: 1.25em;
   height: 100%;
+}
 
-  $shadowDelay: 0.2s;
-  .panel {
-    background-color: white;
+$shadowDelay: 0.2s;
+.panel {
+  background-color: white;
 
-    @include animation-name(fadeInShadow);
-    @include animation-iteration-count(once);
-    @include animation-timing-function(ease-in);
-    @include animation-delay($shadowDelay);
-    @include animation-duration(0.4s);
-    @include animation-fill-mode(forwards);
+  @include animation-name(fadeInShadow);
+  @include animation-iteration-count(once);
+  @include animation-timing-function(ease-in);
+  @include animation-delay($shadowDelay);
+  @include animation-duration(0.4s);
+  @include animation-fill-mode(forwards);
 
-    &:first-child {
-      // don't show the outline
-      @include animation-name(none);
-    }
+  &:first-child {
+    // don't show the outline
+    @include animation-name(none);
   }
+}
 
-  .list {
-    @include animation-name(fadeInText);
-    @include animation-iteration-count(once);
-    @include animation-timing-function(ease-in);
-    @include animation-duration(0.4s);
-    @include animation-fill-mode(forwards);
-  }
+.list {
+  @include animation-name(fadeInText);
+  @include animation-iteration-count(once);
+  @include animation-timing-function(ease-in);
+  @include animation-duration(0.4s);
+  @include animation-fill-mode(forwards);
+}
 
-  .val {
-    opacity: 1;
-    @include transition(opacity 0.4s ease $shadowDelay);
-  }
+.val {
+  opacity: 1;
+  @include transition(opacity 0.4s ease $shadowDelay);
+}
 
-  // the arrow
-  .selected > .panel:before {
-    visibility: hidden; // TODO only if animations are supported?
-    z-index: -1;
+// the arrow
+.selected > .panel:before {
+  visibility: hidden; // TODO only if animations are supported?
+  z-index: -1;
 
-    @include animation-name(slideArrow);
-    @include animation-iteration-count(once);
-    @include animation-timing-function(ease-out);
-    @include animation-delay($shadowDelay);
-    @include animation-duration(0.2s);
-    @include animation-fill-mode(forwards);
-  }
+  @include animation-name(slideArrow);
+  @include animation-iteration-count(once);
+  @include animation-timing-function(ease-out);
+  @include animation-delay($shadowDelay);
+  @include animation-duration(0.2s);
+  @include animation-fill-mode(forwards);
 }
 
 .meta-links {
