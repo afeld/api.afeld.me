@@ -153,7 +153,7 @@
     },
     {
       "title": "Stringer",
-      "description": "Virtual stringed instrument, played with a Kinect.  3rd place at NYC Music Hackday 2011.",
+      "description": "Virtual stringed instrument, played with a Kinect.  Third place at NYC Music Hackday 2011.",
       "url": "http://afeld.github.com/stringer"
     }
   ],
@@ -184,12 +184,17 @@
     {
       "title": "Introduction to Backbone.js",
       "date": "03/11/2013",
-      "url": "http://www.meetup.com/NYC-Tech-Skillshares/events/105257562"
+      "url": "https://github.com/afeld/intro_to_backbone"
     },
     {
       "title": "Single-Page App Architecture",
       "date": "03/07/2013",
       "url": "https://github.com/afeld/spaa"
+    },
+    {
+      "title": "Seven Languages is Seven Months: Ruby",
+      "date": "10/24/2012",
+      "url": "https://gist.github.com/afeld/3944262"
     },
     {
       "title": "What Developers Want",
