@@ -1,6 +1,10 @@
 // base jsonpanes styles
+
+@import "compass/css3/box-sizing";
+
+
 .jsonpanes {
-  box-sizing: border-box;
+  @include box-sizing(border-box);
   overflow-x: scroll;
   white-space: nowrap;
   font-family: monospace;
