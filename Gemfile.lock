@@ -1,20 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    animation (0.1.alpha.3)
-      compass (>= 0.12.0)
-      sass (>= 3.2.0.alpha.95)
     chunky_png (1.2.7)
-    compass (0.12.2)
+    compass (0.13.alpha.2)
       chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
-    fssm (0.2.10)
+      listen (~> 0.5.3)
+      sass (~> 3.2.0.alpha.93)
+    listen (0.5.3)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
-    sass (3.3.0.alpha.103)
-    sinatra (1.4.1)
+    sass (3.2.7)
+    sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
@@ -26,8 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  animation (= 0.1.alpha.3)
-  compass
+  compass (~> 0.13.alpha.2)
   sass
   sinatra
   sinatra-respond_to
