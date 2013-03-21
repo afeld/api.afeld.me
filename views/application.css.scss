@@ -48,7 +48,7 @@ $shadowDelay: 0.2s;
   background-color: white;
 
   @include animation-name(fadeInShadow);
-  @include animation-iteration-count(once);
+  @include animation-iteration-count(1);
   @include animation-timing-function(ease-in);
   @include animation-delay($shadowDelay);
   @include animation-duration(0.4s);
@@ -62,7 +62,7 @@ $shadowDelay: 0.2s;
 
 .list {
   @include animation-name(fadeInText);
-  @include animation-iteration-count(once);
+  @include animation-iteration-count(1);
   @include animation-timing-function(ease-in);
   @include animation-duration(0.4s);
   @include animation-fill-mode(forwards);
@@ -79,7 +79,7 @@ $shadowDelay: 0.2s;
   z-index: -1;
 
   @include animation-name(slideArrow);
-  @include animation-iteration-count(once);
+  @include animation-iteration-count(1);
   @include animation-timing-function(ease-out);
   @include animation-delay($shadowDelay);
   @include animation-duration(0.2s);
