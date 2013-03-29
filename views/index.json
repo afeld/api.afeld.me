@@ -182,6 +182,16 @@
   ],
   "talks": [
     {
+      "title": "MongoDB + Ruby Workshop",
+      "date": "03/27/2013",
+      "url": "https://github.com/afeld/mongo_ruby_workshop"
+    },
+    {
+      "title": "Hackathon Workshop",
+      "date": "03/26/2013",
+      "url": "https://github.com/afeld/hackathon_workshop/wiki"
+    },
+    {
       "title": "Introduction to Backbone.js",
       "date": "03/11/2013",
       "url": "https://github.com/afeld/intro_to_backbone"
