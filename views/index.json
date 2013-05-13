@@ -26,11 +26,16 @@
   "employment": {
     "coding": [
       {
+        "employer": "Artsy",
+        "start_date": "05/2013",
+        "end_date": null
+      },
+      {
         "employer": "Jux",
         "title": "Senior Web Developer",
         "description": "Working on full-stack Ruby and JavaScript.",
         "start_date": "01/2011",
-        "end_date": null
+        "end_date": "05/2013"
       },
       {
         "employer": "American Express Publishing",
