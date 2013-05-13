@@ -1,6 +1,7 @@
 // base jsonpanes styles
 
 @import "compass/css3/box-sizing";
+@import "compass/css3/transition";
 
 
 .jsonpanes {
@@ -65,8 +66,18 @@
     text-decoration: none;
     color: black;
 
+    $color: #D3DFF0;
+    background-color: rgba($color, 0);
+    @include transition(background-color 0.3s ease 0.5);
+
+    &:hover {
+      // fallback for older browsers
+      background-color: $color;
+      background-color: rgba($color, 1);
+    }
+
     // expander
-    & .key:before {
+    .key:before {
       content: "+";
       margin-right: 0.5em;
     }
@@ -77,11 +88,11 @@
 
     & > .expandable {
       // collapser
-      & .key:before {
+      .key:before {
         content: "-";
       }
 
-      & .val {
+      .val {
         // hide the Array/Object indicator
         opacity: 0;
       }

@@ -97,6 +97,7 @@ $shadowDelay: 0.2s;
     display: block;
     font-family: sans-serif;
     font-size: 0.7em;
+    line-height: 1.3;
     color: black;
     opacity: 0.6;
     @include transition(opacity 0.2s ease);
