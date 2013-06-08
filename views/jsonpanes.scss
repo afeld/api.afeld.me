@@ -62,6 +62,14 @@
     }
   }
 
+  // only applies in collapsed state
+  .val-inner {
+    display: inline-block;
+    max-width: 17em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .expandable {
     text-decoration: none;
     color: black;
