@@ -40,7 +40,13 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
 
 .jsonpanes {
   font-size: 1.25em;
-  height: 100%;
+
+  // cover the screen
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 $shadowDelay: 0.2s;
