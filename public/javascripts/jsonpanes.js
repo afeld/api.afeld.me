@@ -1,8 +1,6 @@
 (function($){
   var Panel = function(data){
     this.data = data;
-    this.$selected = null;
-    this.childPanel = null;
   };
 
   Panel.prototype.render = function(){
@@ -87,10 +85,8 @@
     var childPanel = new Panel(data);
     childPanel.render();
     $selected.append(childPanel.$el);
-    this.childPanel = childPanel;
 
     $selected.addClass('selected');
-    this.$selected = $selected;
   };
 
 
