@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
   <head>
     <title>Aidan Feldman API</title>
@@ -8,6 +9,7 @@
     <script>
       $(function(){
         $('.jsonpanes').jsonPanes(<%= PROFILE_STR %>);
+        $('.profile').hide();
       });
 
       var _gaq = _gaq || [];
@@ -27,5 +29,8 @@
       <a href="https://github.com/afeld/api.afeld.me">Fork me</a>
     </div>
     <div class="jsonpanes"></div>
+    <div class="profile">
+      <%= to_dl(PROFILE_HSH) %>
+    </div>
   </body>
 </html>
