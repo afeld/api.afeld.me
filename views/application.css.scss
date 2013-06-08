@@ -1,21 +1,8 @@
 @import "compass/css3/animation";
-@import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 
 @import "./jsonpanes";
 
-
-$finalBorder: 1px solid #ccc;
-$finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
-@include keyframes(fadeInShadow) {
-  0% {
-    @include box-shadow(none);
-  }
-  100% {
-    border-left: $finalBorder;
-    @include box-shadow($finalShadow);
-  }
-}
 
 @include keyframes(fadeInText) {
   0% {
@@ -23,17 +10,6 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   }
   100% {
     opacity: 1;
-  }
-}
-
-@include keyframes(slideArrow) {
-  0% {
-    visibility: visible;
-    left: 0;
-  }
-  100% {
-    visibility: visible;
-    left: -1em;
   }
 }
 
@@ -49,23 +25,6 @@ $finalShadow: -13px 0px 37px -13px rgba(0, 0, 0, 0.5);
   right: 0;
 }
 
-$shadowDelay: 0.2s;
-.panel {
-  background-color: white;
-
-  @include animation-name(fadeInShadow);
-  @include animation-iteration-count(1);
-  @include animation-timing-function(ease-in);
-  @include animation-delay($shadowDelay);
-  @include animation-duration(0.4s);
-  @include animation-fill-mode(forwards);
-
-  &:first-child {
-    // don't show the outline
-    @include animation-name(none);
-  }
-}
-
 .list {
   @include animation-name(fadeInText);
   @include animation-iteration-count(1);
@@ -76,20 +35,7 @@ $shadowDelay: 0.2s;
 
 .val {
   opacity: 1;
-  @include transition(opacity 0.4s ease $shadowDelay);
-}
-
-// the arrow
-.selected > .panel:before {
-  visibility: hidden; // TODO only if animations are supported?
-  z-index: -1;
-
-  @include animation-name(slideArrow);
-  @include animation-iteration-count(1);
-  @include animation-timing-function(ease-out);
-  @include animation-delay($shadowDelay);
-  @include animation-duration(0.2s);
-  @include animation-fill-mode(forwards);
+  @include transition(opacity 0.4s ease);
 }
 
 .meta-links {
