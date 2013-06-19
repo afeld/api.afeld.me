@@ -1,8 +1,6 @@
 (function($){
   var Panel = function(data){
     this.data = data;
-    this.$selected = null;
-    this.childPanel = null;
   };
 
   Panel.prototype.render = function(){
@@ -66,12 +64,14 @@
   // private
   Panel.prototype.onKeyClicked = function(e){
     var $expandable = $(e.currentTarget),
-      nestedData = $expandable.data('obj'),
-      oldChildPanel = this.removeChildPanel();
+      $selected = $expandable.closest('li');
 
-    // only open if an existing panel wasn't being toggled off
-    if (!oldChildPanel || oldChildPanel.data !== nestedData){
-      var $selected = $expandable.closest('li');
+    if ($selected.hasClass('selected')){
+      // collapse
+      $selected.children('.panel').remove();
+      $selected.removeClass('selected');
+    } else {
+      var nestedData = $expandable.data('obj');
       this.addChildPanel($selected, nestedData);
     }
 
@@ -80,36 +80,13 @@
   };
 
   // private
-  Panel.prototype.removeChildPanel = function(){
-    var childPanel = this.childPanel;
-
-    // remove any existing child panel
-    if (childPanel){
-      childPanel.remove();
-      this.childPanel = null;
-      this.$selected.removeClass('selected');
-      this.$selected = null;
-    }
-
-    return childPanel;
-  };
-
-  // private
   Panel.prototype.addChildPanel = function($selected, data){
     // open new panel
     var childPanel = new Panel(data);
     childPanel.render();
     $selected.append(childPanel.$el);
-    this.childPanel = childPanel;
 
     $selected.addClass('selected');
-    this.$selected = $selected;
-  };
-
-  // recursively remove this and all child panels
-  Panel.prototype.remove = function(){
-    this.removeChildPanel();
-    this.$el.remove();
   };
 
 

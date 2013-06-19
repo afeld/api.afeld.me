@@ -24,9 +24,7 @@
 
   .list {
     list-style-type: none;
-
-    $verticalPadding: 1em;
-    padding: $verticalPadding 0 $verticalPadding 0.8em;
+    padding: 0.5em 0;
   }
 
   ul {
@@ -71,6 +69,7 @@
   }
 
   .expandable {
+    display: block;
     text-decoration: none;
     color: black;
 
@@ -107,26 +106,7 @@
     }
 
     & > .panel {
-      position: absolute;
-      left: 100%;
-      margin-left: 15px;
-
-      $arrowVerticalOffset: 15px;
-      top: -1 * $arrowVerticalOffset;
-
-      // CSS arrow
-      &:before {
-        position: absolute;
-        left: -1em;
-        top: $arrowVerticalOffset;
-        content: " ";
-        height: 0;
-        width: 0;
-        border: solid transparent;
-        border-color: rgba(0, 0, 0, 0);
-        border-width: 0.5em;
-        border-right-color: #999;
-      }
+      margin-left: 2em;
     }
   }
 
