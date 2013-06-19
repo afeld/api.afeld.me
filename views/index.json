@@ -117,6 +117,11 @@
   ],
   "projects": [
     {
+      "title": "Vittle",
+      "description": "A Chrome extension that shows previews of items on food ordering sites.",
+      "url": "https://chrome.google.com/webstore/detail/vittle/oijdfokmphhefjgnmjccmknllomobhdg"
+    },
+    {
       "title": "Advanced JavaScript",
       "description": "Interactive slides, course outline and resources for teach Advanced JS.",
       "url": "https://github.com/afeld/advanced_js"
