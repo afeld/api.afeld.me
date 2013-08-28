@@ -199,7 +199,22 @@
       "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
     }
   ],
-  "talks": [
+  "talks_and_workshops": [
+    {
+      "title": "Getting Serious (with Front-End JavaScript)",
+      "date": "07/08/2013",
+      "url": "https://github.com/afeld/getting_serious"
+    },
+    {
+      "title": "Test to Learn",
+      "date": "06/20/2013",
+      "url": "https://github.com/afeld/test_to_learn"
+    },
+    {
+      "title": "Web Development Basics (Git, MAMP, Wordpress and FTP)",
+      "date": "05/13/2013",
+      "url": "https://github.com/afeld/web_dev_basics"
+    },
     {
       "title": "MongoDB + Ruby Workshop",
       "date": "03/27/2013",
