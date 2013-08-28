@@ -2,6 +2,10 @@
   "name": "Aidan Feldman",
   "url": "http://api.afeld.me",
   "profiles": {
+    "artsy": {
+      "username": "aidanfeldman",
+      "profile_url": "http://artsy.net/aidanfeldman/favorites"
+    },
     "facebook": {
       "username": "aidan.feldman",
       "profile_url": "https://facebook.com/aidan.feldman"
