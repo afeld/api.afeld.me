@@ -121,6 +121,11 @@
   ],
   "projects": [
     {
+      "title": "Tricle",
+      "description": "Automated metrics reporting via email.",
+      "url": "https://github.com/artsy/tricle"
+    },
+    {
       "title": "Vittle",
       "description": "A Chrome extension that shows previews of items on food ordering sites.",
       "url": "https://chrome.google.com/webstore/detail/vittle/oijdfokmphhefjgnmjccmknllomobhdg"
