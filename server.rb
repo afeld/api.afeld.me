@@ -68,6 +68,6 @@ get %r{^/(index)?$} do
   end
 end
 
-get '/github_desc' do
+get '/github-job-description' do
   erb :github_desc
 end
