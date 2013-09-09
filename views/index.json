@@ -42,10 +42,16 @@
   "employment": {
     "coding": [
       {
+        "employer": "GitHub",
+        "title": "Education Hacker",
+        "start_date": "08/2013",
+        "end_date": null
+      },
+      {
         "employer": "Artsy",
         "title": "Software Engineer",
         "start_date": "05/2013",
-        "end_date": null
+        "end_date": "08/2013"
       },
       {
         "employer": "Jux",
