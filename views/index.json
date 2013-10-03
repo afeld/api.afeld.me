@@ -220,6 +220,11 @@
   ],
   "talks": [
     {
+      "title": "JavaScript: the little language everyone loves to hate",
+      "date": "09/30/2013",
+      "url": "https://github.com/afeld/js-overview"
+    },
+    {
       "title": "Getting Serious (with Front-End JavaScript)",
       "date": "07/08/2013",
       "url": "http://afeld.github.io/getting_serious/slides/"
