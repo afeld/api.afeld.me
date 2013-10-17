@@ -220,6 +220,11 @@
   ],
   "talks": [
     {
+      "title": "Education the GitHub Way",
+      "date": "10/12/2013",
+      "url": "https://github.com/afeld/edu_the_gh_way"
+    },
+    {
       "title": "JavaScript: the little language everyone loves to hate",
       "date": "09/30/2013",
       "url": "https://github.com/afeld/js-overview"
