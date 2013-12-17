@@ -220,6 +220,16 @@
   ],
   "talks": [
     {
+      "title": "How GitHub Does Collaboration",
+      "date": "11/20/2013",
+      "url": "https://github.com/afeld/gh_collab"
+    },
+    {
+      "title": "Git & GitHub, Up & Running",
+      "date": "10/22/2013",
+      "url": "https://gist.github.com/afeld/7096908"
+    },
+    {
       "title": "Education the GitHub Way",
       "date": "10/12/2013",
       "url": "https://github.com/afeld/edu_the_gh_way"
