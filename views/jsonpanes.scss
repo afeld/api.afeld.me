@@ -63,10 +63,11 @@
 
   // only applies in collapsed state
   .val-inner {
-    display: inline;
+    display: inline-block;
     max-width: 28em;
     overflow: hidden;
     text-overflow: ellipsis;
+    vertical-align: top;
   }
 
   .expandable {
