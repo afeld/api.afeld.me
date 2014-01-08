@@ -298,6 +298,30 @@
       "event": "Hacking for Hustlers meetup",
       "date": "11/14/2011",
       "url": "http://afeld.me/nerdery/38274"
+    },
+    {
+      "title": "Animation with HTML5: An Overview",
+      "description": "A lightning talk about ways to do animation in HTML5 and CSS3.",
+      "date": "12/30/2010",
+      "url": "http://www.scribd.com/doc/46086316/Animation-with-HTML5-An-Overview"
+    },
+    {
+      "title": "Plano Real: How Fake Money Saved Brazil",
+      "description": "A lightning talk about Plano Real, a plan which stabilized the Brazilian economy in the mid-1990's.",
+      "date": "12/30/2010",
+      "url": "http://www.scribd.com/doc/46086444/Plano-Real-How-Fake-Money-Saved-Brazil"
+    },
+    {
+      "title": "Ruby Fibers",
+      "description": "A lightning talk about Ruby Fibers, a feature added in v1.9 that adds \"green thread\" support.",
+      "date": "12/30/2010",
+      "url": "http://www.scribd.com/doc/46086446/Ruby-Fibers"
+    },
+    {
+      "title": "Firesheep!",
+      "description": "A lightning talk about Firesheep, a Firefox plugin for doing \"sidejacking\" (a.k.a. breaking into other people's accounts).",
+      "date": "12/30/2010",
+      "url": "http://www.scribd.com/doc/46086447/firesheep"
     }
   ]
 }
