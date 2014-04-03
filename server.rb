@@ -68,6 +68,10 @@ get %r{^/(index)?$} do
   end
 end
 
+get '/meet' do
+  erb :meet
+end
+
 get '/github-job-description' do
   erb :github_desc
 end
