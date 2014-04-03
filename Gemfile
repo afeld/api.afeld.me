@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby File.read('.ruby-version').strip
 
 gem 'compass', '~> 0.13.alpha.2' # for animation support
 gem 'sass'

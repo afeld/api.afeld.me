@@ -4,7 +4,7 @@
 
 ```bash
 bundle install
-rackup
+bundle exec rackup
 open http://localhost:9292
 ```
 
