@@ -5,8 +5,8 @@
     {
       "school": "University of Michigan",
       "location": "Ann Arbor, MI",
-      "start_date": "08/2005",
-      "end_date": "08/2010",
+      "start_date": "2005-08",
+      "end_date": "2010-08",
       "degrees": [
         {
           "title": "BSE",
@@ -21,8 +21,8 @@
     {
       "school": "Oak Park and River Forest High School",
       "location": "Oak Park, IL",
-      "start_date": "08/2001",
-      "end_date": "06/2005"
+      "start_date": "2001-08",
+      "end_date": "2005-06"
     }
   ],
   "employment": {
@@ -30,28 +30,28 @@
       {
         "employer": "GitHub",
         "title": "Education Hacker",
-        "start_date": "08/2013",
+        "start_date": "2013-08",
         "end_date": null
       },
       {
         "employer": "Artsy",
         "title": "Software Engineer",
-        "start_date": "05/2013",
-        "end_date": "08/2013"
+        "start_date": "2013-05",
+        "end_date": "2013-08"
       },
       {
         "employer": "Jux",
         "title": "Senior Web Developer",
         "description": "Working on full-stack Ruby and JavaScript.",
-        "start_date": "01/2011",
-        "end_date": "05/2013"
+        "start_date": "2011-01",
+        "end_date": "2013-05"
       },
       {
         "employer": "American Express Publishing",
         "title": "Contract Web Developer",
         "description": "Building CMS tools and microsites for FoodAndWine.com.",
-        "start_date": "08/2010",
-        "end_date": "01/2011"
+        "start_date": "2010-08",
+        "end_date": "2011-01"
       }
     ],
     "teaching": [
@@ -59,7 +59,7 @@
         "employer": "General Assembly",
         "title": "Instructor",
         "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
-        "start_date": "02/2013",
+        "start_date": "2013-02",
         "end_date": null
       },
       {
@@ -67,7 +67,7 @@
         "title": "Adjunct Instructor",
         "description": "Teaching Advanced JavaScript.",
         "profile_url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
-        "start_date": "06/2012",
+        "start_date": "2012-06",
         "end_date": null
       }
     ],
@@ -76,21 +76,21 @@
         "employer": "danceTactics Performance Group",
         "choreographer": "Keith Thompson",
         "url": "http://dancetactics.org",
-        "start_date": "05/2012",
+        "start_date": "2012-05",
         "end_date": null
       },
       {
         "employer": "Artichoke Dance Company",
         "choreographer": "Lynn Neuman",
         "url": "http://artichokedance.org",
-        "start_date": "10/2010",
+        "start_date": "2010-10",
         "end_date": null
       },
       {
         "employer": "Chavasse Dance & Performance",
         "choreographer": "Amy Chavasse",
         "url": "http://chavassedanceandperformance.com",
-        "start_date": "06/2010",
+        "start_date": "2010-06",
         "end_date": null
       }
     ]
@@ -198,133 +198,133 @@
   "talks": [
     {
       "title": "How GitHub Does Collaboration",
-      "date": "11/20/2013",
+      "date": "2013-11-20",
       "url": "https://github.com/afeld/gh_collab"
     },
     {
       "title": "Git & GitHub, Up & Running",
-      "date": "10/22/2013",
+      "date": "2013-10-22",
       "url": "https://gist.github.com/afeld/7096908"
     },
     {
       "title": "Education the GitHub Way",
-      "date": "10/12/2013",
+      "date": "2013-10-12",
       "url": "https://github.com/afeld/edu_the_gh_way"
     },
     {
       "title": "JavaScript: the little language everyone loves to hate",
-      "date": "09/30/2013",
+      "date": "2013-09-30",
       "url": "https://github.com/afeld/js-overview"
     },
     {
       "title": "Getting Serious (with Front-End JavaScript)",
-      "date": "07/08/2013",
+      "date": "2013-07-08",
       "url": "http://afeld.github.io/getting_serious/slides/"
     },
     {
       "title": "Test to Learn",
-      "date": "06/20/2013",
+      "date": "2013-06-20",
       "url": "http://afeld.github.io/test_to_learn/"
     },
     {
       "title": "Web Development Basics (Git, MAMP, Wordpress and FTP)",
-      "date": "05/13/2013",
+      "date": "2013-05-13",
       "url": "https://github.com/afeld/web_dev_basics"
     },
     {
       "title": "MongoDB + Ruby Workshop",
-      "date": "03/27/2013",
+      "date": "2013-03-27",
       "url": "https://github.com/afeld/mongo_ruby_workshop"
     },
     {
       "title": "Hackathon Workshop",
-      "date": "03/26/2013",
+      "date": "2013-03-26",
       "url": "https://github.com/afeld/hackathon_workshop/wiki"
     },
     {
       "title": "Introduction to Backbone.js",
-      "date": "03/11/2013",
+      "date": "2013-03-11",
       "url": "https://github.com/afeld/intro_to_backbone"
     },
     {
       "title": "Single-Page App Architecture",
-      "date": "03/07/2013",
+      "date": "2013-03-07",
       "url": "https://github.com/afeld/spaa"
     },
     {
       "title": "Seven Languages is Seven Months: Ruby",
-      "date": "10/24/2012",
+      "date": "2012-10-24",
       "url": "https://gist.github.com/afeld/3944262"
     },
     {
       "title": "What Developers Want",
       "description": "Talk and panelist on how to make APIs developer-friendly.  I did a slow jam.",
       "event": "Business of APIs Conference 2012",
-      "date": "10/17/2012",
+      "date": "2012-10-17",
       "url": "http://afeld.me/nerdery/816975"
     },
     {
       "title": "Junior Developer panel",
       "description": "Organizer and moderator of panel on how to get your first job as a programmer.",
       "event": "NYC on Rails meetup",
-      "date": "9/19/2012",
+      "date": "2012-09-19",
       "url": "http://afeld.me/nerdery/522101"
     },
     {
       "title": "Learn2Code",
       "event": "Hacking for Hustlers meetup",
-      "date": "11/14/2011",
+      "date": "2011-11-14",
       "url": "http://afeld.me/nerdery/38274"
     },
     {
       "title": "Animation with HTML5: An Overview",
       "description": "A lightning talk about ways to do animation in HTML5 and CSS3.",
-      "date": "12/30/2010",
+      "date": "2010-12-30",
       "url": "http://www.scribd.com/doc/46086316/Animation-with-HTML5-An-Overview"
     },
     {
       "title": "Plano Real: How Fake Money Saved Brazil",
       "description": "A lightning talk about Plano Real, a plan which stabilized the Brazilian economy in the mid-1990's.",
-      "date": "12/30/2010",
+      "date": "2010-12-30",
       "url": "http://www.scribd.com/doc/46086444/Plano-Real-How-Fake-Money-Saved-Brazil"
     },
     {
       "title": "Ruby Fibers",
       "description": "A lightning talk about Ruby Fibers, a feature added in v1.9 that adds \"green thread\" support.",
-      "date": "12/30/2010",
+      "date": "2010-12-30",
       "url": "http://www.scribd.com/doc/46086446/Ruby-Fibers"
     },
     {
       "title": "Firesheep!",
       "description": "A lightning talk about Firesheep, a Firefox plugin for doing \"sidejacking\" (a.k.a. breaking into other people's accounts).",
-      "date": "12/30/2010",
+      "date": "2010-12-30",
       "url": "http://www.scribd.com/doc/46086447/firesheep"
     }
   ],
   "writeups": [
     {
       "title": "Campus Party: Hacker do GitHub explica crescimento da 'rede social' de desenvolvedores",
-      "date": "01/31/2014",
+      "date": "2014-01-31",
       "url": "http://info.abril.com.br/noticias/internet/2014/01/campus-party-hacker-do-github-explica-crescimento-da-rede-social-de-desenvolvedores.shtml"
     },
     {
       "title": "Já estamos no quarto e penúltimo dia de conteúdos da Campus Party Brasil 2014!",
-      "date": "01/31/2014",
+      "date": "2014-01-31",
       "url": "http://blog.campus-party.com.br/post/75170721637/ja-estamos-no-quarto-e-penultimo-dia-de-conteudos"
     },
     {
       "title": "The Man of the (Hacker) Hour",
-      "date": "08/22/2013",
+      "date": "2013-08-22",
       "url": "http://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour"
     },
     {
       "title": "Hacker Hours with Aidan Feldman",
-      "date": "08/10/2013",
+      "date": "2013-08-10",
       "url": "http://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
-      "date": "05/14/2012",
+      "date": "2012-05-14",
       "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
     }
   ],
@@ -333,21 +333,21 @@
       "title": "Developing a Backbone.js Edge",
       "type": "book",
       "publisher": "Backstop Media",
-      "publish_date": "04/10/2013",
+      "publish_date": "2013-04-10",
       "url": "http://bleedingedgepress.com/our-books/backbone-js/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
       "type": "interview",
       "publisher": "The Next Web",
-      "publish_date": "05/14/2012",
+      "publish_date": "2012-05-14",
       "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
     },
     {
       "title": "Hacker Olympics, the Un-Hackathon",
       "type": "blog",
       "publisher": "Twilio",
-      "publish_date": "03/15/2012",
+      "publish_date": "2012-03-15",
       "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
     }
   ]
