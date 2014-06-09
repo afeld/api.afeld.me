@@ -1,44 +1,30 @@
 {
   "name": "Aidan Feldman",
   "url": "http://api.afeld.me",
-  "profiles": {
-    "artsy": {
-      "username": "aidanfeldman",
-      "profile_url": "http://artsy.net/aidanfeldman/favorites"
+  "education": [
+    {
+      "school": "University of Michigan",
+      "location": "Ann Arbor, MI",
+      "start_date": "08/2005",
+      "end_date": "08/2010",
+      "degrees": [
+        {
+          "title": "BSE",
+          "major": "Computer Science Engineering"
+        },
+        {
+          "title": "BFA",
+          "major": "Dance"
+        }
+      ]
     },
-    "facebook": {
-      "username": "aidan.feldman",
-      "profile_url": "https://facebook.com/aidan.feldman"
-    },
-    "foursquare": {
-      "username": "aidanfeldman",
-      "profile_url": "https://foursquare.com/aidanfeldman"
-    },
-    "github": {
-      "username": "afeld",
-      "profile_url": "https://github.com/afeld"
-    },
-    "instagram": {
-      "username": "aidanfeldman",
-      "profile_url": "http://instagram.com/aidanfeldman"
-    },
-    "jux": {
-      "username": "aidan",
-      "profile_url": "http://afeld.me"
-    },
-    "twitter": {
-      "username": "aidanfeldman",
-      "profile_url": "https://twitter.com/aidanfeldman"
-    },
-    "vimeo": {
-      "username": "aidanfeldman",
-      "profile_url": "https://vimeo.com/aidanfeldman"
-    },
-    "youtube": {
-      "username": "alfgames",
-      "profile_url": "http://www.youtube.com/user/alfgames"
+    {
+      "school": "Oak Park and River Forest High School",
+      "location": "Oak Park, IL",
+      "start_date": "08/2001",
+      "end_date": "06/2005"
     }
-  },
+  ],
   "employment": {
     "coding": [
       {
@@ -109,30 +95,44 @@
       }
     ]
   },
-  "education": [
-    {
-      "school": "University of Michigan",
-      "location": "Ann Arbor, MI",
-      "start_date": "08/2005",
-      "end_date": "08/2010",
-      "degrees": [
-        {
-          "title": "BSE",
-          "major": "Computer Science Engineering"
-        },
-        {
-          "title": "BFA",
-          "major": "Dance"
-        }
-      ]
+  "profiles": {
+    "artsy": {
+      "username": "aidanfeldman",
+      "profile_url": "http://artsy.net/aidanfeldman/favorites"
     },
-    {
-      "school": "Oak Park and River Forest High School",
-      "location": "Oak Park, IL",
-      "start_date": "08/2001",
-      "end_date": "06/2005"
+    "facebook": {
+      "username": "aidan.feldman",
+      "profile_url": "https://facebook.com/aidan.feldman"
+    },
+    "foursquare": {
+      "username": "aidanfeldman",
+      "profile_url": "https://foursquare.com/aidanfeldman"
+    },
+    "github": {
+      "username": "afeld",
+      "profile_url": "https://github.com/afeld"
+    },
+    "instagram": {
+      "username": "aidanfeldman",
+      "profile_url": "http://instagram.com/aidanfeldman"
+    },
+    "jux": {
+      "username": "aidan",
+      "profile_url": "http://afeld.me"
+    },
+    "twitter": {
+      "username": "aidanfeldman",
+      "profile_url": "https://twitter.com/aidanfeldman"
+    },
+    "vimeo": {
+      "username": "aidanfeldman",
+      "profile_url": "https://vimeo.com/aidanfeldman"
+    },
+    "youtube": {
+      "username": "alfgames",
+      "profile_url": "http://www.youtube.com/user/alfgames"
     }
-  ],
+  },
   "projects": [
     {
       "title": "Tricle",
@@ -193,29 +193,6 @@
       "title": "Stringer",
       "description": "Virtual stringed instrument, played with a Kinect.  Third place at NYC Music Hackday 2011.",
       "url": "http://afeld.github.com/stringer"
-    }
-  ],
-  "writing": [
-    {
-      "title": "Developing a Backbone.js Edge",
-      "type": "book",
-      "publisher": "Backstop Media",
-      "publish_date": "04/10/2013",
-      "url": "http://bleedingedgepress.com/our-books/backbone-js/"
-    },
-    {
-      "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
-      "type": "interview",
-      "publisher": "The Next Web",
-      "publish_date": "05/14/2012",
-      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
-    },
-    {
-      "title": "Hacker Olympics, the Un-Hackathon",
-      "type": "blog",
-      "publisher": "Twilio",
-      "publish_date": "03/15/2012",
-      "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
     }
   ],
   "talks": [
@@ -322,6 +299,29 @@
       "description": "A lightning talk about Firesheep, a Firefox plugin for doing \"sidejacking\" (a.k.a. breaking into other people's accounts).",
       "date": "12/30/2010",
       "url": "http://www.scribd.com/doc/46086447/firesheep"
+    }
+  ],
+  "writing": [
+    {
+      "title": "Developing a Backbone.js Edge",
+      "type": "book",
+      "publisher": "Backstop Media",
+      "publish_date": "04/10/2013",
+      "url": "http://bleedingedgepress.com/our-books/backbone-js/"
+    },
+    {
+      "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
+      "type": "interview",
+      "publisher": "The Next Web",
+      "publish_date": "05/14/2012",
+      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
+    },
+    {
+      "title": "Hacker Olympics, the Un-Hackathon",
+      "type": "blog",
+      "publisher": "Twilio",
+      "publish_date": "03/15/2012",
+      "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
     }
   ]
 }
