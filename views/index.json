@@ -301,6 +301,33 @@
       "url": "http://www.scribd.com/doc/46086447/firesheep"
     }
   ],
+  "writeups": [
+    {
+      "title": "Campus Party: Hacker do GitHub explica crescimento da 'rede social' de desenvolvedores",
+      "date": "01/31/2014",
+      "url": "http://info.abril.com.br/noticias/internet/2014/01/campus-party-hacker-do-github-explica-crescimento-da-rede-social-de-desenvolvedores.shtml"
+    },
+    {
+      "title": "Já estamos no quarto e penúltimo dia de conteúdos da Campus Party Brasil 2014!",
+      "date": "01/31/2014",
+      "url": "http://blog.campus-party.com.br/post/75170721637/ja-estamos-no-quarto-e-penultimo-dia-de-conteudos"
+    },
+    {
+      "title": "The Man of the (Hacker) Hour",
+      "date": "08/22/2013",
+      "url": "http://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour"
+    },
+    {
+      "title": "Hacker Hours with Aidan Feldman",
+      "date": "08/10/2013",
+      "url": "http://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
+    },
+    {
+      "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
+      "date": "05/14/2012",
+      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
+    }
+  ],
   "writing": [
     {
       "title": "Developing a Backbone.js Edge",
