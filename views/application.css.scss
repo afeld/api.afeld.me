@@ -1,7 +1,7 @@
 @import "compass/css3/animation";
 @import "compass/css3/transition";
 
-@import "./jsonpanes";
+@import "../public/bower_components/jsonpanel/sass/jsonpanel";
 
 
 @include keyframes(fadeInText) {
@@ -14,7 +14,7 @@
 }
 
 
-.jsonpanes {
+.jsonpanel {
   font-size: 1.25em;
 
   // cover the screen
