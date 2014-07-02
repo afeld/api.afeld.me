@@ -2,6 +2,6 @@
   "name": "api.afeld.me",
   "private": true,
   "dependencies": {
-    "jsonpanel": "*"
+    "jsonpanel": "~0.1.0"
   }
 }
