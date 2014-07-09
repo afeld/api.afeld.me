@@ -31,11 +31,11 @@
         "employer": "GitHub",
         "title": "Education Hacker",
         "start_date": "2013-08",
-        "end_date": null
+        "end_date": "2014-06"
       },
       {
         "employer": "Artsy",
-        "title": "Software Engineer",
+        "title": "Software Engineer (Contract)",
         "start_date": "2013-05",
         "end_date": "2013-08"
       },
@@ -48,7 +48,7 @@
       },
       {
         "employer": "American Express Publishing",
-        "title": "Contract Web Developer",
+        "title": "Web Developer (Contract)",
         "description": "Building CMS tools and microsites for FoodAndWine.com.",
         "start_date": "2010-08",
         "end_date": "2011-01"
@@ -56,39 +56,49 @@
     ],
     "teaching": [
       {
-        "employer": "General Assembly",
-        "title": "Instructor",
-        "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
-        "start_date": "2013-02",
-        "end_date": null
-      },
-      {
         "employer": "New York University",
         "title": "Adjunct Instructor",
         "description": "Teaching Advanced JavaScript.",
         "profile_url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
         "start_date": "2012-06",
         "end_date": null
+      },
+      {
+        "employer": "General Assembly",
+        "title": "Instructor",
+        "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
+        "start_date": "2013-02",
+        "end_date": "2013-03"
       }
     ],
     "dance": [
       {
+        "employer": "Barkin/Selissen Project",
+        "director": [
+          "Kyla Barkin",
+          "Aaron Selissen"
+        ],
+        "url": "http://www.barkinselissenproject.com",
+        "start_date": "2014-03",
+        "end_date": null
+      },
+      {
         "employer": "danceTactics Performance Group",
-        "choreographer": "Keith Thompson",
+        "director": "Keith Thompson",
         "url": "http://dancetactics.org",
         "start_date": "2012-05",
         "end_date": null
       },
       {
         "employer": "Artichoke Dance Company",
-        "choreographer": "Lynn Neuman",
+        "director": "Lynn Neuman",
         "url": "http://artichokedance.org",
         "start_date": "2010-10",
         "end_date": null
       },
       {
         "employer": "Chavasse Dance & Performance",
-        "choreographer": "Amy Chavasse",
+        "director": "Amy Chavasse",
         "url": "http://chavassedanceandperformance.com",
         "start_date": "2010-06",
         "end_date": null
