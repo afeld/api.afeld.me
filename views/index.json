@@ -145,9 +145,19 @@
   },
   "projects": [
     {
+      "title": "teachers_pet",
+      "description": "Command line tool to help teachers use GitHub in their classrooms.",
+      "url": "https://github.com/education/teachers_pet"
+    },
+    {
+      "title": "git-setup",
+      "description": "Easy Git setup.",
+      "url": "https://github.com/afeld/git-setup"
+    },
+    {
       "title": "Tricle",
       "description": "Automated metrics reporting via email.",
-      "url": "https://github.com/artsy/tricle"
+      "url": "https://github.com/afeld/tricle"
     },
     {
       "title": "Vittle",
@@ -156,23 +166,18 @@
     },
     {
       "title": "Advanced JavaScript",
-      "description": "Interactive slides, course outline and resources for teach Advanced JS.",
-      "url": "https://github.com/afeld/advanced_js"
+      "description": "Interactive slides, course outline and resources for teaching Advanced JS.",
+      "url": "https://github.com/advanced-js/syllabus"
     },
     {
       "title": "Backbone-Nested",
       "description": "A plugin to make Backbone.js keep track of nested attributes.",
-      "url": "http://afeld.github.com/backbone-nested"
+      "url": "http://afeld.github.io/backbone-nested"
     },
     {
       "title": "Coolest Thing All Week",
       "description": "Mailing list for people to share the coolest thing they've seen in the past seven days.",
       "url": "https://groups.google.com/forum/?fromgroups#!forum/coolest-thing-all-week"
-    },
-    {
-      "title": "github-find",
-      "description": "Chrome extension for searching code within a particular repo.",
-      "url": "https://chrome.google.com/webstore/detail/github-find/blocadmfchabihonegcgjjikbbmpliph"
     },
     {
       "title": "JSONProxy",
@@ -187,7 +192,7 @@
     {
       "title": "Magickly",
       "description": "Image manipulation API as a service/gem.",
-      "url": "http://magickly.jux.com"
+      "url": "http://magickly.afeld.me"
     },
     {
       "title": "Mongoid-Locker",
@@ -202,7 +207,7 @@
     {
       "title": "Stringer",
       "description": "Virtual stringed instrument, played with a Kinect.  Third place at NYC Music Hackday 2011.",
-      "url": "http://afeld.github.com/stringer"
+      "url": "http://afeld.github.io/stringer"
     }
   ],
   "talks": [
