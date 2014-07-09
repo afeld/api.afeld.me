@@ -350,6 +350,20 @@
   ],
   "writing": [
     {
+      "title": "Advanced JS class information for teachers",
+      "type": "blog",
+      "publisher": "self",
+      "publish_date": "2014-06-26",
+      "url": "https://github.com/advanced-js/syllabus/blob/master/meta.md"
+    },
+    {
+      "title": "GitHub Classroom Guide",
+      "type": "tutorial",
+      "publisher": "GitHub",
+      "publish_date": "2014-02-10",
+      "url": "https://education.github.com/guide"
+    },
+    {
       "title": "Developing a Backbone.js Edge",
       "type": "book",
       "publisher": "Backstop Media",
