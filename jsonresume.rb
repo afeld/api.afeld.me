@@ -83,4 +83,4 @@ File.open('resume.json', 'w') do |file|
   file.write(JSON.pretty_generate(resume))
 end
 
-`resume export resume.html`
+`resume export public/resume.html`
