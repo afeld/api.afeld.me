@@ -42,28 +42,28 @@
   "employment": {
     "coding": [
       {
-        "employer": "GitHub",
+        "organization": "GitHub",
         "title": "Education Hacker",
         "description": "Built tools, taught workshops, wrote documentation, and provided support to make GitHub better for teachers and students.",
         "start_date": "2013-08",
         "end_date": "2014-06"
       },
       {
-        "employer": "Artsy",
+        "organization": "Artsy",
         "title": "Software Engineer (Contract)",
         "description": "Front-end development in Backbone.js, as well as internal tools around metrics.",
         "start_date": "2013-05",
         "end_date": "2013-08"
       },
       {
-        "employer": "Jux",
+        "organization": "Jux",
         "title": "Senior Web Developer",
         "description": "Full-stack Ruby and JavaScript development, primarily responsible for the navigation, gallery view, and social features.",
         "start_date": "2011-01",
         "end_date": "2013-05"
       },
       {
-        "employer": "American Express Publishing",
+        "organization": "American Express Publishing",
         "title": "Web Developer (Contract)",
         "description": "Built CMS tools and microsites for FoodAndWine.com.",
         "start_date": "2010-08",
@@ -72,7 +72,7 @@
     ],
     "teaching": [
       {
-        "employer": "New York University",
+        "organization": "New York University",
         "title": "Adjunct Instructor",
         "description": "Teaching Advanced JavaScript.",
         "profile_url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
@@ -80,7 +80,7 @@
         "end_date": null
       },
       {
-        "employer": "General Assembly",
+        "organization": "General Assembly",
         "title": "Instructor",
         "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
         "start_date": "2013-02",
@@ -89,7 +89,7 @@
     ],
     "dance": [
       {
-        "employer": "Barkin/Selissen Project",
+        "organization": "Barkin/Selissen Project",
         "director": [
           "Kyla Barkin",
           "Aaron Selissen"
@@ -99,21 +99,21 @@
         "end_date": null
       },
       {
-        "employer": "danceTactics Performance Group",
+        "organization": "danceTactics Performance Group",
         "director": "Keith Thompson",
         "url": "http://dancetactics.org",
         "start_date": "2012-05",
         "end_date": null
       },
       {
-        "employer": "Artichoke Dance Company",
+        "organization": "Artichoke Dance Company",
         "director": "Lynn Neuman",
         "url": "http://artichokedance.org",
         "start_date": "2010-10",
         "end_date": null
       },
       {
-        "employer": "Chavasse Dance & Performance",
+        "organization": "Chavasse Dance & Performance",
         "director": "Amy Chavasse",
         "url": "http://chavassedanceandperformance.com",
         "start_date": "2010-06",
