@@ -44,26 +44,28 @@
       {
         "employer": "GitHub",
         "title": "Education Hacker",
+        "description": "Built tools, taught workshops, wrote documentation, and provided support to make GitHub better for teachers and students.",
         "start_date": "2013-08",
         "end_date": "2014-06"
       },
       {
         "employer": "Artsy",
         "title": "Software Engineer (Contract)",
+        "description": "Front-end development in Backbone.js, as well as internal tools around metrics.",
         "start_date": "2013-05",
         "end_date": "2013-08"
       },
       {
         "employer": "Jux",
         "title": "Senior Web Developer",
-        "description": "Working on full-stack Ruby and JavaScript.",
+        "description": "Full-stack Ruby and JavaScript development, primarily responsible for the navigation, gallery view, and social features.",
         "start_date": "2011-01",
         "end_date": "2013-05"
       },
       {
         "employer": "American Express Publishing",
         "title": "Web Developer (Contract)",
-        "description": "Building CMS tools and microsites for FoodAndWine.com.",
+        "description": "Built CMS tools and microsites for FoodAndWine.com.",
         "start_date": "2010-08",
         "end_date": "2011-01"
       }
