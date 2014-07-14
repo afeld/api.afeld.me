@@ -77,14 +77,15 @@
     "teaching": [
       {
         "organization": "New York University",
+        "url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
         "title": "Adjunct Instructor",
-        "description": "Teaching Advanced JavaScript.",
-        "profile_url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
+        "description": "Teaching an Advanced JavaScript class as part of SCPS (continuing education), as well as a graduate class at ITP called Building for Learning.",
         "start_date": "2012-06",
         "end_date": null
       },
       {
         "organization": "General Assembly",
+        "url": "https://generalassemb.ly",
         "title": "Instructor",
         "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
         "start_date": "2013-02",
