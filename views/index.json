@@ -43,6 +43,7 @@
     "coding": [
       {
         "organization": "GitHub",
+        "url": "https://github.com",
         "title": "Education Hacker",
         "description": "Built tools, taught workshops, wrote documentation, and provided support to make GitHub better for teachers and students.",
         "start_date": "2013-08",
@@ -50,6 +51,7 @@
       },
       {
         "organization": "Artsy",
+        "url": "https://artsy.net",
         "title": "Software Engineer (Contract)",
         "description": "Front-end development in Backbone.js, as well as internal tools around metrics.",
         "start_date": "2013-05",
@@ -57,6 +59,7 @@
       },
       {
         "organization": "Jux",
+        "url": "https://jux.com",
         "title": "Senior Web Developer",
         "description": "Full-stack Ruby and JavaScript development, primarily responsible for the navigation, gallery view, and social features.",
         "start_date": "2011-01",
@@ -64,6 +67,7 @@
       },
       {
         "organization": "American Express Publishing",
+        "url": "http://www.amexpub.com",
         "title": "Web Developer (Contract)",
         "description": "Built CMS tools and microsites for FoodAndWine.com.",
         "start_date": "2010-08",
