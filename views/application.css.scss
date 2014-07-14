@@ -49,10 +49,8 @@
 
   a {
     color: black;
-    display: block;
     font-family: sans-serif;
     font-size: 0.7em;
-    line-height: 1.3;
 
     opacity: 0.6;
     @include transition(opacity 0.2s ease);
@@ -60,5 +58,16 @@
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .jsonpanel {
+    font-size: 9px;
+    padding-top: 50px;
+  }
+
+  .pair.simple {
+    max-width: 300px;
   }
 }
