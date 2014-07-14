@@ -1,9 +1,3 @@
-# http://jsonresume.org
-#
-# npm install -g resume-cli
-#
-
-require 'date'
 require 'json'
 
 json = JSON.parse(File.read('views/index.json'))

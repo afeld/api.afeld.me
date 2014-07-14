@@ -15,6 +15,16 @@ bundle exec rackup
 open http://localhost:9292
 ```
 
+## To generate resume
+
+...using [JSONResume](http://jsonresume.org):
+
+```bash
+npm install -g resume-cli
+ruby jsonresume.rb
+open resume.html
+```
+
 ## To make your own
 
 1. Fork that sh\*t
