@@ -42,6 +42,24 @@ resume = {
       startDate: um['start_date'],
       endDate: um['end_date']
     }
+  ],
+  skills: [
+    {
+      name: "Front-end",
+      keywords: [
+        "HTML/CSS",
+        "JavaScript",
+        "Backbone.js"
+      ]
+    },
+    {
+      name: "Back-end",
+      keywords: [
+        "Ruby",
+        "Rails",
+        "Node.js"
+      ]
+    }
   ]
 }
 
