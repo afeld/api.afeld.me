@@ -62,7 +62,7 @@
         "organization": "Jux",
         "url": "https://jux.com",
         "title": "Senior Web Developer",
-        "description": "Full-stack Ruby and JavaScript development, primarily responsible for the navigation, gallery view, and social features.",
+        "description": "Full-stack Ruby and JavaScript development; primarily responsible for the navigation, gallery view, and social features.",
         "start_date": "2011-01",
         "end_date": "2013-05"
       },
@@ -88,7 +88,7 @@
         "organization": "General Assembly",
         "url": "https://generalassemb.ly",
         "title": "Instructor",
-        "description": "Teaching JavaScript as part of the Front-End + Rails curriculum.",
+        "description": "Taught JavaScript as part of the Front-End + Rails curriculum.",
         "start_date": "2013-02",
         "end_date": "2013-03"
       }
