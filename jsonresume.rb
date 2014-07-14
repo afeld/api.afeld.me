@@ -12,6 +12,7 @@ resume = {
     email: {
       personal: json['email']
     },
+    summary: json['description'],
     location: {
       city: json['location']['city'],
       state: json['location']['state'],
