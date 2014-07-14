@@ -2,10 +2,19 @@
   "name": "Aidan Feldman",
   "url": "http://api.afeld.me",
   "email": "aidan.feldman@gmail.com",
+  "location": {
+    "city": "Brooklyn",
+    "state": "NY",
+    "country": "US"
+  },
   "education": [
     {
       "school": "University of Michigan",
-      "location": "Ann Arbor, MI",
+      "location": {
+        "city": "Ann Arbor",
+        "state": "MI",
+        "country": "US"
+      },
       "start_date": "2005-08",
       "end_date": "2010-08",
       "degrees": [
@@ -21,7 +30,11 @@
     },
     {
       "school": "Oak Park and River Forest High School",
-      "location": "Oak Park, IL",
+      "location": {
+        "city": "Oak Park",
+        "state": "IL",
+        "country": "US"
+      },
       "start_date": "2001-08",
       "end_date": "2005-06"
     }
