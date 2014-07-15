@@ -1,6 +1,8 @@
 language: ruby
 rvm:
 - 2.1.1
+cache: bundler
+script: echo "Nothing to build."
 deploy:
   provider: s3
   access_key_id: AKIAIZQPPNBERTK4EBNA
@@ -10,4 +12,3 @@ deploy:
   on:
     repo: afeld/api.afeld.me
     branch: travis
-cache: bundler
