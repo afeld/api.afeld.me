@@ -7,7 +7,7 @@ deploy:
   provider: s3
   access_key_id: AKIAIZY56TD54JM32ZFA
   secret_access_key:
-    secure: vijuU1Eaau50XAcw55vQi5n0/YQfWnhOYRJU23P0iieJvymGGM0r/wdBd52TVZWYxkHVIKRPoHgtxm4A2GjWujDjtWmJYjdteg4fa4PJdwQODf2IR3f1Lug/DjwcRZg4Q/L/7X2CCXRbfJqynRJdcaNG0rlfPu1YFaVfBIe1cJE=
+    secure: n34fM601G3MAlrsIAv7sRL+LQ430CPWSr1cNobyoRScWHUcOKtqvNhT6B2ZXYSyFp4Jiv/DrLpsBLjft5cYG+k3Ixhm4xgxKkF747uu2dudNcMDlygMVeaXpSnmWwpsasABMYUoKEdMBBdKh65K/RuUgO+YHuzGbJ3W4mCSESPs=
   on:
     repo: afeld/api.afeld.me
     branch: travis
