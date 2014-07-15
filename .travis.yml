@@ -11,3 +11,4 @@ deploy:
   on:
     repo: afeld/api.afeld.me
     branch: travis
+  skip_cleanup: true
