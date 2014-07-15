@@ -5,10 +5,9 @@ cache: bundler
 script: echo "Nothing to build."
 deploy:
   provider: s3
-  access_key_id: AKIAIZQPPNBERTK4EBNA
+  access_key_id: AKIAIZY56TD54JM32ZFA
   secret_access_key:
-    secure: mBmjZAMprOYgcPhQRzSFbclt5XS2qQbUlQjmaletf0dzkjqs+FYWVVl6fUnFOtnbzjnKUGksyWs+FyQ0Qm3LQyOQPkI8s7jQDpYhq6Hamdb/2nURnoTimUyt59EaTr5chW97TvJZQKrzlkmbkSrsZPG+nmVecoP50J+TWSlUz7M=
-  bucket: api.afeld.me
+    secure: vijuU1Eaau50XAcw55vQi5n0/YQfWnhOYRJU23P0iieJvymGGM0r/wdBd52TVZWYxkHVIKRPoHgtxm4A2GjWujDjtWmJYjdteg4fa4PJdwQODf2IR3f1Lug/DjwcRZg4Q/L/7X2CCXRbfJqynRJdcaNG0rlfPu1YFaVfBIe1cJE=
   on:
     repo: afeld/api.afeld.me
     branch: travis
