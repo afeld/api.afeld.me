@@ -10,3 +10,4 @@ deploy:
   on:
     repo: afeld/api.afeld.me
     branch: travis
+cache: bundler
