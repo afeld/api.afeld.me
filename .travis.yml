@@ -1,3 +1,12 @@
 language: ruby
 rvm:
 - 2.1.1
+deploy:
+  provider: s3
+  access_key_id: AKIAIZQPPNBERTK4EBNA
+  secret_access_key:
+    secure: mBmjZAMprOYgcPhQRzSFbclt5XS2qQbUlQjmaletf0dzkjqs+FYWVVl6fUnFOtnbzjnKUGksyWs+FyQ0Qm3LQyOQPkI8s7jQDpYhq6Hamdb/2nURnoTimUyt59EaTr5chW97TvJZQKrzlkmbkSrsZPG+nmVecoP50J+TWSlUz7M=
+  bucket: api.afeld.me
+  on:
+    repo: afeld/api.afeld.me
+    branch: travis
