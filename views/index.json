@@ -77,6 +77,14 @@
     ],
     "teaching": [
       {
+        "organization": "City University of New York",
+        "url": "https://github.com/cuny-nytech/syllabus",
+        "title": "Instructor",
+        "description": "Teaching a practical developer skills class to CS seniors, covering version control, web development, resume writing, etc.",
+        "start_date": "2014-09",
+        "end_date": null
+      },
+      {
         "organization": "New York University",
         "url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
         "title": "Adjunct Instructor",
