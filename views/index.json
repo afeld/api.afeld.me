@@ -43,6 +43,14 @@
   "employment": {
     "coding": [
       {
+        "organization": "18F",
+        "url": "https://18f.gsa.gov",
+        "title": "Innovation Specialist",
+        "description": "Building open source tools and apps for the federal government.",
+        "start_date": "2014-10-20",
+        "end_date": null
+      },
+      {
         "organization": "GitHub",
         "url": "https://github.com",
         "title": "Education Hacker",
