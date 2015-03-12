@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Magickly, Mustachio, & Stateless APIs",
+      "date": "2015-02-26",
+      "url": "https://www.youtube.com/watch?v=X3VdlBDCJSA"
+    },
+    {
       "title": "Intro to Backbone Unit Testing",
       "date": "2014-10-30",
       "url": "http://www.youtube.com/watch?v=37lBmGVRVsQ"
