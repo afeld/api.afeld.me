@@ -411,6 +411,13 @@
   ],
   "writing": [
     {
+      "title": "How To Welcome New Coders To A Civic Hackathon",
+      "type": "blog",
+      "publisher": "18F Blog",
+      "publish_date": "2015-04-03",
+      "url": "https://18f.gsa.gov/2015/04/03/how-to-welcome-new-coders-to-a-civic-hackathon/"
+    },
+    {
       "title": "Learn Ruby on Rails as You Modify a Craigslist Clone",
       "type": "tutorial",
       "publisher": "Thinkful",
