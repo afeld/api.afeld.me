@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Introduction to Promises in JavaScript",
+      "date": "2015-04-28",
+      "url": "https://www.youtube.com/watch?v=KeQYjpckudA"
+    },
+    {
       "title": "Magickly, Mustachio, & Stateless APIs",
       "date": "2015-02-26",
       "url": "https://www.youtube.com/watch?v=X3VdlBDCJSA"
