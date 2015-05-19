@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Git, Graphically",
+      "date": "2015-05-18",
+      "url": "https://speakerdeck.com/aidanfeldman/git-graphically"
+    },
+    {
       "title": "Introduction to Promises in JavaScript",
       "date": "2015-04-28",
       "url": "https://www.youtube.com/watch?v=KeQYjpckudA"
