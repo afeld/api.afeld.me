@@ -30,3 +30,5 @@ open resume.html
 1. Fork that sh\*t
 2. Modify `views/index.json` and `views/index.html.erb`
 3. Push up to Heroku (using [custom buildpack](https://github.com/qnyp/heroku-buildpack-ruby-bower)), or wherever
+
+See also: https://github.com/danfang/me-api
