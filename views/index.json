@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Interview about Hacker Hours on the CodeNewbie Podcast",
+      "date": "2015-06-01",
+      "url": "http://www.codenewbie.org/podcast/hacker-hours"
+    },
+    {
       "title": "Git, Graphically",
       "date": "2015-05-18",
       "url": "https://speakerdeck.com/aidanfeldman/git-graphically"
