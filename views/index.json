@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Interview on Thoughtbot's Giant Robots podcast: Open by Default",
+      "date": "2015-06-15",
+      "url": "http://giantrobots.fm/151"
+    },
+    {
       "title": "Interview about Hacker Hours on the CodeNewbie Podcast",
       "date": "2015-06-01",
       "url": "http://www.codenewbie.org/podcast/hacker-hours"
