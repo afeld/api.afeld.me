@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "E Pluribus Unum: Building better software in the US government",
+      "date": "2015-07-14",
+      "url": "http://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae&utm_source=lslibrary&utm_medium=ui-thumb"
+    },
+    {
       "title": "Interview on Thoughtbot's Giant Robots podcast: Open by Default",
       "date": "2015-06-15",
       "url": "http://giantrobots.fm/151"
