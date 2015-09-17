@@ -436,6 +436,13 @@
   ],
   "writing": [
     {
+      "title": "What is jQuery?",
+      "type": "blog",
+      "publisher": "One Month",
+      "publish_date": "2015-09-17",
+      "url": "http://learn.onemonth.com/what-is-jquery"
+    },
+    {
       "title": "How To Welcome New Coders To A Civic Hackathon",
       "type": "blog",
       "publisher": "18F Blog",
