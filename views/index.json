@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Dabbling in Docker",
+      "date": "2016-01-25",
+      "url": "https://speakerdeck.com/aidanfeldman/dabbling-in-docker"
+    },
+    {
       "title": "E Pluribus Unum: Building better software in the US government",
       "date": "2015-07-14",
       "url": "http://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae&utm_source=lslibrary&utm_medium=ui-thumb"
