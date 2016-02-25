@@ -258,6 +258,11 @@
   ],
   "talks": [
     {
+      "title": "Open Source for New York City",
+      "date": "2016-02-24",
+      "url": "https://medium.com/@aidanfeldman/open-source-for-new-york-city-3c23e75cb43#.vb5sgcn1x"
+    },
+    {
       "title": "Dabbling in Docker",
       "date": "2016-01-25",
       "url": "https://speakerdeck.com/aidanfeldman/dabbling-in-docker"
