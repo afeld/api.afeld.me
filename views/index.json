@@ -258,9 +258,9 @@
   ],
   "talks": [
     {
-      "title": "Open Source for New York City",
-      "date": "2016-02-24",
-      "url": "https://medium.com/@aidanfeldman/open-source-for-new-york-city-3c23e75cb43#.vb5sgcn1x"
+      "title": "18F on the Mozilla Science Lab Project Call",
+      "date": "2016-02-25",
+      "url": "https://www.youtube.com/watch?v=vBQrIDZKMK8"
     },
     {
       "title": "Dabbling in Docker",
@@ -445,6 +445,11 @@
     }
   ],
   "writing": [
+    {
+      "title": "Open Source for New York City",
+      "date": "2016-02-24",
+      "url": "https://medium.com/@aidanfeldman/open-source-for-new-york-city-3c23e75cb43#.vb5sgcn1x"
+    },
     {
       "title": "What is jQuery?",
       "type": "blog",
