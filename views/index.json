@@ -191,6 +191,11 @@
   },
   "projects": [
     {
+      "title": "Empire Node 2015",
+      "description": "Organizer for NYC's Node.js conference.",
+      "url": "http://2015.empirenode.org/"
+    },
+    {
       "title": "teachers_pet",
       "description": "Command line tool to help teachers use GitHub in their classrooms.",
       "url": "https://github.com/education/teachers_pet"
@@ -257,6 +262,11 @@
     }
   ],
   "talks": [
+    {
+      "title": "DevOps at Large: Modernizing apps and infrastructure in the federal government",
+      "date": "2016-05-18",
+      "url": "https://speakerdeck.com/aidanfeldman/devops-at-large-modernizing-apps-and-infrastructure-in-the-federal-government"
+    },
     {
       "title": "18F on the Mozilla Science Lab Project Call",
       "date": "2016-02-25",
