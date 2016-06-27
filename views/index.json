@@ -263,6 +263,11 @@
   ],
   "talks": [
     {
+      "title": "Software Engineering Daily podcast: cloud.gov with Aidan Feldman",
+      "date": "2016-06-26",
+      "url": "http://softwareengineeringdaily.com/2016/06/26/cloud-gov-with-aidan-feldman/"
+    },
+    {
       "title": "DevOps at Large: Modernizing apps and infrastructure in the federal government",
       "date": "2016-05-18",
       "url": "https://speakerdeck.com/aidanfeldman/devops-at-large-modernizing-apps-and-infrastructure-in-the-federal-government"
