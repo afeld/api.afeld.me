@@ -176,6 +176,10 @@
       "username": "8818215",
       "profile_url": "http://www.meetup.com/members/8818215/"
     },
+    "speakerdeck": {
+      "username": "aidanfeldman",
+      "profile_url": "https://speakerdeck.com/aidanfeldman"
+    },
     "twitter": {
       "username": "aidanfeldman",
       "profile_url": "https://twitter.com/aidanfeldman"
@@ -262,6 +266,21 @@
     }
   ],
   "talks": [
+    {
+      "title": "Search for Static Sites",
+      "date": "2016-08-04",
+      "url": "https://speakerdeck.com/aidanfeldman/search-for-static-sites"
+    },
+    {
+      "title": "Learning Teaching",
+      "date": "2016-08-02",
+      "url": "https://docs.google.com/presentation/d/1owZ4sfp_qpy2L_23BPBeM8YEmZxeddSJBFgLDJLponM/edit"
+    },
+    {
+      "title": "Everything I Think I Understand About IT Compliance",
+      "date": "2016-07-25",
+      "url": "https://www.youtube.com/watch?v=-Nc4GXPxpQg&index=1&list=PLd9b-GuOJ3nG5zDAg7exOHusZKVVrkhjO"
+    },
     {
       "title": "Software Engineering Daily podcast: cloud.gov with Aidan Feldman",
       "date": "2016-06-26",
