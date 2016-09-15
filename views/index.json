@@ -85,20 +85,28 @@
     ],
     "teaching": [
       {
-        "organization": "City University of New York",
-        "url": "https://github.com/cuny-nytech/syllabus",
-        "title": "Instructor",
-        "description": "Teaching a practical developer skills class to CS seniors, covering version control, web development, resume writing, etc.",
-        "start_date": "2014-09",
+        "organization": "Cornell Tech",
+        "url": "https://docs.google.com/document/d/1-hk6GzhV1yHU1T0E7uqcdNTtvv3fuq1_WECQOWOT2zw/edit",
+        "title": "Adjunct Faculty",
+        "description": "Teaching the Startup Systems course, a core class for the Master of Engineering in Computer Science program, which covers web development from HTML to APIs to servers.",
+        "start_date": "2016-08",
         "end_date": null
       },
       {
         "organization": "New York University",
         "url": "http://scps.nyu.edu/content/scps/faculty/faculty-profile.html?id=14293",
-        "title": "Adjunct Instructor",
+        "title": "Adjunct Faculty",
         "description": "Teaching an Advanced JavaScript class as part of SCPS (continuing education), as well as a graduate class at ITP called Building for Learning.",
         "start_date": "2012-06",
         "end_date": null
+      },
+      {
+        "organization": "City University of New York",
+        "url": "https://github.com/cuny-nytech/syllabus",
+        "title": "Instructor",
+        "description": "Teaching a practical developer skills class to CS seniors, covering version control, web development, resume writing, etc.",
+        "start_date": "2014-09",
+        "end_date": "2015-05"
       },
       {
         "organization": "General Assembly",
