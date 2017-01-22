@@ -207,9 +207,9 @@
   },
   "projects": [
     {
-      "title": "Empire Node 2015",
+      "title": "Empire Node 2015+2016",
       "description": "Organizer for NYC's Node.js conference.",
-      "url": "http://2015.empirenode.org/"
+      "url": "http://empirenode.org"
     },
     {
       "title": "teachers_pet",
@@ -278,6 +278,16 @@
     }
   ],
   "talks": [
+    {
+      "title": "Getting Started Contributing to Open Source",
+      "date": "2016-10-25",
+      "url": "https://www.youtube.com/watch?v=HzlpCwsNLas&feature=youtu.be"
+    },
+    {
+      "title": "OpenControl Demo & Quickstart",
+      "date": "2016-10-20",
+      "url": "http://open-control.org/event2016/#opencontrol-demo-quickstart"
+    },
     {
       "title": "Rewiring Government podcast: cloud.gov and the new marriage of policy and technology in government",
       "date": "2016-09-14",
