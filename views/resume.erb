@@ -86,6 +86,9 @@
             <h2>
               <a href="<%= writing['url'] %>"><%= writing['title'] %></a>
             </h2>
+            <% if writing['publisher'] != 'self' %>
+              <h2><%= writing['publisher'] %></h2>
+            <% end %>
             <p><%= date(writing['date']) %></p>
             <!-- this only displayed when printing -->
             <p class="url">
