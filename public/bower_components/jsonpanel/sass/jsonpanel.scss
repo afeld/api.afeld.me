@@ -1,0 +1,138 @@
+// base jsonpanel styles
+
+@import "compass/css3/box-sizing";
+@import "compass/css3/transition";
+
+
+.jsonpanel {
+  @include box-sizing(border-box);
+  overflow-x: scroll;
+  white-space: nowrap;
+  font-family: monospace;
+  padding: 1em;
+  line-height: 1.4;
+
+  * {
+    // reset
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .list {
+    list-style-type: none;
+    padding: 0.5em 0;
+  }
+
+  ul {
+    &:before {
+      content: '{';
+    }
+    &:after {
+      content: '}';
+    }
+  }
+
+  ol {
+    &:before {
+      content: '[';
+    }
+    &:after {
+      content: ']';
+    }
+  }
+
+  .key {
+    margin-left: 1em;
+    font-weight: bold;
+  }
+
+  .pair {
+    &.simple {
+      $hangingIndent: 30px;
+      max-width: 600px;
+      padding-left: $hangingIndent;
+      text-indent: -1 * $hangingIndent;
+      white-space: normal;
+    }
+
+    // commas after every non-nested link item
+    .val:after {
+      content: ",";
+    }
+    &:last-child .val:after {
+      display: none;
+    }
+  }
+
+  // only applies in collapsed state
+  .val-inner {
+    display: inline-block;
+    max-width: 28em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+  }
+
+  .expander {
+    display: block;
+    text-decoration: none;
+    color: black;
+
+    $color: #D3DFF0;
+    background-color: rgba($color, 0);
+    @include transition(background-color 0.3s ease 0.5);
+
+    &:hover {
+      // fallback for older browsers
+      background-color: $color;
+      background-color: rgba($color, 1);
+    }
+
+    // expander
+    .key:before {
+      content: "+";
+      margin-right: 0.5em;
+    }
+  }
+
+  .expanded {
+    position: relative;
+
+    & > .expander {
+      // collapser
+      .key:before {
+        content: "-";
+      }
+
+      .val {
+        // hide the Array/Object indicator
+        opacity: 0;
+      }
+    }
+
+    & > .panel {
+      margin-left: 2em;
+    }
+  }
+
+  .boolean {
+    color: red;
+  }
+  .string {
+    color: green;
+  }
+  .number {
+    color: blue;
+  }
+  .array,
+  .object {
+    .val-inner {
+      color: #a5a5a5;
+    }
+  }
+}
