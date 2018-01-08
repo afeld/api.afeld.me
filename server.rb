@@ -1,6 +1,10 @@
-require 'sinatra'
 require 'sinatra/respond_with'
 require 'json'
+
+if development?
+  require 'sinatra/reloader'
+  enable :reloader
+end
 
 enable :logging
 
