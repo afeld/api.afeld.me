@@ -57,10 +57,10 @@ a {
   p {
     margin: 0.6rem 0;
   }
-}
 
-.talks .url {
-  display: none;
+  .url {
+    display: none;
+  }
 }
 
 // large screen - two columns
@@ -119,7 +119,7 @@ a {
     }
   }
 
-  .talks .url {
+  .listing .url {
     display: block;
   }
 }

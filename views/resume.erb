@@ -56,5 +56,24 @@
         <% end %>
       </div>
     </div>
+    <div class="grid-wrap listings writeups">
+      <div class="section">
+        <h1>Writeups</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['writeups'].each do |writeup| %>
+          <div class="listing">
+            <h2>
+              <a href="<%= writeup['url'] %>"><%= writeup['title'] %></a>
+            </h2>
+            <p><%= date(writeup['date']) %></p>
+            <!-- this only displayed when printing -->
+            <p class="url">
+              <a href="<%= writeup['url'] %>"><%= url(writeup['url']) %></a>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </body>
 </html>
