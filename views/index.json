@@ -471,41 +471,49 @@
   "writeups": [
     {
       "title": "How To Build A Mustached Message Service With Twilio MMS And Python",
+      "publisher": "Twilio blog",
       "date": "2014-09-18",
       "url": "https://www.twilio.com/blog/2014/09/how-to-build-a-mustached-message-service-with-twilio-mms-and-python.html"
     },
     {
       "title": "Here Are the Most and Least Popular Citi Bike Stations in New York City",
+      "publisher": "Nerve",
       "date": "2014-06-19",
       "url": "http://www.nerve.com/infographics/most-popular-least-popular-citibike-stations-new-york-city"
     },
     {
       "title": "Campus Party: Hacker do GitHub explica crescimento da 'rede social' de desenvolvedores",
+      "publisher": "Exame",
       "date": "2014-01-31",
-      "url": "http://info.abril.com.br/noticias/internet/2014/01/campus-party-hacker-do-github-explica-crescimento-da-rede-social-de-desenvolvedores.shtml"
+      "url": "https://exame.abril.com.br/tecnologia/campus-party-hacker-do-github-explica-crescimento-da-rede-social-de-desenvolvedores/"
     },
     {
       "title": "Já estamos no quarto e penúltimo dia de conteúdos da Campus Party Brasil 2014!",
+      "publisher": "Campus Party blog",
       "date": "2014-01-31",
       "url": "http://blog.campus-party.com.br/post/75170721637/ja-estamos-no-quarto-e-penultimo-dia-de-conteudos"
     },
     {
       "title": "The Man of the (Hacker) Hour",
+      "publisher": "Gilt Tech blog",
       "date": "2013-08-22",
       "url": "http://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour"
     },
     {
       "title": "Hacker Hours with Aidan Feldman",
+      "publisher": "Desmond Rawls blog",
       "date": "2013-08-10",
       "url": "http://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
+      "publisher": "The Next Web",
       "date": "2012-05-14",
       "url": "https://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
     },
     {
       "title": "Nerds Ditch Grammys for New York's First Music Hackday",
+      "publisher": "TechCrunch",
       "date": "2011-02-14",
       "url": "https://techcrunch.com/2011/02/14/music-hackday/"
     }
