@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'compass', '~> 1.0.0'
+gem 'compass'
 gem 'sinatra'
-gem 'sinatra-respond_to'
+gem 'sinatra-contrib'
