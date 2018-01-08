@@ -66,7 +66,7 @@ helpers do
   end
 
   def url(url_str)
-    url_str.sub(/^https?:\/\//, '')
+    url_str.sub(/^https?:\/\/(www\.)?/, '')
   end
 end
 
