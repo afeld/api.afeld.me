@@ -21,11 +21,14 @@ a {
   color: #00BE13;
   font-size: 5rem;
 }
+
 .meta .content-inner {
   color: $secondary-color;
 }
 
 .grid-wrap {
+  margin-bottom: 3rem;
+
   display: grid;
   // single column
   grid-template-columns: 1fr;
@@ -34,13 +37,26 @@ a {
     "content";
 }
 
-.section {
+.listings .section {
   color: $secondary-color;
   grid-area: section;
 }
 
 .content {
   grid-area: content;
+}
+
+.listing {
+  margin-bottom: 2rem;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    margin: 0.6rem 0;
+  }
 }
 
 // large screen - two columns

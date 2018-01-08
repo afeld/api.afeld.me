@@ -26,10 +26,28 @@
       </div>
       <div class="content">
         <% PROFILE_HSH['employment']['coding'].each do |job| %>
-        <h2><%= job['title'] %></h2>
-        <h2><%= job['organization'] %></h2>
-        <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
-        <p><%= job['description'] %></p>
+          <div class="listing">
+            <h2><%= job['title'] %></h2>
+            <h2><%= job['organization'] %></h2>
+            <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
+            <p><%= job['description'] %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="grid-wrap listings">
+      <div class="section">
+        <h1>Talks</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['talks'].each do |talk| %>
+          <div class="listing">
+            <h2><%= talk['title'] %></h2>
+            <p><%= date(talk['date']) %></p>
+            <p>
+              <a href="<%= talk['url'] %>"><%= url(talk['url']) %></a>
+            </p>
+          </div>
         <% end %>
       </div>
     </div>
