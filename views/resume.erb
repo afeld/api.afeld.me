@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Aidan Feldman's (Long-Form) Resume</title>
     <link rel="stylesheet" type="text/css" href="assets/resume.css">
   </head>
@@ -12,7 +13,9 @@
       </div>
       <div class="content">
         <div class="content-inner">
-          <p><%= PROFILE_HSH['email'] %></p>
+          <p class="url">
+            <a href="mailto:<%= PROFILE_HSH['email'] %>"><%= PROFILE_HSH['email'] %></a>
+          </p>
           <p class="url">
             <a href="<%= PROFILE_HSH['url'] %>"><%= url(PROFILE_HSH['url']) %></a>
           </p>

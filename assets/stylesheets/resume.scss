@@ -3,7 +3,6 @@ $secondary-color: #7A7A7A;
 
 body {
   font-family: Helvetica, sans-serif;
-  max-width: 1100px;
   padding: 1rem;
 
   @media print {
@@ -24,10 +23,14 @@ a {
 
 .meta .content-inner {
   color: $secondary-color;
+  p {
+    margin: 0.5rem 0;
+  }
 }
 
 .grid-wrap {
   margin-bottom: 3rem;
+  max-width: 1000px;
 
   display: grid;
   // single column
@@ -64,16 +67,10 @@ a {
 }
 
 // large screen - two columns
-@media (min-width: $column-break) {
-  body {
-    padding: 3rem;
-  }
-
-  .listings .section h1 {
-    font-size: 1.2rem;
-  }
-}
 @media print, (min-width: $column-break) {
+  .name {
+    margin: 0;
+  }
   .meta {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "section content";
@@ -103,7 +100,15 @@ a {
     }
   }
 }
+@media (min-width: $column-break) {
+  body {
+    padding: 3rem;
+  }
 
+  .listings .section h1 {
+    font-size: 1.2rem;
+  }
+}
 @media print {
   // only links whose text is a URL shouldn appear to be clickable
   a {
