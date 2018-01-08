@@ -1,14 +1,8 @@
-@import "compass/css3/animation";
-@import "compass/css3/transition";
-
-@import "../public/bower_components/jsonpanel/sass/jsonpanel";
-
-
-@include keyframes(fadeInText) {
-  0% {
+@keyframes fadeInText {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -26,16 +20,16 @@
 }
 
 .list {
-  @include animation-name(fadeInText);
-  @include animation-iteration-count(1);
-  @include animation-timing-function(ease-in);
-  @include animation-duration(0.4s);
-  @include animation-fill-mode(forwards);
+  animation-name: fadeInText;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
 
 .val {
   opacity: 1;
-  @include transition(opacity 0.4s ease);
+  transition: opacity 0.4s ease;
 }
 
 .meta-links {
@@ -53,7 +47,7 @@
     font-size: 0.7em;
 
     opacity: 0.6;
-    @include transition(opacity 0.2s ease);
+    transition: opacity 0.2s ease;
 
     &:hover {
       opacity: 1;
