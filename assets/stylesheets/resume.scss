@@ -1,6 +1,14 @@
+$column-break: 800px;
+
 body {
   font-family: Helvetica, sans-serif;
-  padding: 3em;
+  padding: 1rem;
+
+  @media print {
+    & {
+      padding: 0;
+    }
+  }
 }
 
 .grid-wrap {
@@ -21,14 +29,20 @@ body {
   grid-area: content;
 }
 
-// large screen - two columns
-@media (min-width: 800px) {
-  .section {
-    font-size: 0.7em;
+// medium+ screen - two columns
+@media (min-width: $column-break) {
+  body {
+    padding: 3rem;
   }
 
+  .section h1 {
+    font-size: 1.2rem;
+  }
+}
+@media print, (min-width: $column-break) {
   // vertically align tops of sections
   .section h1 {
+    font-weight: normal;
     margin-top: 0;
   }
   .content h2:first-child {
@@ -36,7 +50,21 @@ body {
   }
 
   .grid-wrap {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-areas: "section content";
+  }
+}
+
+// large screen
+@media print, (min-width: 1200px) {
+  .section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media print {
+  .section h1 {
+    font-size: 1.1rem;
   }
 }
