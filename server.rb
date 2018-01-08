@@ -55,6 +55,25 @@ helpers do
 
     out
   end
+
+  def date(date_str)
+    if date_str.scan(/-/).size == 1
+      # month only
+      Date.strptime(date_str, '%Y-%m').strftime('%b %Y')
+    else
+      Date.parse(date_str).strftime('%b %-m, %Y')
+    end
+  end
+
+  def date_range(obj)
+    start_date = date(obj['start_date'])
+    end_date = obj['end_date'] ? date(obj['end_date']) : 'present'
+    "#{start_date} — #{end_date}"
+  end
+
+  def url(url_str)
+    url_str.sub(/^https?:\/\/(www\.)?/, '')
+  end
 end
 
 
@@ -77,4 +96,8 @@ end
 
 get '/meet' do
   erb :meet
+end
+
+get '/resume' do
+  erb :resume
 end

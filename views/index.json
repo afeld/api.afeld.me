@@ -1,7 +1,7 @@
 {
   "name": "Aidan Feldman",
   "description": "Web developer by day, dancer by night.",
-  "url": "http://api.afeld.me",
+  "url": "https://api.afeld.me",
   "email": "aidan.feldman@gmail.com",
   "location": {
     "city": "Brooklyn",
@@ -502,69 +502,75 @@
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
       "date": "2012-05-14",
-      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
+      "url": "https://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
+    },
+    {
+      "title": "Nerds Ditch Grammys for New York's First Music Hackday",
+      "date": "2011-02-14",
+      "url": "https://techcrunch.com/2011/02/14/music-hackday/"
     }
   ],
   "writing": [
     {
       "title": "Open Source for New York City",
       "date": "2016-02-24",
+      "publisher": "blog",
       "url": "https://medium.com/@aidanfeldman/open-source-for-new-york-city-3c23e75cb43#.vb5sgcn1x"
     },
     {
       "title": "What is jQuery?",
       "type": "blog",
       "publisher": "One Month",
-      "publish_date": "2015-09-17",
+      "date": "2015-09-17",
       "url": "http://learn.onemonth.com/what-is-jquery"
     },
     {
       "title": "How To Welcome New Coders To A Civic Hackathon",
       "type": "blog",
       "publisher": "18F Blog",
-      "publish_date": "2015-04-03",
+      "date": "2015-04-03",
       "url": "https://18f.gsa.gov/2015/04/03/how-to-welcome-new-coders-to-a-civic-hackathon/"
     },
     {
       "title": "Learn Ruby on Rails as You Modify a Craigslist Clone",
       "type": "tutorial",
       "publisher": "Thinkful",
-      "publish_date": "2014-10-24",
+      "date": "2014-10-24",
       "url": "http://www.thinkful.com/learn/ruby-on-rails-tutorial/"
     },
     {
       "title": "Advanced JS class information for teachers",
       "type": "blog",
       "publisher": "self",
-      "publish_date": "2014-06-26",
+      "date": "2014-06-26",
       "url": "https://github.com/advanced-js/syllabus/blob/master/meta.md"
     },
     {
       "title": "GitHub Classroom Guide",
       "type": "tutorial",
       "publisher": "GitHub",
-      "publish_date": "2014-02-10",
+      "date": "2014-02-10",
       "url": "https://education.github.com/guide"
     },
     {
       "title": "Developing a Backbone.js Edge",
       "type": "book",
       "publisher": "Backstop Media",
-      "publish_date": "2013-04-10",
+      "date": "2013-04-10",
       "url": "http://bleedingedgepress.com/our-books/backbone-js/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
       "type": "interview",
       "publisher": "The Next Web",
-      "publish_date": "2012-05-14",
+      "date": "2012-05-14",
       "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
     },
     {
       "title": "Hacker Olympics, the Un-Hackathon",
       "type": "blog",
       "publisher": "Twilio",
-      "publish_date": "2012-03-15",
+      "date": "2012-03-15",
       "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
     }
   ]

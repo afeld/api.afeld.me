@@ -1,0 +1,130 @@
+$column-break: 800px;
+$secondary-color: #7A7A7A;
+
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 1rem;
+
+  @media print {
+    & {
+      padding: 0;
+    }
+  }
+}
+
+a {
+  color: inherit;
+}
+
+.name {
+  color: #00BE13;
+  font-size: 5rem;
+}
+
+.meta .content-inner {
+  color: $secondary-color;
+  p {
+    margin: 0.5rem 0;
+  }
+}
+
+.grid-wrap {
+  margin-bottom: 3rem;
+  max-width: 1000px;
+
+  display: grid;
+  // single column
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "section"
+    "content";
+}
+
+.listings .section {
+  color: $secondary-color;
+  grid-area: section;
+}
+
+.content {
+  grid-area: content;
+}
+
+.listing {
+  margin-bottom: 2rem;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    margin: 0.6rem 0;
+  }
+
+  .url {
+    display: none;
+  }
+}
+
+// large screen - two columns
+@media print, (min-width: $column-break) {
+  .name {
+    margin: 0;
+  }
+  .meta {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section content";
+
+    .content {
+      position: relative;
+    }
+    .content-inner {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+  }
+
+  .listings {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "section content";
+
+    // vertically align tops of sections
+    .section h1 {
+      font-weight: normal;
+      margin-top: 0;
+    }
+    .content h2:first-child {
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: $column-break) {
+  body {
+    padding: 3rem;
+  }
+
+  .listings .section h1 {
+    font-size: 1.2rem;
+  }
+}
+@media print {
+  // only links whose text is a URL shouldn appear to be clickable
+  a {
+    text-decoration: none;
+  }
+  .url a {
+    text-decoration: underline;
+  }
+
+  .listings {
+    .section h1 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .listing .url {
+    display: block;
+  }
+}

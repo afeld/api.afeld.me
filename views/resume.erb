@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Aidan Feldman's (Long-Form) Resume</title>
+    <link rel="stylesheet" type="text/css" href="assets/resume.css">
+  </head>
+  <body>
+    <div class="grid-wrap meta">
+      <div class="section">
+        <h1 class="name"><%= PROFILE_HSH['name'] %></h1>
+      </div>
+      <div class="content">
+        <div class="content-inner">
+          <p class="url">
+            <a href="mailto:<%= PROFILE_HSH['email'] %>"><%= PROFILE_HSH['email'] %></a>
+          </p>
+          <p class="url">
+            <a href="<%= PROFILE_HSH['url'] %>"><%= url(PROFILE_HSH['url']) %></a>
+          </p>
+          <p><%= PROFILE_HSH['location']['city'] %>, <%= PROFILE_HSH['location']['state'] %></p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-wrap listings employment">
+      <div class="section">
+        <h1>Experience</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['employment']['coding'].each do |job| %>
+          <div class="listing">
+            <h2><%= job['title'] %></h2>
+            <h2>
+              <a href="<%= job['url'] %>"><%= job['organization'] %></a>
+            </h2>
+            <p><%= date_range(job) %></p>
+            <p><%= job['description'] %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="grid-wrap listings education">
+      <div class="section">
+        <h1>Education</h1>
+      </div>
+      <div class="content">
+        <%# exclude high school %>
+        <% PROFILE_HSH['education'][0...-1].each do |edu| %>
+          <div class="listing">
+            <h2><%= edu['school'] %>, <%= edu['location']['city'] %>, <%= edu['location']['state'] %></h2>
+            <p><%= date_range(edu) %></p>
+            <% edu['degrees'].each do |degree| %>
+              <p><%= degree['title'] %> — <%= degree['major'] %></p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="grid-wrap listings talks">
+      <div class="section">
+        <h1>Talks</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['talks'].each do |talk| %>
+          <div class="listing">
+            <h2>
+              <a href="<%= talk['url'] %>"><%= talk['title'] %></a>
+            </h2>
+            <p><%= date(talk['date']) %></p>
+            <!-- this only displayed when printing -->
+            <p class="url">
+              <a href="<%= talk['url'] %>"><%= url(talk['url']) %></a>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="grid-wrap listings writing">
+      <div class="section">
+        <h1>Publications</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['writing'].each do |writing| %>
+          <div class="listing">
+            <h2>
+              <a href="<%= writing['url'] %>"><%= writing['title'] %></a>
+            </h2>
+            <p><%= date(writing['date']) %></p>
+            <!-- this only displayed when printing -->
+            <p class="url">
+              <a href="<%= writing['url'] %>"><%= url(writing['url']) %></a>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="grid-wrap listings writeups">
+      <div class="section">
+        <h1>Writeups</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['writeups'].each do |writeup| %>
+          <div class="listing">
+            <h2>
+              <a href="<%= writeup['url'] %>"><%= writeup['title'] %></a>
+            </h2>
+            <p><%= date(writeup['date']) %></p>
+            <!-- this only displayed when printing -->
+            <p class="url">
+              <a href="<%= writeup['url'] %>"><%= url(writeup['url']) %></a>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
