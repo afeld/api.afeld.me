@@ -64,6 +64,10 @@ helpers do
       Date.parse(date_str).strftime('%b %-m, %Y')
     end
   end
+
+  def url(url_str)
+    url_str.sub(/^https?:\/\//, '')
+  end
 end
 
 

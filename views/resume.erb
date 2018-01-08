@@ -5,17 +5,33 @@
     <title>Aidan Feldman's (Long-Form) Resume</title>
     <link rel="stylesheet" type="text/css" href="assets/resume.css">
   </head>
-  <body class="grid-wrap">
-    <div class="section">
-      <h1>Experience</h1>
+  <body>
+    <div class="grid-wrap meta">
+      <div class="section">
+        <h1 class="name"><%= PROFILE_HSH['name'] %></h1>
+      </div>
+      <div class="content">
+        <div class="content-inner">
+          <p><%= PROFILE_HSH['email'] %></p>
+          <p>
+            <a href="<%= PROFILE_HSH['url'] %>"><%= url(PROFILE_HSH['url']) %></a>
+          </p>
+          <p><%= PROFILE_HSH['location']['city'] %>, <%= PROFILE_HSH['location']['state'] %></p>
+        </div>
+      </div>
     </div>
-    <div class="content">
-      <% PROFILE_HSH['employment']['coding'].each do |job| %>
-      <h2><%= job['title'] %></h2>
-      <h2><%= job['organization'] %></h2>
-      <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
-      <p><%= job['description'] %></p>
-      <% end %>
+    <div class="grid-wrap listings">
+      <div class="section">
+        <h1>Experience</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['employment']['coding'].each do |job| %>
+        <h2><%= job['title'] %></h2>
+        <h2><%= job['organization'] %></h2>
+        <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
+        <p><%= job['description'] %></p>
+        <% end %>
+      </div>
     </div>
   </body>
 </html>
