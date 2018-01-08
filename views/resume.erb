@@ -13,14 +13,14 @@
       <div class="content">
         <div class="content-inner">
           <p><%= PROFILE_HSH['email'] %></p>
-          <p>
+          <p class="url">
             <a href="<%= PROFILE_HSH['url'] %>"><%= url(PROFILE_HSH['url']) %></a>
           </p>
           <p><%= PROFILE_HSH['location']['city'] %>, <%= PROFILE_HSH['location']['state'] %></p>
         </div>
       </div>
     </div>
-    <div class="grid-wrap listings">
+    <div class="grid-wrap listings employment">
       <div class="section">
         <h1>Experience</h1>
       </div>
@@ -28,7 +28,9 @@
         <% PROFILE_HSH['employment']['coding'].each do |job| %>
           <div class="listing">
             <h2><%= job['title'] %></h2>
-            <h2><%= job['organization'] %></h2>
+            <h2>
+              <a href="<%= job['url'] %>"><%= job['organization'] %></a>
+            </h2>
             <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
             <p><%= job['description'] %></p>
           </div>

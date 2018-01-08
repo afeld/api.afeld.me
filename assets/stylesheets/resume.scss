@@ -105,14 +105,17 @@ a {
 }
 
 @media print {
+  // only links whose text is a URL shouldn appear to be clickable
+  a {
+    text-decoration: none;
+  }
+  .url a {
+    text-decoration: underline;
+  }
+
   .listings {
     .section h1 {
       font-size: 1.1rem;
-    }
-
-    // don't have it appear to be a link
-    &.talks h2 a {
-      text-decoration: none;
     }
   }
 
