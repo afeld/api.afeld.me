@@ -281,7 +281,7 @@
     {
       "title": "Getting Started Contributing to Open Source",
       "date": "2016-10-25",
-      "url": "https://www.youtube.com/watch?v=HzlpCwsNLas&feature=youtu.be"
+      "url": "https://www.youtube.com/watch?v=HzlpCwsNLas"
     },
     {
       "title": "OpenControl Demo & Quickstart",
@@ -306,7 +306,7 @@
     {
       "title": "Everything I Think I Understand About IT Compliance",
       "date": "2016-07-25",
-      "url": "https://www.youtube.com/watch?v=-Nc4GXPxpQg&index=1&list=PLd9b-GuOJ3nG5zDAg7exOHusZKVVrkhjO"
+      "url": "https://www.youtube.com/watch?v=-Nc4GXPxpQg"
     },
     {
       "title": "Software Engineering Daily podcast: cloud.gov with Aidan Feldman",
@@ -331,7 +331,7 @@
     {
       "title": "E Pluribus Unum: Building better software in the US government",
       "date": "2015-07-14",
-      "url": "http://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae&utm_source=lslibrary&utm_medium=ui-thumb"
+      "url": "http://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae"
     },
     {
       "title": "Interview on Thoughtbot's Giant Robots podcast: Open by Default",
@@ -516,7 +516,7 @@
       "type": "testimony",
       "publisher": "self",
       "date": "2016-02-24",
-      "url": "https://medium.com/@aidanfeldman/open-source-for-new-york-city-3c23e75cb43#.vb5sgcn1x"
+      "url": "https://medium.com/@aidanfeldman/open-source-for-new-york-city-3c23e75cb43"
     },
     {
       "title": "What is jQuery?",
@@ -572,7 +572,7 @@
       "type": "blog",
       "publisher": "Twilio",
       "date": "2012-03-15",
-      "url": "http://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
+      "url": "https://www.twilio.com/blog/2012/03/hacker-olympics-the-un-hackathon-guest-post-by-aidan-feldman.html"
     }
   ]
 }
