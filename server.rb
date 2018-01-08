@@ -65,6 +65,12 @@ helpers do
     end
   end
 
+  def date_range(obj)
+    start_date = date(obj['start_date'])
+    end_date = obj['end_date'] ? date(obj['end_date']) : 'present'
+    "#{start_date} — #{end_date}"
+  end
+
   def url(url_str)
     url_str.sub(/^https?:\/\/(www\.)?/, '')
   end

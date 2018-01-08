@@ -31,8 +31,25 @@
             <h2>
               <a href="<%= job['url'] %>"><%= job['organization'] %></a>
             </h2>
-            <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
+            <p><%= date_range(job) %></p>
             <p><%= job['description'] %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="grid-wrap listings education">
+      <div class="section">
+        <h1>Education</h1>
+      </div>
+      <div class="content">
+        <%# exclude high school %>
+        <% PROFILE_HSH['education'][0...-1].each do |edu| %>
+          <div class="listing">
+            <h2><%= edu['school'] %>, <%= edu['location']['city'] %>, <%= edu['location']['state'] %></h2>
+            <p><%= date_range(edu) %></p>
+            <% edu['degrees'].each do |degree| %>
+              <p><%= degree['title'] %> — <%= degree['major'] %></p>
+            <% end %>
           </div>
         <% end %>
       </div>
