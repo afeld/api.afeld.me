@@ -35,16 +35,19 @@
         <% end %>
       </div>
     </div>
-    <div class="grid-wrap listings">
+    <div class="grid-wrap listings talks">
       <div class="section">
         <h1>Talks</h1>
       </div>
       <div class="content">
         <% PROFILE_HSH['talks'].each do |talk| %>
           <div class="listing">
-            <h2><%= talk['title'] %></h2>
+            <h2>
+              <a href="<%= talk['url'] %>"><%= talk['title'] %></a>
+            </h2>
             <p><%= date(talk['date']) %></p>
-            <p>
+            <!-- this only displayed when printing -->
+            <p class="url">
               <a href="<%= talk['url'] %>"><%= url(talk['url']) %></a>
             </p>
           </div>

@@ -59,6 +59,10 @@ a {
   }
 }
 
+.talks .url {
+  display: none;
+}
+
 // large screen - two columns
 @media (min-width: $column-break) {
   body {
@@ -101,7 +105,18 @@ a {
 }
 
 @media print {
-  .listings .section h1 {
-    font-size: 1.1rem;
+  .listings {
+    .section h1 {
+      font-size: 1.1rem;
+    }
+
+    // don't have it appear to be a link
+    &.talks h2 a {
+      text-decoration: none;
+    }
+  }
+
+  .talks .url {
+    display: block;
   }
 }
