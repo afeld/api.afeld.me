@@ -55,6 +55,15 @@ helpers do
 
     out
   end
+
+  def date(date_str)
+    if date_str.scan(/-/).size == 1
+      # month only
+      Date.strptime(date_str, '%Y-%m').strftime('%b %Y')
+    else
+      Date.parse(date_str).strftime('%b %-m, %Y')
+    end
+  end
 end
 
 
@@ -77,4 +86,8 @@ end
 
 get '/meet' do
   erb :meet
+end
+
+get '/resume' do
+  erb :resume
 end
