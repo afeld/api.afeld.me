@@ -5,15 +5,13 @@ require 'json'
 enable :logging
 
 configure do
-  # copied from https://github.com/chriseppstein/compass/wiki/Sinatra-Integration
-  Compass.configuration do |config|
-    config.project_path = File.dirname(__FILE__)
-    config.sass_dir = 'views'
-  end
-
   set :haml, format: :html5
-  set :sass, Compass.sass_engine_options
-  set :scss, Compass.sass_engine_options
+
+  environment = Sprockets::Environment.new
+  environment.append_path 'assets/stylesheets'
+  # environment.append_path 'assets/javascripts'
+  environment.css_compressor = :scss
+  set :environment, environment
 end
 
 PROFILE_STR = File.read('./views/index.json').freeze
@@ -56,8 +54,9 @@ helpers do
 end
 
 
-get '/stylesheets/application' do
-  scss :application
+get '/assets/*' do
+  env['PATH_INFO'].sub!('/assets', '')
+  settings.environment.call(env)
 end
 
 get %r{/(index)?} do
