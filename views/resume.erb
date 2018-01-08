@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Aidan Feldman's (Long-Form) Resume</title>
+    <link rel="stylesheet" type="text/css" href="assets/resume.css">
   </head>
-  <body>
-    <h1>Experience</h1>
-    <% PROFILE_HSH['employment']['coding'].each do |job| %>
+  <body class="grid-wrap">
+    <div class="section">
+      <h1>Experience</h1>
+    </div>
+    <div class="content">
+      <% PROFILE_HSH['employment']['coding'].each do |job| %>
       <h2><%= job['title'] %></h2>
       <h2><%= job['organization'] %></h2>
       <p><%= date(job['start_date']) %> — <%= job['end_date'] ? date(job['end_date']) : 'present' %></p>
       <p><%= job['description'] %></p>
-    <% end %>
+      <% end %>
+    </div>
   </body>
 </html>
