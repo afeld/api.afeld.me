@@ -76,6 +76,25 @@
         <% end %>
       </div>
     </div>
+    <div class="grid-wrap listings writing">
+      <div class="section">
+        <h1>Publications</h1>
+      </div>
+      <div class="content">
+        <% PROFILE_HSH['writing'].each do |writing| %>
+          <div class="listing">
+            <h2>
+              <a href="<%= writing['url'] %>"><%= writing['title'] %></a>
+            </h2>
+            <p><%= date(writing['date']) %></p>
+            <!-- this only displayed when printing -->
+            <p class="url">
+              <a href="<%= writing['url'] %>"><%= url(writing['url']) %></a>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
     <div class="grid-wrap listings writeups">
       <div class="section">
         <h1>Writeups</h1>
