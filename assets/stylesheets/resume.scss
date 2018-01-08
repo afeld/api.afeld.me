@@ -1,9 +1,11 @@
-html {
+body {
   font-family: Helvetica, sans-serif;
+  padding: 3em;
 }
 
 .grid-wrap {
   display: grid;
+  // single column
   grid-template-columns: 1fr;
   grid-template-areas:
     "section"
@@ -11,6 +13,7 @@ html {
 }
 
 .section {
+  color: #7a7a7a;
   grid-area: section;
 }
 
@@ -18,9 +21,18 @@ html {
   grid-area: content;
 }
 
+// large screen - two columns
 @media (min-width: 800px) {
-  h1 {
+  .section {
+    font-size: 0.7em;
+  }
 
+  // vertically align tops of sections
+  .section h1 {
+    margin-top: 0;
+  }
+  .content h2:first-child {
+    margin-top: 0;
   }
 
   .grid-wrap {
