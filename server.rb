@@ -66,6 +66,11 @@ get %r{/(index)?} do
   end
 end
 
+get '/index.json' do
+  content_type 'application/json'
+  PROFILE_STR
+end
+
 get '/meet' do
   erb :meet
 end
