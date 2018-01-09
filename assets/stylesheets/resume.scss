@@ -77,6 +77,11 @@ a {
   }
 }
 
+.dates {
+  font-style: italic;
+  font-weight: bold;
+}
+
 // large screen - two columns
 @media print, screen and (min-width: $column-break) {
   .name {

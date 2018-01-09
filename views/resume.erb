@@ -34,7 +34,7 @@
             <h2>
               <a href="<%= job.url %>"><%= job.organization %></a>
             </h2>
-            <div><%= date_range(job) %></div>
+            <div class="dates"><%= date_range(job) %></div>
             <p><%= job.description %></p>
             <% if job['responsibilities']  %>
               <ul class="responsibilities">
@@ -68,7 +68,7 @@
         <% PROFILE_HSH.education[0...-1].each do |edu| %>
           <div class="listing">
             <h2><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h2>
-            <div><%= date_range(edu) %></div>
+            <div class="dates"><%= date_range(edu) %></div>
             <ul>
               <% edu.degrees.each do |degree| %>
                 <li><%= degree.title %> <%= degree.major %></li>
@@ -89,7 +89,7 @@
               <a href="<%= talk.url %>"><%= talk.title %></a>
             </h2>
             <h2><%= talk['event'] %></h2>
-            <div><%= date(talk.date) %></div>
+            <div class="dates"><%= date(talk.date) %></div>
             <p><%= talk['description'] %></p>
             <!-- this only displayed when printing -->
             <p class="url">
@@ -112,7 +112,7 @@
             <% if writing.publisher != 'self' %>
               <h2><%= writing.publisher %></h2>
             <% end %>
-            <div><%= date(writing.date) %></div>
+            <div class="dates"><%= date(writing.date) %></div>
             <!-- this only displayed when printing -->
             <div class="url">
               <a href="<%= writing.url %>"><%= url(writing.url) %></a>
@@ -132,7 +132,7 @@
               <a href="<%= writeup.url %>"><%= writeup.title %></a>
             </h2>
             <h2><%= writeup.publisher %></h2>
-            <div><%= date(writeup.date) %></div>
+            <div class="dates"><%= date(writeup.date) %></div>
             <!-- this only displayed when printing -->
             <div class="url">
               <a href="<%= writeup.url %>"><%= url(writeup.url) %></a>
