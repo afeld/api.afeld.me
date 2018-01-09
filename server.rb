@@ -20,6 +20,7 @@ end
 
 PROFILE_STR = File.read('./views/index.json').freeze
 PROFILE_HSH = JSON.parse(PROFILE_STR).freeze
+JOBS = (PROFILE_HSH['employment']['coding'] + PROFILE_HSH['employment']['teaching']).sort_by { |j| j['start_date'] }.reverse
 
 helpers do
   def to_html(val)
