@@ -33,6 +33,7 @@ a {
   max-width: 1000px;
 
   display: grid;
+  grid-column-gap: 2rem;
   // single column
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -77,7 +78,7 @@ a {
 }
 
 // large screen - two columns
-@media print, (min-width: $column-break) {
+@media print, screen and (min-width: $column-break) {
   .name {
     margin: 0;
   }
@@ -97,7 +98,7 @@ a {
   }
 
   .listings {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 10rem 1fr;
     grid-template-areas: "section content";
 
     // vertically align tops of sections
@@ -110,7 +111,7 @@ a {
     }
   }
 }
-@media (min-width: $column-break) {
+@media screen and (min-width: $column-break) {
   body {
     padding: 3rem;
   }
@@ -120,7 +121,7 @@ a {
   }
 }
 @media print {
-  // only links whose text is a URL shouldn appear to be clickable
+  // only links whose text is a URL should appear to be clickable
   a {
     text-decoration: none;
   }
@@ -135,7 +136,7 @@ a {
   }
 
   .listing {
-    // ideally would use revert
+    // show the URLs; ideally would use 'revert'
     // https://developer.mozilla.org/en-US/docs/Web/CSS/revert
     .url {
       display: block;
