@@ -67,6 +67,7 @@
           "Python",
           "Ruby on Rails",
           "Ruby",
+          "teaching",
           "Terraform"
         ],
         "responsibilities": [
@@ -122,35 +123,82 @@
       },
       {
         "organization": "GitHub",
-        "url": "https://github.com",
+        "url": "https://education.github.com",
         "title": "Education Hacker",
-        "description": "Built tools, taught workshops, wrote documentation, and provided support to make GitHub better for teachers and students.",
+        "description": "Worked to understand students’ and teachers’ obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally. Was responsible for the system accepting and processing educational user upgrades, as well as determining best practices for classroom workflows.",
         "start_date": "2013-08",
-        "end_date": "2014-06"
+        "end_date": "2014-06",
+        "skills": [
+          "CSS",
+          "Git",
+          "GitHub",
+          "HTML",
+          "JavaScript",
+          "Jekyll",
+          "jQuery",
+          "public speaking",
+          "Ruby",
+          "Ruby on Rails",
+          "teaching"
+        ]
       },
       {
         "organization": "Artsy",
         "url": "https://artsy.net",
         "title": "Software Engineer (Contract)",
-        "description": "Front-end development in Backbone.js, as well as internal tools around metrics.",
+        "description": "Full-stack web development on the site and APIs, as well as building an open source stats reporting framework.",
         "start_date": "2013-05",
-        "end_date": "2013-08"
+        "end_date": "2013-08",
+        "skills": [
+          "Backbone.js",
+          "CSS",
+          "Git",
+          "GitHub",
+          "HTML",
+          "JavaScript",
+          "jQuery",
+          "Ruby",
+          "Ruby on Rails"
+        ]
       },
       {
         "organization": "Jux",
         "url": "https://jux.com",
         "title": "Senior Web Developer",
-        "description": "Full-stack Ruby and JavaScript development; primarily responsible for the navigation, gallery view, and social features.",
+        "description": "As the only full-stack web developer at the small (now defunct) startup, touched all pieces of the blogging application, including social features and integrations of the site, layout templating, navigation, the image processing pipeline, and much of the API, as well as helping guide vision for the product.",
         "start_date": "2011-01",
-        "end_date": "2013-05"
+        "end_date": "2013-05",
+        "skills": [
+          "Backbone.js",
+          "CSS",
+          "Git",
+          "GitHub",
+          "HTML",
+          "JavaScript",
+          "jQuery",
+          "MongoDB",
+          "Ruby",
+          "Ruby on Rails"
+        ]
       },
       {
         "organization": "American Express Publishing",
         "url": "http://www.amexpub.com",
         "title": "Web Developer (Contract)",
-        "description": "Built CMS tools and microsites for FoodAndWine.com.",
+        "description": "Contractor building content management tools for FoodAndWine.com, as well as promotional micro sites for advertising partners.",
         "start_date": "2010-08",
-        "end_date": "2011-01"
+        "end_date": "2011-01",
+        "skills": [
+          "CSS",
+          "Git",
+          "GitHub",
+          "JavaScript",
+          "HTML",
+          "jQuery",
+          "Ruby",
+          "Ruby on Rails",
+          "Sinatra"
+        ]
       }
     ],
     "teaching": [
@@ -175,13 +223,15 @@
           "GitHub",
           "HTML",
           "JavaScript",
-          "NodeJS"
+          "NodeJS",
+          "public speaking",
+          "teaching"
         ],
         "responsibilities": [
           {
             "group": "School of Professional Studies",
             "title": "Advanced JavaScript",
-            "description": "Helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development.",
+            "description": "After redesigning the curriculum, taught the Advanced JavaScript course for twelve consecutive semesters, helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully available to the public online, became the showcase class for GitHub’s Education program.",
             "url": "https://advanced-js.github.io/syllabus/"
           },
           {
@@ -207,8 +257,10 @@
           "JavaScript",
           "NodeJS",
           "PostgreSQL",
+          "public speaking",
+          "Ruby on Rails",
           "Ruby",
-          "Ruby on Rails"
+          "teaching"
         ]
       },
       {
@@ -217,7 +269,15 @@
         "title": "Instructor",
         "description": "Taught JavaScript as part of the Front-End + Rails curriculum.",
         "start_date": "2013-02",
-        "end_date": "2013-03"
+        "end_date": "2013-03",
+        "skills": [
+          "CSS",
+          "HTML",
+          "JavaScript",
+          "jQuery",
+          "public speaking",
+          "teaching"
+        ]
       }
     ],
     "dance": [
