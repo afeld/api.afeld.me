@@ -45,7 +45,7 @@
       {
         "organization": "18F",
         "url": "https://18f.gsa.gov",
-        "title": "Innovation Specialist",
+        "title": "Innovation Specialist (GS-15)",
         "description": "Federal employee, working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in web development, devops, and open source. Participated and led multiple user research sessions.",
         "start_date": "2014-10-20",
         "end_date": null,
@@ -68,7 +68,7 @@
           },
           {
             "group": "CIO Liaison",
-            "title": "",
+            "title": null,
             "description": "Work with GSA’s Office of the Chief Information Officer to ensure 18F is getting the support it needs while maintaining compliance. Regularly negotiate with the GSA Security team to find compromise between security, compliance, and operational efficiency.",
             "url": null,
             "skills": []

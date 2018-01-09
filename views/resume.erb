@@ -25,7 +25,7 @@
     </div>
     <div class="grid-wrap listings employment">
       <div class="section">
-        <h1>Experience</h1>
+        <h1>Experience includes</h1>
       </div>
       <div class="content">
         <% PROFILE_HSH['employment']['coding'].each do |job| %>
@@ -40,12 +40,17 @@
               <ul class="responsibilities">
                 <% job['responsibilities'].each do |resp| %>
                   <li>
-                    <span class="title"><%= [resp['group'], resp['title']].compact.join(' — ') %></span>: <%= resp['description'] %>
-                    <% if resp['skills'].any? %>
-                      <ul>
+                    <a href="<%= resp['url'] %>" class="title"><%= [resp['group'], resp['title']].compact.join(' — ') %></a>: <%= resp['description'] %>
+                    <ul>
+                      <% if resp['url'] %>
+                        <li class="url">
+                          <a href="<%= resp['url'] %>"><%= url(resp['url']) %></a>
+                        </li>
+                      <% end %>
+                      <% if resp['skills'].any? %>
                         <li><em>Skills used:</em> <%= resp['skills'].join(', ') %></li>
-                      </ul>
-                    <% end %>
+                      <% end %>
+                    </ul>
                   </li>
                 <% end %>
               </ul>

@@ -133,7 +133,12 @@ a {
     }
   }
 
-  .listing .url {
-    display: block;
+  .listing {
+    .url {
+      display: block;
+    }
+    li.url {
+      display: list-item;
+    }
   }
 }
