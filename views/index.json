@@ -117,7 +117,7 @@
             "group": null,
             "title": "Engineering Facilitator",
             "description": "Supervising a team of engineers, providing mentorship, soliciting peer reviews, mediating conflicts, etc.",
-            "url": ""
+            "url": null
           }
         ]
       },
@@ -144,7 +144,7 @@
       },
       {
         "organization": "Artsy",
-        "url": "https://artsy.net",
+        "url": "https://www.artsy.net/",
         "title": "Software Engineer (Contract)",
         "description": "Full-stack web development on the site and APIs, as well as building an open source stats reporting framework.",
         "start_date": "2013-05",
@@ -163,7 +163,7 @@
       },
       {
         "organization": "Jux",
-        "url": "https://jux.com",
+        "url": null,
         "title": "Senior Web Developer",
         "description": "As the only full-stack web developer at the small (now defunct) startup, touched all pieces of the blogging application, including social features and integrations of the site, layout templating, navigation, the image processing pipeline, and much of the API, as well as helping guide vision for the product.",
         "start_date": "2011-01",
@@ -183,7 +183,7 @@
       },
       {
         "organization": "American Express Publishing",
-        "url": "http://www.amexpub.com",
+        "url": null,
         "title": "Web Developer (Contract)",
         "description": "Contractor building content management tools for FoodAndWine.com, as well as promotional micro sites for advertising partners.",
         "start_date": "2010-08",
@@ -480,7 +480,7 @@
       "title": "cloud.gov with Aidan Feldman",
       "event": "Software Engineering Daily podcast",
       "date": "2016-06-26",
-      "url": "http://softwareengineeringdaily.com/2016/06/26/cloud-gov-with-aidan-feldman/"
+      "url": "https://softwareengineeringdaily.com/2016/06/26/cloud-gov-with-aidan-feldman/"
     },
     {
       "title": "DevOps at Large: Modernizing apps and infrastructure in the federal government",
@@ -514,7 +514,7 @@
       "title": "Interview about Hacker Hours",
       "event": "CodeNewbie Podcast",
       "date": "2015-06-01",
-      "url": "http://www.codenewbie.org/podcast/hacker-hours"
+      "url": "https://www.codenewbie.org/podcast/hacker-hours"
     },
     {
       "title": "Git, Graphically",
@@ -626,25 +626,25 @@
       "title": "Animation with HTML5: An Overview",
       "description": "A lightning talk about ways to do animation in HTML5 and CSS3.",
       "date": "2010-12-30",
-      "url": "http://www.scribd.com/doc/46086316/Animation-with-HTML5-An-Overview"
+      "url": "https://www.scribd.com/doc/46086316/animation-with-html5-an-overview"
     },
     {
       "title": "Plano Real: How Fake Money Saved Brazil",
       "description": "A lightning talk about Plano Real, a plan which stabilized the Brazilian economy in the mid-1990's.",
       "date": "2010-12-30",
-      "url": "http://www.scribd.com/doc/46086444/Plano-Real-How-Fake-Money-Saved-Brazil"
+      "url": "https://www.scribd.com/doc/46086444/plano-real-how-fake-money-saved-brazil"
     },
     {
       "title": "Ruby Fibers",
       "description": "A lightning talk about Ruby Fibers, a feature added in v1.9 that adds \"green thread\" support.",
       "date": "2010-12-30",
-      "url": "http://www.scribd.com/doc/46086446/Ruby-Fibers"
+      "url": "https://www.scribd.com/presentation/46086446/Ruby-Fibers"
     },
     {
       "title": "Firesheep!",
       "description": "A lightning talk about Firesheep, a Firefox plugin for doing \"sidejacking\" (a.k.a. breaking into other people's accounts).",
       "date": "2010-12-30",
-      "url": "http://www.scribd.com/doc/46086447/firesheep"
+      "url": "https://www.scribd.com/doc/46086447/firesheep"
     }
   ],
   "writeups": [
@@ -658,7 +658,7 @@
       "title": "Here Are the Most and Least Popular Citi Bike Stations in New York City",
       "publisher": "Nerve",
       "date": "2014-06-19",
-      "url": "http://www.nerve.com/infographics/most-popular-least-popular-citibike-stations-new-york-city"
+      "url": "https://web.archive.org/web/20151027110119/http://www.nerve.com/infographics/most-popular-least-popular-citibike-stations-new-york-city"
     },
     {
       "title": "Campus Party: Hacker do GitHub explica crescimento da 'rede social' de desenvolvedores",
@@ -670,25 +670,25 @@
       "title": "Já estamos no quarto e penúltimo dia de conteúdos da Campus Party Brasil 2014!",
       "publisher": "Campus Party blog",
       "date": "2014-01-31",
-      "url": "http://blog.campus-party.com.br/post/75170721637/ja-estamos-no-quarto-e-penultimo-dia-de-conteudos"
+      "url": "http://blog.campus-party.com.br/post/75170721637/j%C3%A1-estamos-no-quarto-e-pen%C3%BAltimo-dia-de-conte%C3%BAdos"
     },
     {
       "title": "The Man of the (Hacker) Hour",
       "publisher": "Gilt Tech blog",
       "date": "2013-08-22",
-      "url": "http://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour"
+      "url": "http://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour/"
     },
     {
       "title": "Hacker Hours with Aidan Feldman",
       "publisher": "Desmond Rawls blog",
       "date": "2013-08-10",
-      "url": "http://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
+      "url": "https://web.archive.org/web/20150204160224/http://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
       "publisher": "The Next Web",
       "date": "2012-05-14",
-      "url": "https://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code/"
+      "url": "https://tnw.to/1EOo7"
     },
     {
       "title": "Nerds Ditch Grammys for New York's First Music Hackday",
@@ -710,7 +710,7 @@
       "type": "blog",
       "publisher": "One Month",
       "date": "2015-09-17",
-      "url": "http://learn.onemonth.com/what-is-jquery"
+      "url": "https://web.archive.org/web/20170508052915/http://learn.onemonth.com:80/what-is-jquery"
     },
     {
       "title": "How To Welcome New Coders To A Civic Hackathon",
@@ -724,7 +724,7 @@
       "type": "tutorial",
       "publisher": "Thinkful",
       "date": "2014-10-24",
-      "url": "http://www.thinkful.com/learn/ruby-on-rails-tutorial/"
+      "url": "https://www.thinkful.com/learn/ruby-on-rails-tutorial/"
     },
     {
       "title": "Advanced JS class information for teachers",
@@ -745,7 +745,7 @@
       "type": "book",
       "publisher": "Backstop Media",
       "date": "2013-04-10",
-      "url": "http://bleedingedgepress.com/our-books/backbone-js/"
+      "url": "https://bleedingedgepress.com/backbone-js/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",

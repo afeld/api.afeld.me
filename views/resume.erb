@@ -32,7 +32,11 @@
           <div class="listing">
             <h2><%= job.title %></h2>
             <h2>
-              <a href="<%= job.url %>"><%= job.organization %></a>
+              <% if job.url %>
+                <a href="<%= job.url %>"><%= job.organization %></a>
+              <% else %>
+                <%= job.organization %>
+              <% end %>
             </h2>
             <div class="dates"><%= date_range(job) %></div>
             <p><%= job.description %></p>
@@ -41,7 +45,13 @@
                 <% job.responsibilities.each do |resp| %>
                   <li>
                     <p>
-                      <a href="<%= resp.url %>" class="title"><%= [resp.group, resp.title].compact.join(' — ') %></a>: <%= resp.description %>
+                      <% title = [resp.group, resp.title].compact.join(' — ') %>
+                      <% if resp['url'] %>
+                        <a href="<%= resp.url %>" class="title"><%= title %></a>:
+                      <% else %>
+                        <span class="title"><%= title %></span>:
+                      <% end %>
+                      <%= resp.description %>
                       <% if resp['url'] %>
                         <span class="url">
                           <a href="<%= resp.url %>"><%= url(resp.url) %></a>
