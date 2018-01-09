@@ -19,8 +19,10 @@ configure do
 end
 
 PROFILE_STR = File.read('./views/index.json').freeze
+# workaround for https://github.com/adsteel/hash_dot/issues/18
+Hash.use_dot_syntax = true
 PROFILE_HSH = JSON.parse(PROFILE_STR).freeze
-JOBS = (PROFILE_HSH['employment']['coding'] + PROFILE_HSH['employment']['teaching']).sort_by { |j| j['start_date'] }.reverse
+JOBS = (PROFILE_HSH.employment.coding + PROFILE_HSH.employment.teaching).sort_by(&:start_date).reverse
 
 helpers do
   def to_html(val)
@@ -67,8 +69,8 @@ helpers do
   end
 
   def date_range(obj)
-    start_date = date(obj['start_date'])
-    end_date = obj['end_date'] ? date(obj['end_date']) : 'present'
+    start_date = date(obj.start_date)
+    end_date = obj['end_date'] ? date(obj.end_date) : 'present'
     "#{start_date} — #{end_date}"
   end
 

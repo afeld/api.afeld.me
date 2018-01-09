@@ -9,17 +9,17 @@
   <body>
     <div class="grid-wrap meta">
       <div class="section">
-        <h1 class="name"><%= PROFILE_HSH['name'] %></h1>
+        <h1 class="name"><%= PROFILE_HSH.name %></h1>
       </div>
       <div class="content">
         <div class="content-inner">
           <p class="url">
-            <a href="mailto:<%= PROFILE_HSH['email'] %>"><%= PROFILE_HSH['email'] %></a>
+            <a href="mailto:<%= PROFILE_HSH.email %>"><%= PROFILE_HSH.email %></a>
           </p>
           <p class="url">
-            <a href="<%= PROFILE_HSH['url'] %>"><%= url(PROFILE_HSH['url']) %></a>
+            <a href="<%= PROFILE_HSH.url %>"><%= url(PROFILE_HSH.url) %></a>
           </p>
-          <p><%= PROFILE_HSH['location']['city'] %>, <%= PROFILE_HSH['location']['state'] %></p>
+          <p><%= PROFILE_HSH.location.city %>, <%= PROFILE_HSH.location.state %></p>
         </div>
       </div>
     </div>
@@ -30,25 +30,25 @@
       <div class="content">
         <% JOBS.each do |job| %>
           <div class="listing">
-            <h2><%= job['title'] %></h2>
+            <h2><%= job.title %></h2>
             <h2>
-              <a href="<%= job['url'] %>"><%= job['organization'] %></a>
+              <a href="<%= job.url %>"><%= job.organization %></a>
             </h2>
             <p><%= date_range(job) %></p>
-            <p><%= job['description'] %></p>
+            <p><%= job.description %></p>
             <% if job['responsibilities']  %>
               <ul class="responsibilities">
-                <% job['responsibilities'].each do |resp| %>
+                <% job.responsibilities.each do |resp| %>
                   <li>
-                    <a href="<%= resp['url'] %>" class="title"><%= [resp['group'], resp['title']].compact.join(' — ') %></a>: <%= resp['description'] %>
+                    <a href="<%= resp.url %>" class="title"><%= [resp.group, resp.title].compact.join(' — ') %></a>: <%= resp.description %>
                     <ul>
-                      <% if resp['url'] %>
+                      <% if resp.url %>
                         <li class="url">
-                          <a href="<%= resp['url'] %>"><%= url(resp['url']) %></a>
+                          <a href="<%= resp.url %>"><%= url(resp.url) %></a>
                         </li>
                       <% end %>
-                      <% if resp['skills'].any? %>
-                        <li><em>Skills used:</em> <%= resp['skills'].join(', ') %></li>
+                      <% if resp.skills.any? %>
+                        <li><em>Skills used:</em> <%= resp.skills.join(', ') %></li>
                       <% end %>
                     </ul>
                   </li>
@@ -65,12 +65,12 @@
       </div>
       <div class="content">
         <%# exclude high school %>
-        <% PROFILE_HSH['education'][0...-1].each do |edu| %>
+        <% PROFILE_HSH.education[0...-1].each do |edu| %>
           <div class="listing">
-            <h2><%= edu['school'] %>, <%= edu['location']['city'] %>, <%= edu['location']['state'] %></h2>
+            <h2><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h2>
             <p><%= date_range(edu) %></p>
-            <% edu['degrees'].each do |degree| %>
-              <p><%= degree['title'] %> — <%= degree['major'] %></p>
+            <% edu.degrees.each do |degree| %>
+              <p><%= degree.title %> — <%= degree.major %></p>
             <% end %>
           </div>
         <% end %>
@@ -81,15 +81,15 @@
         <h1>Talks</h1>
       </div>
       <div class="content">
-        <% PROFILE_HSH['talks'].each do |talk| %>
+        <% PROFILE_HSH.talks.each do |talk| %>
           <div class="listing">
             <h2>
-              <a href="<%= talk['url'] %>"><%= talk['title'] %></a>
+              <a href="<%= talk.url %>"><%= talk.title %></a>
             </h2>
-            <p><%= date(talk['date']) %></p>
+            <p><%= date(talk.date) %></p>
             <!-- this only displayed when printing -->
             <p class="url">
-              <a href="<%= talk['url'] %>"><%= url(talk['url']) %></a>
+              <a href="<%= talk.url %>"><%= url(talk.url) %></a>
             </p>
           </div>
         <% end %>
@@ -100,18 +100,18 @@
         <h1>Publications</h1>
       </div>
       <div class="content">
-        <% PROFILE_HSH['writing'].each do |writing| %>
+        <% PROFILE_HSH.writing.each do |writing| %>
           <div class="listing">
             <h2>
-              <a href="<%= writing['url'] %>"><%= writing['title'] %></a>
+              <a href="<%= writing.url %>"><%= writing.title %></a>
             </h2>
-            <% if writing['publisher'] != 'self' %>
-              <h2><%= writing['publisher'] %></h2>
+            <% if writing.publisher != 'self' %>
+              <h2><%= writing.publisher %></h2>
             <% end %>
-            <p><%= date(writing['date']) %></p>
+            <p><%= date(writing.date) %></p>
             <!-- this only displayed when printing -->
             <p class="url">
-              <a href="<%= writing['url'] %>"><%= url(writing['url']) %></a>
+              <a href="<%= writing.url %>"><%= url(writing.url) %></a>
             </p>
           </div>
         <% end %>
@@ -122,16 +122,16 @@
         <h1>Writeups</h1>
       </div>
       <div class="content">
-        <% PROFILE_HSH['writeups'].each do |writeup| %>
+        <% PROFILE_HSH.writeups.each do |writeup| %>
           <div class="listing">
             <h2>
-              <a href="<%= writeup['url'] %>"><%= writeup['title'] %></a>
+              <a href="<%= writeup.url %>"><%= writeup.title %></a>
             </h2>
-            <h2><%= writeup['publisher'] %></h2>
-            <p><%= date(writeup['date']) %></p>
+            <h2><%= writeup.publisher %></h2>
+            <p><%= date(writeup.date) %></p>
             <!-- this only displayed when printing -->
             <p class="url">
-              <a href="<%= writeup['url'] %>"><%= url(writeup['url']) %></a>
+              <a href="<%= writeup.url %>"><%= url(writeup.url) %></a>
             </p>
           </div>
         <% end %>
