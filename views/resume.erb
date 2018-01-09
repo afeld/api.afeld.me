@@ -13,13 +13,13 @@
       </div>
       <div class="content">
         <div class="content-inner">
-          <p class="url">
+          <div class="url">
             <a href="mailto:<%= PROFILE_HSH.email %>"><%= PROFILE_HSH.email %></a>
-          </p>
-          <p class="url">
+          </div>
+          <div class="url">
             <a href="<%= PROFILE_HSH.url %>"><%= url(PROFILE_HSH.url) %></a>
-          </p>
-          <p><%= PROFILE_HSH.location.city %>, <%= PROFILE_HSH.location.state %></p>
+          </div>
+          <div><%= PROFILE_HSH.location.city %>, <%= PROFILE_HSH.location.state %></div>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
             <h2>
               <a href="<%= job.url %>"><%= job.organization %></a>
             </h2>
-            <p><%= date_range(job) %></p>
+            <div><%= date_range(job) %></div>
             <p><%= job.description %></p>
             <% if job['responsibilities']  %>
               <ul class="responsibilities">
@@ -53,7 +53,7 @@
               </ul>
             <% end %>
             <% if job['skills'] && job.skills.any? %>
-              <p><em>Skills/tools:</em> <%= job.skills.join(', ') %></p>
+              <div><em>Skills/tools:</em> <%= job.skills.join(', ') %></div>
             <% end %>
           </div>
         <% end %>
@@ -68,10 +68,12 @@
         <% PROFILE_HSH.education[0...-1].each do |edu| %>
           <div class="listing">
             <h2><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h2>
-            <p><%= date_range(edu) %></p>
-            <% edu.degrees.each do |degree| %>
-              <p><%= degree.title %> <%= degree.major %></p>
-            <% end %>
+            <div><%= date_range(edu) %></div>
+            <ul>
+              <% edu.degrees.each do |degree| %>
+                <li><%= degree.title %> <%= degree.major %></li>
+              <% end %>
+            </ul>
           </div>
         <% end %>
       </div>
@@ -87,7 +89,7 @@
               <a href="<%= talk.url %>"><%= talk.title %></a>
             </h2>
             <h2><%= talk['event'] %></h2>
-            <p><%= date(talk.date) %></p>
+            <div><%= date(talk.date) %></div>
             <p><%= talk['description'] %></p>
             <!-- this only displayed when printing -->
             <p class="url">
@@ -110,11 +112,11 @@
             <% if writing.publisher != 'self' %>
               <h2><%= writing.publisher %></h2>
             <% end %>
-            <p><%= date(writing.date) %></p>
+            <div><%= date(writing.date) %></div>
             <!-- this only displayed when printing -->
-            <p class="url">
+            <div class="url">
               <a href="<%= writing.url %>"><%= url(writing.url) %></a>
-            </p>
+            </div>
           </div>
         <% end %>
       </div>
@@ -130,11 +132,11 @@
               <a href="<%= writeup.url %>"><%= writeup.title %></a>
             </h2>
             <h2><%= writeup.publisher %></h2>
-            <p><%= date(writeup.date) %></p>
+            <div><%= date(writeup.date) %></div>
             <!-- this only displayed when printing -->
-            <p class="url">
+            <div class="url">
               <a href="<%= writeup.url %>"><%= url(writeup.url) %></a>
-            </p>
+            </div>
           </div>
         <% end %>
       </div>
