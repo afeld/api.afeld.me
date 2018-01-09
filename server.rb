@@ -1,9 +1,11 @@
-require 'sinatra/respond_with'
 require 'json'
+require 'sinatra/respond_with'
 
 if development?
   require 'sinatra/reloader'
   enable :reloader
+elsif test?
+  enable :show_exceptions
 end
 
 enable :logging
@@ -18,7 +20,8 @@ configure do
   set :environment, environment
 end
 
-PROFILE_STR = File.read('./views/index.json').freeze
+path = File.expand_path('views/index.json', __dir__)
+PROFILE_STR = File.read(path).freeze
 # workaround for https://github.com/adsteel/hash_dot/issues/18
 Hash.use_dot_syntax = true
 PROFILE_HSH = JSON.parse(PROFILE_STR).freeze

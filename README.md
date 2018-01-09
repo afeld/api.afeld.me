@@ -1,4 +1,4 @@
-# Aidan Feldman API
+# Aidan Feldman API [![CircleCI](https://circleci.com/gh/afeld/api.afeld.me.svg?style=svg)](https://circleci.com/gh/afeld/api.afeld.me)
 
 ## To run locally
 
