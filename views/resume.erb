@@ -86,7 +86,9 @@
             <h2>
               <a href="<%= talk.url %>"><%= talk.title %></a>
             </h2>
+            <h2><%= talk['event'] %></h2>
             <p><%= date(talk.date) %></p>
+            <p><%= talk['description'] %></p>
             <!-- this only displayed when printing -->
             <p class="url">
               <a href="<%= talk.url %>"><%= url(talk.url) %></a>

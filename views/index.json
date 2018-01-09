@@ -383,21 +383,25 @@
   "talks": [
     {
       "title": "Getting Started Contributing to Open Source",
+      "event": "Dev Bootcamp",
       "date": "2016-10-25",
       "url": "https://www.youtube.com/watch?v=HzlpCwsNLas"
     },
     {
       "title": "OpenControl Demo & Quickstart",
+      "event": "OpenControl Symposium",
       "date": "2016-10-20",
       "url": "http://open-control.org/event2016/#opencontrol-demo-quickstart"
     },
     {
-      "title": "Rewiring Government podcast: cloud.gov and the new marriage of policy and technology in government",
+      "title": "cloud.gov and the new marriage of policy and technology in government",
+      "event": "Rewiring Government podcast",
       "date": "2016-09-14",
       "url": "https://www.dobt.co/blog/interview-aidan-feldman/"
     },
     {
       "title": "Search for Static Sites",
+      "event": "The New Dynamic meetup",
       "date": "2016-08-04",
       "url": "https://www.thenewdynamic.org/event/2016/08/04/search-for-static-sites-by-aidan-feldman/"
     },
@@ -408,16 +412,19 @@
     },
     {
       "title": "Everything I Think I Understand About IT Compliance",
+      "event": "DigitalGov",
       "date": "2016-07-25",
       "url": "https://www.youtube.com/watch?v=-Nc4GXPxpQg"
     },
     {
-      "title": "Software Engineering Daily podcast: cloud.gov with Aidan Feldman",
+      "title": "cloud.gov with Aidan Feldman",
+      "event": "Software Engineering Daily podcast",
       "date": "2016-06-26",
       "url": "http://softwareengineeringdaily.com/2016/06/26/cloud-gov-with-aidan-feldman/"
     },
     {
       "title": "DevOps at Large: Modernizing apps and infrastructure in the federal government",
+      "event": "O'Reilly OSCON",
       "date": "2016-05-18",
       "url": "https://www.youtube.com/watch?v=X2Drua-AEBg"
     },
@@ -433,16 +440,19 @@
     },
     {
       "title": "E Pluribus Unum: Building better software in the US government",
+      "event": "Pivotal New York Tech Talks meetup",
       "date": "2015-07-14",
       "url": "http://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae"
     },
     {
-      "title": "Interview on Thoughtbot's Giant Robots podcast: Open by Default",
+      "title": "Open by Default",
+      "event": "Thoughtbot's Giant Robots podcast",
       "date": "2015-06-15",
       "url": "http://giantrobots.fm/151"
     },
     {
-      "title": "Interview about Hacker Hours on the CodeNewbie Podcast",
+      "title": "Interview about Hacker Hours",
+      "event": "CodeNewbie Podcast",
       "date": "2015-06-01",
       "url": "http://www.codenewbie.org/podcast/hacker-hours"
     },
@@ -458,21 +468,25 @@
     },
     {
       "title": "Magickly, Mustachio, & Stateless APIs",
+      "event": "Code Genius meetup",
       "date": "2015-02-26",
       "url": "https://www.youtube.com/watch?v=X3VdlBDCJSA"
     },
     {
       "title": "Intro to Backbone Unit Testing",
+      "event": "New York JavaScript meetup",
       "date": "2014-10-30",
-      "url": "http://www.youtube.com/watch?v=37lBmGVRVsQ"
+      "url": "https://www.youtube.com/watch?v=vaq_mirZ0UA"
     },
     {
       "title": "How GitHub Does Collaboration",
+      "event": "Campus Party Brazil keynote",
       "date": "2013-11-20",
       "url": "https://github.com/afeld/gh_collab"
     },
     {
       "title": "Git & GitHub, Up & Running",
+      "event": "Campus Party Brazil workshop",
       "date": "2013-10-22",
       "url": "https://gist.github.com/afeld/7096908"
     },
@@ -493,6 +507,7 @@
     },
     {
       "title": "Test to Learn",
+      "event": "Flatiron School guest lecture",
       "date": "2013-06-20",
       "url": "http://afeld.github.io/test_to_learn/"
     },
@@ -522,14 +537,15 @@
       "url": "https://github.com/afeld/spaa"
     },
     {
-      "title": "Seven Languages is Seven Months: Ruby",
+      "title": "Ruby",
+      "event": "Seven Languages in Seven Months meetup",
       "date": "2012-10-24",
       "url": "https://gist.github.com/afeld/3944262"
     },
     {
       "title": "What Developers Want",
       "description": "Talk and panelist on how to make APIs developer-friendly.  I did a slow jam.",
-      "event": "Business of APIs Conference 2012",
+      "event": "Business of APIs Conference",
       "date": "2012-10-17",
       "url": "http://afeld.me/nerdery/816975"
     },
