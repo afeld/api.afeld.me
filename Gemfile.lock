@@ -5,11 +5,14 @@ GEM
     concurrent-ruby (1.0.5)
     ffi (1.9.18)
     hash_dot (2.2.0)
-    multi_json (1.12.2)
+    minitest (5.11.1)
+    multi_json (1.13.0)
     mustermann (1.0.1)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -40,6 +43,8 @@ PLATFORMS
 
 DEPENDENCIES
   hash_dot
+  minitest
+  rack-test
   sass
   sinatra
   sinatra-contrib
