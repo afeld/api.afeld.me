@@ -47,13 +47,13 @@
                           <a href="<%= resp.url %>"><%= url(resp.url) %></a>
                         </li>
                       <% end %>
-                      <% if resp.skills.any? %>
-                        <li><em>Skills used:</em> <%= resp.skills.join(', ') %></li>
-                      <% end %>
                     </ul>
                   </li>
                 <% end %>
               </ul>
+            <% end %>
+            <% if job['skills'] && job.skills.any? %>
+              <p><em>Skills/tools:</em> <%= job.skills.join(', ') %></p>
             <% end %>
           </div>
         <% end %>
@@ -70,7 +70,7 @@
             <h2><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h2>
             <p><%= date_range(edu) %></p>
             <% edu.degrees.each do |degree| %>
-              <p><%= degree.title %> — <%= degree.major %></p>
+              <p><%= degree.title %> <%= degree.major %></p>
             <% end %>
           </div>
         <% end %>

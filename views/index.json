@@ -49,108 +49,74 @@
         "description": "Federal employee, working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in web development, devops, and open source. Participated and led multiple user research sessions.",
         "start_date": "2014-10-20",
         "end_date": null,
+        "skills": [
+          "Amazon Web Services (AWS)",
+          "Ansible",
+          "CSS",
+          "Git",
+          "GitHub",
+          "Go",
+          "HTML",
+          "JavaScript",
+          "Jekyll",
+          "Jenkins",
+          "management",
+          "Packer",
+          "PostgreSQL",
+          "public speaking",
+          "Python",
+          "Ruby on Rails",
+          "Ruby",
+          "Terraform"
+        ],
         "responsibilities": [
           {
             "group": "DevSecOps Working Group",
             "title": "Technical Lead",
             "description": "Helping GSA systems migrate to the cloud by developing reusable components and processes around logging, monitoring, deployment, operating system hardening, automated testing, etc. This helps systems to incorporate operational best practices, while streamlining their security assessments.",
-            "url": "https://tech.gsa.gov/guides/dev_sec_ops_guide/",
-            "skills": [
-              "Amazon Web Services (AWS)",
-              "Ansible",
-              "Git",
-              "GitHub",
-              "Jenkins",
-              "Packer",
-              "Python",
-              "Terraform"
-            ]
+            "url": "https://tech.gsa.gov/guides/dev_sec_ops_guide/"
           },
           {
             "group": "CIO Liaison",
             "title": null,
             "description": "Work with GSA’s Office of the Chief Information Officer to ensure 18F is getting the support it needs while maintaining compliance. Regularly negotiate with the GSA Security team to find compromise between security, compliance, and operational efficiency.",
-            "url": null,
-            "skills": []
+            "url": null
           },
           {
             "group": "Project Boise",
             "title": "Project Lead",
             "description": "Leading a team to research software security compliance (Authority to Operate, or ATO) processes across the federal government, to understand how they vary across agencies, and how they can be streamlined. Managed budget of $165,000, staff, and project direction, while interacting with Chief Information Officers (CIOs), Chief Information Security Officers (CISOs), the Nation Institute of Standards and Technology (NIST), vendors, the White House, and more.",
-            "url": "https://boise.18f.gov",
-            "skills": [
-              "CSS",
-              "Git",
-              "GitHub",
-              "HTML",
-              "JavaScript",
-              "Jekyll"
-            ]
+            "url": "https://boise.18f.gov"
           },
           {
             "group": "ATO Sprinting/Streamlining Team",
             "title": null,
             "description": "Helped 18F projects achieve FISMA compliance by writing documentation and providing hands-on assistance with improving their application security and completing compliance documentation, while ensuring devops best practices. We were able to reduce the time to ATO from six months to one.",
-            "url": "https://before-you-ship.18f.gov",
-            "skills": [
-              "CSS",
-              "Git",
-              "GitHub",
-              "Go",
-              "HTML",
-              "Jekyll",
-              "OWASP ZAP"
-            ]
+            "url": "https://before-you-ship.18f.gov"
           },
           {
             "group": "cloud.gov",
             "title": null,
             "description": "cloud.gov: Helped build a Platform as a Service for the federal government, specifically focusing on reducing friction to adoption. Wrote user documentation, built services, and provided training.",
-            "url": "https://cloud.gov",
-            "skills": [
-              "CSS",
-              "Git",
-              "GitHub",
-              "Go",
-              "HTML",
-              "Jekyll"
-            ]
+            "url": "https://cloud.gov"
           },
           {
             "group": "OpenControl / Compliance Masonry",
             "title": null,
             "description": "Helped create tooling and community around improving the security compliance process, by encouraging structured compliance data, reuse, and automation.",
-            "url": "http://open-control.org",
-            "skills": [
-              "Git",
-              "GitHub",
-              "Go"
-            ]
+            "url": "http://open-control.org"
           },
           {
             "group": "C2",
             "title": "Technical Lead",
             "description": "Built a business process automation tool for streamlining purchase approvals, while providing better auditing capabilities.",
-            "url": "https://github.com/18F/C2",
-            "skills": [
-              "CSS",
-              "Git",
-              "GitHub",
-              "HTML",
-              "JavaScript",
-              "Ruby",
-              "Ruby on Rails",
-              "PostgreSQL"
-            ]
+            "url": "https://github.com/18F/C2"
           },
           {
             "group": null,
             "title": "Engineering Facilitator",
             "description": "Supervising a team of engineers, providing mentorship, soliciting peer reviews, mediating conflicts, etc.",
-            "url": "",
-            "skills": [
-              "management"
-            ]
+            "url": ""
           }
         ]
       },
@@ -203,44 +169,47 @@
         "description": null,
         "start_date": "2012-06",
         "end_date": "2015-05",
+        "skills": [
+          "CSS",
+          "Git",
+          "GitHub",
+          "HTML",
+          "JavaScript",
+          "NodeJS"
+        ],
         "responsibilities": [
           {
             "group": "School of Professional Studies",
             "title": "Advanced JavaScript",
             "description": "Helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development.",
-            "url": "https://advanced-js.github.io/syllabus/",
-            "skills": [
-              "CSS",
-              "Git",
-              "GitHub",
-              "HTML",
-              "JavaScript",
-              "NodeJS"
-            ]
+            "url": "https://advanced-js.github.io/syllabus/"
           },
           {
             "group": "Interactive Telecommunications Program (ITP)",
             "title": "Building for Learning",
-            "description": "A graduate class focused on building educational tools while learning front-end web development.",
-            "url": "https://github.com/bfl-itp/syllabus",
-            "skills": [
-              "CSS",
-              "Git",
-              "GitHub",
-              "HTML",
-              "JavaScript",
-              "NodeJS"
-            ]
+            "description": "Was asked to create and teach an interdisciplinary graduate-level course around building interactive educational tools, while also covering front-end web development. In addition to rapid prototyping of physical and digital learning materials, also brought in experts from the educational technology to give students an understanding of taking projects from concept to product.",
+            "url": "https://github.com/bfl-itp/syllabus"
           }
         ]
       },
       {
-        "organization": "City University of New York",
+        "organization": "City University of New York (CUNY)",
         "url": "https://github.com/cuny-nytech/syllabus",
         "title": "Instructor",
-        "description": "Teaching a practical developer skills class to CS seniors, covering version control, web development, resume writing, etc.",
+        "description": "Designed curriculum and was lead instructor for the NYTech program, which helped seniors and graduate students build practical skills necessary for joining startups based in New York City, such as version control, web development, and resume writing. The culminating project was a class-wide collaboration to build a new site for a non-profit.",
         "start_date": "2014-09",
-        "end_date": "2015-05"
+        "end_date": "2015-05",
+        "skills": [
+          "CSS",
+          "Git",
+          "GitHub",
+          "HTML",
+          "JavaScript",
+          "NodeJS",
+          "PostgreSQL",
+          "Ruby",
+          "Ruby on Rails"
+        ]
       },
       {
         "organization": "General Assembly",
