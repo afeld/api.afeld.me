@@ -66,6 +66,15 @@ a {
   }
 }
 
+.responsibilities {
+  li {
+    margin: 0.5rem 0;
+  }
+  .title {
+    font-weight: bold;
+  }
+}
+
 // large screen - two columns
 @media print, (min-width: $column-break) {
   .name {

@@ -46,9 +46,113 @@
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist",
-        "description": "Building open source tools and apps for the federal government.",
+        "description": "Federal employee, working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in web development, devops, and open source. Participated and led multiple user research sessions.",
         "start_date": "2014-10-20",
-        "end_date": null
+        "end_date": null,
+        "responsibilities": [
+          {
+            "group": "DevSecOps Working Group",
+            "title": "Technical Lead",
+            "description": "Helping GSA systems migrate to the cloud by developing reusable components and processes around logging, monitoring, deployment, operating system hardening, automated testing, etc. This helps systems to incorporate operational best practices, while streamlining their security assessments.",
+            "url": "https://tech.gsa.gov/guides/dev_sec_ops_guide/",
+            "skills": [
+              "Amazon Web Services (AWS)",
+              "Ansible",
+              "Git",
+              "GitHub",
+              "Jenkins",
+              "Packer",
+              "Python",
+              "Terraform"
+            ]
+          },
+          {
+            "group": "CIO Liaison",
+            "title": "",
+            "description": "Work with GSA’s Office of the Chief Information Officer to ensure 18F is getting the support it needs while maintaining compliance. Regularly negotiate with the GSA Security team to find compromise between security, compliance, and operational efficiency.",
+            "url": null,
+            "skills": []
+          },
+          {
+            "group": "Project Boise",
+            "title": "Project Lead",
+            "description": "Leading a team to research software security compliance (Authority to Operate, or ATO) processes across the federal government, to understand how they vary across agencies, and how they can be streamlined. Managed budget of $165,000, staff, and project direction, while interacting with Chief Information Officers (CIOs), Chief Information Security Officers (CISOs), the Nation Institute of Standards and Technology (NIST), vendors, the White House, and more.",
+            "url": "https://boise.18f.gov",
+            "skills": [
+              "CSS",
+              "Git",
+              "GitHub",
+              "HTML",
+              "JavaScript",
+              "Jekyll"
+            ]
+          },
+          {
+            "group": "ATO Sprinting/Streamlining Team",
+            "title": null,
+            "description": "Helped 18F projects achieve FISMA compliance by writing documentation and providing hands-on assistance with improving their application security and completing compliance documentation, while ensuring devops best practices. We were able to reduce the time to ATO from six months to one.",
+            "url": "https://before-you-ship.18f.gov",
+            "skills": [
+              "CSS",
+              "Git",
+              "GitHub",
+              "Go",
+              "HTML",
+              "Jekyll",
+              "OWASP ZAP"
+            ]
+          },
+          {
+            "group": "cloud.gov",
+            "title": null,
+            "description": "cloud.gov: Helped build a Platform as a Service for the federal government, specifically focusing on reducing friction to adoption. Wrote user documentation, built services, and provided training.",
+            "url": "https://cloud.gov",
+            "skills": [
+              "CSS",
+              "Git",
+              "GitHub",
+              "Go",
+              "HTML",
+              "Jekyll"
+            ]
+          },
+          {
+            "group": "OpenControl / Compliance Masonry",
+            "title": null,
+            "description": "Helped create tooling and community around improving the security compliance process, by encouraging structured compliance data, reuse, and automation.",
+            "url": "http://open-control.org",
+            "skills": [
+              "Git",
+              "GitHub",
+              "Go"
+            ]
+          },
+          {
+            "group": "C2",
+            "title": "Technical Lead",
+            "description": "Built a business process automation tool for streamlining purchase approvals, while providing better auditing capabilities.",
+            "url": "https://github.com/18F/C2",
+            "skills": [
+              "CSS",
+              "Git",
+              "GitHub",
+              "HTML",
+              "JavaScript",
+              "Ruby",
+              "Ruby on Rails",
+              "PostgreSQL"
+            ]
+          },
+          {
+            "group": null,
+            "title": "Engineering Facilitator",
+            "description": "Supervising a team of engineers, providing mentorship, soliciting peer reviews, mediating conflicts, etc.",
+            "url": "",
+            "skills": [
+              "management"
+            ]
+          }
+        ]
       },
       {
         "organization": "GitHub",

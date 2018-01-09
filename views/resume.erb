@@ -36,6 +36,20 @@
             </h2>
             <p><%= date_range(job) %></p>
             <p><%= job['description'] %></p>
+            <% if job['responsibilities']  %>
+              <ul class="responsibilities">
+                <% job['responsibilities'].each do |resp| %>
+                  <li>
+                    <span class="title"><%= [resp['group'], resp['title']].compact.join(' — ') %></span>: <%= resp['description'] %>
+                    <% if resp['skills'].any? %>
+                      <ul>
+                        <li><em>Skills used:</em> <%= resp['skills'].join(', ') %></li>
+                      </ul>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
           </div>
         <% end %>
       </div>
