@@ -40,14 +40,14 @@
               <ul class="responsibilities">
                 <% job.responsibilities.each do |resp| %>
                   <li>
-                    <a href="<%= resp.url %>" class="title"><%= [resp.group, resp.title].compact.join(' — ') %></a>: <%= resp.description %>
-                    <ul>
-                      <% if resp.url %>
-                        <li class="url">
+                    <p>
+                      <a href="<%= resp.url %>" class="title"><%= [resp.group, resp.title].compact.join(' — ') %></a>: <%= resp.description %>
+                      <% if resp['url'] %>
+                        <span class="url">
                           <a href="<%= resp.url %>"><%= url(resp.url) %></a>
-                        </li>
+                        </span>
                       <% end %>
-                    </ul>
+                    </p>
                   </li>
                 <% end %>
               </ul>

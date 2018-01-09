@@ -134,8 +134,13 @@ a {
   }
 
   .listing {
+    // ideally would use revert
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/revert
     .url {
       display: block;
+    }
+    span.url {
+      display: inline;
     }
     li.url {
       display: list-item;
