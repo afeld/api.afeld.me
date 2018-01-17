@@ -4,9 +4,9 @@ GEM
     backports (3.11.0)
     concurrent-ruby (1.0.5)
     ffi (1.9.18)
-    hash_dot (2.2.0)
+    hash_dot (2.3.0)
     minitest (5.11.1)
-    multi_json (1.13.0)
+    multi_json (1.13.1)
     mustermann (1.0.1)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -42,7 +42,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  hash_dot
+  hash_dot (~> 2.3)
   minitest
   rack-test
   sass

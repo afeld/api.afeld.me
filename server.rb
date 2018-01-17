@@ -22,9 +22,7 @@ end
 
 path = File.expand_path('views/index.json', __dir__)
 PROFILE_STR = File.read(path).freeze
-# workaround for https://github.com/adsteel/hash_dot/issues/18
-Hash.use_dot_syntax = true
-PROFILE_HSH = JSON.parse(PROFILE_STR).freeze
+PROFILE_HSH = JSON.parse(PROFILE_STR).to_dot.freeze
 JOBS = (PROFILE_HSH.employment.coding + PROFILE_HSH.employment.teaching).sort_by(&:start_date).reverse
 
 helpers do
