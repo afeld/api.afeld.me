@@ -58,7 +58,7 @@ resume = {
   ]
 }
 
-jobs = json['employment']['coding'] + json['employment']['teaching']
+jobs = json['experience']['coding'] + json['experience']['teaching']
 
 # sort by jobs by last ended, then by last started, in descending order
 jobs.sort_by! do |job|

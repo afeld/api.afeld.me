@@ -23,7 +23,7 @@ end
 path = File.expand_path('views/index.json', __dir__)
 PROFILE_STR = File.read(path).freeze
 PROFILE_HSH = JSON.parse(PROFILE_STR).to_dot.freeze
-JOBS = (PROFILE_HSH.employment.coding + PROFILE_HSH.employment.teaching).sort_by(&:start_date).reverse
+JOBS = (PROFILE_HSH.experience.coding + PROFILE_HSH.experience.teaching).sort_by(&:start_date).reverse
 
 helpers do
   def to_html(val)
