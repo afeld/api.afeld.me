@@ -31,7 +31,9 @@
         <% JOBS.each do |job| %>
           <div class="listing">
             <h2>
-              <%= job.title %>,
+              <% if job.title %>
+                <%= job.title %>,
+              <% end %>
               <% if job.url %>
                 <a href="<%= job.url %>"><%= job.organization %></a>
               <% else %>

@@ -182,6 +182,35 @@
         ]
       },
       {
+        "organization": "Open source contribution",
+        "url": "https://bigquery.cloud.google.com/savedquery/197011051441:4bf2e709159e4256803f2f3637e30ef1",
+        "title": null,
+        "description": "Have contributed to many open source projects, including Ansible, Backbone.js, Cloud Foundry, ConcourseCI, Dep (the Go package manager), Docker, Hubot, Jekyll, Packer, Terraform, TravisCI, and Vagrant.",
+        "start_date": "2010-09",
+        "end_date": null,
+        "skills": [
+          "Ansible",
+          "CSS",
+          "Git",
+          "GitHub",
+          "Go",
+          "HTML",
+          "JavaScript",
+          "Jekyll",
+          "Jenkins",
+          "jQuery",
+          "management",
+          "Packer",
+          "PostgreSQL",
+          "Python",
+          "Ruby on Rails",
+          "Ruby",
+          "Sinatra",
+          "teaching",
+          "Terraform"
+        ]
+      },
+      {
         "organization": "American Express Publishing",
         "url": null,
         "title": "Web Developer (Contract)",
@@ -276,6 +305,28 @@
           "JavaScript",
           "jQuery",
           "public speaking",
+          "teaching"
+        ]
+      },
+      {
+        "organization": "Hacker Hours",
+        "url": "http://hackerhours.org",
+        "title": "Creator",
+        "description": "Created a meetup group to provide mentorship for individuals learning to code. Has grown to over six thousand members across seven states, occurring up to two to three times per week in NYC alone.",
+        "start_date": "2011-09",
+        "end_date": null,
+        "skills": [
+          "CSS",
+          "Git",
+          "GitHub",
+          "HTML",
+          "JavaScript",
+          "Jekyll",
+          "jQuery",
+          "PostgreSQL",
+          "Python",
+          "Ruby on Rails",
+          "Ruby",
           "teaching"
         ]
       }
