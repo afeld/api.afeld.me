@@ -25,6 +25,9 @@ PROFILE_STR = File.read(path).freeze
 PROFILE_HSH = JSON.parse(PROFILE_STR).to_dot.freeze
 JOBS = (PROFILE_HSH.experience.coding + PROFILE_HSH.experience.teaching).sort_by(&:start_date).reverse
 
+# https://banisterfiend.wordpress.com/2009/10/02/wtf-infinite-ranges-in-ruby/
+INF = 1.0 / 0.0
+
 helpers do
   def to_html(val)
     case val
@@ -86,6 +89,39 @@ helpers do
 
   def url(url_str)
     url_str.sub(/^https?:\/\/(www\.)?/, '')
+  end
+
+  # https://stackoverflow.com/a/1904193/358804
+  def years_since(date)
+    delta = (Date.today - date) / 365
+    delta.to_i
+  end
+
+  def skill_years
+    results = Hash.new(0)
+    JOBS.each do |job|
+      # they all get lumped together in this time range, so exclude it
+      next if job.organization == "Open source contribution"
+      next unless job['skills'] && job.skills.any?
+
+      start = parse_date(job.start_date)
+      # TODO don't assume all skills have been used continuously
+      years_experience = years_since(start)
+      job.skills.each do |skill|
+        if years_experience > results[skill]
+          results[skill] = years_experience
+        end
+      end
+    end
+
+    results
+  end
+
+  def skills(num_years_range)
+    # TODO don't recompute every time
+    results = skill_years.select { |skill, yrs| num_years_range.include?(yrs) }.keys
+    results.sort_by! { |skill| skill.downcase }
+    results
   end
 end
 

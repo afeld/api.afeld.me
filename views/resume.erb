@@ -71,6 +71,21 @@
         <% end %>
       </div>
     </div>
+    <div class="grid-wrap listings skills">
+      <div class="section">
+        <h1>Skills include</h1>
+      </div>
+      <div class="content">
+        <% [7..INF, 4..6, 1..3].each do |yrs| %>
+          <p>
+            <strong>
+              <%= yrs.begin %><%= yrs.end == INF ? '+' : "-#{yrs.end}" %> years experience:
+            </strong>
+            <%= skills(yrs).join(', ') %>
+          </p>
+        <% end %>
+      </div>
+    </div>
     <div class="grid-wrap listings education">
       <div class="section">
         <h1>Education</h1>
