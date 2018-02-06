@@ -240,6 +240,19 @@
         "end_date": "2016-12"
       },
       {
+        "organization": "EmpireConf",
+        "url": "http://empireconf.org/",
+        "title": "Organizer",
+        "description": "One of the organizers for the annual EmpireNode/EmpireConf JavaScript conferences.",
+        "start_date": "2015-01",
+        "end_date": null,
+        "skills": [
+          "community organizing",
+          "public speaking",
+          "teaching"
+        ]
+      },
+      {
         "organization": "New York University",
         "url": "http://www.nyu.edu/",
         "title": "Adjunct Faculty",
@@ -316,6 +329,7 @@
         "start_date": "2011-09",
         "end_date": null,
         "skills": [
+          "community organizing",
           "CSS",
           "Git",
           "GitHub",
