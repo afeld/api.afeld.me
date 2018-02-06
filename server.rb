@@ -60,13 +60,22 @@ helpers do
     out
   end
 
-  def date(date_str)
-    if date_str.scan(/-/).size == 1
-      # month only
-      Date.strptime(date_str, '%Y-%m').strftime('%b %Y')
+  def month_only?(date_str)
+    date_str.scan('-').size == 1
+  end
+
+  def parse_date(date_str)
+    if month_only?(date_str)
+      Date.strptime(date_str, '%Y-%m')
     else
-      Date.parse(date_str).strftime('%b %-m, %Y')
+      Date.parse(date_str)
     end
+  end
+
+  def date(date_str)
+    obj = parse_date(date_str)
+    format_str = month_only?(date_str) ? '%b %Y' : '%b %-m, %Y'
+    obj.strftime(format_str)
   end
 
   def date_range(obj)
