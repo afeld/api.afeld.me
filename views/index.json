@@ -507,6 +507,18 @@
   ],
   "talks": [
     {
+      "title": "Achieving ATO: Ongoing Authorization & Containers",
+      "event": "Red Hat Government Symposium",
+      "date": "2017-11-09",
+      "url": "https://www.fedscoop.com/events/redhatgov/2017/agenda/"
+    },
+    {
+      "title": "Automation Tools for Risk Management",
+      "event": "NIST Risk Management Framework Workshop",
+      "date": "2017-10-03",
+      "url": "https://csrc.nist.gov/Events/2017/NIST-Risk-Management-Framework-Workshop"
+    },
+    {
       "title": "Getting Started Contributing to Open Source",
       "event": "Dev Bootcamp",
       "date": "2016-10-25",
