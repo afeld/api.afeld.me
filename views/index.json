@@ -509,6 +509,12 @@
   ],
   "talks": [
     {
+      "title": "Love and Agony: Containers in Government",
+      "event": "Docker Government Symposium",
+      "date": "2018-04-11",
+      "url": "https://speakerdeck.com/aidanfeldman/love-and-agony-containers-in-government"
+    },
+    {
       "title": "Achieving ATO: Ongoing Authorization & Containers",
       "event": "Red Hat Government Symposium",
       "date": "2017-11-09",
