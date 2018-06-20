@@ -82,6 +82,18 @@ a {
   font-weight: bold;
 }
 
+.talks,
+.writing,
+.writeups {
+  h2 {
+    font-size: 1em;
+  }
+
+  .dates {
+    font-weight: normal;
+  }
+}
+
 // large screen - two columns
 @media print, screen and (min-width: $column-break) {
   .name {
