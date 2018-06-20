@@ -43,6 +43,15 @@
   "experience": {
     "coding": [
       {
+        "organization": "NYC Planning Labs",
+        "url": "https://planninglabs.nyc",
+        "title": "Consultant",
+        "description": "Helping the Labs group within the New York City's Department of City Planning improve their devops and security practices.",
+        "start_date": "2018-06",
+        "end_date": null,
+        "skills": []
+      },
+      {
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist (GS-15)",
@@ -66,12 +75,20 @@
           "PostgreSQL",
           "public speaking",
           "Python",
+          "React",
           "Ruby on Rails",
           "Ruby",
+          "Security compliance",
           "teaching",
           "Terraform"
         ],
         "responsibilities": [
+          {
+            "group": "eQIP",
+            "title": "Frontend Lead",
+            "description": "Rebuilding the extensive form used for federal employment and contracting background investigations.",
+            "url": "https://github.com/18F/e-QIP-prototype"
+          },
           {
             "group": "DevSecOps Working Group",
             "title": "Technical Lead",
