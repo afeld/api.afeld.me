@@ -2,6 +2,7 @@
   "name": "api.afeld.me",
   "private": true,
   "dependencies": {
-    "jsonpanel": "~0.1.0"
+    "jsonpanel": "~0.1.0",
+    "anchor-js": "^4.1.1"
   }
 }
