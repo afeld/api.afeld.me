@@ -95,6 +95,18 @@ a {
   }
 }
 
+// https://css-tricks.com/hash-tag-links-padding/
+h2::before {
+  $anchor-offset: 2rem;
+
+  display: block;
+  content: " ";
+  margin-top: -$anchor-offset;
+  height: $anchor-offset;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 // large screen - two columns
 @media print, screen and (min-width: $column-break) {
   .name {
