@@ -3,10 +3,9 @@ source 'https://rubygems.org'
 ruby '~> 2.5.0'
 
 gem 'hash_dot', '~> 2.3'
-gem 'sass'
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'sprockets'
+gem 'sinatra-asset-pipeline'
 
 group :test do
   gem 'minitest'

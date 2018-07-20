@@ -1,3 +1,4 @@
 /.sass-cache/
+/public/assets/
 /public/stylesheets/*.css
 resume.json

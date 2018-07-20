@@ -1,5 +1,7 @@
 require 'json'
+require 'sinatra/asset_pipeline'
 require 'sinatra/respond_with'
+require 'sprockets-helpers'
 
 if development?
   require 'sinatra/reloader'
@@ -9,15 +11,11 @@ elsif test?
 end
 
 enable :logging
+register Sinatra::AssetPipeline
 
 configure do
-  set :haml, format: :html5
-
-  environment = Sprockets::Environment.new
-  environment.append_path 'assets/stylesheets'
-  # environment.append_path 'assets/javascripts'
-  environment.css_compressor = :scss
-  set :environment, environment
+  set :assets_css_compressor, :sass
+  set :assets_precompile, %w(*.css)
 end
 
 path = File.expand_path('views/index.json', __dir__)
@@ -29,6 +27,8 @@ JOBS = (PROFILE_HSH.experience.coding + PROFILE_HSH.experience.teaching).sort_by
 INF = 1.0 / 0.0
 
 helpers do
+  include Sprockets::Helpers
+
   def to_html(val)
     case val
     when Array
@@ -125,11 +125,6 @@ helpers do
   end
 end
 
-
-get '/assets/*' do
-  env['PATH_INFO'].sub!('/assets', '')
-  settings.environment.call(env)
-end
 
 get %r{/(index)?} do
   respond_to do |wants|
