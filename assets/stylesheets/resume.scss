@@ -53,7 +53,8 @@ a {
 .listing {
   margin-bottom: 2rem;
 
-  h2 {
+  h3 {
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 0.4rem;
   }
@@ -85,7 +86,7 @@ a {
 .talks,
 .writing,
 .writeups {
-  h2 {
+  h3 {
     font-size: 1em;
   }
 
@@ -119,11 +120,11 @@ a {
     grid-template-areas: "section content";
 
     // vertically align tops of sections
-    .section h1 {
+    .section h2 {
       font-weight: normal;
       margin-top: 0;
     }
-    .content h2:first-child {
+    .content h3:first-child {
       margin-top: 0;
     }
   }
@@ -133,7 +134,7 @@ a {
     padding: 3rem;
   }
 
-  .listings .section h1 {
+  .listings .section h2 {
     font-size: 1.2rem;
   }
 }
@@ -147,7 +148,7 @@ a {
   }
 
   .listings {
-    .section h1 {
+    .section h2 {
       font-size: 1.1rem;
     }
   }

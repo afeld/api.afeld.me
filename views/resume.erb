@@ -25,12 +25,12 @@
     </div>
     <div class="grid-wrap listings experience">
       <div class="section">
-        <h1>Experience includes</h1>
+        <h2>Experience includes</h2>
       </div>
       <div class="content">
         <% JOBS.each do |job| %>
           <div class="listing">
-            <h2>
+            <h3>
               <% if job.title %>
                 <%= job.title %>,
               <% end %>
@@ -39,7 +39,7 @@
               <% else %>
                 <%= job.organization %>
               <% end %>
-            </h2>
+            </h3>
             <div class="dates"><%= date_range(job) %></div>
             <p><%= job.description %></p>
             <% if job['responsibilities']  %>
@@ -73,7 +73,7 @@
     </div>
     <div class="grid-wrap listings skills">
       <div class="section">
-        <h1>Skills include</h1>
+        <h2>Skills include</h2>
       </div>
       <div class="content">
         <% [7..INF, 4..6, 1..3].each do |yrs| %>
@@ -88,13 +88,13 @@
     </div>
     <div class="grid-wrap listings education">
       <div class="section">
-        <h1>Education</h1>
+        <h2>Education</h2>
       </div>
       <div class="content">
         <%# exclude high school %>
         <% PROFILE_HSH.education[0...-1].each do |edu| %>
           <div class="listing">
-            <h2><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h2>
+            <h3><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h3>
             <div class="dates"><%= date_range(edu) %></div>
             <ul>
               <% edu.degrees.each do |degree| %>
@@ -107,15 +107,15 @@
     </div>
     <div class="grid-wrap listings talks">
       <div class="section">
-        <h1>Talks</h1>
+        <h2>Talks</h2>
       </div>
       <div class="content">
         <% PROFILE_HSH.talks.each do |talk| %>
           <div class="listing">
-            <h2>
+            <h3>
               <a href="<%= talk.url %>"><%= talk.title %></a>
-            </h2>
-            <h2><%= talk['event'] %></h2>
+            </h3>
+            <h3><%= talk['event'] %></h3>
             <div class="dates"><%= date(talk.date) %></div>
             <p><%= talk['description'] %></p>
             <!-- this only displayed when printing -->
@@ -128,16 +128,16 @@
     </div>
     <div class="grid-wrap listings writing">
       <div class="section">
-        <h1>Publications</h1>
+        <h2>Publications</h2>
       </div>
       <div class="content">
         <% PROFILE_HSH.writing.each do |writing| %>
           <div class="listing">
-            <h2>
+            <h3>
               <a href="<%= writing.url %>"><%= writing.title %></a>
-            </h2>
+            </h3>
             <% if writing.publisher != 'self' %>
-              <h2><%= writing.publisher %></h2>
+              <h3><%= writing.publisher %></h3>
             <% end %>
             <div class="dates"><%= date(writing.date) %></div>
             <!-- this only displayed when printing -->
@@ -150,15 +150,15 @@
     </div>
     <div class="grid-wrap listings writeups">
       <div class="section">
-        <h1>Writeups</h1>
+        <h2>Writeups</h2>
       </div>
       <div class="content">
         <% PROFILE_HSH.writeups.each do |writeup| %>
           <div class="listing">
-            <h2>
+            <h3>
               <a href="<%= writeup.url %>"><%= writeup.title %></a>
-            </h2>
-            <h2><%= writeup.publisher %></h2>
+            </h3>
+            <h3><%= writeup.publisher %></h3>
             <div class="dates"><%= date(writeup.date) %></div>
             <!-- this only displayed when printing -->
             <div class="url">
