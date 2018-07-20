@@ -96,7 +96,7 @@ a {
 }
 
 // https://css-tricks.com/hash-tag-links-padding/
-h2::before {
+*[id]::before {
   $anchor-offset: 2rem;
 
   display: block;

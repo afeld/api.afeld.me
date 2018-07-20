@@ -30,7 +30,7 @@
       <div class="content">
         <% JOBS.each do |job| %>
           <div class="listing">
-            <h3>
+            <h3 id="<%= to_anchor(job.organization) %>">
               <% if job.title %>
                 <%= job.title %>,
               <% end %>

@@ -63,6 +63,10 @@ helpers do
     out
   end
 
+  def to_anchor(str)
+    str.downcase.gsub(/[^a-z0-9]+/, '-').sub(/^-|-$/, '')
+  end
+
   def month_only?(date_str)
     date_str.scan('-').size == 1
   end
