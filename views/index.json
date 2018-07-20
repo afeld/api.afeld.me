@@ -49,7 +49,30 @@
         "description": "Helping the Labs group within the New York City's Department of City Planning improve their devops and security practices.",
         "start_date": "2018-06",
         "end_date": null,
-        "skills": []
+        "skills": [
+          "Ansible",
+          "DigitalOcean",
+          "Docker",
+          "Git",
+          "GitHub",
+          "JavaScript",
+          "security compliance",
+          "teaching"
+        ],
+        "responsibilities": [
+          {
+            "group": null,
+            "title": "Discovery",
+            "description": "Helped the team identify threats/concerns around their software development, deployment, and operation, as well as the underlying problems and possible solutions for each. Tasks were then prioritized based on the ranking of the corresponding concern.",
+            "url": "https://trello.com/b/35BrYfqh/nyc-planning-labs-discovery"
+          },
+          {
+            "group": null,
+            "title": "Infrastructure as code",
+            "description": "Automated the hardening and configuration of their servers, while finding ways to minimize the operational burden.",
+            "url": "https://github.com/NYCPlanning/labs-infrastructure"
+          }
+        ]
       },
       {
         "organization": "18F",
@@ -78,7 +101,7 @@
           "React",
           "Ruby on Rails",
           "Ruby",
-          "Security compliance",
+          "security compliance",
           "teaching",
           "Terraform"
         ],
