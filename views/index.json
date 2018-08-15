@@ -836,6 +836,13 @@
   ],
   "writing": [
     {
+      "title": "Shared infrastructure as code",
+      "type": "blog",
+      "publisher": "18F",
+      "date": "2018-08-15",
+      "url": "https://18f.gsa.gov/2018/08/15/shared-infrastructure-as-code/"
+    },
+    {
       "title": "Taking the ATO process from 6 months to 30 days",
       "type": "blog",
       "publisher": "18F",
