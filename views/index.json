@@ -849,6 +849,13 @@
   ],
   "writing": [
     {
+      "title": "I joined the Census Bureau!",
+      "type": "blog",
+      "publisher": "self",
+      "date": "2018-09-07",
+      "url": "https://medium.com/@aidanfeldman/i-joined-the-census-bureau-983f8a9ce135"
+    },
+    {
       "title": "Shared infrastructure as code",
       "type": "blog",
       "publisher": "18F",
