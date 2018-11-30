@@ -49,11 +49,7 @@
         "description": "Helping to \"build experimental data products for the public good\" with federal agencies from within the Census Bureau.",
         "start_date": "2018-09-02",
         "end_date": null,
-        "skills": [
-          "Git",
-          "GitHub",
-          "security compliance"
-        ]
+        "skills": ["Git", "GitHub", "security compliance"]
       },
       {
         "organization": "NYC Planning Labs",
@@ -301,11 +297,7 @@
         "description": "One of the organizers for the annual EmpireNode/EmpireConf JavaScript conferences.",
         "start_date": "2015-01",
         "end_date": null,
-        "skills": [
-          "community organizing",
-          "public speaking",
-          "teaching"
-        ]
+        "skills": ["community organizing", "public speaking", "teaching"]
       },
       {
         "organization": "New York University",
@@ -403,10 +395,7 @@
     "dance": [
       {
         "organization": "Barkin/Selissen Project",
-        "director": [
-          "Kyla Barkin",
-          "Aaron Selissen"
-        ],
+        "director": ["Kyla Barkin", "Aaron Selissen"],
         "url": "http://www.barkinselissenproject.com",
         "start_date": "2014-03",
         "end_date": null
@@ -848,6 +837,20 @@
     }
   ],
   "writing": [
+    {
+      "title": "Keeping an Eye on Your Systems",
+      "type": "blog",
+      "publisher": "NYC Planning Labs",
+      "date": "2018-11-20",
+      "url": "https://medium.com/nycplanninglabs/keeping-an-eye-on-your-systems-97332d689044"
+    },
+    {
+      "title": "DevOps and Security on a Small Team",
+      "type": "blog",
+      "publisher": "NYC Planning Labs",
+      "date": "2018-11-20",
+      "url": "https://medium.com/nycplanninglabs/devops-and-security-on-a-small-team-8709cfc5b0aa"
+    },
     {
       "title": "I joined the Census Bureau!",
       "type": "blog",
