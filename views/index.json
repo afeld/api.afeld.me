@@ -622,6 +622,11 @@
       "url": "https://www.youtube.com/watch?v=X2Drua-AEBg"
     },
     {
+      "title": "How to Build Platforms and Influence People",
+      "date": "2016-03-01",
+      "url": "https://gist.github.com/afeld/42e65d2b83786eabde1b"
+    },
+    {
       "title": "18F on the Mozilla Science Lab Project Call",
       "date": "2016-02-25",
       "url": "https://www.youtube.com/watch?v=vBQrIDZKMK8"
@@ -658,6 +663,11 @@
       "title": "Introduction to Promises in JavaScript",
       "date": "2015-04-28",
       "url": "https://www.youtube.com/watch?v=KeQYjpckudA"
+    },
+    {
+      "title": "Running Our Own Heroku",
+      "date": "2015-03-24",
+      "url": "https://gist.github.com/afeld/0500a73578bc29906e7c"
     },
     {
       "title": "Magickly, Mustachio, & Stateless APIs",
