@@ -848,6 +848,13 @@
   ],
   "writing": [
     {
+      "title": "Cloud is not a virtue",
+      "type": "blog",
+      "publisher": "18F",
+      "date": "2019-02-07",
+      "url": "https://18f.gsa.gov/2019/02/07/the-cloud-is-not-a-virtue/"
+    },
+    {
       "title": "Keeping an Eye on Your Systems",
       "type": "blog",
       "publisher": "NYC Planning Labs",
