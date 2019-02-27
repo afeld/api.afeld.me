@@ -551,6 +551,12 @@
   ],
   "talks": [
     {
+      "title": "Open Source Maintenance",
+      "event": "Open Source NYC",
+      "date": "2019-02-20",
+      "url": "https://docs.google.com/presentation/d/1u_fHwM0LN8WpIqd2HOlqi0EGPBmlV6ZK0EJrkTroTGM/edit"
+    },
+    {
       "title": "Love and Agony: Containers in Government",
       "event": "Docker Government Symposium",
       "date": "2018-04-11",
