@@ -57,7 +57,33 @@
         "description": "Helping to \"build experimental data products for the public good\" with federal agencies from within the Census Bureau.",
         "start_date": "2018-09-02",
         "end_date": null,
-        "skills": ["Git", "GitHub", "security compliance"]
+        "skills": [
+          "Git",
+          "GitHub",
+          "IT policy",
+          "Python",
+          "security compliance"
+        ],
+        "responsibilities": [
+          {
+            "group": "Recalls",
+            "title": null,
+            "description": "Worked with regulatory agencies and large companies to improve the quality, consistency, and delivery of federal recall data.",
+            "url": "https://www.usa.gov/recalls"
+          },
+          {
+            "group": "Census Self-Response Red Team",
+            "title": null,
+            "description": "To test the fraud / suspicious response detection systems for the 2020 Census, helped develop various scenarios and then create synthetic data to represent them.",
+            "url": "https://fedtechmagazine.com/article/2019/03/census-bureau-boosts-cybersecurity-efforts-ahead-2020-count"
+          },
+          {
+            "group": "FISMAtic",
+            "title": null,
+            "description": "Leading a project to reduce the amount of time spent authoring, reviewing, and editing the security compliance documentation leading up to an Authority to Operate (ATO).",
+            "url": "https://github.com/uscensusbureau/fismatic"
+          }
+        ]
       },
       {
         "organization": "NYC Planning Labs",
@@ -107,6 +133,7 @@
           "GitHub",
           "Go",
           "HTML",
+          "IT policy",
           "JavaScript",
           "Jekyll",
           "Jenkins",
