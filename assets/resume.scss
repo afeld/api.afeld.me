@@ -110,6 +110,7 @@ a {
 // large screen - two columns
 @media print, screen and (min-width: $column-break) {
   .name {
+    font-size: 3rem;
     margin: 0;
   }
   .meta {
