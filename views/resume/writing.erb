@@ -1,0 +1,22 @@
+<div class="grid-wrap listings writing">
+  <div class="section">
+    <h2 id="publications">Publications</h2>
+  </div>
+  <div class="content">
+    <% PROFILE_HSH.writing.each do |writing| %>
+      <div class="listing">
+        <h3>
+          <a href="<%= writing.url %>"><%= writing.title %></a>
+        </h3>
+        <% if writing.publisher != 'self' %>
+          <h3><%= writing.publisher %></h3>
+        <% end %>
+        <div class="dates"><%= date(writing.date) %></div>
+        <!-- this only displayed when printing -->
+        <div class="url">
+          <a href="<%= writing.url %>"><%= url(writing.url) %></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
