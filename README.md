@@ -8,9 +8,6 @@ Requires Ruby 1.9.3+ and Node.js 0.8+.
 gem install bundler
 bundle install
 
-npm install -g bower
-bower install
-
 bundle exec rackup
 open http://localhost:9292
 ```
