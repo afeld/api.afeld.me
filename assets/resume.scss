@@ -1,5 +1,5 @@
 $column-break: 800px;
-$secondary-color: #7A7A7A;
+$secondary-color: #7a7a7a;
 
 body {
   font-family: Helvetica, sans-serif;
@@ -17,7 +17,7 @@ a {
 }
 
 .name {
-  color: #00BE13;
+  color: #00be13;
   font-size: 5rem;
 }
 
@@ -151,6 +151,10 @@ a {
   }
 }
 @media print {
+  html {
+    font-size: 0.8rem;
+  }
+
   // only links whose text is a URL should appear to be clickable
   a {
     text-decoration: none;
@@ -166,6 +170,10 @@ a {
   }
 
   .listing {
+    p {
+      line-height: 1.3;
+    }
+
     // show the URLs; ideally would use 'revert'
     // https://developer.mozilla.org/en-US/docs/Web/CSS/revert
     .url {
