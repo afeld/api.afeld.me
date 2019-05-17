@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 require 'sinatra/asset_pipeline'
 require 'sinatra/respond_with'
@@ -15,7 +17,7 @@ register Sinatra::AssetPipeline
 
 configure do
   set :assets_css_compressor, :sass
-  set :assets_precompile, %w(*.css)
+  set :assets_precompile, %w[*.css]
 end
 
 path = File.expand_path('views/index.json', __dir__)
@@ -92,7 +94,7 @@ helpers do
   end
 
   def url(url_str)
-    url_str.sub(/^https?:\/\/(www\.)?/, '')
+    url_str.sub(%r{^https?://(www\.)?}, '')
   end
 
   # https://stackoverflow.com/a/1904193/358804
@@ -105,16 +107,14 @@ helpers do
     results = Hash.new(0)
     JOBS.each do |job|
       # they all get lumped together in this time range, so exclude it
-      next if job.organization == "Open source contribution"
+      next if job.organization == 'Open source contribution'
       next unless job['skills'] && job.skills.any?
 
       start = parse_date(job.start_date)
-      # TODO don't assume all skills have been used continuously
+      # TODO: don't assume all skills have been used continuously
       years_experience = years_since(start)
       job.skills.each do |skill|
-        if years_experience > results[skill]
-          results[skill] = years_experience
-        end
+        results[skill] = years_experience if years_experience > results[skill]
       end
     end
 
@@ -122,13 +122,12 @@ helpers do
   end
 
   def skills(num_years_range)
-    # TODO don't recompute every time
-    results = skill_years.select { |skill, yrs| num_years_range.include?(yrs) }.keys
-    results.sort_by! { |skill| skill.downcase }
+    # TODO: don't recompute every time
+    results = skill_years.select { |_skill, yrs| num_years_range.include?(yrs) }.keys
+    results.sort_by!(&:downcase)
     results
   end
 end
-
 
 get %r{/(index)?} do
   respond_to do |wants|
