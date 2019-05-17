@@ -8,7 +8,7 @@
         <strong>
           <%= yrs.begin %><%= yrs.end == INF ? '+' : "-#{yrs.end}" %> years experience:
         </strong>
-        <%= skills(yrs).join(', ') %>
+        <%= skills(JOBS, yrs).join(', ') %>
       </p>
     <% end %>
   </div>
