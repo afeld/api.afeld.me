@@ -27,13 +27,16 @@ module SkillHelpers
   end
 
   def hours_per_week(hours)
-    case hours
-    when 40
-      'full time'
-    when 1
-      '1 hour/week'
-    else
-      "#{hours} hours/week"
-    end
+    hours == 1 ? '1 hour/week' : "#{hours} hours/week"
+  end
+
+  def date_row(job)
+    employees = ("#{job.employees} employees" if job.respond_to? :employees)
+
+    [
+      date_range(job),
+      hours_per_week(job.hours),
+      employees
+    ].compact.join(', ')
   end
 end

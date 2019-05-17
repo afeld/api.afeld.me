@@ -50,6 +50,7 @@
         "start_date": "2019-01-07",
         "end_date": null,
         "hours": 5,
+        "employees": 12,
         "skills": ["Git", "GitHub", "MySQL", "PHP"]
       },
       {
@@ -60,6 +61,7 @@
         "start_date": "2018-09-02",
         "end_date": null,
         "hours": 40,
+        "employees": 4300,
         "skills": [
           "Git",
           "GitHub",
@@ -96,6 +98,7 @@
         "start_date": "2018-06",
         "end_date": "2018-08",
         "hours": 10,
+        "employees": 325,
         "skills": [
           "Ansible",
           "DigitalOcean",
@@ -129,6 +132,7 @@
         "start_date": "2014-10-20",
         "end_date": "2018-09-01",
         "hours": 40,
+        "employees": 11500,
         "skills": [
           "Amazon Web Services (AWS)",
           "Ansible",
@@ -219,6 +223,7 @@
         "start_date": "2013-08",
         "end_date": "2014-06",
         "hours": 40,
+        "employees": 300,
         "skills": [
           "CSS",
           "Git",
@@ -241,6 +246,7 @@
         "start_date": "2013-05",
         "end_date": "2013-08",
         "hours": 40,
+        "employees": 70,
         "skills": [
           "Backbone.js",
           "CSS",
@@ -261,6 +267,7 @@
         "start_date": "2011-01",
         "end_date": "2013-05",
         "hours": 40,
+        "employees": 5,
         "skills": [
           "Backbone.js",
           "CSS",
@@ -313,6 +320,7 @@
         "start_date": "2010-08",
         "end_date": "2011-01",
         "hours": 40,
+        "employees": 200,
         "skills": [
           "CSS",
           "Git",
@@ -334,7 +342,8 @@
         "description": "Taught the Startup Systems course, a core class for the Master of Engineering in Computer Science program, which covered web development from HTML to APIs to servers.",
         "start_date": "2016-08",
         "end_date": "2016-12",
-        "hours": 20
+        "hours": 20,
+        "employees": 10000
       },
       {
         "organization": "EmpireConf",
@@ -354,6 +363,7 @@
         "start_date": "2012-06",
         "end_date": "2015-05",
         "hours": 5,
+        "employees": 19000,
         "skills": [
           "CSS",
           "Git",
@@ -387,6 +397,7 @@
         "start_date": "2014-09",
         "end_date": "2015-05",
         "hours": 5,
+        "employees": 43000,
         "skills": [
           "CSS",
           "Git",
@@ -409,6 +420,7 @@
         "start_date": "2013-02",
         "end_date": "2013-03",
         "hours": 8,
+        "employees": 3200,
         "skills": [
           "CSS",
           "HTML",

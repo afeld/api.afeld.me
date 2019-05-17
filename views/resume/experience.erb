@@ -15,7 +15,7 @@
             <%= job.organization %>
           <% end %>
         </h3>
-        <div class="dates"><%= date_range(job) %>, <%= hours_per_week(job.hours) %></div>
+        <div class="dates"><%= date_row(job) %></div>
         <p><%= job.description %></p>
         <% if job['responsibilities']  %>
           <ul class="responsibilities">
