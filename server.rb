@@ -100,7 +100,7 @@ helpers do
   # https://stackoverflow.com/a/1904193/358804
   def years_since(date)
     delta = (Date.today - date) / 365
-    delta.to_i
+    delta.ceil
   end
 
   def skill_years
@@ -114,7 +114,7 @@ helpers do
       # TODO: don't assume all skills have been used continuously
       years_experience = years_since(start)
       job.skills.each do |skill|
-        results[skill] = years_experience if years_experience > results[skill]
+        results[skill] = [years_experience, results[skill]].max
       end
     end
 
