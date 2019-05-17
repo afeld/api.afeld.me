@@ -27,8 +27,11 @@ module SkillHelpers
   end
 
   def hours_per_week(hours)
-    if hours == 40
+    case hours
+    when 40
       'full time'
+    when 1
+      '1 hour/week'
     else
       "#{hours} hours/week"
     end
