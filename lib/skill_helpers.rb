@@ -27,7 +27,7 @@ module SkillHelpers
   end
 
   def hours_per_week(hours)
-    hours == 1 ? '1 hour/week' : "#{hours} hours/week"
+    "#{hours} #{'hour'.pluralize(hours)}/week"
   end
 
   def num_employees(job)
