@@ -4,6 +4,7 @@ require 'json'
 require 'sinatra/asset_pipeline'
 require 'sinatra/respond_with'
 require 'sprockets-helpers'
+require 'active_support/all'
 require_relative './lib/html_helpers'
 require_relative './lib/skill_helpers'
 require_relative './lib/time_helpers'
@@ -32,6 +33,7 @@ JOBS = (PROFILE_HSH.experience.coding + PROFILE_HSH.experience.teaching).sort_by
 INF = 1.0 / 0.0
 
 helpers do
+  include ActiveSupport::NumberHelper
   include Sprockets::Helpers
   include HtmlHelpers
   include SkillHelpers

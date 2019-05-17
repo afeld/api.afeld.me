@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '~> 2.5.0'
 
+gem 'activesupport'
 gem 'hash_dot', '~> 2.3'
 gem 'sinatra'
 gem 'sinatra-contrib'

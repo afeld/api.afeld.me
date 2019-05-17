@@ -30,13 +30,18 @@ module SkillHelpers
     hours == 1 ? '1 hour/week' : "#{hours} hours/week"
   end
 
-  def date_row(job)
-    employees = ("#{job.employees} employees" if job.respond_to? :employees)
+  def num_employees(job)
+    if job.respond_to? :employees
+      num = number_to_delimited(job.employees)
+      "#{num} employees"
+    end
+  end
 
+  def date_row(job)
     [
       date_range(job),
       hours_per_week(job.hours),
-      employees
+      num_employees(job)
     ].compact.join(', ')
   end
 end
