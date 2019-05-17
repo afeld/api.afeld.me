@@ -57,7 +57,7 @@
         "organization": "xD",
         "url": "https://xdgov.github.io/xd.gov/",
         "title": "Information Technology (IT) Specialist (GS-15)",
-        "description": "Helping to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau.",
+        "description": "Helping to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau. Worked the CTO and Standards Working Group on a Bureau-wide Open Source Policy and various software approvals and process changes.",
         "start_date": "2018-09-02",
         "end_date": null,
         "hours": 40,
@@ -73,7 +73,7 @@
           {
             "group": "Recalls",
             "title": null,
-            "description": "Worked with regulatory agencies and large companies to improve the quality, consistency, and delivery of federal recall data.",
+            "description": "Worked with regulatory agencies and large companies to improve the quality, consistency, and delivery of federal recall data through their APIs.",
             "url": "https://www.usa.gov/recalls"
           },
           {
@@ -113,7 +113,7 @@
           {
             "group": null,
             "title": "Discovery",
-            "description": "Helped the team identify threats/concerns around their software development, deployment, and operation, as well as the underlying problems and possible solutions for each. Tasks were then prioritized based on the ranking of the corresponding concern.",
+            "description": "Helped the team identify security threats andconcerns around their software development, deployment, and operation. We then looked at the underlying problems and possible solutions for each. Tasks were then prioritized based on the ranking of the corresponding concern.",
             "url": "https://medium.com/nycplanninglabs/devops-and-security-on-a-small-team-8709cfc5b0aa"
           },
           {
@@ -174,7 +174,7 @@
           {
             "group": "CIO Liaison",
             "title": null,
-            "description": "Worked with GSA’s Office of the Chief Information Officer to ensure 18F got the support it needed for its business while maintaining compliance. Regularly engaged with the GSA Security team and other stakeholders to find compromise between security, compliance, and operational efficiency. Helped create the FedRAMP Tailored baseline to make it easier for tech companies to work with government.",
+            "description": "Worked with GSA's Office of the Chief Information Officer to ensure 18F got the support it needed for its business while maintaining compliance. Regularly engaged with the GSA Security team and other stakeholders to find compromise between security, compliance, and operational efficiency. Helped create the FedRAMP Tailored baseline to make it easier for tech companies to work with government.",
             "url": null
           },
           {
@@ -219,7 +219,7 @@
         "organization": "GitHub",
         "url": "https://education.github.com",
         "title": "Education Hacker",
-        "description": "Company building tools for software development workflows. Worked to understand students’ and teachers’ obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally. Was responsible for the system accepting and processing educational user upgrades, as well as determining best practices for classroom workflows.",
+        "description": "Company building tools for software development workflows. Worked to understand students' and teachers' obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally. Was responsible for the system accepting and processing educational user upgrades, as well as determining best practices for classroom workflows.",
         "start_date": "2013-08",
         "end_date": "2014-06",
         "hours": 40,
@@ -339,7 +339,7 @@
         "organization": "Cornell Tech",
         "url": "https://docs.google.com/document/d/1-hk6GzhV1yHU1T0E7uqcdNTtvv3fuq1_WECQOWOT2zw/edit",
         "title": "Adjunct Faculty",
-        "description": "Taught the Startup Systems course, a core class for the Master of Engineering in Computer Science program, which covered web development from HTML to APIs to servers.",
+        "description": "Taught the Startup Systems course, a core class for the Master of Engineering in Computer Science program, which covered web development from HTML to APIs to servers. The class covered the basics of JavaScript, Python, Terraform, Ansible, and Amazon Web Services (AWS) for students with a broad range of experience levels.",
         "start_date": "2016-08",
         "end_date": "2016-12",
         "hours": 20,
@@ -378,7 +378,7 @@
           {
             "group": "School of Professional Studies",
             "title": "Advanced JavaScript",
-            "description": "After redesigning the curriculum, taught the Advanced JavaScript course for twelve consecutive semesters, helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully available to the public online, became the showcase class for GitHub’s Education program.",
+            "description": "After redesigning the curriculum, taught the Advanced JavaScript course for twelve consecutive semesters, helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully available to the public online, became the showcase class for GitHub's Education program.",
             "url": "https://advanced-js.github.io/syllabus/"
           },
           {
