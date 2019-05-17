@@ -48,7 +48,8 @@
         "title": "Advisory Board Member",
         "description": "Helping improve the infrastructure, workflow, and software use of this non-profit arts publication.",
         "start_date": "2019-01-07",
-        "end_date": null
+        "end_date": null,
+        "skills": ["Git", "GitHub", "MySQL", "PHP"]
       },
       {
         "organization": "xD",
@@ -89,7 +90,7 @@
         "organization": "NYC Planning Labs",
         "url": "https://planninglabs.nyc",
         "title": "Consultant",
-        "description": "Helped the Labs group within New York City's Department of City Planning improve their devops and security practices.",
+        "description": "Helped the Labs group within New York City's Department of City Planning improve their DevSecOps practices. 10 hours/week.",
         "start_date": "2018-06",
         "end_date": "2018-08",
         "skills": [
@@ -121,7 +122,7 @@
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist (GS-15)",
-        "description": "Federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in web development, devops, and open source. Participated and led multiple user research sessions.",
+        "description": "Federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source. Participated and led multiple user research sessions.",
         "start_date": "2014-10-20",
         "end_date": "2018-09-01",
         "skills": [
@@ -159,13 +160,13 @@
           {
             "group": "DevSecOps Working Group",
             "title": "Technical Lead",
-            "description": "Helped GSA systems migrate to the cloud by developing reusable components and processes around logging, monitoring, deployment, operating system hardening, automated testing, etc. This helped systems to incorporate operational best practices, while streamlining their security assessments.",
+            "description": "Helped GSA systems migrate to the cloud by developing reusable components and processes around logging, monitoring, deployment, operating system hardening, automated testing, etc. This helped systems to incorporate operational best practices, while streamlining their security assessments. Helped build the DevSecOps-driven GRACE infrastucture-as-a-service (IaaS) platform through hybrid cloud + on-premise network design and infrastructure as code.",
             "url": "https://tech.gsa.gov/guides/dev_sec_ops_guide/"
           },
           {
             "group": "CIO Liaison",
             "title": null,
-            "description": "Worked with GSA’s Office of the Chief Information Officer to ensure 18F got the support it needed while maintaining compliance. Regularly negotiated with the GSA Security team to find compromise between security, compliance, and operational efficiency.",
+            "description": "Worked with GSA’s Office of the Chief Information Officer to ensure 18F got the support it needed while maintaining compliance. Regularly negotiated with the GSA Security team and other stakeholders to find compromise between security, compliance, and operational efficiency. Helped create the FedRAMP Tailored baseline to make it easier for tech companies to work with government.",
             "url": null
           },
           {
@@ -177,7 +178,7 @@
           {
             "group": "ATO Sprinting/Streamlining Team",
             "title": null,
-            "description": "Helped 18F projects achieve FISMA compliance by writing documentation and providing hands-on assistance with improving their application security and completing compliance documentation, while ensuring devops best practices. We were able to reduce the time to ATO from six months to one.",
+            "description": "Helped 18F projects achieve FISMA compliance by writing documentation and providing hands-on assistance with improving their application security and completing compliance documentation, while ensuring DevSecOps best practices. We were able to reduce the time to ATO from six months to one.",
             "url": "https://before-you-ship.18f.gov"
           },
           {
