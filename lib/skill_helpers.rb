@@ -25,4 +25,12 @@ module SkillHelpers
     results.sort_by!(&:downcase)
     results
   end
+
+  def hours_per_week(hours)
+    if hours == 40
+      'full time'
+    else
+      "#{hours} hours/week"
+    end
+  end
 end

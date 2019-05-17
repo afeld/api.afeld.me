@@ -49,6 +49,7 @@
         "description": "Helping improve the infrastructure, workflow, and software use of this non-profit arts publication.",
         "start_date": "2019-01-07",
         "end_date": null,
+        "hours": 5,
         "skills": ["Git", "GitHub", "MySQL", "PHP"]
       },
       {
@@ -58,6 +59,7 @@
         "description": "Helping to \"build experimental data products for the public good\" with federal agencies from within the Census Bureau.",
         "start_date": "2018-09-02",
         "end_date": null,
+        "hours": 40,
         "skills": [
           "Git",
           "GitHub",
@@ -93,6 +95,7 @@
         "description": "Helped the Labs group within New York City's Department of City Planning improve their DevSecOps practices. 10 hours/week.",
         "start_date": "2018-06",
         "end_date": "2018-08",
+        "hours": 10,
         "skills": [
           "Ansible",
           "DigitalOcean",
@@ -125,6 +128,7 @@
         "description": "Federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source. Participated and led multiple user research sessions.",
         "start_date": "2014-10-20",
         "end_date": "2018-09-01",
+        "hours": 40,
         "skills": [
           "Amazon Web Services (AWS)",
           "Ansible",
@@ -214,6 +218,7 @@
         "description": "Worked to understand students’ and teachers’ obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally. Was responsible for the system accepting and processing educational user upgrades, as well as determining best practices for classroom workflows.",
         "start_date": "2013-08",
         "end_date": "2014-06",
+        "hours": 40,
         "skills": [
           "CSS",
           "Git",
@@ -235,6 +240,7 @@
         "description": "Full-stack web development on the site and APIs, as well as building an open source stats reporting framework.",
         "start_date": "2013-05",
         "end_date": "2013-08",
+        "hours": 40,
         "skills": [
           "Backbone.js",
           "CSS",
@@ -254,6 +260,7 @@
         "description": "As the only full-stack web developer at the small (now defunct) startup, touched all pieces of the blogging application, including social features and integrations of the site, layout templating, navigation, the image processing pipeline, and much of the API, as well as helping guide vision for the product.",
         "start_date": "2011-01",
         "end_date": "2013-05",
+        "hours": 40,
         "skills": [
           "Backbone.js",
           "CSS",
@@ -274,6 +281,7 @@
         "description": "Have contributed to many open source projects, including Ansible, Backbone.js, Cloud Foundry, ConcourseCI, Dep (the Go package manager), Docker, Hubot, Jekyll, Packer, Terraform, TravisCI, and Vagrant.",
         "start_date": "2010-09",
         "end_date": null,
+        "hours": 8,
         "skills": [
           "Ansible",
           "CSS",
@@ -304,6 +312,7 @@
         "description": "Contractor building content management tools for FoodAndWine.com, as well as promotional micro sites for advertising partners.",
         "start_date": "2010-08",
         "end_date": "2011-01",
+        "hours": 40,
         "skills": [
           "CSS",
           "Git",
@@ -324,7 +333,8 @@
         "title": "Adjunct Faculty",
         "description": "Taught the Startup Systems course, a core class for the Master of Engineering in Computer Science program, which covered web development from HTML to APIs to servers.",
         "start_date": "2016-08",
-        "end_date": "2016-12"
+        "end_date": "2016-12",
+        "hours": 20
       },
       {
         "organization": "EmpireConf",
@@ -333,6 +343,7 @@
         "description": "One of the organizers for the annual EmpireNode/EmpireConf JavaScript conferences.",
         "start_date": "2015-01",
         "end_date": null,
+        "hours": 1,
         "skills": ["community organizing", "public speaking", "teaching"]
       },
       {
@@ -342,6 +353,7 @@
         "description": null,
         "start_date": "2012-06",
         "end_date": "2015-05",
+        "hours": 5,
         "skills": [
           "CSS",
           "Git",
@@ -374,6 +386,7 @@
         "description": "Designed curriculum and was lead instructor for the NYTech program, which helped seniors and graduate students build practical skills necessary for joining startups based in New York City, such as version control, web development, and resume writing. The culminating project was a class-wide collaboration to build a new site for a non-profit.",
         "start_date": "2014-09",
         "end_date": "2015-05",
+        "hours": 5,
         "skills": [
           "CSS",
           "Git",
@@ -395,6 +408,7 @@
         "description": "Taught JavaScript as part of the Front-End + Rails curriculum.",
         "start_date": "2013-02",
         "end_date": "2013-03",
+        "hours": 8,
         "skills": [
           "CSS",
           "HTML",
@@ -411,6 +425,7 @@
         "description": "Created a meetup group to provide mentorship for individuals learning to code. Has grown to over six thousand members across seven states, occurring up to two to three times per week in NYC alone.",
         "start_date": "2011-09",
         "end_date": null,
+        "hours": 4,
         "skills": [
           "community organizing",
           "CSS",
