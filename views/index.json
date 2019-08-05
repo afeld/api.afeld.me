@@ -43,6 +43,28 @@
   "experience": {
     "coding": [
       {
+        "organization": "Technology Transformation Services (TTS)",
+        "url": "https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services",
+        "title": "Technology Portfolio Director",
+        "description": "Helping improve the infrastructure, workflow, and software use of this non-profit arts publication.",
+        "start_date": "2019-07-07",
+        "end_date": null,
+        "hours": 40,
+        "employees": 300,
+        "skills": ["Git", "GitHub", "security compliance"]
+      },
+      {
+        "organization": "Upsolve",
+        "url": "https://upsolve.org/",
+        "title": "Freelancer",
+        "description": "Improving development workflows and some backend features of the site that helps people file for bankruptcy.",
+        "start_date": "2019-06-10",
+        "end_date": null,
+        "hours": 8,
+        "employees": 8,
+        "skills": ["Git", "GitHub", "JavaScript", "Docker"]
+      },
+      {
         "organization": "Brooklyn Rail",
         "url": "https://brooklynrail.org/",
         "title": "Advisory Board Member",
@@ -57,9 +79,9 @@
         "organization": "xD",
         "url": "https://xdgov.github.io/xd.gov/",
         "title": "Information Technology (IT) Specialist (GS-15)",
-        "description": "Helping to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau. Worked the CTO and Standards Working Group on a Bureau-wide Open Source Policy and various software approvals and process changes.",
+        "description": "Helped to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau. Worked the CTO and Standards Working Group on a Bureau-wide Open Source Policy and various software approvals and process changes.",
         "start_date": "2018-09-02",
-        "end_date": null,
+        "end_date": "2019-07-06",
         "hours": 40,
         "employees": 4300,
         "skills": [
