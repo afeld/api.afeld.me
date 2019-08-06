@@ -1,37 +1,45 @@
-# Speaker’s Rider
+# Aidan Feldman's Rider for Public Speaking
 
-Please review the considerations below to make sure we have a great event. Contact me if you have any questions or concerns. I’m happy to help work through them!
+Please review the considerations below to make sure we have a great, inclusive event. Contact me if you have any questions or concerns. I'm happy to help work through them!
+
+This rider applies to commercial conferences and events. Not-for-profit/community-run ones, I will be more flexible on the things that cost money.
 
 ## Licensing
 
-- **My materials are licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**, except where otherwise noted.
-- I own and retain the rights to official recordings of my presentation and grant you license to use, modify, and redistribute them. (For example: **I need to be able to post recordings on Internet Archive and YouTube.**)
+- **My materials are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**, except where otherwise noted.
+- I own and retain the rights to all materials related to my presentation, including official recordings. I grant you license to use, modify, and redistribute them.
 
 ## Setup and AV
 
-- **Microphones**: **Lapel or lavalier** preferred. Handheld is OK.
-- **Video**: **USB-C or HDMI** preferred. Please notify if VGA or DVI, I can bring adapters.
-- **Power**: Preferred! Please notify if not available. I’ll have a country appropriate adapter.
-- **Wi-fi**: Preferred! Please notify if not available, I may have a hotspot available to me.
+- **Video**: **USB-C** preferred. Please notify if HDMI, VGA or DVI - I can bring adapters.
+- **Power**: Preferred. Please notify if a [three-prong American outlet](https://www.iec.ch/worldplugs/typeB.htm) will not be available - I can bring an adapter.
+- **Wi-fi**: Preferred. Please notify if not available.
 
 ## Accessibility
 
-- Provide **open captioning** for the audience.
-- Ensure **all official event venues are accessible** to people with mobility issues, including people who use wheelchairs. Please document where that’s not possible and make that documentation readily available to attendees.
+- Provide **captioning** for the audience for at least one track (if there are multiple).
+- Ensure **all official event venues are accessible** to people with mobility issues, including people who use wheelchairs. Please document where that's not possible and make that documentation readily available to attendees.
 - Reserve some **seating in the front rows** for people with vision impairments.
-- Run a **financial aid**, scholarship, opportunity grant, or similar program for attendees.
-- Offer **childcare and nursing rooms** for parents of young children.
+- If a paid event, run a **financial aid**, scholarship, opportunity grant, or similar program for attendees.
+- Offer **childcare and nursing room(s)** for parents of young children.
+- **Travel, meals, and lodging** must be offered for all out-of-town speakers. (No [\#PayToSpeak](https://paytospeak.org/).)
 
 ## Safety
 
-- Have a **code of conduct and enforcement procedures**, with conspicuous signage.
+- Have a **[Code of Conduct](https://www.ashedryden.com/blog/codes-of-conduct-101-faq)** with clear reporting and enforcement procedures.
 - If providing or otherwise facilitating meals, be responsive to people with **dietary restrictions**.
 
 ## Representation
 
-- **Speaker lineup should be representative of the surrounding community.**
-- No all male panels.
-- Gender parity with men, women, and nonbinary people.
-- Include people with disabilities, people of color, and LGBTQIA+ people.
+- **No all male or all white panels** at the entire event.
+- Minimum **one-third of speakers must be people of color, LGBTQIA+, or people with a disability**.
 
-This speaker's rider is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+---
+
+## Additional information
+
+This document is licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Inspirations:
+
+- [Frances McDormand](https://www.npr.org/sections/thetwo-way/2018/03/05/590867132/whats-an-inclusion-rider-here-s-the-story-behind-frances-mcdormand-s-closing-wor)
+- [Josh Simmons](https://github.com/joshsimmons/inclusion-rider)
+- [Richard Bradshaw](https://thefriendlytester.co.uk/speaker-rider/)
