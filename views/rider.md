@@ -4,18 +4,30 @@ Please review the considerations below to make sure we have a great, inclusive e
 
 This rider applies to commercial conferences and events. Not-for-profit/community-run ones, I will be more flexible on the things that cost money.
 
-## Licensing
+## Short version
+
+- Be accessible to:
+  - People with motor and sensory disabilities
+  - Parents with young children
+  - Speakers and attendees with low income
+- Have:
+  - A Code of Conduct
+  - A diverse set of speakers
+
+## Long version
+
+### Licensing
 
 - **My materials are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**, except where otherwise noted.
 - I own and retain the rights to all materials related to my presentation, including official recordings. I grant you license to use, modify, and redistribute them.
 
-## Setup and AV
+### Setup and AV
 
 - **Video**: **USB-C** preferred. Please notify if HDMI, VGA or DVI - I can bring adapters.
 - **Power**: Preferred. Please notify if a [three-prong American outlet](https://www.iec.ch/worldplugs/typeB.htm) will not be available - I can bring an adapter.
 - **Wi-fi**: Preferred. Please notify if not available.
 
-## Accessibility
+### Accessibility
 
 - Provide **captioning** for the audience for at least one track (if there are multiple).
 - Ensure **all official event venues are accessible** to people with mobility issues, including people who use wheelchairs. Please document where that's not possible and make that documentation readily available to attendees.
@@ -24,14 +36,14 @@ This rider applies to commercial conferences and events. Not-for-profit/communit
 - Offer **childcare and nursing room(s)** for parents of young children.
 - **Travel, meals, and lodging** must be offered for all out-of-town speakers. (No [\#PayToSpeak](https://paytospeak.org/).)
 
-## Safety
+### Safety
 
 - Have a **[Code of Conduct](https://www.ashedryden.com/blog/codes-of-conduct-101-faq)** with clear reporting and enforcement procedures.
 - If providing or otherwise facilitating meals, be responsive to people with **dietary restrictions**.
 
-## Representation
+### Representation
 
-- **No all male or all white panels** at the entire event.
+- **No all-male or all-white panels** at the entire event.
 - Minimum **one-third of speakers must be people of color, LGBTQIA+, or people with a disability**.
 
 ---
