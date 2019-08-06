@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'json'
+require 'rdiscount'
 require 'sinatra/asset_pipeline'
 require 'sinatra/respond_with'
 require 'sprockets-helpers'
@@ -58,4 +59,8 @@ end
 
 get '/resume' do
   erb :resume
+end
+
+get '/rider' do
+  markdown :rider, layout_engine: :erb, layout: :layout
 end

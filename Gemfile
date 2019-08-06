@@ -4,6 +4,7 @@ ruby '~> 2.5.0'
 
 gem 'activesupport'
 gem 'hash_dot', '~> 2.3'
+gem 'rdiscount'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-asset-pipeline'
