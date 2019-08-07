@@ -62,5 +62,5 @@ get '/resume' do
 end
 
 get '/rider' do
-  markdown :rider, layout_engine: :erb, layout: :layout
+  markdown :rider, layout_engine: :erb, layout: :rider, layout_options: { views: 'views/layouts' }
 end
