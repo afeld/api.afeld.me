@@ -29,6 +29,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rdiscount (2.2.0.1)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -71,6 +72,7 @@ DEPENDENCIES
   hash_dot (~> 2.3)
   minitest
   rack-test
+  rdiscount
   sinatra
   sinatra-asset-pipeline
   sinatra-contrib
