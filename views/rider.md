@@ -6,6 +6,7 @@ This rider applies to commercial conferences and events. Not-for-profit/communit
 
 ## Short version
 
+- My content is mine, but it will be shared broadly
 - Be accessible to:
   - People with motor and sensory disabilities
   - Parents with young children
