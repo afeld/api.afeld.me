@@ -1,0 +1,6 @@
+{
+  "buildpacks": [
+    "https://github.com/qnyp/heroku-buildpack-ruby-bower.git#run-bower"
+  ],
+  "stack": "heroku-18"
+}
