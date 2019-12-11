@@ -42,6 +42,11 @@ helpers do
 end
 
 get %r{/(index)?} do
+  if request.host == 'afeld.me'
+    redirect to('https://api.afeld.me/')
+    return
+  end
+
   respond_to do |wants|
     wants.html { erb :index }
     wants.json { PROFILE_STR }
