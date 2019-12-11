@@ -1,8 +1,6 @@
 # Aidan Feldman's Rider for Public Speaking
 
-Please review the considerations below to make sure we have a great, inclusive event. Contact me if you have any questions or concerns. I'm happy to help work through them!
-
-This rider applies to commercial conferences and events. Not-for-profit/community-run ones, I will be more flexible on the things that cost money.
+Please review the considerations below to make sure we have a great, inclusive event. None of the requirements have direct costs, and therefore should be achievable by all events. Contact me if you have any questions or concerns. I'm happy to help work through them!
 
 ## Short version
 
@@ -30,12 +28,8 @@ This rider applies to commercial conferences and events. Not-for-profit/communit
 
 ### Accessibility
 
-- Provide **captioning** for the audience for at least one track (if there are multiple).
 - Ensure **all official event venues are accessible** to people with mobility issues, including people who use wheelchairs. Please document where that's not possible and make that documentation readily available to attendees.
 - Reserve some **seating in the front rows** for people with vision impairments.
-- If a paid event, run a **financial aid**, scholarship, opportunity grant, or similar program for attendees.
-- Offer **childcare and nursing room(s)** for parents of young children.
-- **Travel, meals, and lodging** must be offered for all out-of-town speakers. (No [\#PayToSpeak](https://paytospeak.org/).)
 
 ### Safety
 
@@ -46,6 +40,15 @@ This rider applies to commercial conferences and events. Not-for-profit/communit
 
 - **No all-male or all-white panels** at the entire event.
 - Minimum **one-third of speakers must be people of color, LGBTQIA+, or people with a disability**.
+
+## Above and beyond
+
+While not strictly required by this rider, the following are strongly encouraged:
+
+- Provide **captioning** for the audience (for at least one track, if there are multiple).
+- If a paid event, run a **financial aid**, scholarship, opportunity grant, or similar program for attendees.
+- Offer **childcare and nursing room(s)** for parents of young children.
+- **Travel, meals, and lodging** must be offered for all out-of-town speakers. (No [\#PayToSpeak](https://paytospeak.org/).)
 
 ---
 
