@@ -2,15 +2,14 @@
 
 ## To run locally
 
-Requires Ruby 1.9.3+ and Node.js 0.8+.
+1. Download and start Docker.
+1. Start the server.
 
-```bash
-gem install bundler
-bundle install
+   ```bash
+   docker-compose up --build
+   ```
 
-bundle exec rackup
-open http://localhost:9292
-```
+1. Open http://localhost:9292.
 
 ## To make your own
 
