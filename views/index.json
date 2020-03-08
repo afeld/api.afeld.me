@@ -67,7 +67,7 @@
         "title": "Freelancer",
         "description": "Improving development workflows and some backend features of the site that helps people file for bankruptcy.",
         "start_date": "2019-06-10",
-        "end_date": null,
+        "end_date": "2019-11-04",
         "hours": 8,
         "employees": 8,
         "skills": ["Git", "GitHub", "JavaScript", "Docker"]
