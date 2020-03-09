@@ -154,6 +154,16 @@
         ]
       },
       {
+        "organization": "EmpireConf",
+        "url": "http://empireconf.org/",
+        "title": "Organizer",
+        "description": "One of the organizers for the annual EmpireNode/EmpireConf JavaScript conferences.",
+        "start_date": "2015-01",
+        "end_date": null,
+        "hours": 1,
+        "skills": ["community organizing", "public speaking"]
+      },
+      {
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist (GS-15)",
@@ -370,16 +380,6 @@
         "end_date": "2016-12",
         "hours": 20,
         "employees": 10000
-      },
-      {
-        "organization": "EmpireConf",
-        "url": "http://empireconf.org/",
-        "title": "Organizer",
-        "description": "One of the organizers for the annual EmpireNode/EmpireConf JavaScript conferences.",
-        "start_date": "2015-01",
-        "end_date": null,
-        "hours": 1,
-        "skills": ["community organizing", "public speaking"]
       },
       {
         "organization": "New York University",
