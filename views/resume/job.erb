@@ -1,0 +1,39 @@
+<div class="listing">
+  <h3 id="<%= to_anchor(job.organization) %>">
+    <% if job.title %>
+      <%= job.title %>,
+    <% end %>
+    <% if job.url %>
+      <a href="<%= job.url %>"><%= job.organization %></a>
+    <% else %>
+      <%= job.organization %>
+    <% end %>
+  </h3>
+  <div class="dates"><%= date_row(job) %></div>
+  <p><%= job.description %></p>
+  <% if job['responsibilities']  %>
+    <ul class="responsibilities">
+      <% job.responsibilities.each do |resp| %>
+        <li>
+          <p>
+            <% title = [resp.group, resp.title].compact.join(' — ') %>
+            <% if resp['url'] %>
+              <a href="<%= resp.url %>" class="title"><%= title %></a>:
+            <% else %>
+              <span class="title"><%= title %></span>:
+            <% end %>
+            <%= resp.description %>
+            <% if resp['url'] %>
+              <span class="url">
+                <a href="<%= resp.url %>"><%= url(resp.url) %></a>
+              </span>
+            <% end %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+  <% if job['skills'] && job.skills.any? %>
+    <div><em>Skills/tools:</em> <%= job.skills.join(', ') %></div>
+  <% end %>
+</div>
