@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-       - image: ruby:2.5
+      - image: ruby:2.7
     environment:
       # fix encoding
       - LANG: C.UTF-8
@@ -12,9 +12,9 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
       - run:
           name: install dependencies
           command: |
