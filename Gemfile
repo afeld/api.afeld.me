@@ -9,6 +9,10 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-asset-pipeline'
 
+group :development do
+  gem 'rerun'
+end
+
 group :test do
   gem 'minitest'
   gem 'rack-test', require: 'rack/test'

@@ -9,4 +9,6 @@ WORKDIR /usr/src/app
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-CMD bundle exec rackup --host 0.0.0.0
+CMD bundle exec rerun \
+  --pattern '**/*.{rb,md,json}' \
+  -- rackup --host 0.0.0.0

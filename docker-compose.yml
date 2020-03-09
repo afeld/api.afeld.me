@@ -2,6 +2,7 @@ version: "3.7"
 services:
   web:
     build: .
+    tty: true
     ports:
       - "9292:9292"
     volumes:
