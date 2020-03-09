@@ -76,6 +76,9 @@ a {
   .title {
     font-weight: bold;
   }
+  .industry & {
+    display: none;
+  }
 }
 
 .dates {
