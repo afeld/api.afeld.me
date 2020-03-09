@@ -7,21 +7,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/afeld/jsonpanel@v0.1.2/stylesheets/jsonpanel.min.css">
     <%= stylesheet_tag 'application' %>
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/autolinker@3.0.5,gh/afeld/jsonpanel@v0.1.2/jsonpanel.min.js"></script>
-    <script>
-      $(function(){
-        var $json = $('.jsonpanel')
-        $json.jsonpanel({data: <%= PROFILE_STR %>});
-
-        // turn URLs into links
-        $json.find('.val.string').each(function(i, el){
-          var $el = $(el);
-          var linked = Autolinker.link($el.text());
-          $el.html(linked);
-        });
-
-        $('.profile').remove();
-      });
-    </script>
     <%= erb :ga %>
   </head>
   <body>
@@ -39,5 +24,18 @@
     <div class="profile">
       <%= to_dl(PROFILE_HSH) %>
     </div>
+    <script>
+      var $json = $('.jsonpanel')
+      $json.jsonpanel({data: <%= PROFILE_STR %>});
+
+      // turn URLs into links
+      $json.find('.val.string').each(function(i, el){
+        var $el = $(el);
+        var linked = Autolinker.link($el.text());
+        $el.html(linked);
+      });
+
+      $('.profile').remove();
+    </script>
   </body>
 </html>
