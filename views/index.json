@@ -136,8 +136,7 @@
           "Git",
           "GitHub",
           "JavaScript",
-          "security compliance",
-          "teaching"
+          "security compliance"
         ],
         "responsibilities": [
           {
@@ -185,7 +184,6 @@
           "Ruby on Rails",
           "Ruby",
           "security compliance",
-          "teaching",
           "Terraform"
         ],
         "responsibilities": [
@@ -264,8 +262,7 @@
           "jQuery",
           "public speaking",
           "Ruby",
-          "Ruby on Rails",
-          "teaching"
+          "Ruby on Rails"
         ]
       },
       {
@@ -338,7 +335,6 @@
           "Ruby on Rails",
           "Ruby",
           "Sinatra",
-          "teaching",
           "Terraform"
         ]
       },
@@ -383,7 +379,7 @@
         "start_date": "2015-01",
         "end_date": null,
         "hours": 1,
-        "skills": ["community organizing", "public speaking", "teaching"]
+        "skills": ["community organizing", "public speaking"]
       },
       {
         "organization": "New York University",
@@ -401,8 +397,7 @@
           "HTML",
           "JavaScript",
           "NodeJS",
-          "public speaking",
-          "teaching"
+          "public speaking"
         ],
         "responsibilities": [
           {
@@ -438,8 +433,7 @@
           "PostgreSQL",
           "public speaking",
           "Ruby on Rails",
-          "Ruby",
-          "teaching"
+          "Ruby"
         ]
       },
       {
@@ -451,14 +445,7 @@
         "end_date": "2013-03",
         "hours": 8,
         "employees": 3200,
-        "skills": [
-          "CSS",
-          "HTML",
-          "JavaScript",
-          "jQuery",
-          "public speaking",
-          "teaching"
-        ]
+        "skills": ["CSS", "HTML", "JavaScript", "jQuery", "public speaking"]
       },
       {
         "organization": "Hacker Hours",
@@ -480,8 +467,7 @@
           "PostgreSQL",
           "Python",
           "Ruby on Rails",
-          "Ruby",
-          "teaching"
+          "Ruby"
         ]
       }
     ],
