@@ -572,6 +572,24 @@
   },
   "talks": [
     {
+      "title": "Human-Centered DevOps",
+      "event": "DevOpsDC",
+      "date": "2020-04-14",
+      "url": "https://www.youtube.com/watch?v=0wIvXfhWpx0"
+    },
+    {
+      "title": "The Future of Civic Tech",
+      "event": "School of Data NYC",
+      "date": "2020-03-07",
+      "url": "https://livestream.com/internetsociety/nycsodata301/videos/202714494"
+    },
+    {
+      "title": "Continuous Delivery workshop",
+      "event": "DevOps & Agile Digital Transformation for Government conference (Australia)",
+      "date": "2019-11-26",
+      "url": "https://github.com/afeld/delivery#readme"
+    },
+    {
       "title": "Open Source Maintenance",
       "event": "Open Source NYC",
       "date": "2019-02-20",
