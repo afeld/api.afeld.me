@@ -366,6 +366,17 @@
     ],
     "teaching": [
       {
+        "organization": "NYU Wagner",
+        "url": "http://www.nyu.edu/",
+        "title": "Adjunct Faculty",
+        "description": "Teaching Python Coding for Public Policy at New York University, introducing students to software development and data anlysis though code.",
+        "start_date": "2020-04",
+        "end_date": null,
+        "hours": 5,
+        "employees": 19000,
+        "skills": ["Git", "GitHub", "Pandas", "Python", "public speaking"]
+      },
+      {
         "organization": "Cornell Tech",
         "url": "https://docs.google.com/document/d/1-hk6GzhV1yHU1T0E7uqcdNTtvv3fuq1_WECQOWOT2zw/edit",
         "title": "Adjunct Faculty",
