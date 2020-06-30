@@ -59,6 +59,26 @@
           "IT policy",
           "JavaScript",
           "security compliance"
+        ],
+        "responsibilities": [
+          {
+            "group": "FAS Systems Governance Committee (FSGC)",
+            "title": "Voting Member",
+            "description": "Help decide on and steer budgets for IT projects in the Federal Acquisition Service (FAS). Drove the Committee from accepting multi-million-dollar budget requests to a phased funding process that encourages agile practices of being user-centered and delivering value quickly.",
+            "url": "https://www.gsa.gov/about-us/organization/federal-acquisition-service"
+          },
+          {
+            "group": "Mac Working Group",
+            "title": null,
+            "description": "Serve as a primary stakeholder representing 400 Mac users across the agency, advocating for the workstation needs of technical team members.",
+            "url": null
+          },
+          {
+            "group": null,
+            "title": "Authorizing Official",
+            "description": "Responsible for the security risk of ten systems across TTS, including cross-agency platforms like data.gov, Federalist, and search.gov.",
+            "url": null
+          }
         ]
       },
       {
