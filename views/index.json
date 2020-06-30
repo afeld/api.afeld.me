@@ -374,7 +374,25 @@
         "end_date": null,
         "hours": 5,
         "employees": 19000,
-        "skills": ["Git", "GitHub", "Pandas", "Python", "public speaking"]
+        "skills": [
+          "Git",
+          "GitHub",
+          "Pandas",
+          "Python",
+          "public speaking",
+          "teaching"
+        ]
+      },
+      {
+        "organization": "The New School",
+        "url": "https://opencampus.newschool.edu/program/certificate-programs/art-design-with-parsons/web-design-and-development",
+        "title": "Adjunct Faculty",
+        "description": "Teaching a class on Working with APIs and AJAX through the Open Campus Web Design and Development certificate.",
+        "start_date": "2020-03",
+        "end_date": null,
+        "hours": 4,
+        "employees": 1000,
+        "skills": ["JavaScript", "public speaking", "teaching"]
       },
       {
         "organization": "Cornell Tech",
