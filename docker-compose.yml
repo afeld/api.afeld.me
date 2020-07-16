@@ -4,6 +4,6 @@ services:
     build: .
     tty: true
     ports:
-      - "9292:9292"
+      - "4567:4567"
     volumes:
       - .:/usr/src/app

@@ -9,7 +9,7 @@
    docker-compose up --build
    ```
 
-1. Open http://localhost:9292.
+1. Open http://localhost:4567.
 
 ## To make your own
 

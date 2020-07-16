@@ -10,5 +10,5 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 CMD bundle exec rerun \
-  --pattern '**/*.{rb,md,json}' \
-  -- rackup --host 0.0.0.0
+  --dir helpers \
+  -- middleman --bind-address=0.0.0.0

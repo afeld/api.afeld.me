@@ -94,6 +94,8 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rerun (0.13.0)
+      listen (~> 3.0)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -113,6 +115,7 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-livereload
+  rerun
   tzinfo-data
   wdm (~> 0.1)
 
