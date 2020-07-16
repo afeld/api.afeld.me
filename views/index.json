@@ -386,24 +386,6 @@
     ],
     "teaching": [
       {
-        "organization": "NYU Wagner",
-        "url": "http://www.nyu.edu/",
-        "title": "Adjunct Faculty",
-        "description": "Teaching Python Coding for Public Policy at New York University, introducing students to software development and data anlysis though code.",
-        "start_date": "2020-04",
-        "end_date": null,
-        "hours": 5,
-        "employees": 19000,
-        "skills": [
-          "Git",
-          "GitHub",
-          "Pandas",
-          "Python",
-          "public speaking",
-          "teaching"
-        ]
-      },
-      {
         "organization": "The New School",
         "url": "https://opencampus.newschool.edu/program/certificate-programs/art-design-with-parsons/web-design-and-development",
         "title": "Adjunct Faculty",
@@ -435,12 +417,12 @@
         "skills": ["community organizing", "public speaking", "teaching"]
       },
       {
-        "organization": "New York University",
+        "organization": "New York University (NYU)",
         "url": "http://www.nyu.edu/",
         "title": "Adjunct Faculty",
         "description": null,
         "start_date": "2012-06",
-        "end_date": "2015-05",
+        "end_date": null,
         "hours": 5,
         "employees": 19000,
         "skills": [
@@ -450,6 +432,7 @@
           "HTML",
           "JavaScript",
           "NodeJS",
+          "Python",
           "public speaking",
           "teaching"
         ],
@@ -465,6 +448,12 @@
             "title": "Building for Learning",
             "description": "Was asked to create and teach an interdisciplinary graduate-level course around building interactive educational tools, while also covering front-end web development. In addition to rapid prototyping of physical and digital learning materials, also brought in experts from the educational technology to give students an understanding of taking projects from concept to product.",
             "url": "https://github.com/bfl-itp/syllabus"
+          },
+          {
+            "group": "Wagner Graduate School of Public Service",
+            "title": "Python Coding for Public Policy",
+            "description": "Introducing Public Policy students with little to no programming experience to software development and data anlysis though code. Teaching the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
+            "url": "https://github.com/afeld/python-public-policy"
           }
         ]
       },
