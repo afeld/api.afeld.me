@@ -12,6 +12,8 @@ activate :livereload
 
 # Per-page layout changes
 page '/', layout: false
+page '/index.json', layout: false
+page '/resume.html', layout: false
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
