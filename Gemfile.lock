@@ -116,8 +116,6 @@ DEPENDENCIES
   middleman-autoprefixer (~> 2.7)
   middleman-livereload
   rerun
-  tzinfo-data
-  wdm (~> 0.1)
 
 BUNDLED WITH
    2.1.4
