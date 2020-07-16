@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Aidan Feldman's (Long-Form) Resume</title>
-    <%= stylesheet_tag 'resume' %>
+    <%= stylesheet_link_tag 'resume' %>
     <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <%= erb :'resume/meta' %>
-    <%= erb :'resume/experience' %>
-    <%= erb :'resume/skills' %>
-    <%= erb :'resume/edu' %>
-    <%= erb :'resume/talks' %>
-    <%= erb :'resume/writing' %>
-    <%= erb :'resume/writeups' %>
+    <%= partial 'resume/meta' %>
+    <%= partial 'resume/experience' %>
+    <%= partial 'resume/skills' %>
+    <%= partial 'resume/edu' %>
+    <%= partial 'resume/talks' %>
+    <%= partial 'resume/writing' %>
+    <%= partial 'resume/writeups' %>
     <script>
       anchors.add('*[id]');
     </script>

@@ -1,0 +1,16 @@
+<div class="grid-wrap meta">
+  <div class="section">
+    <h1 class="name"><%= data.index.name %></h1>
+  </div>
+  <div class="content">
+    <div class="content-inner">
+      <div class="url">
+        <a href="mailto:<%= data.index.email %>"><%= data.index.email %></a>
+      </div>
+      <div class="url">
+        <a href="<%= data.index.url %>"><%= url(data.index.url) %></a>
+      </div>
+      <div><%= data.index.location.city %>, <%= data.index.location.state %></div>
+    </div>
+  </div>
+</div>

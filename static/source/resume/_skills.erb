@@ -3,12 +3,12 @@
     <h2 id="skills">Skills include</h2>
   </div>
   <div class="content">
-    <% [7..INF, 4..6, 1..3].each do |yrs| %>
+    <% [7..infinity, 4..6, 1..3].each do |yrs| %>
       <p>
         <strong>
-          <%= yrs.begin %><%= yrs.end == INF ? '+' : "-#{yrs.end}" %> years experience:
+          <%= yrs.begin %><%= yrs.end == infinity ? '+' : "-#{yrs.end}" %> years experience:
         </strong>
-        <%= skills(JOBS, yrs).join(', ') %>
+        <%= skills(all_jobs, yrs).join(', ') %>
       </p>
     <% end %>
   </div>
