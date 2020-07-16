@@ -1,3 +1,7 @@
+---
+title: Rider
+---
+
 # Aidan Feldman's Rider for Public Speaking
 
 Please review the considerations below to make sure we have a great, inclusive event. None of the requirements have direct costs, and therefore should be achievable by all events. Contact me if you have any questions or concerns. I'm happy to help work through them!
