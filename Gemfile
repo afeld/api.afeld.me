@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.5'
-
 gem 'activesupport'
 gem 'hash_dot', '~> 2.3'
 gem 'rdiscount'

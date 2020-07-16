@@ -11,6 +11,7 @@ activate :livereload
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
+page '/', layout: false
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
