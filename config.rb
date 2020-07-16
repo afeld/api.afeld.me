@@ -5,7 +5,11 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :livereload
+activate :directory_indexes
+
+activate :livereload do |opts|
+  opts.host = config[:cli_options]['bind_address'] || config[:cli_options]['server_name']
+end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -45,5 +49,3 @@ page '/*', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
-
-activate :directory_indexes

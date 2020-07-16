@@ -4,6 +4,11 @@ FROM ruby:2.7
 RUN bundle config --global frozen 1
 ENV LANG C.UTF-8
 
+# install Node.js
+# https://github.com/nodesource/distributions/#installation-instructions
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
 WORKDIR /usr/src/app
 
 COPY Gemfile Gemfile.lock ./
@@ -11,4 +16,4 @@ RUN bundle install
 
 CMD bundle exec rerun \
   --dir helpers \
-  -- middleman --bind-address=0.0.0.0
+  -- middleman --bind-address=0.0.0.0 --server-name=0.0.0.0
