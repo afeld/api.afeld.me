@@ -91,8 +91,6 @@ GEM
     rack (2.2.3)
     rack-livereload (0.3.17)
       rack
-    rack-test (1.1.0)
-      rack (>= 1.0, < 3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -115,7 +113,6 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-livereload
-  rack-test
   tzinfo-data
   wdm (~> 0.1)
 

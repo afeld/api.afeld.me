@@ -5,7 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :livereload unless ENV['RACK_ENV'] == 'test'
+activate :livereload
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
