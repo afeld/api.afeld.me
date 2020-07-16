@@ -28,4 +28,9 @@ module TimeHelpers
     delta = (Date.today - date) / 365
     delta.ceil
   end
+
+  def infinity
+    # https://banisterfiend.wordpress.com/2009/10/02/wtf-infinite-ranges-in-ruby/
+    1.0 / 0.0
+  end
 end

@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
-module SkillHelpers
+module ResumeHelpers
+  def all_jobs
+    (data.resume.experience.coding + data.resume.experience.teaching).sort_by(&:start_date).reverse
+  end
+
   def skill_years(jobs)
     results = Hash.new(0)
     jobs.each do |job|
@@ -32,7 +36,7 @@ module SkillHelpers
 
   def num_employees(job)
     if job.respond_to? :employees
-      num = number_to_delimited(job.employees)
+      num = number_with_delimiter(job.employees)
       "#{num} employees"
     end
   end

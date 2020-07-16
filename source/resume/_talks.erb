@@ -3,7 +3,7 @@
     <h2 id="talks">Talks</h2>
   </div>
   <div class="content">
-    <% PROFILE_HSH.talks.each do |talk| %>
+    <% data.resume.talks.each do |talk| %>
       <div class="listing">
         <h3>
           <a href="<%= talk.url %>"><%= talk.title %></a>

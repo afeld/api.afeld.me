@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>Aidan Feldman API</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/afeld/jsonpanel@v0.1.2/stylesheets/jsonpanel.min.css">
-    <%= stylesheet_tag 'application' %>
+    <%= stylesheet_link_tag "application" %>
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/autolinker@3.0.5,gh/afeld/jsonpanel@v0.1.2/jsonpanel.min.js"></script>
-    <%= erb :ga %>
+    <%= partial "ga" %>
   </head>
   <body>
     <div class="jsonpanel"></div>
@@ -23,11 +23,11 @@
       </li>
     </ul>
     <div class="profile">
-      <%= to_dl(PROFILE_HSH) %>
+      <%= to_dl(data.resume) %>
     </div>
     <script>
       var $json = $('.jsonpanel')
-      $json.jsonpanel({data: <%= PROFILE_STR %>});
+      $json.jsonpanel({data: <%= data.resume.to_json %>});
 
       // turn URLs into links
       $json.find('.val.string').each(function(i, el){

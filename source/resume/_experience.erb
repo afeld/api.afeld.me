@@ -3,8 +3,8 @@
     <h2 id="experience">Experience includes</h2>
   </div>
   <div class="content">
-    <% JOBS.each do |job| %>
-      <%= erb :'resume/job', locals: { job: job } %>
+    <% all_jobs.each do |job| %>
+      <%= partial 'resume/job', locals: { job: job } %>
     <% end %>
   </div>
 </div>
