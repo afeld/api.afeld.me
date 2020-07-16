@@ -1,17 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'activesupport'
-gem 'hash_dot', '~> 2.3'
-gem 'rdiscount'
-gem 'sinatra'
-gem 'sinatra-contrib'
-gem 'sinatra-asset-pipeline'
-
-group :development do
-  gem 'rerun'
-end
-
-group :test do
-  gem 'minitest'
-  gem 'rack-test', require: 'rack/test'
-end
+gem 'middleman', '~> 4.2'
+gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-livereload'
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
+gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
