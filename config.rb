@@ -16,6 +16,7 @@ end
 
 # Per-page layout changes
 page '/rider.html', layout: 'rider'
+page '/*.html', layout: 'layout'
 page '/*', layout: false
 
 # With alternative layout

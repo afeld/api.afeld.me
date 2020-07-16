@@ -1,42 +1,39 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Aidan Feldman API</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/afeld/jsonpanel@v0.1.2/stylesheets/jsonpanel.min.css">
-    <%= stylesheet_link_tag "application" %>
-    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/autolinker@3.0.5,gh/afeld/jsonpanel@v0.1.2/jsonpanel.min.js"></script>
-    <%= partial "ga" %>
-  </head>
-  <body>
-    <div class="jsonpanel"></div>
-    <ul class="meta-links">
-      <li>
-        <a href="https://twitter.com/aidanfeldman">
-          <img alt="Follow @aidanfeldman on Twitter" src="https://img.shields.io/twitter/follow/aidanfeldman?color=rgb%2829%2C%20161%2C%20242%29&style=for-the-badge">
-        </a>
-      </li>
-      <li>
-        <a href="index.json">View raw</a>
-        <a href="https://github.com/afeld/api.afeld.me">Fork me</a>
-      </li>
-    </ul>
-    <div class="profile">
-      <%= to_dl(data.resume) %>
-    </div>
-    <script>
-      var $json = $('.jsonpanel')
-      $json.jsonpanel({data: <%= data.resume.to_json %>});
+---
+title: Aidan Feldman API
+canonical_origin: https://api.afeld.me
+---
 
-      // turn URLs into links
-      $json.find('.val.string').each(function(i, el){
-        var $el = $(el);
-        var linked = Autolinker.link($el.text());
-        $el.html(linked);
-      });
+<% content_for :head do %>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/afeld/jsonpanel@v0.1.2/stylesheets/jsonpanel.min.css">
+  <%= stylesheet_link_tag "application" %>
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/autolinker@3.0.5,gh/afeld/jsonpanel@v0.1.2/jsonpanel.min.js"></script>
+<% end %>
 
-      $('.profile').remove();
-    </script>
-  </body>
-</html>
+<div class="jsonpanel"></div>
+<ul class="meta-links">
+  <li>
+    <a href="https://twitter.com/aidanfeldman">
+      <img alt="Follow @aidanfeldman on Twitter" src="https://img.shields.io/twitter/follow/aidanfeldman?color=rgb%2829%2C%20161%2C%20242%29&style=for-the-badge">
+    </a>
+  </li>
+  <li>
+    <a href="index.json">View raw</a>
+    <a href="https://github.com/afeld/api.afeld.me">Fork me</a>
+  </li>
+</ul>
+<div class="profile">
+  <%= to_dl(data.resume) %>
+</div>
+<script>
+  var $json = $('.jsonpanel')
+  $json.jsonpanel({data: <%= data.resume.to_json %>});
+
+  // turn URLs into links
+  $json.find('.val.string').each(function(i, el){
+    var $el = $(el);
+    var linked = Autolinker.link($el.text());
+    $el.html(linked);
+  });
+
+  $('.profile').remove();
+</script>
