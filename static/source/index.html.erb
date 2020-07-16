@@ -23,11 +23,11 @@
       </li>
     </ul>
     <div class="profile">
-      <%= to_dl(data.index) %>
+      <%= to_dl(data.resume) %>
     </div>
     <script>
       var $json = $('.jsonpanel')
-      $json.jsonpanel({data: <%= data.index.to_json %>});
+      $json.jsonpanel({data: <%= data.resume.to_json %>});
 
       // turn URLs into links
       $json.find('.val.string').each(function(i, el){

@@ -1,16 +1,16 @@
 <div class="grid-wrap meta">
   <div class="section">
-    <h1 class="name"><%= data.index.name %></h1>
+    <h1 class="name"><%= data.resume.name %></h1>
   </div>
   <div class="content">
     <div class="content-inner">
       <div class="url">
-        <a href="mailto:<%= data.index.email %>"><%= data.index.email %></a>
+        <a href="mailto:<%= data.resume.email %>"><%= data.resume.email %></a>
       </div>
       <div class="url">
-        <a href="<%= data.index.url %>"><%= url(data.index.url) %></a>
+        <a href="<%= data.resume.url %>"><%= url(data.resume.url) %></a>
       </div>
-      <div><%= data.index.location.city %>, <%= data.index.location.state %></div>
+      <div><%= data.resume.location.city %>, <%= data.resume.location.state %></div>
     </div>
   </div>
 </div>

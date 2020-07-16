@@ -2,7 +2,7 @@
 
 module ResumeHelpers
   def all_jobs
-    (data.index.experience.coding + data.index.experience.teaching).sort_by(&:start_date).reverse
+    (data.resume.experience.coding + data.resume.experience.teaching).sort_by(&:start_date).reverse
   end
 
   def skill_years(jobs)
