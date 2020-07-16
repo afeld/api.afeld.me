@@ -4,17 +4,17 @@ Bundler.require(:default, :test)
 
 require 'json'
 require 'minitest/autorun'
-require_relative 'server'
+require 'middleman/rack'
 
 describe "site" do
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    Middleman.server
   end
 
   it "has valid JSON" do
-    contents = File.read('views/index.json')
+    contents = File.read('data/resume.json')
     JSON.parse(contents) # shouldn't raise an exception
   end
 
