@@ -11,4 +11,14 @@
 
 1. Open http://localhost:4567.
 
-See also: https://github.com/danfang/me-api
+## Checking broken links
+
+```sh
+gem install html-proofer
+bundle exec middleman build
+htmlproofer ./build
+```
+
+## See also
+
+https://github.com/danfang/me-api
