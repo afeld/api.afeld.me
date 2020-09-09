@@ -2,7 +2,13 @@
 
 module ResumeHelpers
   def all_jobs
-    (data.resume.experience.coding + data.resume.experience.teaching).sort_by(&:start_date).reverse
+    jobs = (data.resume.experience.coding + data.resume.experience.teaching).sort_by(&:start_date).reverse
+
+    # put current jobs in front of past ones
+    current = jobs.select{|job| job.end_date.nil? }
+    past = jobs.select{|job| job.end_date.present? }
+
+    current + past
   end
 
   def skill_years(jobs)
