@@ -8,10 +8,12 @@
         <h3>
           <a href="<%= writing.url %>"><%= writing.title %></a>
         </h3>
-        <% if writing.publisher != 'self' %>
-          <h3><%= writing.publisher %></h3>
-        <% end %>
-        <div class="dates"><%= date(writing.date) %></div>
+        <h3>
+          <% if writing.publisher != 'self' %>
+            <%= writing.publisher %>,
+          <% end %>
+          <span class="dates"><%= date(writing.date) %></span>
+        </h3>
         <!-- this only displayed when printing -->
         <div class="url">
           <a href="<%= writing.url %>"><%= url(writing.url) %></a>

@@ -8,8 +8,7 @@
         <h3>
           <a href="<%= writeup.url %>"><%= writeup.title %></a>
         </h3>
-        <h3><%= writeup.publisher %></h3>
-        <div class="dates"><%= date(writeup.date) %></div>
+        <h3><%= writeup.publisher %>, <span class="dates"><%= date(writeup.date) %></span></h3>
         <!-- this only displayed when printing -->
         <div class="url">
           <a href="<%= writeup.url %>"><%= url(writeup.url) %></a>
