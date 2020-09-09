@@ -13,8 +13,16 @@ module TimeHelpers
 
   def date(date_str)
     obj = parse_date(date_str)
-    format_str = month_only?(date_str) ? '%b %Y' : '%b %-m, %Y'
-    obj.strftime(format_str)
+
+    if month_only?(date_str)
+      datetime = obj.strftime("%Y-%m")
+      display_date = obj.strftime('%b %Y')
+    else
+      datetime = obj.strftime("%Y-%m-%d")
+      display_date = obj.strftime('%b %-m, %Y')
+    end
+
+    "<time datetime=\"#{datetime}\">#{display_date}</time>"
   end
 
   def date_range(obj)
