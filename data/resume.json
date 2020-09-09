@@ -44,9 +44,9 @@
     "coding": [
       {
         "organization": "Technology Transformation Services (TTS)",
-        "url": "https://handbook.18f.gov/tech-portfolio/",
+        "url": "https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services",
         "title": "Technology Director",
-        "description": "Information Technology (IT) Specialist in Information Security (INFOSEC). Leads a team within the General Services Administration (GSA) that oversees, manages, and coordinates everything technology-related that cuts across TTS, as well as anything technology-related that will affect TTS from the outside. Particular focus on security, compliance, infrastructure, and tech policy.",
+        "description": "Information Technology (IT) Specialist in Information Security (INFOSEC). Leads the <a href=\"https://handbook.tts.gsa.gov/tech-portfolio/\">Technology Portfolio</a>, a team within the General Services Administration (GSA) that oversees, manages, and coordinates everything technology-related that cuts across TTS, as well as anything technology-related that will affect TTS from the outside. Particular focus on security, compliance, infrastructure, and tech policy.",
         "start_date": "2019-07-07",
         "end_date": null,
         "hours": 40,
