@@ -48,6 +48,7 @@ If in-person,
 
 - **No all-male or all-white panels** at the entire event.
 - Minimum **one-third of speakers must be people of color, LGBTQIA+, or people with a disability**.
+- Provide a way for speakers attendees and speakers to specify their [**pronouns**](https://pronoun.is/) (printed on badges, markers, stickers, etc.)
 
 ## Above and beyond
 
