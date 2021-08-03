@@ -1,12 +1,12 @@
-FROM ruby:2.7
+FROM ruby:3
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
 ENV LANG C.UTF-8
 
-# install Node.js
+# install Node.js for ExecJS
 # https://github.com/nodesource/distributions/#installation-instructions
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 
 WORKDIR /usr/src/app
