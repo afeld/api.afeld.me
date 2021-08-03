@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 
 # install Node.js
 # https://github.com/nodesource/distributions/#installation-instructions
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y nodejs
 
 WORKDIR /usr/src/app
