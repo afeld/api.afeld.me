@@ -98,7 +98,7 @@
         "title": "Advisory Board Member",
         "description": "Helping improve the infrastructure, workflow, and software use of this non-profit arts publication.",
         "start_date": "2019-01-07",
-        "end_date": "2020-02-24,
+        "end_date": "2020-02-24",
         "hours": 5,
         "employees": 12,
         "skills": ["Git", "GitHub", "MySQL", "PHP"]
