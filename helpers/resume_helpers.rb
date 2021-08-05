@@ -19,8 +19,8 @@ module ResumeHelpers
       next unless job['skills'] && job.skills.any?
 
       start = parse_date(job.start_date)
-      # TODO: don't assume all skills have been used continuously
-      years_experience = years_since(start)
+      end_date = job.end_date ? parse_date(job.end_date) : Date.today
+      years_experience = (end_date - start) / 365 + 1
       job.skills.each do |skill|
         results[skill] = [years_experience, results[skill]].max
       end
