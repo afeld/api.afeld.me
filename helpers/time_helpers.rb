@@ -31,12 +31,6 @@ module TimeHelpers
     "#{start_date} — #{end_date}"
   end
 
-  # https://stackoverflow.com/a/1904193/358804
-  def years_since(date)
-    delta = (Date.today - date) / 365
-    delta.ceil
-  end
-
   def infinity
     # https://banisterfiend.wordpress.com/2009/10/02/wtf-infinite-ranges-in-ruby/
     1.0 / 0.0
