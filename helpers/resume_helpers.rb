@@ -47,9 +47,7 @@ module ResumeHelpers
 
   def date_row(job)
     [
-      date_range(job),
-      hours_per_week(job.hours),
-      num_employees(job)
+      date_range(job)
     ].compact.join(", ")
   end
 end

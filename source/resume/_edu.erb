@@ -7,7 +7,6 @@
     <% data.resume.education[0...-1].each do |edu| %>
       <div class="listing">
         <h3><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h3>
-        <div class="dates"><%= date_range(edu) %></div>
         <ul>
           <% edu.degrees.each do |degree| %>
             <li><%= degree.title %> <%= degree.major %></li>

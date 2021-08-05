@@ -80,7 +80,7 @@ nav[data-toggle="toc"] .nav > li > a {
 }
 
 .grid-wrap {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   max-width: 1000px;
 
   display: grid;
@@ -105,7 +105,7 @@ nav[data-toggle="toc"] .nav > li > a {
   margin-bottom: 2rem;
 
   h3 {
-    font-size: 1.5rem;
+    display: inline;
     margin-top: 0;
     margin-bottom: 0.4rem;
   }
@@ -132,6 +132,7 @@ nav[data-toggle="toc"] .nav > li > a {
 .dates {
   font-style: italic;
   font-weight: bold;
+  float: right;
 }
 
 .talks,
