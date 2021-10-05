@@ -15,14 +15,8 @@ module TimeHelpers
 
   def date(date_str)
     obj = parse_date(date_str)
-
-    if month_only?(date_str)
-      datetime = obj.strftime("%Y-%m")
-      display_date = obj.strftime("%b %Y")
-    else
-      datetime = obj.strftime("%Y-%m-%d")
-      display_date = obj.strftime("%b %-d, %Y")
-    end
+    datetime = obj.strftime("%Y-%m")
+    display_date = obj.strftime("%b %Y")
 
     "<time datetime=\"#{datetime}\">#{display_date}</time>"
   end
