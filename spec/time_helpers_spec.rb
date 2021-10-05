@@ -26,7 +26,7 @@ RSpec.describe TimeHelpers do
     end
 
     it "parses a full date" do
-      expect(@helper.date("2021-10-01")).to eq("<time datetime=\"2021-10-01\">Oct 1, 2021</time>")
+      expect(@helper.date("2021-10-01")).to eq("<time datetime=\"2021-10\">Oct 2021</time>")
     end
   end
 end
