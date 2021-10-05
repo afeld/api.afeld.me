@@ -18,6 +18,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
     contracts (0.13.0)
+    diff-lcs (1.4.4)
     dotenv (2.7.6)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
@@ -101,6 +102,19 @@ GEM
     rerun (0.13.1)
       listen (~> 3.0)
     rexml (3.2.5)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -124,6 +138,7 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-livereload
   rerun
+  rspec
 
 BUNDLED WITH
-   2.1.4
+   2.2.22

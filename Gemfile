@@ -4,3 +4,7 @@ gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
 gem 'rerun'
+
+group :test do
+  gem 'rspec'
+end
