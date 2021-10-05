@@ -454,6 +454,12 @@
             "title": "Python Coding for Public Policy",
             "description": "Introducing Public Policy students with little to no programming experience to software development and data anlysis though code. Teaching the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
             "url": "https://github.com/afeld/python-public-policy"
+          },
+          {
+            "group": "Wagner Graduate School of Public Service",
+            "title": "Big Data Analytics for Public Policy",
+            "description": "This class gets students to apply new techniques to analyze social problems using and combining large quantities of heterogeneous data from a variety of different sources, through machine learning, data mining and data science.",
+            "url": "https://wagner.nyu.edu/education/courses/advanced-data-analytics-and-evidence-building"
           }
         ]
       },
