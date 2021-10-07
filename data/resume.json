@@ -338,29 +338,7 @@
         "description": "Have contributed to many open source projects, including Ansible, Backbone.js, Cloud Foundry, ConcourseCI, Dep (the Go package manager), Docker, Hubot, Jekyll, Packer, pandas, Terraform, TravisCI, and Vagrant.",
         "start_date": "2010-09",
         "end_date": null,
-        "hours": 8,
-        "skills": [
-          "Ansible",
-          "CSS",
-          "Docker",
-          "Git",
-          "GitHub",
-          "Go",
-          "HTML",
-          "JavaScript",
-          "Jekyll",
-          "Jenkins",
-          "jQuery",
-          "management",
-          "Packer",
-          "PostgreSQL",
-          "Python",
-          "Ruby on Rails",
-          "Ruby",
-          "Sinatra",
-          "teaching",
-          "Terraform"
-        ]
+        "hours": 8
       },
       {
         "organization": "American Express Publishing",

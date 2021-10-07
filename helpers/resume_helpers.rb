@@ -14,8 +14,6 @@ module ResumeHelpers
   def skill_years(jobs)
     results = Hash.new(0)
     jobs.each do |job|
-      # they all get lumped together in this time range, so exclude it
-      next if job.organization == 'Open source contribution'
       next unless job['skills'] && job.skills.any?
 
       start = parse_date(job.start_date)
