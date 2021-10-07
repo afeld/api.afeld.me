@@ -5,8 +5,8 @@ module ResumeHelpers
     jobs = (data.resume.experience.coding + data.resume.experience.teaching).sort_by(&:start_date).reverse
 
     # put current jobs in front of past ones
-    current = jobs.select{|job| job.end_date.nil? }
-    past = jobs.select{|job| job.end_date.present? }
+    current = jobs.select { |job| job.end_date.nil? }
+    past = jobs.select { |job| job.end_date.present? }
 
     current + past
   end
@@ -14,7 +14,7 @@ module ResumeHelpers
   def skill_years(jobs)
     results = Hash.new(0)
     jobs.each do |job|
-      next unless job['skills'] && job.skills.any?
+      next unless job["skills"] && job.skills.any?
 
       start = parse_date(job.start_date)
       end_date = job.end_date ? parse_date(job.end_date) : Date.today
@@ -35,7 +35,7 @@ module ResumeHelpers
   end
 
   def hours_per_week(hours)
-    "#{hours} #{'hour'.pluralize(hours)}/week"
+    "#{hours} #{"hour".pluralize(hours)}/week"
   end
 
   def num_employees(job)
@@ -50,6 +50,6 @@ module ResumeHelpers
       date_range(job),
       hours_per_week(job.hours),
       num_employees(job)
-    ].compact.join(', ')
+    ].compact.join(", ")
   end
 end

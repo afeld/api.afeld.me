@@ -1,4 +1,4 @@
-require_relative '../helpers/time_helpers'
+require_relative "../helpers/time_helpers"
 
 class TestableTimeHelpers
   include TimeHelpers

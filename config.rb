@@ -8,16 +8,16 @@ end
 activate :directory_indexes
 
 activate :livereload do |opts|
-  opts.host = config[:cli_options]['bind_address'] || config[:cli_options]['server_name']
+  opts.host = config[:cli_options]["bind_address"] || config[:cli_options]["server_name"]
 end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
-page '/rider.html', layout: 'rider'
-page '/*.html', layout: 'layout'
-page '/*', layout: false
+page "/rider.html", layout: "rider"
+page "/*.html", layout: "layout"
+page "/*", layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

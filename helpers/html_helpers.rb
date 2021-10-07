@@ -36,10 +36,10 @@ module HtmlHelpers
   end
 
   def to_anchor(str)
-    str.downcase.gsub(/[^a-z0-9]+/, '-').sub(/^-|-$/, '')
+    str.downcase.gsub(/[^a-z0-9]+/, "-").sub(/^-|-$/, "")
   end
 
   def url(url_str)
-    url_str.sub(%r{^https?://(www\.)?}, '')
+    url_str.sub(%r{^https?://(www\.)?}, "")
   end
 end
