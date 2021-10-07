@@ -14,11 +14,11 @@ module ResumeHelpers
   def skill_years(jobs)
     results = Hash.new(0)
     jobs.each do |job|
-      next unless job["skills"] && job.skills.any?
+      next unless job.skills? && job.skills.any?
 
       start = parse_date(job.start_date)
-      end_date = job.end_date ? parse_date(job.end_date) : Date.today
-      years_experience = (end_date - start) / 365 + 1
+      end_date = job.end_date? ? parse_date(job.end_date) : Date.today
+      years_experience = ((end_date - start) / 365).ceil
       job.skills.each do |skill|
         results[skill] = [years_experience, results[skill]].max
       end
