@@ -156,14 +156,6 @@ a {
     font-size: 0.8rem;
   }
 
-  // only links whose text is a URL should appear to be clickable
-  a {
-    text-decoration: none;
-  }
-  .url a {
-    text-decoration: underline;
-  }
-
   .listings {
     .section h2 {
       font-size: 1.1rem;
