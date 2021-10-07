@@ -19,6 +19,13 @@ bundle exec middleman build
 htmlproofer ./build
 ```
 
+## Customizing for specific roles
+
+1. Create a new branch locally
+1. Add `"skip": true` to roles that should be hidden
+1. Open Chrome to preview
+1. Print to PDF
+
 ## See also
 
 https://github.com/danfang/me-api

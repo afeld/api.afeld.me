@@ -4,7 +4,9 @@
   </div>
   <div class="content">
     <% all_jobs.each do |job| %>
-      <%= partial 'resume/job', locals: { job: job } %>
+      <% unless job.skip %>
+        <%= partial 'resume/job', locals: { job: job } %>
+      <% end %>
     <% end %>
   </div>
 </div>
