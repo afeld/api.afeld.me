@@ -594,6 +594,12 @@
   },
   "talks": [
     {
+      "title": "Data Cleaning Techniques",
+      "event": "NYC Open Data Week",
+      "date": "2022-03-09",
+      "url": "https://www.icloud.com/keynote/0ceRF6Dirs__xvOV2mrP0NYBw#Data_Cleaning_Techniques"
+    },
+    {
       "title": "Surprised at the Science Conference",
       "event": "Ask a Biologist podcast",
       "date": "2022-02-09",
@@ -610,6 +616,12 @@
       "event": "Public Sector Network: DevSecOps",
       "date": "2021-07-14",
       "url": "https://www.youtube.com/watch?v=0wIvXfhWpx0"
+    },
+    {
+      "title": "pandas Crash Course",
+      "event": "18F Tech Talks",
+      "date": "2020-12-16",
+      "url": "https://colab.research.google.com/github/afeld/python-public-policy/blob/main/extras/pandas_crash_course.ipynb"
     },
     {
       "title": "Human-Centered DevOps",
