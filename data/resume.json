@@ -50,7 +50,7 @@
         "start_date": "2021-12-30",
         "end_date": null,
         "hours": 20,
-        "employees": 1,
+        "employees": 0,
         "skills": [
           "Amazon Web Services (AWS)",
           "Docker",
@@ -64,8 +64,14 @@
           {
             "group": "VoteAmerica",
             "title": null,
-            "description": "Expanding integrations between the voting registration tools, states, and schools. Also helping document systems and practices interally, while cleaning up unused code and applications.",
+            "description": "Expanded integrations between the voting registration tools, states, and schools. Also helped document systems and practices internally, while cleaning up unused code and applications.",
             "url": "https://www.voteamerica.com/"
+          },
+          {
+            "group": "Cal-ITP",
+            "title": null,
+            "description": "Helping streamline the process for transit riders in California to qualify for and receive discounts. Working on indentity verfication, integrations, infrastructure, security, and privacy.",
+            "url": "https://www.calitp.org/"
           }
         ]
       },
@@ -1044,6 +1050,13 @@
     }
   ],
   "writing": [
+    {
+      "title": "You Should Switch to Signal. Here’s Why.",
+      "type": "blog",
+      "publisher": "self",
+      "date": "2022-06-04",
+      "url": "https://personal-security.afeld.me/why-signal"
+    },
     {
       "title": "TTS Bug Bounty Program: 3 Year Review",
       "type": "blog",
