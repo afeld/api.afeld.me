@@ -16,4 +16,4 @@ RUN bundle install
 
 CMD bundle exec rerun \
   --dir helpers \
-  -- middleman --bind-address=0.0.0.0 --server-name=0.0.0.0
+  -- middleman --bind-address=0.0.0.0
