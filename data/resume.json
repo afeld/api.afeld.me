@@ -53,11 +53,13 @@
         "employees": 0,
         "skills": [
           "Amazon Web Services (AWS)",
+          "Django",
           "Docker",
           "Git",
           "GitHub",
           "Heroku",
           "JavaScript",
+          "Microsoft Azure",
           "Python"
         ],
         "responsibilities": [
