@@ -546,11 +546,18 @@
     ],
     "dance": [
       {
+        "organization": "Dance Entropy",
+        "director": ["Valerie Green"],
+        "url": "https://www.danceentropy.org/",
+        "start_date": "2021-11",
+        "end_date": null
+      },
+      {
         "organization": "Barkin/Selissen Project",
         "director": ["Kyla Barkin", "Aaron Selissen"],
         "url": "http://www.barkinselissenproject.com",
         "start_date": "2014-03",
-        "end_date": null
+        "end_date": "2014-11"
       },
       {
         "organization": "danceTactics Performance Group",
@@ -571,7 +578,7 @@
         "director": "Amy Chavasse",
         "url": "http://chavassedanceandperformance.com",
         "start_date": "2010-06",
-        "end_date": null
+        "end_date": "2015-06"
       }
     ]
   },
