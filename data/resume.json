@@ -78,10 +78,10 @@
         ]
       },
       {
-        "organization": "Technology Transformation Services (TTS)",
+        "organization": "TTS",
         "url": "https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services",
         "title": "Technology Director",
-        "description": "GS-15. Supervisory Information Technology (IT) Specialist in Information Security (INFOSEC). Led the <a href=\"https://handbook.tts.gsa.gov/tech-portfolio/\">Technology Portfolio</a>, a team within the General Services Administration (GSA) that oversaw, managed, and coordinated everything technology-related that cut across TTS, as well as anything technology-related that would affect TTS from the outside. Particular focus on security, compliance, infrastructure, and tech policy.",
+        "description": "Supervisory Information Technology (IT) Specialist in Information Security (INFOSEC). Led the <a href=\"https://handbook.tts.gsa.gov/tech-portfolio/\">Technology Portfolio</a>, a team within the General Services Administration (GSA) with particular focus on security, compliance, infrastructure, and tech policy.",
         "start_date": "2019-07-07",
         "end_date": "2021-10-01",
         "hours": 40,
@@ -125,7 +125,8 @@
         "end_date": "2019-11-04",
         "hours": 8,
         "employees": 8,
-        "skills": ["Git", "GitHub", "JavaScript", "Docker"]
+        "skills": ["Git", "GitHub", "JavaScript", "Docker"],
+        "skip": true
       },
       {
         "organization": "Brooklyn Rail",
@@ -136,13 +137,14 @@
         "end_date": "2020-02-24",
         "hours": 5,
         "employees": 12,
-        "skills": ["Git", "GitHub", "MySQL", "PHP"]
+        "skills": ["Git", "GitHub", "MySQL", "PHP"],
+        "skip": true
       },
       {
         "organization": "xD",
         "url": "https://www.xd.gov/",
         "title": "Data Engineer",
-        "description": "GS-15. Helped to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau. Worked with the CTO and Standards Working Group on a Bureau-wide Open Source Policy and various software approvals and process changes.",
+        "description": "Helped to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau. Worked with the CTO and Standards Working Group on a Bureau-wide Open Source Policy and various software approvals and process changes.",
         "start_date": "2018-09-02",
         "end_date": "2019-07-06",
         "hours": 40,
@@ -213,7 +215,7 @@
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist",
-        "description": "GS-15. Federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source. Participated and led multiple user research sessions.",
+        "description": "Federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements.",
         "start_date": "2014-10-20",
         "end_date": "2018-09-01",
         "hours": 40,
@@ -304,7 +306,7 @@
         "organization": "GitHub",
         "url": "https://education.github.com",
         "title": "Education Hacker",
-        "description": "Company building tools for software development workflows. Worked to understand students' and teachers' obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally. Was responsible for the system accepting and processing educational user upgrades, as well as determining best practices for classroom workflows.",
+        "description": "Worked to understand students' and teachers' obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally.",
         "start_date": "2013-08",
         "end_date": "2014-06",
         "hours": 40,
@@ -344,7 +346,8 @@
           "jQuery",
           "Ruby",
           "Ruby on Rails"
-        ]
+        ],
+        "skip": true
       },
       {
         "organization": "Jux",
@@ -366,7 +369,8 @@
           "MongoDB",
           "Ruby",
           "Ruby on Rails"
-        ]
+        ],
+        "skip": true
       },
       {
         "organization": "Open source contribution",
@@ -375,7 +379,8 @@
         "description": "Have contributed to many open source projects, including <a href=\"https://www.ansible.com/\">Ansible</a>, <a href=\"https://backbonejs.org/\">Backbone.js</a>, <a href=\"https://www.instructure.com/canvas\">Canvas LMS</a>, <a href=\"https://www.cloudfoundry.org/\">Cloud Foundry</a>, <a href=\"https://concourse-ci.org/\">ConcourseCI</a>, <a href=\"https://docs.conda.io/\">Conda</a>, <a href=\"https://consulproject.org/\">CONSUL</a></a>, <a href=\"https://golang.github.io/dep/\">Dep</a>, <a href=\"https://www.docker.com/\">Docker</a>, <a href=\"https://greatexpectations.io/\">Great Expectations</a>, <a href=\"https://brew.sh/\">Homebrew</a>, <a href=\"https://hubot.github.com/\">Hubot</a>, <a href=\"https://jekyllrb.com/\">Jekyll</a>, <a href=\"https://www.packer.io/\">Packer</a>, <a href=\"https://pandas.pydata.org/\">pandas</a>, <a href=\"https://www.terraform.io/\">Terraform</a>, <a href=\"https://www.travis-ci.com/\">TravisCI</a>, and <a href=\"https://www.vagrantup.com/\">Vagrant</a>.",
         "start_date": "2010-09",
         "end_date": null,
-        "hours": 8
+        "hours": 8,
+        "skip": true
       },
       {
         "organization": "American Express Publishing",
@@ -396,7 +401,8 @@
           "Ruby",
           "Ruby on Rails",
           "Sinatra"
-        ]
+        ],
+        "skip": true
       }
     ],
     "teaching": [
@@ -415,7 +421,7 @@
         "organization": "Cornell Tech",
         "url": "https://www.tech.cornell.edu/",
         "title": "Adjunct Faculty",
-        "description": "Taught the <a href=\"https://docs.google.com/document/d/1-hk6GzhV1yHU1T0E7uqcdNTtvv3fuq1_WECQOWOT2zw/edit\">Startup Systems course</a>, which covered web development from HTML to APIs to servers. The class covered the basics of JavaScript, Python, Terraform, Ansible, and Amazon Web Services (AWS) for students with a broad range of experience levels.",
+        "description": "Taught the <a href=\"https://docs.google.com/document/d/1-hk6GzhV1yHU1T0E7uqcdNTtvv3fuq1_WECQOWOT2zw/edit\">Startup Systems course</a>, which covered web development from HTML to APIs to servers.",
         "start_date": "2016-08",
         "end_date": "2016-12",
         "hours": 20,
@@ -429,13 +435,14 @@
         "start_date": "2015-01",
         "end_date": "2018-09",
         "hours": 1,
-        "skills": ["community organizing", "public speaking", "teaching"]
+        "skills": ["community organizing", "public speaking", "teaching"],
+        "skip": true
       },
       {
         "organization": "New York University (NYU)",
         "url": "http://www.nyu.edu/",
         "title": "Adjunct Faculty",
-        "description": null,
+        "description": "Have taught coding courses in the School of Professional Studies (SPS), Interactive Telecommunications Program (ITP), and Wagner Graduate School of Public Service.",
         "start_date": "2012-06",
         "end_date": null,
         "hours": 5,
@@ -482,7 +489,7 @@
         "organization": "City University of New York (CUNY)",
         "url": "https://github.com/cuny-nytech/syllabus",
         "title": "Instructor",
-        "description": "Designed curriculum and was lead instructor for the NYTech program, which helped seniors and graduate students build practical skills necessary for joining startups based in New York City, such as version control, web development, and resume writing. The culminating project was a class-wide collaboration to build a new site for a non-profit.",
+        "description": "Designed curriculum and was lead instructor for the NYTech program, which helped seniors and graduate students build practical skills necessary for joining startups based in New York City. The culminating project was a class-wide collaboration to build a new site for a non-profit.",
         "start_date": "2014-09",
         "end_date": "2015-05",
         "hours": 5,
@@ -517,7 +524,8 @@
           "jQuery",
           "public speaking",
           "teaching"
-        ]
+        ],
+        "skip": true
       },
       {
         "organization": "Hacker Hours",
@@ -541,7 +549,8 @@
           "Ruby on Rails",
           "Ruby",
           "teaching"
-        ]
+        ],
+        "skip": true
       }
     ],
     "dance": [
