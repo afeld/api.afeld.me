@@ -60,7 +60,8 @@
           "Heroku",
           "JavaScript",
           "Microsoft Azure",
-          "Python"
+          "Python",
+          "Scrapy"
         ],
         "responsibilities": [
           {
@@ -74,6 +75,12 @@
             "title": null,
             "description": "Helping streamline the process for transit riders in California to qualify for and receive discounts. Working on indentity verfication, integrations, infrastructure, security, and privacy.",
             "url": "https://www.calitp.org/"
+          },
+          {
+            "group": "Reinvent Albany",
+            "title": null,
+            "description": "Crawling the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data.",
+            "url": "https://reinventalbany.org/"
           }
         ]
       },
