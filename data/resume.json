@@ -79,7 +79,7 @@
           {
             "group": "Reinvent Albany",
             "title": null,
-            "description": "Crawling the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data.",
+            "description": "Crawled the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data.",
             "url": "https://reinventalbany.org/"
           }
         ]
@@ -408,6 +408,17 @@
     ],
     "teaching": [
       {
+        "organization": "Columbia University",
+        "url": "https://python-public-policy.afeld.me/en/columbia/",
+        "title": "Lecturer",
+        "description": "Teaching Python for Public Policy, which introduces students with little to no programming experience to software development and data anlysis though code. Covers the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
+        "start_date": "2022-11",
+        "end_date": null,
+        "hours": 9,
+        "employees": 4370,
+        "skills": ["Git", "GitHub", "Python", "public speaking", "teaching"]
+      },
+      {
         "organization": "The New School",
         "url": "https://opencampus.newschool.edu/program/certificate-programs/art-design-with-parsons/web-design-and-development",
         "title": "Adjunct Faculty",
@@ -474,8 +485,8 @@
           {
             "group": "Wagner Graduate School of Public Service",
             "title": "Python Coding for Public Policy",
-            "description": "Introducing Public Policy students with little to no programming experience to software development and data anlysis though code. Teaching the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
-            "url": "https://python-public-policy.afeld.me"
+            "description": "(See <a href=\"#columbia-university\">same course at Columbia University</a>)",
+            "url": "https://python-public-policy.afeld.me/en/nyu/"
           },
           {
             "group": "Wagner Graduate School of Public Service",
