@@ -11,7 +11,7 @@
   </h3>
   <div class="dates"><%= date_row(job) %></div>
   <p><%= job.description %></p>
-  <% if false  %>
+  <% if job['responsibilities']  %>
     <ul class="responsibilities">
       <% job.responsibilities.each do |resp| %>
         <li>
