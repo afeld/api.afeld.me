@@ -43,6 +43,22 @@
   "experience": {
     "coding": [
       {
+        "organization": "PHNDC",
+        "url": "https://phndc.org/",
+        "title": "Technology Committee Chair",
+        "description": "Leading a group within the Prospect Heights Neighborhood Development Council that works to identify opportunities for improving the functioning of the non-profit through process design and use of technology.",
+        "start_date": "2023-01",
+        "end_date": null,
+        "hours": 1,
+        "employees": 0,
+        "skills": [
+          "Airtable",
+          "community organizing",
+          "IT policy",
+          "management"
+        ]
+      },
+      {
         "organization": "self-employed",
         "url": "https://blog.afeld.me/know-any-teams-who-could-use-my-help-87a4247c51c1",
         "title": "Freelance technologist",
