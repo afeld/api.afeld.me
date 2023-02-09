@@ -1,6 +1,6 @@
 <%# based on https://www.w3schools.com/howto/howto_js_mobile_navbar.asp %>
 <div class="topnav">
-  <nav id="toc" data-toggle="toc"></nav>
+  <nav id="toc"></nav>
   <%# https://css-tricks.com/snippets/svg/svg-hamburger-menu/ %>
   <a href="javascript:void(0);" class="icon">
     <svg viewBox="0 0 100 80" width="30" height="30">
@@ -15,6 +15,11 @@
   $(".icon").click(() => $toc.toggle());
 
   $(() => {
+    Toc.init({
+      $nav: $toc,
+      $scope: $('h2')
+    });
+
     const $navLinks = $toc.find("a");
     $navLinks.click(() => $toc.hide());
   });
