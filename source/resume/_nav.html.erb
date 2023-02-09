@@ -11,15 +11,11 @@
   </a>
 </div>
 <script>
-  const toggleToc = () => {
-    const toc = document.getElementById("toc");
-    if (toc.style.display === "block") {
-      toc.style.display = "none";
-    } else {
-      toc.style.display = "block";
-    }
-  };
+  const $toc = $("#toc");
+  $(".icon").click(() => $toc.toggle());
 
-  const icon = document.querySelector(".icon");
-  icon.addEventListener("click", toggleToc);
+  $(() => {
+    const $navLinks = $toc.find("a");
+    $navLinks.click(() => $toc.hide());
+  });
 </script>
