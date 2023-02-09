@@ -1,3 +1,7 @@
+[build.environment]
+# https://docs.netlify.com/configure-builds/manage-dependencies/#ruby
+RUBY_VERSION = "3.2.1"
+
 [[redirects]]
 from = "/reel"
 status = 302
