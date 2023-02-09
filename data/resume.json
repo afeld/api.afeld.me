@@ -427,7 +427,7 @@
         "organization": "Columbia University",
         "url": "https://python-public-policy.afeld.me/en/columbia/",
         "title": "Lecturer",
-        "description": "Teaching Python for Public Policy, which introduces students with little to no programming experience to software development and data anlysis though code. Covers the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
+        "description": "Teaching Python for Public Policy, which introduces students with little to no programming experience to software development and data analysis though code. Covers the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
         "start_date": "2022-11",
         "end_date": null,
         "hours": 9,
