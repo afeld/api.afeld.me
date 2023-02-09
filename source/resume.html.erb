@@ -3,10 +3,18 @@ title: (Long-Form) Resume
 ---
 
 <% content_for :head do %>
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+  />
   <%= stylesheet_link_tag 'resume' %>
+
   <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 <% end %>
 
+<%= partial 'resume/nav' %>
 <%= partial 'resume/meta' %>
 <%= partial 'resume/experience' %>
 <%= partial 'resume/skills' %>
@@ -15,5 +23,5 @@ title: (Long-Form) Resume
 <%= partial 'resume/writing' %>
 <%= partial 'resume/writeups' %>
 <script>
-  anchors.add('*[id]');
+  anchors.add('h2,h3');
 </script>

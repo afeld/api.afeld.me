@@ -16,6 +16,50 @@ a {
   color: inherit;
 }
 
+// based on
+// https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+.topnav .icon {
+  fill: $secondary-color;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+
+  // show above the TOC
+  z-index: 200;
+
+  &:hover {
+    fill: black;
+  }
+}
+#toc {
+  background-color: white;
+  bottom: 0;
+  box-shadow: -3px 0 6px rgba(0, 0, 0, 0.4);
+  padding-top: 6rem;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  top: 0;
+
+  // show above the contact info
+  z-index: 100;
+
+  // hide by default
+  display: none;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+// override bootstrap-toc
+nav[data-toggle="toc"] .nav > li > a {
+  font-size: 1.5rem;
+}
+
 .name {
   color: #00be13;
   font-size: 5rem;
@@ -154,6 +198,10 @@ a {
 @media print {
   html {
     font-size: 0.8rem;
+  }
+
+  .topnav {
+    display: none;
   }
 
   .listings {
