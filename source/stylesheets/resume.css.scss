@@ -5,14 +5,6 @@ body {
   font-family: Helvetica, sans-serif;
   padding: 1rem;
 
-  display: grid;
-  grid-column-gap: 2rem;
-  // single column
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "section"
-    "content";
-
   @media print {
     & {
       padding: 0;
@@ -37,18 +29,37 @@ a {
 }
 
 nav {
-  grid-area: nav;
   position: sticky;
   top: 0;
+
+  ul {
+    padding-left: 0;
+  }
 
   li {
     list-style-type: none;
   }
 }
 
+.grid-wrap {
+  margin-bottom: 3rem;
+  max-width: 1000px;
+
+  display: grid;
+  grid-column-gap: 2rem;
+  // single column
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "section"
+    "content";
+}
+
+.section {
+  grid-area: section;
+}
+
 .listings .section {
   color: $secondary-color;
-  grid-area: section;
 }
 
 .content {
@@ -132,11 +143,12 @@ nav {
       text-align: right;
     }
   }
-
+}
+@media print and (min-width: $column-break) {
   .listings {
-    display: grid;
+    // put the section headings to the side
     grid-template-columns: 10rem 1fr;
-    grid-template-areas: "nav content";
+    grid-template-areas: "section content";
 
     // vertically align tops of sections
     .section h2 {
@@ -153,13 +165,23 @@ nav {
     padding: 3rem;
   }
 
-  .listings .section h2 {
-    // visibility: hidden;
+  // put the navigation in a sidebar
+  .nav-split {
+    grid-template-columns: 10rem 1fr;
+    grid-template-areas: "section content";
   }
 }
 @media print {
   html {
     font-size: 0.8rem;
+  }
+
+  .nav-split {
+    // hide the nav
+    grid-template-areas: "content";
+    > .section {
+      display: none;
+    }
   }
 
   .listings {
