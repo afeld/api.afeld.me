@@ -16,6 +16,13 @@ a {
   color: inherit;
 }
 
+#top {
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
 // based on
 // https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 .topnav .icon {
