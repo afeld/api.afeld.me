@@ -15,13 +15,15 @@ title: (Long-Form) Resume
 <% end %>
 
 <%= partial 'resume/meta' %>
-<nav id="toc" data-toggle="toc" class="sticky-top mt-2 d-none d-lg-block"></nav>
-<%= partial 'resume/experience' %>
-<%= partial 'resume/skills' %>
-<%= partial 'resume/edu' %>
-<%= partial 'resume/talks' %>
-<%= partial 'resume/writing' %>
-<%= partial 'resume/writeups' %>
+<div class="grid-wrap">
+  <nav id="toc" data-toggle="toc" class="sticky-top mt-2 d-none d-lg-block"></nav>
+  <%= partial 'resume/experience' %>
+  <%= partial 'resume/skills' %>
+  <%= partial 'resume/edu' %>
+  <%= partial 'resume/talks' %>
+  <%= partial 'resume/writing' %>
+  <%= partial 'resume/writeups' %>
+</div>
 <script>
   anchors.add('h2,h3');
 </script>
