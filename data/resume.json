@@ -69,6 +69,7 @@
         "employees": 0,
         "skills": [
           "Amazon Web Services (AWS)",
+          "Azure DevOps",
           "Django",
           "Docker",
           "Git",
@@ -77,7 +78,8 @@
           "JavaScript",
           "Microsoft Azure",
           "Python",
-          "Scrapy"
+          "Scrapy",
+          "Snowflake"
         ],
         "responsibilities": [
           {
@@ -89,14 +91,20 @@
           {
             "group": "Cal-ITP",
             "title": null,
-            "description": "Helping streamline the process for transit riders in California to qualify for and receive discounts. Working on indentity verfication, integrations, infrastructure, security, and privacy.",
+            "description": "Helped streamline the process for transit riders in California to qualify for and receive discounts. Worked on indentity verfication, integrations, infrastructure, security, and privacy.",
             "url": "https://www.calitp.org/"
           },
           {
             "group": "Reinvent Albany",
             "title": null,
-            "description": "Crawled the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data.",
+            "description": "Have done a couple projects: one crawing the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data, the other pulling and preparing New York Senate bill and resolution data for analysis of changes in throughput.",
             "url": "https://reinventalbany.org/"
+          },
+          {
+            "group": "Colorado Behavioral Health Administration",
+            "title": null,
+            "description": "Improving DevOps and DataOps processes around the agency's data warehouse. Working through the Colorado Digital Service (CDS).",
+            "url": "https://oit.colorado.gov/colorado-digital-service"
           }
         ]
       },
