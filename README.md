@@ -19,6 +19,16 @@ bundle exec middleman build
 htmlproofer ./build
 ```
 
+## Checking tenses
+
+1. Install Python 3
+1. [Install spacy](https://spacy.io/usage)
+1. Run
+
+   ```sh
+   python tense.py
+   ```
+
 ## Customizing for specific roles
 
 1. Create a new branch locally from [the `compact` branch](https://github.com/afeld/api.afeld.me/compare/main...compact)
