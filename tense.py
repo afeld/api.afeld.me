@@ -55,29 +55,47 @@ IGNORE = [
 
 
 def check_tense(end_date: str | None, desc: str, role: str):
+    """Returns True if tenses are correct, False otherwise"""
+
     if role in IGNORE:
-        return
+        return True
 
     if end_date:
         if not all_past(desc):
             print(f"{role} has a present-tense sentence")
+            return False
     else:
         if not all_present(desc):
             print(f"{role} has a past-tense sentence")
+            return False
+
+    return True
 
 
 with open("data/resume.json") as f:
     data = json.load(f)
+
+    any_incorrect_tense = False
+
     for jobs in data["experience"].values():
         for job in jobs:
             end_date = job["end_date"]
             org = job["organization"]
             desc = job.get("description") or ""
 
-            check_tense(end_date, desc, org)
+            correct_tense = check_tense(end_date, desc, org)
+            if not correct_tense:
+                any_incorrect_tense = True
 
             responsibilities = job.get("responsibilities", [])
             for responsibility in responsibilities:
                 group = responsibility["group"] or responsibility["title"]
                 role = f"{org} - {group}"
-                check_tense(end_date, responsibility["description"], role)
+                correct_tense = check_tense(
+                    end_date, responsibility["description"], role
+                )
+                if not correct_tense:
+                    any_incorrect_tense = True
+
+    if any_incorrect_tense:
+        exit(1)
