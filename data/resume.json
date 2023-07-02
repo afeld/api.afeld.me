@@ -130,19 +130,19 @@
           {
             "group": "FAS Systems Governance Committee (FSGC)",
             "title": "Voting Member",
-            "description": "Help decide on and steer budgets for IT projects in the Federal Acquisition Service (FAS). Drove the Committee from accepting multi-million-dollar budget requests to a phased funding process that encourages agile practices of being user-centered and delivering value quickly.",
+            "description": "Helped decide on and steer budgets for IT projects in the Federal Acquisition Service (FAS). Drove the Committee from accepting multi-million-dollar budget requests to a phased funding process that encourages agile practices of being user-centered and delivering value quickly.",
             "url": "https://www.gsa.gov/about-us/organization/federal-acquisition-service"
           },
           {
             "group": "Mac Working Group",
             "title": null,
-            "description": "Serve as a primary stakeholder representing 400 Mac users across the agency, advocating for the workstation needs of technical team members.",
+            "description": "Served as a primary stakeholder representing 400 Mac users across the agency, advocating for the workstation needs of technical team members.",
             "url": null
           },
           {
             "group": null,
             "title": "Authorizing Official",
-            "description": "Responsible for the security risk of ten systems across TTS, including cross-agency platforms like data.gov, Federalist, and search.gov.",
+            "description": "Was responsible for the security risk of ten systems across TTS, including cross-agency platforms like data.gov, Federalist, and search.gov.",
             "url": null
           }
         ]
@@ -162,7 +162,7 @@
         "organization": "Brooklyn Rail",
         "url": "https://brooklynrail.org/",
         "title": "Advisory Board Member",
-        "description": "Helping improve the infrastructure, workflow, and software use of this non-profit arts publication.",
+        "description": "Helped improve the infrastructure, workflow, and software use of this non-profit arts publication.",
         "start_date": "2019-01-07",
         "end_date": "2020-02-24",
         "hours": 5,
@@ -201,7 +201,7 @@
           {
             "group": "FISMAtic",
             "title": null,
-            "description": "Leading a project to reduce the amount of time spent authoring, reviewing, and editing the security compliance documentation leading up to an Authority to Operate (ATO).",
+            "description": "Led a project to reduce the amount of time spent authoring, reviewing, and editing the security compliance documentation leading up to an Authority to Operate (ATO).",
             "url": "https://github.com/uscensusbureau/fismatic"
           }
         ]
@@ -244,7 +244,7 @@
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist",
-        "description": "GS-15. Federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source. Participated and led multiple user research sessions.",
+        "description": "GS-15. Was a federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source. Participated and led multiple user research sessions.",
         "start_date": "2014-10-20",
         "end_date": "2018-09-01",
         "hours": 40,
@@ -314,7 +314,7 @@
           {
             "group": "OpenControl / Compliance Masonry",
             "title": null,
-            "description": "Helped create tooling and community around improving the security compliance process, by encouraging structured compliance data, reuse, and automation.",
+            "description": "Helped create tooling and community around improving the security compliance process by encouraging structured compliance data, reuse, and automation.",
             "url": "http://open-control.org"
           },
           {
@@ -326,7 +326,7 @@
           {
             "group": null,
             "title": "Engineering Facilitator",
-            "description": "Supervising a team of engineers, providing mentorship, soliciting peer reviews, mediating conflicts, etc.",
+            "description": "Supervised a team of engineers, providing mentorship, soliciting peer reviews, mediating conflicts, etc.",
             "url": null
           }
         ]
@@ -495,7 +495,7 @@
         ],
         "responsibilities": [
           {
-            "group": "School of Professional Studies",
+            "group": "School of Professional Studies (SPS)",
             "title": "Advanced JavaScript",
             "description": "After redesigning the curriculum, taught the Advanced JavaScript course for twelve consecutive semesters, helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully available to the public online, became the showcase class for GitHub's Education program.",
             "url": "https://advanced-js.github.io/syllabus/"
@@ -503,7 +503,7 @@
           {
             "group": "Interactive Telecommunications Program (ITP)",
             "title": "Building for Learning",
-            "description": "Was asked to create and teach an interdisciplinary graduate-level course around building interactive educational tools, while also covering front-end web development. In addition to rapid prototyping of physical and digital learning materials, also brought in experts from the educational technology to give students an understanding of taking projects from concept to product.",
+            "description": "Created and taught an interdisciplinary graduate-level course around building interactive educational tools, while also covering front-end web development. In addition to rapid prototyping of physical and digital learning materials, also brought in experts from the educational technology to give students an understanding of taking projects from concept to product.",
             "url": "https://github.com/bfl-itp/syllabus"
           },
           {
@@ -565,7 +565,7 @@
         "organization": "Hacker Hours",
         "url": "http://hackerhours.org",
         "title": "Founder",
-        "description": "Created a meetup group to provide mentorship for individuals learning to code. Has grown to over 8,000 members across seven states.",
+        "description": "Created a meetup group to provide mentorship for individuals learning to code, which reached over 8,000 members across seven states.",
         "start_date": "2011-09",
         "end_date": "2021-09-30",
         "hours": 4,
