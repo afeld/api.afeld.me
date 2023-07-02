@@ -72,12 +72,22 @@ def check_tense(end_date: str | None, desc: str, role: str):
     return True
 
 
-with open("data/resume.json") as f:
-    data = json.load(f)
+def check_responsibility_tense(responsibility: dict, end_date: str | None, org: str):
+    group = responsibility["group"] or responsibility["title"]
+    role = f"{org} - {group}"
+    return check_tense(end_date, responsibility["description"], role)
 
+
+def get_resume():
+    with open("data/resume.json") as f:
+        return json.load(f)
+
+
+def run():
+    resume = get_resume()
     any_incorrect_tense = False
 
-    for jobs in data["experience"].values():
+    for jobs in resume["experience"].values():
         for job in jobs:
             end_date = job["end_date"]
             org = job["organization"]
@@ -89,13 +99,14 @@ with open("data/resume.json") as f:
 
             responsibilities = job.get("responsibilities", [])
             for responsibility in responsibilities:
-                group = responsibility["group"] or responsibility["title"]
-                role = f"{org} - {group}"
-                correct_tense = check_tense(
-                    end_date, responsibility["description"], role
+                correct_tense = check_responsibility_tense(
+                    responsibility, end_date, org
                 )
                 if not correct_tense:
                     any_incorrect_tense = True
 
     if any_incorrect_tense:
         exit(1)
+
+
+run()
