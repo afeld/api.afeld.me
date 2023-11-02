@@ -1,5 +1,7 @@
 FROM ruby:3
 
+RUN gem update --system && \
+  gem update bundler
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
 ENV LANG C.UTF-8
