@@ -680,6 +680,12 @@
   },
   "talks": [
     {
+      "title": "Jupyter[Hub]",
+      "event": "NYU Coding Instruction Innovation Fest",
+      "date": "2023-11-03",
+      "url": "https://docs.google.com/presentation/d/196tNJ4ON97CxlgWPqIranSiDRSIOSbDxQ6Z1MrMDbTo/edit#slide=id.p"
+    },
+    {
       "title": "Data Cleaning Techniques",
       "event": "NYC Open Data Week",
       "date": "2022-03-09",
