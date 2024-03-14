@@ -433,14 +433,28 @@
     "teaching": [
       {
         "organization": "Columbia University",
-        "url": "https://python-public-policy.afeld.me/en/columbia/",
+        "url": "https://www.columbia.edu/",
         "title": "Lecturer",
-        "description": "Teaching Python for Public Policy, which introduces students with little to no programming experience to software development and data analysis though code. Covers the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
+        "description": null,
         "start_date": "2022-11",
         "end_date": null,
         "hours": 9,
         "employees": 4370,
-        "skills": ["Git", "GitHub", "Python", "public speaking", "teaching"]
+        "skills": ["Git", "GitHub", "Python", "public speaking", "teaching"],
+        "responsibilities": [
+          {
+            "group": "School of International and Public Affairs (SIPA)",
+            "title": "Python for Public Policy",
+            "description": "Introduces students with little to no programming experience to software development and data analysis though code. Covers the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
+            "url": "https://python-public-policy.afeld.me/en/columbia/"
+          },
+          {
+            "group": "School of Professional Studies (SPS)",
+            "title": "Operations Management in IT",
+            "description": "An introduction to technology for business people, also referred to as \"Technology Foundations\". This is a survey course, providing a holistic introduction to tools, roles, and processes of technology and technology organizations.",
+            "url": "https://courseworks2.columbia.edu/courses/198128"
+          }
+        ]
       },
       {
         "organization": "The New School",
@@ -680,10 +694,16 @@
   },
   "talks": [
     {
+      "title": "Web Development and Infrastructure",
+      "event": "Open Source and Professional Software Development class at NYU",
+      "date": "2024-03-13",
+      "url": "https://docs.google.com/presentation/d/14NDYTZvQg3uoKbpo1IlaA6Jht_Uzm_4qV1ccTd0WVOM/edit"
+    },
+    {
       "title": "Jupyter[Hub]",
       "event": "NYU Coding Instruction Innovation Fest",
       "date": "2023-11-03",
-      "url": "https://docs.google.com/presentation/d/196tNJ4ON97CxlgWPqIranSiDRSIOSbDxQ6Z1MrMDbTo/edit#slide=id.p"
+      "url": "https://docs.google.com/presentation/d/196tNJ4ON97CxlgWPqIranSiDRSIOSbDxQ6Z1MrMDbTo/edit"
     },
     {
       "title": "Data Cleaning Techniques",
@@ -1108,7 +1128,7 @@
   ],
   "writing": [
     {
-      "title": "You Should Switch to Signal. Here’s Why.",
+      "title": "You Should Switch to Signal. Here's Why.",
       "type": "blog",
       "publisher": "self",
       "date": "2022-06-04",
