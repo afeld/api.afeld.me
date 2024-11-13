@@ -64,13 +64,9 @@ def check_tense(end_date: str | None, desc: str, role: str):
         return
 
     if end_date:
-        assert all_past(
-            desc
-        ), f"{role} has a present-tense sentence, despite having an end date"
+        assert all_past(desc), "Present-tense sentence, despite having an end date"
     else:
-        assert all_present(
-            desc
-        ), f"{role} has a past-tense sentence, despite not having an end date"
+        assert all_present(desc), "Past-tense sentence, despite not having an end date"
 
 
 def check_responsibility_tense(responsibility: dict, end_date: str | None, org: str):
@@ -87,10 +83,10 @@ def get_resume():
 resume = get_resume()
 # flatten
 # https://stackoverflow.com/a/953097/358804
-jobs = itertools.chain.from_iterable(resume["experience"].values())
+jobs = list(itertools.chain.from_iterable(resume["experience"].values()))
 
 
-@pytest.mark.parametrize("job", jobs)
+@pytest.mark.parametrize("job", jobs, ids=[job["organization"] for job in jobs])
 def test_all(job):
     end_date = job["end_date"]
     org = job["organization"]
