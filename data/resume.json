@@ -74,12 +74,14 @@
           "Docker",
           "Git",
           "GitHub",
+          "Google Cloud",
           "Heroku",
           "JavaScript",
           "Microsoft Azure",
           "Python",
           "Scrapy",
-          "Snowflake"
+          "Snowflake",
+          "Terraform"
         ],
         "responsibilities": [
           {
