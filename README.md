@@ -21,8 +21,25 @@ htmlproofer ./build
 
 ## Checking tenses
 
-1. Install Python 3
-1. [Install spacy](https://spacy.io/usage)
+1. [Install Mamba.](https://mamba.readthedocs.io/)
+1. [Install dependencies.](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
+
+   ```sh
+   mamba env create -f environment.yml
+   ```
+
+1. Activate the environment.
+
+   ```sh
+   mamba activate api-afeld-me
+   ```
+
+1. [Install the model.](https://spacy.io/usage/models#quickstart)
+
+   ```sh
+   python -m spacy download en_core_web_sm
+   ```
+
 1. Run
 
    ```sh

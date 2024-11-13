@@ -1,0 +1,6 @@
+name: api-afeld-me
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - spacy
