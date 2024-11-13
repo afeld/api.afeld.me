@@ -438,7 +438,7 @@
         "description": null,
         "start_date": "2022-11",
         "end_date": null,
-        "hours": 9,
+        "hours": 15,
         "employees": 4370,
         "skills": ["Git", "GitHub", "Python", "public speaking", "teaching"],
         "responsibilities": [
@@ -449,9 +449,21 @@
             "url": "https://python-public-policy.afeld.me/en/columbia/"
           },
           {
+            "group": "SIPA",
+            "title": "Computing in Context",
+            "description": "Co-instruct a course introducing students from various backgrounds the fundamentals of code, then teaching them how that applies to their discipline. I teach the Policy Context.",
+            "url": "https://computing-in-context.afeld.me/"
+          },
+          {
+            "group": "SIPA",
+            "title": "Advanced Computing for Policy",
+            "description": "Building and teaching a follow-up course to Computing in Context, the two of which form the core sequence for the new <a href=\"https://www.sipa.columbia.edu/sipa-education/masters-programs/miampa-concentrations-specializations\">Data Science for Policy</a> program. The course will give students a better understanding of computer science fundamentals, learning how data works in a broader context. They will learn and use APIs, databases, cloud services, and other technologies, processes, and considerations that go into complex data systems.",
+            "url": "https://docs.google.com/document/d/14hGiU8LP0vosSnaT2z_3BYIQM1S4stPN/edit"
+          },
+          {
             "group": "School of Professional Studies (SPS)",
             "title": "Operations Management in IT",
-            "description": "An introduction to technology for business people, also known as \"Technology Foundations\". This is a survey course, providing a holistic introduction to tools, roles, and processes of technology and technology organizations.",
+            "description": "Taught an introduction to technology for business people, also known as \"Technology Foundations\". It was a survey course, providing a holistic introduction to tools, roles, and processes of technology and technology organizations.",
             "url": "https://courseworks2.columbia.edu/courses/198128"
           }
         ]
