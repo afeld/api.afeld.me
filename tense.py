@@ -51,6 +51,7 @@ IGNORE = [
     "City University of New York (CUNY)",
     "General Assembly",
     "Hacker Hours",
+    "Columbia University - School of Professional Studies (SPS)",
 ]
 
 
@@ -62,11 +63,11 @@ def check_tense(end_date: str | None, desc: str, role: str):
 
     if end_date:
         if not all_past(desc):
-            print(f"{role} has a present-tense sentence")
+            print(f"{role} has a present-tense sentence, despite having an end date")
             return False
     else:
         if not all_present(desc):
-            print(f"{role} has a past-tense sentence")
+            print(f"{role} has a past-tense sentence, despite not having an end date")
             return False
 
     return True
