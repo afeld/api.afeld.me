@@ -19,13 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: mamba-org/setup-micromamba@v1
         with:
-          python-version: 3.x
-      - name: Install spaCy
-        run: |
-          pip install -U spacy
-          python -m spacy download en_core_web_sm
+          micromamba-version: latest
+          environment-file: environment.yml
+          init-shell: bash
+          cache-environment: true
+          post-cleanup: none
+
+      - name: Install spaCy model
+        run: python -m spacy download en_core_web_sm
+        # https://github.com/mamba-org/setup-micromamba?tab=readme-ov-file#usage
+        shell: bash -el {0}
+
       - name: Run tense.py
         run: python tense.py
+        shell: bash -el {0}
