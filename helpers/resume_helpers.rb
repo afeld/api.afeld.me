@@ -49,7 +49,7 @@ module ResumeHelpers
     [
       date_range(job),
       hours_per_week(job.hours),
-      num_employees(job)
+      # num_employees(job)
     ].compact.join(", ")
   end
 end
