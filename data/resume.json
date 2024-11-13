@@ -497,7 +497,7 @@
         "title": "Organizer",
         "description": "One of the organizers for the annual EmpireNode/EmpireJS/EmpireConf JavaScript conferences.",
         "start_date": "2015-01",
-        "end_date": "2018-09",
+        "end_date": null,
         "hours": 1,
         "skills": ["community organizing", "public speaking", "teaching"]
       },
