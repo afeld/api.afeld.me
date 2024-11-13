@@ -1,4 +1,6 @@
+import itertools
 import json
+import pytest
 import spacy
 from spacy.tokens import Span
 
@@ -59,24 +61,22 @@ def check_tense(end_date: str | None, desc: str, role: str):
     """Returns True if tenses are correct, False otherwise"""
 
     if role in IGNORE:
-        return True
+        return
 
     if end_date:
-        if not all_past(desc):
-            print(f"{role} has a present-tense sentence, despite having an end date")
-            return False
+        assert all_past(
+            desc
+        ), f"{role} has a present-tense sentence, despite having an end date"
     else:
-        if not all_present(desc):
-            print(f"{role} has a past-tense sentence, despite not having an end date")
-            return False
-
-    return True
+        assert all_present(
+            desc
+        ), f"{role} has a past-tense sentence, despite not having an end date"
 
 
 def check_responsibility_tense(responsibility: dict, end_date: str | None, org: str):
     group = responsibility["group"] or responsibility["title"]
     role = f"{org} - {group}"
-    return check_tense(end_date, responsibility["description"], role)
+    check_tense(end_date, responsibility["description"], role)
 
 
 def get_resume():
@@ -84,27 +84,20 @@ def get_resume():
         return json.load(f)
 
 
-def test_all():
-    resume = get_resume()
-    any_incorrect_tense = False
+resume = get_resume()
+# flatten
+# https://stackoverflow.com/a/953097/358804
+jobs = itertools.chain.from_iterable(resume["experience"].values())
 
-    for jobs in resume["experience"].values():
-        for job in jobs:
-            end_date = job["end_date"]
-            org = job["organization"]
-            desc = job.get("description") or ""
 
-            correct_tense = check_tense(end_date, desc, org)
-            if not correct_tense:
-                any_incorrect_tense = True
+@pytest.mark.parametrize("job", jobs)
+def test_all(job):
+    end_date = job["end_date"]
+    org = job["organization"]
+    desc = job.get("description") or ""
 
-            responsibilities = job.get("responsibilities", [])
-            for responsibility in responsibilities:
-                correct_tense = check_responsibility_tense(
-                    responsibility, end_date, org
-                )
-                if not correct_tense:
-                    any_incorrect_tense = True
+    check_tense(end_date, desc, org)
 
-    if any_incorrect_tense:
-        exit(1)
+    responsibilities = job.get("responsibilities", [])
+    for responsibility in responsibilities:
+        check_responsibility_tense(responsibility, end_date, org)
