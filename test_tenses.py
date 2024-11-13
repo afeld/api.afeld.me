@@ -61,7 +61,7 @@ def check_tense(end_date: str | None, desc: str, role: str):
     """Returns True if tenses are correct, False otherwise"""
 
     if role in IGNORE:
-        pytest.xfail()
+        return
 
     if end_date:
         assert all_past(desc), "Present-tense sentence, despite having an end date"
