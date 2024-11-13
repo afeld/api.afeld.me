@@ -43,7 +43,7 @@ htmlproofer ./build
 1. Run
 
    ```sh
-   python tense.py
+   pytest
    ```
 
 ## Customizing for specific roles

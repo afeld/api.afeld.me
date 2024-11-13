@@ -3,4 +3,5 @@ channels:
   - default
   - conda-forge
 dependencies:
+  - pytest
   - spacy

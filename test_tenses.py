@@ -84,7 +84,7 @@ def get_resume():
         return json.load(f)
 
 
-def run():
+def test_all():
     resume = get_resume()
     any_incorrect_tense = False
 
@@ -108,6 +108,3 @@ def run():
 
     if any_incorrect_tense:
         exit(1)
-
-
-run()

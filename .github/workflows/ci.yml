@@ -32,6 +32,6 @@ jobs:
         # https://github.com/mamba-org/setup-micromamba?tab=readme-ov-file#usage
         shell: bash -el {0}
 
-      - name: Run tense.py
-        run: python tense.py
+      - name: Check tenses
+        run: pytest
         shell: bash -el {0}
