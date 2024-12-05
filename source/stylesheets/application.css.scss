@@ -34,7 +34,7 @@
 .meta-links {
   list-style-type: none;
   margin: 0;
-  padding: 0.25rem 0.5rem;
+  padding: 1rem 0.5rem;
   position: fixed;
   right: 0;
   text-align: right;
@@ -47,6 +47,16 @@
 
     &:hover {
       opacity: 1;
+    }
+  }
+
+  .nav-item {
+    padding-bottom: 0.5rem;
+
+    a {
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
     }
   }
 }

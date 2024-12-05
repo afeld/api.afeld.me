@@ -10,23 +10,23 @@ canonical_origin: https://api.afeld.me
 <% end %>
 
 <div class="jsonpanel"></div>
-<ul class="meta-links">
-  <li>
-    <a href="https://twitter.com/<%= data.resume.profiles.twitter.username %>">
-      <img alt="Follow @<%= data.resume.profiles.twitter.username %> on Twitter" src="https://img.shields.io/twitter/follow/<%= data.resume.profiles.twitter.username %>?color=rgb%2829%2C%20161%2C%20242%29&style=for-the-badge">
-    </a>
-  </li>
-  <li>
-    <a href="resume">Tech/teaching resume</a>
-  </li>
-  <li>
-    <a href="newsletter">Newsletter</a>
-  </li>
-  <li>
-    <a href="index.json">View raw</a>
-    <a href="https://github.com/afeld/api.afeld.me">Fork me</a>
-  </li>
-</ul>
+<nav>
+  <ul class="meta-links">
+    <li class="nav-item">
+      <a href="https://twitter.com/<%= data.resume.profiles.twitter.username %>">Twitter</a>
+    </li>
+    <li class="nav-item">
+      <a href="resume">Tech/teaching resume</a>
+    </li>
+    <li class="nav-item">
+      <a href="newsletter">Newsletter</a>
+    </li>
+    <li>
+      <a href="index.json">View raw</a>
+      <a href="https://github.com/afeld/api.afeld.me">Fork me</a>
+    </li>
+  </ul>
+</nav>
 <div class="profile">
   <%= to_dl(data.resume) %>
 </div>
