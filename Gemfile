@@ -5,7 +5,6 @@ gem "middleman-autoprefixer"
 gem "middleman-livereload"
 
 group :development do
-  gem "rerun"
   gem "standard"
 end
 

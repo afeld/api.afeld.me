@@ -6,10 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
-
-activate :livereload do |opts|
-  opts.host = config[:cli_options]["bind_address"] || config[:cli_options]["server_name"]
-end
+activate :livereload
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

@@ -109,8 +109,6 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     regexp_parser (2.9.3)
-    rerun (0.14.0)
-      listen (~> 3.0)
     rexml (3.3.9)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -175,7 +173,6 @@ DEPENDENCIES
   middleman (~> 4.5)
   middleman-autoprefixer
   middleman-livereload
-  rerun
   rspec
   standard
 
