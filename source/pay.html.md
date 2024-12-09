@@ -1,5 +1,6 @@
 ---
 title: Pay
+layout: big
 ---
 
 To send Aidan money, any of the following are fine.

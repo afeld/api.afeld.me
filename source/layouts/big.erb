@@ -1,0 +1,12 @@
+<% content_for :head do %>
+  <style>
+    body {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+  </style>
+<% end %>
+
+<% wrap_layout :default do %>
+  <%= yield %>
+<% end %>
