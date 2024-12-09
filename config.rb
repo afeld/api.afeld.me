@@ -12,7 +12,7 @@ activate :livereload
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
-page "/*.html", layout: "layout"
+page "/*.html", layout: "default"
 page "/*", layout: false
 
 # With alternative layout
