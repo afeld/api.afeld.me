@@ -12,7 +12,6 @@ activate :livereload
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
-page "/rider.html", layout: "rider"
 page "/*.html", layout: "layout"
 page "/*", layout: false
 

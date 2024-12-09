@@ -1,6 +1,5 @@
 ---
 title: Pay
-layout: rider
 ---
 
 To send Aidan money, any of the following are fine.
