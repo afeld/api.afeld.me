@@ -5,7 +5,6 @@ layout: big
 
 To send Aidan money, any of the following are fine.
 
-- [Google Pay](https://gpay.app.goo.gl/pay-rbL2BAPPH4X) - aidan.feldman@gmail.com
 - [Paypal - afeld](https://paypal.me/afeld)
 - [Square Cash - $afeld](https://cash.me/$afeld)
 - [Venmo - aidanfeldman](https://venmo.com/aidanfeldman)
