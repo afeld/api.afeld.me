@@ -1,9 +1,0 @@
-services:
-  web:
-    build: .
-    tty: true
-    ports:
-      - "4567:4567"
-      - "35729:35729" # livereload
-    volumes:
-      - .:/usr/src/app
