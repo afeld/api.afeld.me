@@ -12,6 +12,7 @@ GEM
     autoprefixer-rails (10.4.19.0)
       execjs (~> 2)
     backports (3.25.0)
+    bigdecimal (3.3.1)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -89,6 +90,7 @@ GEM
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
     minitest (5.25.4)
+    mutex_m (0.3.0)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
       padrino-support (= 0.15.3)
@@ -172,9 +174,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bigdecimal
   middleman (~> 4.5)
   middleman-autoprefixer
   middleman-livereload
+  mutex_m
   rspec
   standard
 
