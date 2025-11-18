@@ -3,6 +3,11 @@
 RUBY_VERSION = "3.2.1"
 
 [[redirects]]
+from = "/psw"
+status = 302
+to = "https://computing-in-context.afeld.me/portfolio_site_workshop.html"
+
+[[redirects]]
 from = "/reel"
 status = 302
 to = "https://vimeo.com/296896082"
