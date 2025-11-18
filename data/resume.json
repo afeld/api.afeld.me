@@ -48,7 +48,7 @@
         "title": "Technology Committee Chair",
         "description": "Leading a group within the Prospect Heights Neighborhood Development Council that works to identify opportunities for improving the functioning of the non-profit through process design and use of technology.",
         "start_date": "2023-01",
-        "end_date": null,
+        "end_date": "2025-11",
         "hours": 1,
         "employees": 0,
         "skills": [
@@ -408,7 +408,7 @@
         "description": "Have contributed to many open source projects, including <a href=\"https://www.ansible.com/\">Ansible</a>, <a href=\"https://backbonejs.org/\">Backbone.js</a>, <a href=\"https://www.instructure.com/canvas\">Canvas LMS</a>, <a href=\"https://www.cloudfoundry.org/\">Cloud Foundry</a>, <a href=\"https://concourse-ci.org/\">ConcourseCI</a>, <a href=\"https://docs.conda.io/\">Conda</a>, <a href=\"https://consulproject.org/\">CONSUL</a></a>, <a href=\"https://golang.github.io/dep/\">Dep</a>, <a href=\"https://www.docker.com/\">Docker</a>, <a href=\"https://greatexpectations.io/\">Great Expectations</a>, <a href=\"https://brew.sh/\">Homebrew</a>, <a href=\"https://hubot.github.com/\">Hubot</a>, <a href=\"https://jekyllrb.com/\">Jekyll</a>, <a href=\"https://www.packer.io/\">Packer</a>, <a href=\"https://pandas.pydata.org/\">pandas</a>, <a href=\"https://www.terraform.io/\">Terraform</a>, <a href=\"https://www.travis-ci.com/\">TravisCI</a>, and <a href=\"https://www.vagrantup.com/\">Vagrant</a>.",
         "start_date": "2010-09",
         "end_date": null,
-        "hours": 8
+        "hours": 2
       },
       {
         "organization": "American Express Publishing",
@@ -497,7 +497,7 @@
         "title": "Organizer",
         "description": "One of the organizers for the annual EmpireNode/EmpireJS/EmpireConf JavaScript conferences.",
         "start_date": "2015-01",
-        "end_date": null,
+        "end_date": "2024-12",
         "hours": 1,
         "skills": ["community organizing", "public speaking", "teaching"]
       },
