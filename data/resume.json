@@ -46,7 +46,7 @@
         "organization": "self-employed",
         "url": "https://blog.afeld.me/know-any-teams-who-could-use-my-help-87a4247c51c1",
         "title": "Freelance technologist",
-        "description": "Helping government and non-profit teams improve their technology and processes.",
+        "description": "Helping government and non-profit teams improve their technology and processes. Clients include the <a href=\"https://oit.colorado.gov/colorado-digital-service\">Colorado Behavioral Health Administration</a>, the <a href=\"https://www.calitp.org/\">California Department of Transportation</a>, <a href=\"https://reinventalbany.org/\">Reinvent Albany</a>, and <a href=\"https://www.voteamerica.com/\">VoteAmerica</a>.",
         "start_date": "2021-12-30",
         "end_date": null,
         "hours": 20,
@@ -66,32 +66,6 @@
           "Scrapy",
           "Snowflake",
           "Terraform"
-        ],
-        "responsibilities": [
-          {
-            "group": "VoteAmerica",
-            "title": null,
-            "description": "Expanded integrations between the voting registration tools, states, and schools. Also helped document systems and practices internally, while cleaning up unused code and applications.",
-            "url": "https://www.voteamerica.com/"
-          },
-          {
-            "group": "Cal-ITP",
-            "title": null,
-            "description": "Helped streamline the process for transit riders in California to qualify for and receive discounts. Worked on indentity verfication, integrations, infrastructure, security, and privacy.",
-            "url": "https://www.calitp.org/"
-          },
-          {
-            "group": "Reinvent Albany",
-            "title": null,
-            "description": "Have done a couple projects: one crawing the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data, the other pulling and preparing New York Senate bill and resolution data for analysis of changes in throughput.",
-            "url": "https://reinventalbany.org/"
-          },
-          {
-            "group": "Colorado Behavioral Health Administration",
-            "title": null,
-            "description": "Improving DevOps and DataOps processes around the agency's data warehouse. Working through the Colorado Digital Service (CDS).",
-            "url": "https://oit.colorado.gov/colorado-digital-service"
-          }
         ]
       },
       {
