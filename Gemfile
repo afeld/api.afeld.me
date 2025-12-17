@@ -9,6 +9,7 @@ gem "bigdecimal"
 gem "mutex_m"
 
 group :development do
+  gem "html-proofer"
   gem "standard"
 end
 

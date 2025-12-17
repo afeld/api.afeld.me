@@ -20,7 +20,6 @@
 ## Checking broken links
 
 ```sh
-gem install html-proofer
 bundle exec middleman build
 htmlproofer ./build
 ```
