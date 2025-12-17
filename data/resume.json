@@ -46,7 +46,7 @@
         "organization": "PHNDC",
         "url": "https://phndc.org/",
         "title": "Technology Committee Chair",
-        "description": "Leading a group within the Prospect Heights Neighborhood Development Council that works to identify opportunities for improving the functioning of the non-profit through process design and use of technology.",
+        "description": "Led a group within the Prospect Heights Neighborhood Development Council that worked to identify opportunities for improving the functioning of the non-profit through process design and use of technology.",
         "start_date": "2023-01",
         "end_date": "2025-11",
         "hours": 1,
@@ -459,7 +459,7 @@
           {
             "group": "SIPA",
             "title": "Advanced Computing for Policy",
-            "description": "Building and teaching a follow-up course to Computing in Context, the two of which form the core sequence for the new <a href=\"https://www.sipa.columbia.edu/sipa-education/masters-programs/miampa-concentrations-specializations\">Data Science for Policy</a> program. The course will give students a better understanding of computer science fundamentals, learning how data works in a broader context. They will learn and use APIs, databases, cloud services, and other technologies, processes, and considerations that go into complex data systems.",
+            "description": "Building and teaching a follow-up course to Computing in Context, the two of which form the core sequence for the new <a href=\"https://www.sipa.columbia.edu/sipa-education/masters-programs/concentrations/data-science-policy\">Data Science for Policy</a> program. The course will give students a better understanding of computer science fundamentals, learning how data works in a broader context. They will learn and use APIs, databases, cloud services, and other technologies, processes, and considerations that go into complex data systems.",
             "url": "https://docs.google.com/document/d/14hGiU8LP0vosSnaT2z_3BYIQM1S4stPN/edit"
           },
           {
@@ -526,7 +526,7 @@
           {
             "group": "School of Professional Studies (SPS)",
             "title": "Advanced JavaScript",
-            "description": "After redesigning the curriculum, taught the Advanced JavaScript course for twelve consecutive semesters, helped students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully available to the public online, became the showcase class for GitHub's Education program.",
+            "description": "After redesigning the curriculum, taught this course for twelve consecutive semesters, helping students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully public, became the showcase class for GitHub's Education program.",
             "url": "https://advanced-js.github.io/syllabus/"
           },
           {
@@ -544,7 +544,7 @@
           {
             "group": "Wagner Graduate School of Public Service",
             "title": "Big Data Analytics for Public Policy",
-            "description": "This class gets students to apply new techniques to analyze social problems using and combining large quantities of heterogeneous data from a variety of different sources, through machine learning, data mining, and data science.",
+            "description": "This class got students to apply new techniques to analyze social problems using and combining large quantities of heterogeneous data from a variety of different sources, through machine learning, data mining, and data science.",
             "url": "https://wagner.nyu.edu/education/courses/advanced-data-analytics-and-evidence-building"
           }
         ]
