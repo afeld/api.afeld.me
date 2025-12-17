@@ -317,7 +317,7 @@
             "group": "OpenControl / Compliance Masonry",
             "title": null,
             "description": "Helped create tooling and community around improving the security compliance process by encouraging structured compliance data, reuse, and automation.",
-            "url": "http://open-control.org"
+            "url": "https://open-control.org"
           },
           {
             "group": "C2",
@@ -493,7 +493,7 @@
       },
       {
         "organization": "EmpireConf",
-        "url": "http://empireconf.org/",
+        "url": "https://empireconf.org/",
         "title": "Organizer",
         "description": "One of the organizers for the annual EmpireNode/EmpireJS/EmpireConf JavaScript conferences.",
         "start_date": "2015-01",
@@ -503,7 +503,7 @@
       },
       {
         "organization": "New York University (NYU)",
-        "url": "http://www.nyu.edu/",
+        "url": "https://www.nyu.edu/",
         "title": "Adjunct Assistant Professor",
         "description": null,
         "start_date": "2012-06",
@@ -592,7 +592,7 @@
       },
       {
         "organization": "Hacker Hours",
-        "url": "http://hackerhours.org",
+        "url": "https://hackerhours.org",
         "title": "Founder",
         "description": "Created a meetup group to provide mentorship for individuals learning to code, which reached over 8,000 members across seven states.",
         "start_date": "2011-09",
@@ -626,28 +626,28 @@
       {
         "organization": "Barkin/Selissen Project",
         "director": ["Kyla Barkin", "Aaron Selissen"],
-        "url": "http://www.barkinselissenproject.com",
+        "url": "https://www.barkinselissenproject.com",
         "start_date": "2014-03",
         "end_date": "2014-11"
       },
       {
         "organization": "danceTactics Performance Group",
         "director": "Keith Thompson",
-        "url": "http://dancetactics.org",
+        "url": "https://dancetactics.org",
         "start_date": "2012-05",
         "end_date": null
       },
       {
         "organization": "Artichoke Dance Company",
         "director": "Lynn Neuman",
-        "url": "http://artichokedance.org",
+        "url": "https://artichokedance.org",
         "start_date": "2010-10",
         "end_date": null
       },
       {
         "organization": "Chavasse Dance & Performance",
         "director": "Amy Chavasse",
-        "url": "http://chavassedanceandperformance.com",
+        "url": "https://chavassedanceandperformance.com",
         "start_date": "2010-06",
         "end_date": "2015-06"
       }
@@ -656,7 +656,7 @@
   "profiles": {
     "artsy": {
       "username": "aidanfeldman",
-      "profile_url": "http://artsy.net/aidanfeldman/favorites"
+      "profile_url": "https://artsy.net/aidanfeldman/favorites"
     },
     "facebook": {
       "username": "aidan.feldman",
@@ -672,7 +672,7 @@
     },
     "instagram": {
       "username": "aidanfeldman",
-      "profile_url": "http://instagram.com/aidanfeldman"
+      "profile_url": "https://instagram.com/aidanfeldman"
     },
     "keybase": {
       "username": "afeld",
@@ -684,7 +684,7 @@
     },
     "meetup": {
       "username": "8818215",
-      "profile_url": "http://www.meetup.com/members/8818215/"
+      "profile_url": "https://www.meetup.com/members/8818215/"
     },
     "speakerdeck": {
       "username": "aidanfeldman",
@@ -692,7 +692,7 @@
     },
     "stack_overflow": {
       "username": "358804",
-      "profile_url": "http://stackoverflow.com/users/358804/aidan-feldman"
+      "profile_url": "https://stackoverflow.com/users/358804/aidan-feldman"
     },
     "twitter": {
       "username": "aidanfeldman",
@@ -704,7 +704,7 @@
     },
     "youtube": {
       "username": "alfgames",
-      "profile_url": "http://www.youtube.com/user/alfgames"
+      "profile_url": "https://www.youtube.com/user/alfgames"
     }
   },
   "talks": [
@@ -802,7 +802,7 @@
       "title": "OpenControl Demo & Quickstart",
       "event": "OpenControl Symposium",
       "date": "2016-10-20",
-      "url": "http://open-control.org/event2016/#opencontrol-demo-quickstart"
+      "url": "https://open-control.org/event2016/#opencontrol-demo-quickstart"
     },
     {
       "title": "18F and OSS in the U.S. Federal Government",
@@ -869,13 +869,13 @@
       "title": "E Pluribus Unum: Building better software in the US government",
       "event": "Pivotal New York Tech Talks meetup",
       "date": "2015-07-14",
-      "url": "http://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae"
+      "url": "https://original.livestream.com/pivotallabs/video?clipId=pla_46c12eee-de95-410a-bcb5-54918f7edfae"
     },
     {
       "title": "Open by Default",
       "event": "Thoughtbot's Giant Robots podcast",
       "date": "2015-06-15",
-      "url": "http://giantrobots.fm/151"
+      "url": "https://giantrobots.fm/151"
     },
     {
       "title": "Interview about Hacker Hours",
@@ -935,13 +935,13 @@
     {
       "title": "Getting Serious (with Front-End JavaScript)",
       "date": "2013-07-08",
-      "url": "http://afeld.github.io/getting_serious/slides/"
+      "url": "https://afeld.github.io/getting_serious/slides/"
     },
     {
       "title": "Test to Learn",
       "event": "Flatiron School guest lecture",
       "date": "2013-06-20",
-      "url": "http://afeld.github.io/test_to_learn/"
+      "url": "https://afeld.github.io/test_to_learn/"
     },
     {
       "title": "Web Development Basics (Git, MAMP, Wordpress and FTP)",
@@ -979,20 +979,20 @@
       "description": "Talk and panelist on how to make APIs developer-friendly.  I did a slow jam.",
       "event": "Business of APIs Conference",
       "date": "2012-10-17",
-      "url": "http://afeld.me/nerdery/816975"
+      "url": "https://afeld.me/nerdery/816975"
     },
     {
       "title": "Junior Developer panel",
       "description": "Organizer and moderator of panel on how to get your first job as a programmer.",
       "event": "NYC on Rails meetup",
       "date": "2012-09-19",
-      "url": "http://afeld.me/nerdery/522101"
+      "url": "https://afeld.me/nerdery/522101"
     },
     {
       "title": "Learn2Code",
       "event": "Hacking for Hustlers meetup",
       "date": "2011-11-14",
-      "url": "http://afeld.me/nerdery/38274"
+      "url": "https://afeld.me/nerdery/38274"
     },
     {
       "title": "Animation with HTML5: An Overview",
@@ -1114,7 +1114,7 @@
       "title": "Here Are the Most and Least Popular Citi Bike Stations in New York City",
       "publisher": "Nerve",
       "date": "2014-06-19",
-      "url": "https://web.archive.org/web/20151027110119/http://www.nerve.com/infographics/most-popular-least-popular-citibike-stations-new-york-city"
+      "url": "https://web.archive.org/web/20151027110119/https://www.nerve.com/infographics/most-popular-least-popular-citibike-stations-new-york-city"
     },
     {
       "title": "Campus Party: Hacker do GitHub explica crescimento da 'rede social' de desenvolvedores",
@@ -1126,19 +1126,19 @@
       "title": "Já estamos no quarto e penúltimo dia de conteúdos da Campus Party Brasil 2014!",
       "publisher": "Campus Party blog",
       "date": "2014-01-31",
-      "url": "http://blog.campus-party.com.br/post/75170721637/j%C3%A1-estamos-no-quarto-e-pen%C3%BAltimo-dia-de-conte%C3%BAdos"
+      "url": "https://blog.campus-party.com.br/post/75170721637/j%C3%A1-estamos-no-quarto-e-pen%C3%BAltimo-dia-de-conte%C3%BAdos"
     },
     {
       "title": "The Man of the (Hacker) Hour",
       "publisher": "Gilt Tech blog",
       "date": "2013-08-22",
-      "url": "http://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour/"
+      "url": "https://tech.gilt.com/post/59016326319/the-man-of-the-hacker-hour/"
     },
     {
       "title": "Hacker Hours with Aidan Feldman",
       "publisher": "Desmond Rawls blog",
       "date": "2013-08-10",
-      "url": "https://web.archive.org/web/20150204160224/http://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
+      "url": "https://web.archive.org/web/20150204160224/https://desmondrawls.com/2013/08/10/hacker-hours-with-aidan-feldman/"
     },
     {
       "title": "Hacker Hours: The awesome grassroots meetup that teaches New Yorkers to code",
@@ -1222,7 +1222,7 @@
       "type": "blog",
       "publisher": "One Month",
       "date": "2015-09-17",
-      "url": "https://web.archive.org/web/20170508052915/http://learn.onemonth.com:80/what-is-jquery"
+      "url": "https://web.archive.org/web/20170508052915/https://learn.onemonth.com:80/what-is-jquery"
     },
     {
       "title": "How To Welcome New Coders To A Civic Hackathon",
@@ -1264,7 +1264,7 @@
       "type": "interview",
       "publisher": "The Next Web",
       "date": "2012-05-14",
-      "url": "http://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
+      "url": "https://thenextweb.com/dd/2012/05/14/hacker-hours-the-awesome-grassroots-meetup-that-teaches-new-yorkers-to-code"
     },
     {
       "title": "Hacker Olympics, the Un-Hackathon",
