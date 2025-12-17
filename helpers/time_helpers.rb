@@ -15,10 +15,7 @@ module TimeHelpers
 
   def date(date_str)
     obj = parse_date(date_str)
-    datetime = obj.strftime("%Y-%m")
-    display_date = obj.strftime("%b %Y")
-
-    "<time datetime=\"#{datetime}\">#{display_date}</time>"
+    "<time datetime=\"#{obj.year}\">#{obj.year}</time>"
   end
 
   def date_range(obj)

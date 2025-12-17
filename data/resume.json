@@ -43,22 +43,6 @@
   "experience": {
     "coding": [
       {
-        "organization": "PHNDC",
-        "url": "https://phndc.org/",
-        "title": "Technology Committee Chair",
-        "description": "Led a group within the Prospect Heights Neighborhood Development Council that worked to identify opportunities for improving the functioning of the non-profit through process design and use of technology.",
-        "start_date": "2023-01",
-        "end_date": "2025-11",
-        "hours": 1,
-        "employees": 0,
-        "skills": [
-          "Airtable",
-          "community organizing",
-          "IT policy",
-          "management"
-        ]
-      },
-      {
         "organization": "self-employed",
         "url": "https://blog.afeld.me/know-any-teams-who-could-use-my-help-87a4247c51c1",
         "title": "Freelance technologist",
@@ -114,7 +98,7 @@
         "organization": "Technology Transformation Services (TTS)",
         "url": "https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services",
         "title": "Technology Director",
-        "description": "GS-15. Supervisory Information Technology (IT) Specialist in Information Security (INFOSEC). Led the <a href=\"https://web.archive.org/web/20210918004657/https://handbook.tts.gsa.gov/office-of-solutions/tech-portfolio/\">Technology Portfolio</a>, a team within the General Services Administration (GSA) that oversaw, managed, and coordinated everything technology-related that cut across TTS, as well as anything technology-related that would affect TTS from the outside. Particular focus on security, compliance, infrastructure, and tech policy.",
+        "description": "Led the <a href=\"https://web.archive.org/web/20210918004657/https://handbook.tts.gsa.gov/office-of-solutions/tech-portfolio/\">Technology Portfolio</a>, a team within the General Services Administration (GSA) that oversaw, managed, and coordinated everything technology-related that cut across the organization. Particular focus on security, compliance, infrastructure, and tech policy.",
         "start_date": "2019-07-07",
         "end_date": "2021-10-01",
         "hours": 40,
@@ -161,21 +145,10 @@
         "skills": ["Git", "GitHub", "JavaScript", "Docker"]
       },
       {
-        "organization": "Brooklyn Rail",
-        "url": "https://brooklynrail.org/",
-        "title": "Advisory Board Member",
-        "description": "Helped improve the infrastructure, workflow, and software use of this non-profit arts publication.",
-        "start_date": "2019-01-07",
-        "end_date": "2020-02-24",
-        "hours": 5,
-        "employees": 12,
-        "skills": ["Git", "GitHub", "MySQL", "PHP"]
-      },
-      {
-        "organization": "xD",
+        "organization": "xD (Census Bureau)",
         "url": "https://www.xd.gov/",
         "title": "Data Engineer",
-        "description": "GS-15. Helped to \"build experimental data products for the public good\" with federal agencies from this startup within the Census Bureau. Worked with the CTO and Standards Working Group on a Bureau-wide Open Source Policy and various software approvals and process changes.",
+        "description": "Helped to \"build experimental data products for the public good\" with federal agencies.",
         "start_date": "2018-09-02",
         "end_date": "2019-07-06",
         "hours": 40,
@@ -226,27 +199,13 @@
           "JavaScript",
           "security compliance",
           "teaching"
-        ],
-        "responsibilities": [
-          {
-            "group": null,
-            "title": "Discovery",
-            "description": "Helped the team identify security threats andconcerns around their software development, deployment, and operation. We then looked at the underlying problems and possible solutions for each. Tasks were then prioritized based on the ranking of the corresponding concern.",
-            "url": "https://medium.com/nycplanninglabs/devops-and-security-on-a-small-team-8709cfc5b0aa"
-          },
-          {
-            "group": null,
-            "title": "Infrastructure as code",
-            "description": "Automated the hardening and configuration of their servers, while finding ways to minimize the operational burden.",
-            "url": "https://github.com/NYCPlanning/labs-infrastructure"
-          }
         ]
       },
       {
         "organization": "18F",
         "url": "https://18f.gsa.gov",
         "title": "Innovation Specialist",
-        "description": "GS-15. Was a federal employee in the General Services Administration (GSA), working with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source. Participated and led multiple user research sessions.",
+        "description": "Worked with internal and external government agency partners to modernize technology practices through multiple engagements. Served as a subject matter expert in development of custom web applications, DevSecOps, ATOs, and open source.",
         "start_date": "2014-10-20",
         "end_date": "2018-09-01",
         "hours": 40,
@@ -320,12 +279,6 @@
             "url": "https://open-control.org"
           },
           {
-            "group": "C2",
-            "title": "Technical Lead",
-            "description": "Built a business process automation tool for streamlining purchase approvals, while providing better auditing capabilities.",
-            "url": "https://github.com/18F/C2"
-          },
-          {
             "group": null,
             "title": "Engineering Facilitator",
             "description": "Supervised a team of engineers, providing mentorship, soliciting peer reviews, mediating conflicts, etc.",
@@ -337,7 +290,7 @@
         "organization": "GitHub",
         "url": "https://education.github.com",
         "title": "Education Hacker",
-        "description": "Company building tools for software development workflows. Worked to understand students' and teachers' obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally. Was responsible for the system accepting and processing educational user upgrades, as well as determining best practices for classroom workflows.",
+        "description": "Worked to understand students' and teachers' obstacles to using professional software development practices in their classes, and conducted trainings on collaborative coding internationally.",
         "start_date": "2013-08",
         "end_date": "2014-06",
         "hours": 40,
@@ -356,80 +309,6 @@
           "Ruby on Rails",
           "teaching"
         ]
-      },
-      {
-        "organization": "Artsy",
-        "url": "https://www.artsy.net/",
-        "title": "Software Engineer (Contract)",
-        "description": "Online fine art marketplace. Full-stack web development on the site and APIs, as well as building an open source business statistics reporting framework.",
-        "start_date": "2013-05",
-        "end_date": "2013-08",
-        "hours": 40,
-        "employees": 70,
-        "skills": [
-          "Backbone.js",
-          "CSS",
-          "Git",
-          "GitHub",
-          "Heroku",
-          "HTML",
-          "JavaScript",
-          "jQuery",
-          "Ruby",
-          "Ruby on Rails"
-        ]
-      },
-      {
-        "organization": "Jux",
-        "url": null,
-        "title": "Senior Web Developer",
-        "description": "As the only full-stack web developer at the small (now defunct) blogging startup, touched all pieces of the application, including social features and integrations of the site, layout templating, navigation, the image processing pipeline, and much of the API, as well as helping guide vision for the product.",
-        "start_date": "2011-01",
-        "end_date": "2013-05",
-        "hours": 40,
-        "employees": 5,
-        "skills": [
-          "Backbone.js",
-          "CSS",
-          "Git",
-          "GitHub",
-          "HTML",
-          "JavaScript",
-          "jQuery",
-          "MongoDB",
-          "Ruby",
-          "Ruby on Rails"
-        ]
-      },
-      {
-        "organization": "Open source contribution",
-        "url": "https://bigquery.cloud.google.com/savedquery/197011051441:4bf2e709159e4256803f2f3637e30ef1",
-        "title": null,
-        "description": "<a href=\"https://pandas.pydata.org/\">pandas</a> maintainer. Have contributed to many other projects, including <a href=\"https://www.ansible.com/\">Ansible</a>, <a href=\"https://backbonejs.org/\">Backbone.js</a>, <a href=\"https://www.instructure.com/canvas\">Canvas LMS</a>, <a href=\"https://www.cloudfoundry.org/\">Cloud Foundry</a>, <a href=\"https://concourse-ci.org/\">ConcourseCI</a>, <a href=\"https://docs.conda.io/\">Conda</a>, <a href=\"https://consulproject.org/\">CONSUL</a></a>, <a href=\"https://golang.github.io/dep/\">Dep</a>, <a href=\"https://www.docker.com/\">Docker</a>, <a href=\"https://greatexpectations.io/\">Great Expectations</a>, <a href=\"https://brew.sh/\">Homebrew</a>, <a href=\"https://jekyllrb.com/\">Jekyll</a>, <a href=\"https://www.packer.io/\">Packer</a>, <a href=\"https://www.terraform.io/\">Terraform</a>, <a href=\"https://www.travis-ci.com/\">TravisCI</a>, <a href=\"https://www.vagrantup.com/\">Vagrant</a>, and <a href=\"https://code.visualstudio.com/\">Visual Studio Code (VSCode)</a>.",
-        "start_date": "2010-09",
-        "end_date": null,
-        "hours": 2
-      },
-      {
-        "organization": "American Express Publishing",
-        "url": null,
-        "title": "Web Developer (Contract)",
-        "description": "Contractor building content management tools for FoodAndWine.com, as well as promotional micro sites for advertising partners.",
-        "start_date": "2010-08",
-        "end_date": "2011-01",
-        "hours": 40,
-        "employees": 200,
-        "skills": [
-          "CSS",
-          "Git",
-          "GitHub",
-          "JavaScript",
-          "HTML",
-          "jQuery",
-          "Ruby",
-          "Ruby on Rails",
-          "Sinatra"
-        ]
       }
     ],
     "teaching": [
@@ -444,82 +323,12 @@
         "skills": ["community organizing"]
       },
       {
-        "organization": "Columbia University",
-        "url": "https://www.columbia.edu/",
-        "title": "Lecturer",
-        "description": null,
-        "start_date": "2022-11",
-        "end_date": null,
-        "hours": 15,
-        "employees": 4370,
-        "skills": ["Git", "GitHub", "Python", "public speaking", "teaching"],
-        "responsibilities": [
-          {
-            "group": "School of International and Public Affairs (SIPA)",
-            "title": "Python for Public Policy",
-            "description": "Introduces students with little to no programming experience to software development and data analysis though code. Covers the basics of command line, Python, Jupyter Notebooks, Pandas, and data visualization by working with open data.",
-            "url": "https://python-public-policy.afeld.me/en/columbia/"
-          },
-          {
-            "group": "SIPA",
-            "title": "Computing in Context",
-            "description": "Co-instruct a course introducing students from various backgrounds the fundamentals of code, then teaching them how that applies to their discipline. I teach the Policy Context.",
-            "url": "https://computing-in-context.afeld.me/"
-          },
-          {
-            "group": "SIPA",
-            "title": "Advanced Computing for Policy",
-            "description": "Building and teaching a follow-up course to Computing in Context, the two of which form the core sequence for the new <a href=\"https://www.sipa.columbia.edu/sipa-education/masters-programs/concentrations/data-science-policy\">Data Science for Policy</a> program. The course will give students a better understanding of computer science fundamentals, learning how data works in a broader context. They will learn and use APIs, databases, cloud services, and other technologies, processes, and considerations that go into complex data systems.",
-            "url": "https://docs.google.com/document/d/14hGiU8LP0vosSnaT2z_3BYIQM1S4stPN/edit"
-          },
-          {
-            "group": "School of Professional Studies (SPS)",
-            "title": "Operations Management in IT",
-            "description": "Taught an introduction to technology for business people, also known as \"Technology Foundations\". It was a survey course, providing a holistic introduction to tools, roles, and processes of technology and technology organizations.",
-            "url": "https://courseworks2.columbia.edu/courses/198128"
-          }
-        ]
-      },
-      {
-        "organization": "The New School",
-        "url": "https://opencampus.newschool.edu/program/certificate-programs/art-design-with-parsons/web-design-and-development",
-        "title": "Adjunct Faculty",
-        "description": "Developed a class on Working with APIs and AJAX for the Open Campus Web Design and Development certificate.",
-        "start_date": "2020-03",
-        "end_date": "2020-10",
-        "hours": 4,
-        "employees": 1000,
-        "skills": ["JavaScript", "public speaking", "teaching"]
-      },
-      {
-        "organization": "Cornell Tech",
-        "url": "https://www.tech.cornell.edu/",
-        "title": "Adjunct Faculty",
-        "description": "Taught the <a href=\"https://docs.google.com/document/d/1-hk6GzhV1yHU1T0E7uqcdNTtvv3fuq1_WECQOWOT2zw/edit\">Startup Systems course</a>, which covered web development from HTML to APIs to servers. The class covered the basics of JavaScript, Python, Terraform, Ansible, and Amazon Web Services (AWS) for students with a broad range of experience levels.",
-        "start_date": "2016-08",
-        "end_date": "2016-12",
-        "hours": 20,
-        "employees": 10000
-      },
-      {
-        "organization": "EmpireConf",
-        "url": "https://empireconf.org/",
-        "title": "Organizer",
-        "description": "One of the organizers for the annual EmpireNode/EmpireJS/EmpireConf JavaScript conferences.",
-        "start_date": "2015-01",
-        "end_date": "2024-12",
-        "hours": 1,
-        "skills": ["community organizing", "public speaking", "teaching"]
-      },
-      {
-        "organization": "New York University (NYU)",
-        "url": "https://www.nyu.edu/",
-        "title": "Adjunct Assistant Professor",
-        "description": null,
+        "organization": "Columbia University and NYU",
+        "title": "Adjunct Professor",
+        "description": "Teach coding and data skills to policy students at Columbia School of International and Public Affairs (SIPA) and NYU's Wagner Graduate School of Public Service.",
         "start_date": "2012-06",
         "end_date": null,
-        "hours": 5,
-        "employees": 19000,
+        "hours": 15,
         "skills": [
           "CSS",
           "Git",
@@ -531,97 +340,6 @@
           "public speaking",
           "teaching",
           "Terraform"
-        ],
-        "responsibilities": [
-          {
-            "group": "School of Professional Studies (SPS)",
-            "title": "Advanced JavaScript",
-            "description": "After redesigning the curriculum, taught this course for twelve consecutive semesters, helping students gain an in-depth understanding of the language while teaching best practices for modern front-end development. The course material, which is fully public, became the showcase class for GitHub's Education program.",
-            "url": "https://advanced-js.github.io/syllabus/"
-          },
-          {
-            "group": "Interactive Telecommunications Program (ITP)",
-            "title": "Building for Learning",
-            "description": "Created and taught an interdisciplinary graduate-level course around building interactive educational tools, while also covering front-end web development. In addition to rapid prototyping of physical and digital learning materials, also brought in experts from the educational technology to give students an understanding of taking projects from concept to product.",
-            "url": "https://github.com/bfl-itp/syllabus"
-          },
-          {
-            "group": "Wagner Graduate School of Public Service",
-            "title": "Python Coding for Public Policy",
-            "description": "(See <a href=\"#columbia-university\">same course at Columbia University</a>)",
-            "url": "https://python-public-policy.afeld.me/en/nyu/"
-          },
-          {
-            "group": "Wagner Graduate School of Public Service",
-            "title": "Big Data Analytics for Public Policy",
-            "description": "This class got students to apply new techniques to analyze social problems using and combining large quantities of heterogeneous data from a variety of different sources, through machine learning, data mining, and data science.",
-            "url": "https://wagner.nyu.edu/education/courses/advanced-data-analytics-and-evidence-building"
-          }
-        ]
-      },
-      {
-        "organization": "City University of New York (CUNY)",
-        "url": "https://github.com/cuny-nytech/syllabus",
-        "title": "Instructor",
-        "description": "Designed curriculum and was lead instructor for the NYTech program, which helped seniors and graduate students build practical skills necessary for joining startups based in New York City, such as version control, web development, and resume writing. The culminating project was a class-wide collaboration to build a new site for a non-profit.",
-        "start_date": "2014-09",
-        "end_date": "2015-05",
-        "hours": 5,
-        "employees": 43000,
-        "skills": [
-          "CSS",
-          "Git",
-          "GitHub",
-          "HTML",
-          "JavaScript",
-          "NodeJS",
-          "PostgreSQL",
-          "public speaking",
-          "Ruby on Rails",
-          "Ruby",
-          "teaching"
-        ]
-      },
-      {
-        "organization": "General Assembly",
-        "url": "https://generalassemb.ly",
-        "title": "Instructor",
-        "description": "Taught JavaScript as part of the Front-End + Rails curriculum at this school for digital skills.",
-        "start_date": "2013-02",
-        "end_date": "2013-03",
-        "hours": 8,
-        "employees": 3200,
-        "skills": [
-          "CSS",
-          "HTML",
-          "JavaScript",
-          "jQuery",
-          "public speaking",
-          "teaching"
-        ]
-      },
-      {
-        "organization": "Hacker Hours",
-        "url": "https://hackerhours.org",
-        "title": "Founder",
-        "description": "Created a meetup group to provide mentorship for individuals learning to code, which reached over 8,000 members across seven states.",
-        "start_date": "2011-09",
-        "end_date": "2021-09-30",
-        "hours": 4,
-        "skills": [
-          "community organizing",
-          "CSS",
-          "Git",
-          "GitHub",
-          "HTML",
-          "JavaScript",
-          "Jekyll",
-          "jQuery",
-          "PostgreSQL",
-          "Python",
-          "Ruby on Rails",
-          "Ruby",
-          "teaching"
         ]
       }
     ],
