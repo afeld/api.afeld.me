@@ -2,10 +2,33 @@
 
 module ResumeHelpers
   def all_jobs
-    jobs = (data.resume.experience.coding + data.resume.experience.teaching).sort_by(&:start_date).reverse
+    coding = data.resume.experience.coding
+    teaching = data.resume.experience.teaching
 
-    # put current jobs in front of past ones
-    current = jobs.select { |job| job.end_date.nil? }
+    # present jobs: coding before teaching, each sorted by start_date desc
+    current_coding = coding.select { |job| job.end_date.nil? }
+    current_coding_sorted = current_coding.sort_by(&:start_date)
+    current_coding = current_coding_sorted.reverse
+
+    current_teaching = teaching.select { |job| job.end_date.nil? }
+    current_teaching_sorted = current_teaching.sort_by(&:start_date)
+    current_teaching = current_teaching_sorted.reverse
+
+    # past jobs: merge categories and sort by start_date desc
+    past_coding = coding.select { |job| job.end_date.present? }
+    past_teaching = teaching.select { |job| job.end_date.present? }
+    past_merged = past_coding + past_teaching
+    past_sorted = past_merged.sort_by(&:start_date)
+    past = past_sorted.reverse
+
+    current_coding + current_teaching + past
+  end
+
+  private
+
+  def organize_jobs(jobs)
+    # put current jobs in front of past ones, only sorting current jobs
+    current = jobs.select { |job| job.end_date.nil? }.sort_by(&:start_date).reverse
     past = jobs.select { |job| job.end_date.present? }
 
     current + past
@@ -17,7 +40,11 @@ module ResumeHelpers
       next unless job.skills? && job.skills.any?
 
       start = parse_date(job.start_date)
-      end_date = job.end_date? ? parse_date(job.end_date) : Date.today
+      end_date = if job.end_date?
+                   parse_date(job.end_date)
+                 else
+                   Date.today
+                 end
       years_experience = ((end_date - start) / 365).ceil
       job.skills.each do |skill|
         results[skill] = [years_experience, results[skill]].max
@@ -29,13 +56,16 @@ module ResumeHelpers
 
   def skills(jobs, num_years_range)
     # TODO: don't recompute every time
-    results = skill_years(jobs).select { |_skill, yrs| num_years_range.include?(yrs) }.keys
-    results.sort_by!(&:downcase)
-    results
+    years_by_skill = skill_years(jobs)
+    filtered = years_by_skill.select { |_skill, yrs| num_years_range.include?(yrs) }
+    result_keys = filtered.keys
+    result_keys.sort_by!(&:downcase)
+    result_keys
   end
 
   def hours_per_week(hours)
-    "#{hours} #{"hour".pluralize(hours)}/week"
+    unit = "hour".pluralize(hours)
+    "#{hours} #{unit}/week"
   end
 
   def num_employees(job)
@@ -46,8 +76,8 @@ module ResumeHelpers
   end
 
   def date_row(job)
-    [
-      date_range(job)
-    ].compact.join(", ")
+    parts = [date_range(job)]
+    compacted = parts.compact
+    compacted.join(", ")
   end
 end
