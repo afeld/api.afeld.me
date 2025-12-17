@@ -434,6 +434,16 @@
     ],
     "teaching": [
       {
+        "organization": "Civic Tech'ish",
+        "url": "https://bit.ly/CivicTechishNYC",
+        "title": "Organizer",
+        "description": "One of the organizers of this civic technology networking group, whose members are \"passionate about improving government services for all.\"",
+        "start_date": "2024-07",
+        "end_date": null,
+        "hours": 1,
+        "skills": ["community organizing"]
+      },
+      {
         "organization": "Columbia University",
         "url": "https://www.columbia.edu/",
         "title": "Lecturer",
