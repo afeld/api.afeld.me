@@ -45,8 +45,8 @@
       {
         "organization": "self-employed",
         "url": "https://blog.afeld.me/know-any-teams-who-could-use-my-help-87a4247c51c1",
-        "title": "Freelance technologist",
-        "description": "Helping government and non-profit teams improve their technology and processes. Clients include the <a href=\"https://oit.colorado.gov/colorado-digital-service\">Colorado Behavioral Health Administration</a>, the <a href=\"https://www.calitp.org/\">California Department of Transportation</a>, <a href=\"https://reinventalbany.org/\">Reinvent Albany</a>, and <a href=\"https://www.voteamerica.com/\">VoteAmerica</a>.",
+        "title": "Freelance Technologist",
+        "description": "Helping government and non-profit teams improve their technology and processes. Clients include the <strong><a href=\"https://bha.colorado.gov/\">Colorado Behavioral Health Administration</a></strong>, the <strong><a href=\"https://www.calitp.org/\">California Department of Transportation</a></strong>, <strong><a href=\"https://reinventalbany.org/\">Reinvent Albany</a></strong>, and <strong><a href=\"https://www.voteamerica.com/\">VoteAmerica</a></strong>.",
         "start_date": "2021-12-30",
         "end_date": null,
         "hours": 20,
@@ -110,7 +110,7 @@
       {
         "organization": "Upsolve",
         "url": "https://upsolve.org/",
-        "title": "Freelancer",
+        "title": "Freelance Web Developer",
         "description": "Improved development workflows and backend features of the site that helps people file for bankruptcy.",
         "start_date": "2019-06-10",
         "end_date": "2019-11-04",
