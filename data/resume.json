@@ -59,11 +59,9 @@
           "Git",
           "GitHub",
           "Google Cloud",
-          "Heroku",
           "JavaScript",
-          "Microsoft Azure",
+          "Azure",
           "Python",
-          "Scrapy",
           "Snowflake",
           "Terraform"
         ]
@@ -166,13 +164,11 @@
         "employees": 325,
         "skills": [
           "Ansible",
-          "DigitalOcean",
           "Docker",
           "Git",
           "GitHub",
           "JavaScript",
-          "security compliance",
-          "teaching"
+          "security compliance"
         ]
       },
       {
@@ -197,8 +193,6 @@
           "JavaScript",
           "Jekyll",
           "Jenkins",
-          "management",
-          "Packer",
           "PostgreSQL",
           "public speaking",
           "Python",
@@ -206,7 +200,6 @@
           "Ruby on Rails",
           "Ruby",
           "security compliance",
-          "teaching",
           "Terraform"
         ],
         "responsibilities": [
@@ -273,15 +266,12 @@
           "CSS",
           "Git",
           "GitHub",
-          "Heroku",
           "HTML",
           "JavaScript",
           "Jekyll",
-          "jQuery",
           "public speaking",
           "Ruby",
-          "Ruby on Rails",
-          "teaching"
+          "Ruby on Rails"
         ]
       }
     ],
@@ -302,7 +292,6 @@
           "NodeJS",
           "Python",
           "public speaking",
-          "teaching",
           "Terraform"
         ]
       }
