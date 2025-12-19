@@ -287,16 +287,6 @@
     ],
     "teaching": [
       {
-        "organization": "Civic Tech'ish",
-        "url": "https://bit.ly/CivicTechishNYC",
-        "title": "Organizer",
-        "description": "One of the organizers of this civic technology networking group, whose members are \"passionate about improving government services for all.\"",
-        "start_date": "2024-07",
-        "end_date": null,
-        "hours": 1,
-        "skills": ["community organizing"]
-      },
-      {
         "organization": "Columbia University and NYU",
         "title": "Adjunct Professor",
         "description": "Teach coding and data skills to policy students at Columbia School of International and Public Affairs (SIPA) and NYU's Wagner Graduate School of Public Service.",
