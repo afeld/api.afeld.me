@@ -1,6 +1,7 @@
 ---
 title: Pay
 layout: big
+noindex: true
 ---
 
 To send Aidan money, any of the following are fine.
