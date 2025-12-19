@@ -99,7 +99,7 @@
           {
             "group": "Reinvent Albany",
             "title": null,
-            "description": "Have done a couple projects: one crawing the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data, the other pulling and preparing New York Senate bill and resolution data for analysis of changes in throughput.",
+            "description": "Have worked on several projects: <a href=\"https://reinventalbany.org/2023/07/subsidy-sheet-reinvent-albany-report-calls-for-major-governance-and-transparency-reforms-for-empire-state-development/\">crawling the Empire State Development website to identify tables trapped in PDFs that should be released as machine-readable open data</a>; pulling and preparing New York Senate bill and resolution data for analysis of changes in throughput; <a href=\"https://reinventalbany.org/2025/12/press-release-transparency-gap-ny-senate-confirmation-votes-kept-behind-two-layers-of-obstacles/\">digitizing and publishing confirmation votes FOIL'd from the New York Senate</a>.",
             "url": "https://reinventalbany.org/"
           },
           {
@@ -680,6 +680,10 @@
       "username": "afeld",
       "profile_url": "https://github.com/afeld"
     },
+    "imdb": {
+      "username": "Aidan Feldman",
+      "profile_url": "https://www.imdb.com/name/nm3238287/"
+    },
     "instagram": {
       "username": "aidanfeldman",
       "profile_url": "https://instagram.com/aidanfeldman"
@@ -1031,16 +1035,22 @@
   ],
   "writeups": [
     {
+      "title": "Transparency Gap: NY Senate Confirmation Votes Kept Behind Two Layers of Obstacles",
+      "publisher": "Reinvent Albany",
+      "date": "2025-12-18",
+      "url": "https://reinventalbany.org/2025/12/press-release-transparency-gap-ny-senate-confirmation-votes-kept-behind-two-layers-of-obstacles/"
+    },
+    {
       "title": "Streamlining State Reporting for Behavioral Health Providers",
       "publisher": "Colorado Governor's Office of Information Technology",
       "date": "2024-11-16",
       "url": "https://oit.colorado.gov/news-article/streamlining-state-reporting-for-behavioral-health-providers"
     },
     {
-      "title": "Open ESD: Increasing the Transparency and Accountability of Empire State Development",
+      "title": "Reinvent Albany report calls for major governance and transparency reforms for Empire State Development",
       "publisher": "Reinvent Albany",
-      "date": "2023-07-27",
-      "url": "https://reinventalbany.org/2023/07/open-esd-watchdog-report-recommends-major-governance-and-transparency-reforms-for-secretive-state-authority/"
+      "date": "2023-07-28",
+      "url": "https://reinventalbany.org/2023/07/subsidy-sheet-reinvent-albany-report-calls-for-major-governance-and-transparency-reforms-for-empire-state-development/"
     },
     {
       "title": "What are the pros and cons of working in civic tech",
@@ -1164,6 +1174,13 @@
     }
   ],
   "writing": [
+    {
+      "title": "Tech Mayor",
+      "type": "blog",
+      "publisher": "self",
+      "date": "2025-07-23",
+      "url": "https://techmayor.nyc/"
+    },
     {
       "title": "You Should Switch to Signal. Here's Why.",
       "type": "blog",
