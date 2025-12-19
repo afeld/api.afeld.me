@@ -16,7 +16,7 @@ The Digital Service built a minimum viable product (MVP) using [agile principles
 
 Making government software is hard. When the government outsources its expertise and follows the [waterfall model](http://localhost:4567/cover-letter), it's harder. I don't blame the vendors --- they were following incentives, doing what they were asked, falling back to an antiquated way of building software ([waterfall](https://en.wikipedia.org/wiki/Waterfall_model)) because it seemed "safe." New Yorkers deserve better.
 
-I'm excited about the Mamdani administration's ambitious goals, and I want to be part of delivering them. I'm interested in a technology leadership role where I can guide complex projects to become the [excellent services that New Yorkers deserve](https://techmayor.nyc/p/about-the-tech-mayor-project). This will include:
+I'm excited about the Mamdani administration's ambitious goals to make the city more affordable and equitable, and I want to be part of delivering them. I'm interested in a technology leadership role where I can guide complex projects to become the [excellent services that New Yorkers deserve](https://techmayor.nyc/p/about-the-tech-mayor-project). This will include:
 
 - [Hiring more engineers, designers, and product managers into city government](https://docs.google.com/document/d/1EFbzYUcDx7fWn0HMuNmEtmo0PBIU45qpGxjzAH1aO_k/edit?usp=sharing); rather than eliminating vendors, integrated teams can ensure work is being done well
 - Empowering new and existing government staff (and yes, vendors), ensuring they have what they need to do their best work
