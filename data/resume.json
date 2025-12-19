@@ -723,6 +723,12 @@
   },
   "talks": [
     {
+      "title": "A Morning Gov Tech Policy Conversation",
+      "event": "BetaNYC's BetaBagels",
+      "date": "2025-12-19",
+      "url": "https://www.beta.nyc/event/betabagels012/"
+    },
+    {
       "title": "Web Development and Infrastructure",
       "event": "Open Source and Professional Software Development class at NYU",
       "date": "2024-03-13",
