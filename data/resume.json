@@ -287,9 +287,9 @@
     ],
     "teaching": [
       {
-        "organization": "Columbia University and NYU",
+        "organization": "<a href=\"https://www.columbia.edu\">Columbia University</a> and <a href=\"https://www.nyu.edu\">NYU</a>",
         "title": "Adjunct Professor",
-        "description": "Teach coding and data skills to policy students at Columbia School of International and Public Affairs (SIPA) and NYU's Wagner Graduate School of Public Service.",
+        "description": "Teach coding and data skills to policy students at the Columbia School of International and Public Affairs (SIPA) and NYU's Wagner Graduate School of Public Service.",
         "start_date": "2012-06",
         "end_date": null,
         "hours": 15,
