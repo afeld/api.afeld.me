@@ -102,7 +102,7 @@ nav[data-toggle="toc"] .nav > li > a {
 }
 
 .listing {
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
 
   h3 {
     display: inline;
@@ -124,6 +124,14 @@ nav[data-toggle="toc"] .nav > li > a {
 
 .community .listing a {
   font-weight: bold;
+}
+
+// .skills .content p {
+//   margin-bottom: 0.5rem;
+//   margin-top: 0rem;
+// }
+.skills .listing {
+  margin-bottom: 0;
 }
 
 .responsibilities {
