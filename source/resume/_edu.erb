@@ -6,12 +6,11 @@
     <%# exclude high school %>
     <% data.resume.education[0...-1].each do |edu| %>
       <div class="listing">
-        <h3><%= edu.school %>, <%= edu.location.city %>, <%= edu.location.state %></h3>
-        <ul>
-          <% edu.degrees.each do |degree| %>
-            <li><%= degree.title %> <%= degree.major %></li>
-          <% end %>
-        </ul>
+        <p>
+          <strong><%= edu.school %>, <%= edu.location.city %></strong>
+          —
+          <%= edu.degrees.map { |degree| "#{degree.title} #{degree.major}" }.join(', ') %>
+        </p>
       </div>
     <% end %>
   </div>
