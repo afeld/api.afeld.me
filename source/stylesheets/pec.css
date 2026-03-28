@@ -1,0 +1,29 @@
+h1,
+h2 {
+  color: #8b1a10;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p,
+li {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
