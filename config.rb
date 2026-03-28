@@ -46,3 +46,5 @@ page "/*", layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+set :markdown, parse_block_html: true
