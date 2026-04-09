@@ -3,6 +3,14 @@ layout: pre-existing-condition
 title: Pre-Existing Condition
 ---
 
+# Pre-Existing Condition
+
+The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversation around the US medical system, particularly the role of middlemen like insurance companies. Simultaneously, there has been an outpouring of support for the accused shooter, Luigi Mangione. Pre-Existing Condition is a dance-theater piece about that event, as well as the large-scale policy issues surrounding it. The piece uses movement, dialogue, data, projection, and headlines to recreate the shockwaves of the moment, and understand what it means for us now.
+
+<p class="center">
+  <a class="newsletter" href="/newsletter">Sign up for updates</a>
+</p>
+
 ## People
 
 **Cast members:** [Clarence Brooks](https://hub.dance.nyc/directory/profile/clarencebrooks/) ([Brian Thompson](https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson)), [Jack Randel](https://jackrandel.com/), [Kristi Ann Schopfer](https://www.linkedin.com/in/kristi-ann-schopfer-a824ba15b/), [Lee Tyler](https://leetyler.info/) ([Luigi Mangione](https://en.wikipedia.org/wiki/Luigi_Mangione)), [Nicole McClam](https://mccole99.wixsite.com/nicolemcclam/biography)
