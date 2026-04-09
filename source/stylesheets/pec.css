@@ -29,7 +29,7 @@ body {
   }
 
   to {
-    transform: scale(1.12) translate3d(-2%, -1%, 0);
+    transform: scale(1.12) translate3d(8%, -4%, 0);
   }
 }
 
