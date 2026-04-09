@@ -11,8 +11,32 @@ body {
 }
 
 #banner {
+  animation: ken-burns-banner 20s ease-in-out infinite alternate;
+  display: block;
   height: auto;
   max-width: 100%;
+  transform-origin: 45% 40%;
+  width: 100%;
+}
+
+.banner-frame {
+  overflow: hidden;
+}
+
+@keyframes ken-burns-banner {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: scale(1.12) translate3d(-2%, -1%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #banner {
+    animation: none;
+  }
 }
 
 .pec-layout {
