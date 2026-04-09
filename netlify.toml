@@ -1,4 +1,9 @@
 [[redirects]]
+from = "/pec"
+status = 302
+to = "/pre-existing-condition"
+
+[[redirects]]
 from = "/psw"
 status = 302
 to = "https://computing-in-context.afeld.me/portfolio_site_workshop.html"
