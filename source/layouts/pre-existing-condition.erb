@@ -9,5 +9,12 @@
 <% end %>
 
 <% wrap_layout :default do %>
-  <%= yield %>
+  <div class="pec-layout">
+    <main class="pec-content">
+      <%= yield %>
+    </main>
+    <aside class="pec-spine" aria-hidden="true">
+      <img src="/images/spine_red.png" alt="Red spine" />
+    </aside>
+  </div>
 <% end %>

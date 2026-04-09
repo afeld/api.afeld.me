@@ -6,6 +6,26 @@ html {
   padding: 1rem;
 }
 
+body {
+  max-width: none;
+}
+
+.pec-layout {
+  max-width: 60rem;
+}
+
+.pec-spine {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pec-spine img {
+  height: auto;
+  max-height: 18rem;
+  max-width: min(100%, 20rem);
+  width: auto;
+}
+
 h1,
 h2 {
   color: var(--pec-red);
@@ -69,4 +89,27 @@ a {
   color: white;
   display: inline-block;
   padding: 0.5rem 1.25rem;
+}
+
+@media (min-width: 64rem) {
+  .pec-layout {
+    align-items: start;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: minmax(0, 52rem) minmax(0, 1fr);
+    max-width: none;
+  }
+
+  .pec-spine {
+    align-self: start;
+    margin-top: 0;
+    position: sticky;
+    text-align: right;
+    top: 1rem;
+  }
+
+  .pec-spine img {
+    max-height: calc(100vh - 2rem);
+    max-width: 100%;
+  }
 }
