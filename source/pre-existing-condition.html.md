@@ -5,6 +5,8 @@ title: Pre-Existing Condition
 
 # Pre-Existing Condition
 
+<img id="banner" src="/images/clarence_unschool_of_data.jpg" alt="Showing at UnSchool of Data" />
+
 The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversation around the US medical system, particularly the role of middlemen like insurance companies. Simultaneously, there has been an outpouring of support for the accused shooter, Luigi Mangione. Pre-Existing Condition is a dance-theater piece about that event, as well as the large-scale policy issues surrounding it. The piece uses movement, dialogue, data, projection, and headlines to recreate the shockwaves of the moment, and understand what it means for us now.
 
 <p class="center">

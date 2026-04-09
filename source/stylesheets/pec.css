@@ -10,6 +10,11 @@ body {
   max-width: none;
 }
 
+#banner {
+  height: auto;
+  max-width: 100%;
+}
+
 .pec-layout {
   max-width: 60rem;
 }
