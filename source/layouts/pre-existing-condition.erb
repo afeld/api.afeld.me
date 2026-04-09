@@ -1,7 +1,3 @@
----
-title: Pre-Existing Condition
----
-
 <% content_for :head do %>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,18 +8,20 @@ title: Pre-Existing Condition
     <%= stylesheet_link_tag 'pec' %>
 <% end %>
 
-<h1>Pre-Existing Condition</h1>
+<% wrap_layout :default do %>
+  <h1>Pre-Existing Condition</h1>
 
-<div class="event center">
-  <p>
-    <a href="https://schoolofdata.nyc/unschool/">UnSchool of Data</a>
-    <br/>
-    March 29, 2026
+  <div class="event center">
+    <p>
+      <a href="https://schoolofdata.nyc/unschool/">UnSchool of Data</a>
+      <br/>
+      March 29, 2026
+    </p>
+  </div>
+
+  <p class="center">
+    <a class="newsletter" href="/newsletter">Sign up for updates</a>
   </p>
-</div>
 
-<p class="center">
-  <a class="newsletter" href="/newsletter">Sign up for updates</a>
-</p>
-
-<%= partial :pec %>
+  <%= yield %>
+<% end %>

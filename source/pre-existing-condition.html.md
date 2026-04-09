@@ -1,3 +1,8 @@
+---
+layout: pre-existing-condition
+title: Pre-Existing Condition
+---
+
 ## People
 
 **Cast members:** [Clarence Brooks](https://hub.dance.nyc/directory/profile/clarencebrooks/) ([Brian Thompson](https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson)), [Jack Randel](https://jackrandel.com/), [Kristi Ann Schopfer](https://www.linkedin.com/in/kristi-ann-schopfer-a824ba15b/), [Lee Tyler](https://leetyler.info/) ([Luigi Mangione](https://en.wikipedia.org/wiki/Luigi_Mangione)), [Nicole McClam](https://mccole99.wixsite.com/nicolemcclam/biography)
