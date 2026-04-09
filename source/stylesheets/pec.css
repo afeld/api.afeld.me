@@ -1,5 +1,6 @@
 :root {
   --pec-red: #8b1a10;
+  --spine-margin: 2rem;
 }
 
 html {
@@ -44,7 +45,7 @@ body {
 }
 
 .pec-spine {
-  margin-top: 2rem;
+  margin-top: var(--spine-margin);
   text-align: center;
 }
 
@@ -129,16 +130,19 @@ a {
     max-width: none;
   }
 
+  /* keep the spine graphic fixed when scrolling */
   .pec-spine {
     align-self: start;
     margin-top: 0;
-    position: sticky;
+    position: fixed;
+    right: 1rem;
     text-align: right;
     top: 1rem;
+    width: min(20rem, calc(100vw - var(--spine-margin)));
   }
 
   .pec-spine img {
-    max-height: calc(100vh - 2rem);
+    max-height: calc(100vh - var(--spine-margin));
     max-width: 100%;
   }
 }
