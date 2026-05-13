@@ -27,6 +27,8 @@ The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversati
 
 ## By the numbers
 
+- [**0.09%:** Projected net average payment increase of Medicare Advantage Rates from 2026 to 2027](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-advance-notice)
+- [**89.1%:** Medical Loss Ratio (MLR, meaning the percentage they pay to providers), 2025](https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2025/unh-reports-2025-results-and-issues-2026-outlook.pdf)
 - [**$5 trillion:** Annual spending by the U.S. healthcare system](https://www.healthsystemtracker.org/chart-collection/u-s-spending-healthcare-changed-time/#Total%20national%20health%20expenditures,%201970-2024)
 - [**5th:** Ranking of the U.S. healthcare system, if it were its own country](https://www.theatlantic.com/health/archive/2012/11/the-worlds-fifth-largest-economy-us-health-care/265368/?utm_source=copy-link&utm_medium=social&utm_campaign=share)
 - **2x:** U.S. healthcare system spending relative to [Russia's GDP](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
@@ -49,6 +51,7 @@ The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversati
 ## Additional references
 
 - “Luigi Mangione, age 26, history of [Lyme disease, severe brain fog](https://www.businessinsider.com/who-is-luigi-mangione-charged-unitedhealthcare-ceo-murder-2024-12), [irritable bowel syndrome, small intestinal bacterial overgrowth](https://people.com/murder-suspect-luigi-mangione-discussed-back-pain-ibs-on-reddit-8759428), and [sciatica](https://people.com/luigi-mangione-painful-back-condition-spondylolisthesis-8760672). [Patient diagnosed with L5-S1 isthmic spondylolisthesis](https://www.reuters.com/world/us/behind-unitedhealth-execs-accused-killer-possible-history-back-pain-emerges-2024-12-10/), which [became debilitating after a surfing accident in 2022](https://www.scientificamerican.com/article/luigi-mangione-said-he-had-spondylolisthesis-what-is-it/). [This led to pain and numbness in his lower back and genital area.](https://www.businessinsider.com/who-is-luigi-mangione-charged-unitedhealthcare-ceo-murder-2024-12?op=1) [In July 2023, patient underwent successful spinal fusion surgery.](https://www.nytimes.com/2025/10/21/us/luigi-mangione-asia-trip.html)”
+- ["The push on Medicare Advantage rates — that point-0-9 percent increase — is, frankly, a misalignment with reality."](https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2025/unh-q4-2025-remarks.pdf#page=4)
 - “[Florida, where open carry is legal](https://www.usconcealedcarry.com/blog/open-carry-in-florida/).”
 - “I’ll wait to see what actual changes come of this, because [so far it’s just a lot of conversation](https://www.beckerspayer.com/payer/one-year-after-ceo-killing-unitedhealth-navigates-a-financial-reset/).”
 - “[The monopolization of these healthcare companies is being scrutinized as we speak.](https://www.ama-assn.org/about/leadership/change-healthcare-hack-shows-need-more-competition)”
