@@ -19,13 +19,11 @@ The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversati
 
 **Cast members:** [Clarence Brooks](https://hub.dance.nyc/directory/profile/clarencebrooks/) ([Brian Thompson](https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson)), [Jack Randel](https://jackrandel.com/), [Kristi Ann Schopfer](https://www.linkedin.com/in/kristi-ann-schopfer-a824ba15b/), [Lee Tyler](https://leetyler.info/) ([Luigi Mangione](https://en.wikipedia.org/wiki/Luigi_Mangione)), [Nicole McClam](https://mccole99.wixsite.com/nicolemcclam/biography)
 
-**Director/Choreographer:** [Aidan Feldman](https://api.afeld.me/)
-
-**Playwright:** [Seth Moore](https://sethmoore.com/)
+**Creator:** [Aidan Feldman](https://api.afeld.me/)
 
 **Music:** [Boards of Canada](https://open.spotify.com/track/2KS7b9EbL3sPGswRf3seAZ?si=33cb20bb83bb4dbb), [Hans Zimmer](https://open.spotify.com/track/6pWgRkpqVfxnj3WuIcJ7WP?si=920484f6120748e6), [Cristobal Tapia de Veer](https://open.spotify.com/track/1sPO1CnZHq54addG9DeQPU?si=e244fcb6af7f4b4d)
 
-**Special thanks to:** [Carla Jackie Sampson](https://wagner.nyu.edu/community/faculty/carla-jackie-sampson), [Elise Long](https://spokethehub.org/about-us/), [Jacob Victory](https://wagner.nyu.edu/community/faculty/jacob-victory)
+**Special thanks to:** [Carla Jackie Sampson](https://wagner.nyu.edu/community/faculty/carla-jackie-sampson), [Elise Long](https://spokethehub.org/about-us/), [Jacob Victory](https://wagner.nyu.edu/community/faculty/jacob-victory), [Seth Moore](https://sethmoore.com/), Vanessa Isaac
 
 ## By the numbers
 
