@@ -1,5 +1,7 @@
 # Aidan Feldman API
 
+This is a static site built with [Middleman](https://middlemanapp.com/).
+
 ## To run locally
 
 1. Install Ruby.
