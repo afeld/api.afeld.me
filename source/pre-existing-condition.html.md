@@ -21,7 +21,7 @@ The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversati
 
 **Creator:** [Aidan Feldman](https://api.afeld.me/)
 
-**Music:** [Boards of Canada](https://open.spotify.com/track/2KS7b9EbL3sPGswRf3seAZ?si=33cb20bb83bb4dbb), [Hans Zimmer](https://open.spotify.com/track/6pWgRkpqVfxnj3WuIcJ7WP?si=920484f6120748e6), [Cristobal Tapia de Veer](https://open.spotify.com/track/1sPO1CnZHq54addG9DeQPU?si=e244fcb6af7f4b4d)
+**Music:** [Boards of Canada](https://open.spotify.com/artist/2VAvhf61GgLYmC6C8anyX1), [Air](https://open.spotify.com/track/5fddI3jipxueajScJYReMT), [Cristobal Tapia de Veer](https://open.spotify.com/album/5N2Wi5hCX9K8HYbymwLfLK), [Thom Yorke](https://open.spotify.com/track/3oC3iuyvwfaTCOBWL6YOYj), [Hans Zimmer](https://open.spotify.com/track/6pWgRkpqVfxnj3WuIcJ7WP)
 
 **Special thanks to:** [Carla Jackie Sampson](https://wagner.nyu.edu/community/faculty/carla-jackie-sampson), [Elise Long](https://spokethehub.org/about-us/), [Jacob Victory](https://wagner.nyu.edu/community/faculty/jacob-victory), [Seth Moore](https://sethmoore.com/), Vanessa Isaac
 
