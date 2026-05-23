@@ -15,6 +15,14 @@ img {
   max-width: 100%;
 }
 
+figcaption,
+/* for some reason Kramdown wraps the caption in a paragraph tag */
+figcaption p {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
 #banner {
   animation: ken-burns-banner 20s ease-in-out infinite alternate;
   display: block;
