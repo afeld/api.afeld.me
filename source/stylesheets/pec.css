@@ -11,6 +11,10 @@ body {
   max-width: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 #banner {
   animation: ken-burns-banner 20s ease-in-out infinite alternate;
   display: block;

@@ -25,6 +25,10 @@ The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversati
 
 **Special thanks to:** [Carla Jackie Sampson](https://wagner.nyu.edu/community/faculty/carla-jackie-sampson), [Elise Long](https://spokethehub.org/about-us/), [Jacob Victory](https://wagner.nyu.edu/community/faculty/jacob-victory), [Seth Moore](https://sethmoore.com/), Vanessa Isaac
 
+![Dollar bill with "DENY DEFEND DEPOSE" written on it](images/dollar.jpeg)
+
+_Photo courtesy of [Kate Garfield](https://kategarfield.com/)._
+
 ## By the numbers
 
 - [**0.09%:** Projected net average payment increase of Medicare Advantage Rates from 2026 to 2027](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-advance-notice)
