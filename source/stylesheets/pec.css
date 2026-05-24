@@ -19,7 +19,7 @@ img {
 figure {
   text-align: center;
 
-  & > p {
+  > p {
     margin: 0;
     overflow: clip;
   }
@@ -32,6 +32,10 @@ figcaption p {
 
 .banner-frame {
   overflow: hidden;
+
+  figure {
+    margin: 0;
+  }
 
   img {
     animation: ken-burns-banner 20s ease-in-out infinite alternate;
