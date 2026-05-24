@@ -5,12 +5,9 @@ title: Pre-Existing Condition
 
 # Pre-Existing Condition
 
-<figure class="banner-frame">
-  <img id="banner" src="/images/clarence_unschool_of_data.jpg" alt="Showing at UnSchool of Data" />
-  <!-- https://github.com/gettalong/kramdown/issues/757#issuecomment-1474995623 -->
-  <figcaption>Photo courtesy of <a href="https://www.beta.nyc/">BetaNYC</a>.
-  </figcaption>
-</figure>
+<div class="banner-frame">
+  <%= partial(:figure, locals: {src: 'images/clarence_unschool_of_data.jpg', alt: 'Showing at UnSchool of Data', caption: 'Photo courtesy of <a href="https://www.beta.nyc/">BetaNYC</a>.'}) %>
+</div>
 
 The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversation around the US medical system, particularly the role of middlemen like insurance companies. Simultaneously, there has been an outpouring of support for the accused shooter, Luigi Mangione. Pre-Existing Condition is a dance-theater piece about that event, as well as the large-scale policy issues surrounding it. The piece uses movement, dialogue, data, projection, and headlines to recreate the shockwaves of the moment, and understand what it means for us now.
 
@@ -28,14 +25,7 @@ The assassination of UnitedHealthcare CEO Brian Thompson re-energized conversati
 
 **Special thanks to:** [Carla Jackie Sampson](https://wagner.nyu.edu/community/faculty/carla-jackie-sampson), [Elise Long](https://spokethehub.org/about-us/), [Jacob Victory](https://wagner.nyu.edu/community/faculty/jacob-victory), [Seth Moore](https://sethmoore.com/), Vanessa Isaac
 
-<figure>
-  <img
-    src="/images/dollar.jpeg"
-    alt="Dollar bill with 'DENY DEFEND DEPOSE' written on it" />
-  <!-- https://github.com/gettalong/kramdown/issues/757#issuecomment-1474995623 -->
-  <figcaption>Photo courtesy of <a href="https://kategarfield.com/">Kate Garfield</a>.
-  </figcaption>
-</figure>
+<%= partial(:figure, locals: {src: 'images/dollar.jpeg', alt: "Dollar bill with 'DENY DEFEND DEPOSE' written on it", caption: 'Photo courtesy of <a href="https://kategarfield.com/">Kate Garfield</a>.'}) %>
 
 ## By the numbers
 
