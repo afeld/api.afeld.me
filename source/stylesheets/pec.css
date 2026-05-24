@@ -15,12 +15,15 @@ img {
   max-width: 100%;
 }
 
+figure {
+  text-align: center;
+}
+
 figcaption,
 /* for some reason Kramdown wraps the caption in a paragraph tag */
 figcaption p {
   font-size: 1rem;
   font-style: italic;
-  text-align: center;
 }
 
 .banner-frame {
