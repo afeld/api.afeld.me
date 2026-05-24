@@ -5,6 +5,6 @@ description = "Python dependencies for tense checking"
 dependencies = [
     # needed for installing spaCy model
     "pip",
-    "pytest",
-    "spacy",
+    "pytest~=9.0",
+    "spacy~=3.0",
 ]

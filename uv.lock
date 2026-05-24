@@ -45,8 +45,8 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "pip" },
-    { name = "pytest" },
-    { name = "spacy" },
+    { name = "pytest", specifier = "~=9.0" },
+    { name = "spacy", specifier = "~=3.0" },
 ]
 
 [[package]]
