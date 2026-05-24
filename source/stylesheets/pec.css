@@ -15,12 +15,16 @@ img {
   max-width: 100%;
 }
 
+/* for some reason Kramdown wraps the figure elements in paragraph tags */
 figure {
   text-align: center;
-}
 
+  & > p {
+    margin: 0;
+    overflow: clip;
+  }
+}
 figcaption,
-/* for some reason Kramdown wraps the caption in a paragraph tag */
 figcaption p {
   font-size: 1rem;
   font-style: italic;
