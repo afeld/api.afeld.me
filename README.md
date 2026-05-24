@@ -35,10 +35,9 @@ htmlproofer ./build
    uv sync
    ```
 
-1. Install the spaCy model.
+1. Install the [spaCy model](https://spacy.io/usage/models/).
 
    ```sh
-   uv pip install pip
    uv run python -m spacy download en_core_web_sm
    ```
 
