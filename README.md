@@ -32,7 +32,7 @@ htmlproofer ./build
 1. Install dependencies.
 
    ```sh
-   uv sync --python
+   uv sync
    ```
 
 1. Install the spaCy model.
