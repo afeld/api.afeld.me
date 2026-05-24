@@ -97,6 +97,12 @@ h2 {
   margin-top: 3rem;
 }
 
+del {
+  text-decoration-line: none;
+  /* https://svgbox.net/iconset/pen-brushes */
+  background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=8b1a10);
+}
+
 ul,
 ol {
   padding-left: 1.5rem;
