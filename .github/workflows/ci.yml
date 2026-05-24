@@ -19,19 +19,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: mamba-org/setup-micromamba@v1
+      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v5
         with:
-          micromamba-version: latest
-          environment-file: environment.yml
-          init-shell: bash
-          cache-environment: true
-          post-cleanup: none
+          enable-cache: true
+      - name: Sync Python dependencies
+        run: uv sync
+
+      - name: Install pip in project environment
+        run: uv pip install pip
 
       - name: Install spaCy model
-        run: python -m spacy download en_core_web_sm
-        # https://github.com/mamba-org/setup-micromamba?tab=readme-ov-file#usage
-        shell: bash -el {0}
+        run: uv run python -m spacy download en_core_web_sm
 
       - name: Check tenses
-        run: pytest
-        shell: bash -el {0}
+        run: uv run pytest

@@ -28,29 +28,24 @@ htmlproofer ./build
 
 ## Checking tenses
 
-1. [Install Mamba.](https://mamba.readthedocs.io/)
-1. [Install dependencies.](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
+1. [Install uv.](https://docs.astral.sh/uv/getting-started/installation/)
+1. Install dependencies.
 
    ```sh
-   mamba env create -f environment.yml
+   uv sync --python
    ```
 
-1. Activate the environment.
+1. Install the spaCy model.
 
    ```sh
-   mamba activate api-afeld-me
-   ```
-
-1. [Install the model.](https://spacy.io/usage/models#quickstart)
-
-   ```sh
-   python -m spacy download en_core_web_sm
+   uv pip install pip
+   uv run python -m spacy download en_core_web_sm
    ```
 
 1. Run
 
    ```sh
-   pytest
+   uv run pytest
    ```
 
 ## Customizing for specific roles

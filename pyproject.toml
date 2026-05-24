@@ -1,0 +1,5 @@
+[project]
+name = "api-afeld-me"
+version = "0.1.0"
+description = "Python dependencies for tense checking"
+dependencies = ["pytest", "spacy"]
