@@ -24,11 +24,6 @@ PAST_LEAD_WORDS = {
 }
 
 
-def _normalize_text(text: str) -> str:
-    # Normalize symbols that frequently confuse sentence boundaries/POS tagging.
-    return text.replace(" + ", " and ")
-
-
 def _morph_has(token, key: str, value: str) -> bool:
     return value in token.morph.get(key)
 
@@ -78,12 +73,12 @@ def _sentence_tense(sent: Span) -> str:
 
 
 def all_present(text: str):
-    sentences = nlp(_normalize_text(text)).sents
+    sentences = nlp(text).sents
     return all(_sentence_tense(s) != "past" for s in sentences)
 
 
 def all_past(text: str):
-    sentences = nlp(_normalize_text(text)).sents
+    sentences = nlp(text).sents
     return all(_sentence_tense(s) != "present" for s in sentences)
 
 
