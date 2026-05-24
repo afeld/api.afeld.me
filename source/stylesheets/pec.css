@@ -42,18 +42,18 @@ figcaption p {
     display: block;
     height: auto;
     max-width: 100%;
-    transform-origin: 45% 40%;
+    transform-origin: left 40%;
     width: 100%;
   }
 }
 
 @keyframes ken-burns-banner {
   from {
-    transform: scale(1) translate3d(0, 0, 0);
+    transform: scale(1);
   }
 
   to {
-    transform: scale(1.12) translate3d(8%, -4%, 0);
+    transform: scale(1.2);
   }
 }
 
