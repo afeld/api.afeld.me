@@ -1,0 +1,191 @@
+:root {
+  --sign-yellow: #ffd447;
+  --sign-yellow-shadow: #d8ad1c;
+  --sign-border: #1a1a1a;
+  --sign-black: #101010;
+  --sign-white: #fff9db;
+}
+
+html {
+  background:
+    radial-gradient(circle at 10% 20%, #fff7cf 0%, rgba(255, 247, 207, 0) 40%),
+    radial-gradient(circle at 90% 90%, #f7ca52 0%, rgba(247, 202, 82, 0) 42%),
+    linear-gradient(160deg, #f0bf2d 0%, #ffdf67 100%);
+  min-height: 100%;
+}
+
+body {
+  align-items: center;
+  display: grid;
+  margin: 0;
+  max-width: none;
+  min-height: calc(100vh - 4rem);
+}
+
+.ai-page {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.safety-sign {
+  background: var(--sign-yellow);
+  border: 0.75rem solid var(--sign-border);
+  box-shadow:
+    0 0.5rem 0 0 var(--sign-yellow-shadow),
+    0 1.8rem 2.5rem rgba(58, 42, 0, 0.25);
+  color: var(--sign-black);
+  font-family: "Black Ops One", sans-serif;
+  margin: 1rem;
+  max-width: 34rem;
+  overflow: hidden;
+  padding: 1.2rem 1.4rem 1.5rem;
+  position: relative;
+  text-align: center;
+  width: min(92vw, 34rem);
+}
+
+.sign-top,
+.sign-mid,
+.sign-bottom {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sign-top {
+  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  letter-spacing: 0.05em;
+}
+
+.sign-mid {
+  border-bottom: 0.35rem solid var(--sign-border);
+  border-top: 0.35rem solid var(--sign-border);
+  font-size: clamp(1rem, 3.7vw, 1.5rem);
+  letter-spacing: 0.08em;
+  margin: 0.65rem 0;
+  padding: 0.45rem 0;
+}
+
+.days {
+  appearance: none;
+  background: var(--sign-black);
+  border: 0.45rem inset #484848;
+  border-radius: 0.6rem;
+  color: var(--sign-white);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Special Elite", serif;
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 1;
+  margin: 0.35rem 0;
+  min-width: 8.4rem;
+  padding: 0.5rem 1rem 0.3rem;
+  text-shadow: 0.1rem 0.08rem 0 #9d9d9d;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.days:hover,
+.days:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.6);
+  transform: translateY(-0.15rem) scale(1.02);
+}
+
+.days:active {
+  transform: translateY(0.08rem) scale(0.99);
+}
+
+.sign-bottom {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  letter-spacing: 0.18em;
+  margin-top: 0.5rem;
+}
+
+.status {
+  color: #402f00;
+  font-family: "Special Elite", serif;
+  font-size: 1rem;
+  margin: 0.75rem 0 0;
+  min-height: 1.5rem;
+}
+
+.safety-sign.is-resetting {
+  animation: sirenShake 430ms ease-in-out 3;
+}
+
+.safety-sign.is-resetting .days {
+  animation: flipPop 850ms cubic-bezier(0.26, 0.89, 0.31, 1.25);
+}
+
+.safety-sign .confetti {
+  animation: paperBurst 1.4s ease-in forwards;
+  background: linear-gradient(0deg, #f6f6f6 0%, #ff4f4f 100%);
+  height: 1rem;
+  pointer-events: none;
+  position: absolute;
+  top: 45%;
+  width: 0.4rem;
+}
+
+@keyframes sirenShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1.5deg);
+  }
+  50% {
+    transform: rotate(-1.5deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flipPop {
+  0% {
+    transform: scale(1) rotateX(0deg);
+  }
+  40% {
+    transform: scale(1.12) rotateX(180deg);
+  }
+  100% {
+    transform: scale(1) rotateX(360deg);
+  }
+}
+
+@keyframes paperBurst {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-9rem) rotate(540deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .safety-sign,
+  .days,
+  .safety-sign .confetti {
+    animation: none !important;
+    transition: none !important;
+  }
+}

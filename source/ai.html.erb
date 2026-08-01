@@ -1,0 +1,116 @@
+---
+title: Days Since AI
+---
+
+<% content_for :head do %>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Special+Elite&display=swap"
+    rel="stylesheet"
+  />
+  <%= stylesheet_link_tag "ai" %>
+<% end %>
+
+<main class="ai-page">
+  <h1 class="sr-only">Days Since AI Was Brought Up In Conversation</h1>
+
+  <section class="safety-sign" aria-live="polite">
+    <p class="sign-top">DAYS SINCE AI WAS BROUGHT UP</p>
+    <p class="sign-mid">IN CONVERSATION</p>
+    <button class="days" id="days-counter" type="button" aria-label="Reset days counter">0</button>
+    <p class="sign-bottom">TAP NUMBER TO RESET</p>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </section>
+</main>
+
+<script>
+  (function () {
+    var STORAGE_KEY = "aiConversationCounterStartAt";
+    var MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+    var counter = document.getElementById("days-counter");
+    var status = document.getElementById("status");
+    var sign = document.querySelector(".safety-sign");
+
+    function nowMs() {
+      return Date.now();
+    }
+
+    function getStartMs() {
+      var saved = window.localStorage.getItem(STORAGE_KEY);
+      var parsed = Number(saved);
+      if (!saved || Number.isNaN(parsed) || parsed <= 0) {
+        var current = nowMs();
+        window.localStorage.setItem(STORAGE_KEY, String(current));
+        return current;
+      }
+      return parsed;
+    }
+
+    function setStartMs(timestamp) {
+      window.localStorage.setItem(STORAGE_KEY, String(timestamp));
+    }
+
+    function elapsedDays() {
+      return Math.floor((nowMs() - getStartMs()) / MS_PER_DAY);
+    }
+
+    function updateCounter() {
+      counter.textContent = String(elapsedDays());
+    }
+
+    function msUntilNextDayTick() {
+      var start = getStartMs();
+      var elapsed = nowMs() - start;
+      var remainder = elapsed % MS_PER_DAY;
+      return MS_PER_DAY - remainder;
+    }
+
+    function scheduleDayRollover() {
+      window.setTimeout(function () {
+        updateCounter();
+        window.setInterval(updateCounter, MS_PER_DAY);
+      }, msUntilNextDayTick());
+    }
+
+    function launchCornyResetAnimation() {
+      sign.classList.remove("is-resetting");
+      void sign.offsetWidth;
+      sign.classList.add("is-resetting");
+
+      status.textContent = "Incident report filed. Counter reset to 0.";
+      window.setTimeout(function () {
+        status.textContent = "";
+      }, 2000);
+
+      for (var i = 0; i < 14; i += 1) {
+        var paper = document.createElement("span");
+        paper.className = "confetti";
+        paper.style.left = String(8 + Math.random() * 84) + "%";
+        paper.style.animationDelay = String(Math.random() * 0.18) + "s";
+        paper.style.transform = "rotate(" + String(Math.round(Math.random() * 360)) + "deg)";
+        sign.appendChild(paper);
+        window.setTimeout(
+          function (el) {
+            if (el.parentNode) {
+              el.parentNode.removeChild(el);
+            }
+          },
+          1550,
+          paper
+        );
+      }
+    }
+
+    function resetCounter() {
+      setStartMs(nowMs());
+      updateCounter();
+      launchCornyResetAnimation();
+    }
+
+    counter.addEventListener("click", resetCounter);
+    updateCounter();
+    scheduleDayRollover();
+  })();
+</script>
