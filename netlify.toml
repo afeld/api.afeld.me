@@ -3,6 +3,9 @@ from = "/pec"
 status = 302
 to = "/pre-existing-condition"
 
+[build.environment]
+NODE_VERSION = "24"
+
 [[redirects]]
 from = "/psw"
 status = 302
