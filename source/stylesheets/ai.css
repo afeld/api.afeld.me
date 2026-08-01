@@ -114,6 +114,14 @@ body {
   transform: translateY(0.08rem) scale(0.99);
 }
 
+.time-since {
+  color: #3a2b00;
+  font-family: "Special Elite", serif;
+  font-size: clamp(0.8rem, 3.5vw, 0.95rem);
+  letter-spacing: 0.1em;
+  margin: 0.2rem 0 0;
+}
+
 .sign-bottom {
   font-size: clamp(0.72rem, 3vw, 1rem);
   letter-spacing: 0.12em;

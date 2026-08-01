@@ -19,6 +19,7 @@ title: Days Since AI
     <p class="sign-top">DAYS SINCE AI WAS BROUGHT UP</p>
     <p class="sign-mid">IN CONVERSATION</p>
     <button class="days" id="days-counter" type="button" aria-label="Reset days counter">0</button>
+    <p class="time-since" id="time-since" aria-live="off">00:00:00</p>
     <p class="sign-bottom">TAP NUMBER TO RESET</p>
     <p class="status" id="status" role="status" aria-live="polite"></p>
   </section>
@@ -28,8 +29,12 @@ title: Days Since AI
   (function () {
     var STORAGE_KEY = "aiConversationCounterStartAt";
     var MS_PER_DAY = 24 * 60 * 60 * 1000;
+    var MS_PER_HOUR = 60 * 60 * 1000;
+    var MS_PER_MINUTE = 60 * 1000;
+    var MS_PER_SECOND = 1000;
 
     var counter = document.getElementById("days-counter");
+    var timeSince = document.getElementById("time-since");
     var status = document.getElementById("status");
     var sign = document.querySelector(".safety-sign");
 
@@ -56,8 +61,21 @@ title: Days Since AI
       return Math.floor((nowMs() - getStartMs()) / MS_PER_DAY);
     }
 
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function elapsedClock() {
+      var elapsed = Math.max(0, nowMs() - getStartMs());
+      var hours = Math.floor(elapsed / MS_PER_HOUR);
+      var minutes = Math.floor((elapsed % MS_PER_HOUR) / MS_PER_MINUTE);
+      var seconds = Math.floor((elapsed % MS_PER_MINUTE) / MS_PER_SECOND);
+      return pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+    }
+
     function updateCounter() {
       counter.textContent = String(elapsedDays());
+      timeSince.textContent = elapsedClock();
     }
 
     function msUntilNextDayTick() {
@@ -111,6 +129,7 @@ title: Days Since AI
 
     counter.addEventListener("click", resetCounter);
     updateCounter();
+    window.setInterval(updateCounter, MS_PER_SECOND);
     scheduleDayRollover();
   })();
 </script>
