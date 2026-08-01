@@ -12,6 +12,7 @@ html {
     radial-gradient(circle at 90% 90%, #f7ca52 0%, rgba(247, 202, 82, 0) 42%),
     linear-gradient(160deg, #f0bf2d 0%, #ffdf67 100%);
   min-height: 100%;
+  padding: 0;
 }
 
 body {
@@ -19,7 +20,11 @@ body {
   display: grid;
   margin: 0;
   max-width: none;
-  min-height: calc(100vh - 4rem);
+  min-height: 100dvh;
+  padding: max(0.75rem, env(safe-area-inset-top))
+    max(0.75rem, env(safe-area-inset-right))
+    max(0.75rem, env(safe-area-inset-bottom))
+    max(0.75rem, env(safe-area-inset-left));
 }
 
 .ai-page {
@@ -42,19 +47,19 @@ body {
 
 .safety-sign {
   background: var(--sign-yellow);
-  border: 0.75rem solid var(--sign-border);
+  border: 0.55rem solid var(--sign-border);
   box-shadow:
-    0 0.5rem 0 0 var(--sign-yellow-shadow),
-    0 1.8rem 2.5rem rgba(58, 42, 0, 0.25);
+    0 0.42rem 0 0 var(--sign-yellow-shadow),
+    0 1.2rem 2rem rgba(58, 42, 0, 0.24);
   color: var(--sign-black);
   font-family: "Black Ops One", sans-serif;
-  margin: 1rem;
+  margin: 0;
   max-width: 34rem;
   overflow: hidden;
-  padding: 1.2rem 1.4rem 1.5rem;
+  padding: 0.95rem 0.95rem 1rem;
   position: relative;
   text-align: center;
-  width: min(92vw, 34rem);
+  width: min(100%, 34rem);
 }
 
 .sign-top,
@@ -65,33 +70,34 @@ body {
 }
 
 .sign-top {
-  font-size: clamp(1.1rem, 4vw, 1.8rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(0.98rem, 4.7vw, 1.8rem);
+  letter-spacing: 0.04em;
 }
 
 .sign-mid {
-  border-bottom: 0.35rem solid var(--sign-border);
-  border-top: 0.35rem solid var(--sign-border);
-  font-size: clamp(1rem, 3.7vw, 1.5rem);
-  letter-spacing: 0.08em;
-  margin: 0.65rem 0;
-  padding: 0.45rem 0;
+  border-bottom: 0.24rem solid var(--sign-border);
+  border-top: 0.24rem solid var(--sign-border);
+  font-size: clamp(0.9rem, 4.1vw, 1.5rem);
+  letter-spacing: 0.07em;
+  margin: 0.5rem 0;
+  padding: 0.34rem 0;
 }
 
 .days {
   appearance: none;
   background: var(--sign-black);
-  border: 0.45rem inset #484848;
+  border: 0.34rem inset #484848;
   border-radius: 0.6rem;
   color: var(--sign-white);
   cursor: pointer;
   display: inline-block;
   font-family: "Special Elite", serif;
-  font-size: clamp(4rem, 18vw, 8rem);
+  font-size: clamp(3rem, 22vw, 8rem);
   line-height: 1;
-  margin: 0.35rem 0;
-  min-width: 8.4rem;
-  padding: 0.5rem 1rem 0.3rem;
+  margin: 0.2rem 0;
+  min-width: 7.1rem;
+  min-height: 4.4rem;
+  padding: 0.44rem 0.7rem 0.28rem;
   text-shadow: 0.1rem 0.08rem 0 #9d9d9d;
   transition:
     transform 160ms ease,
@@ -109,17 +115,17 @@ body {
 }
 
 .sign-bottom {
-  font-size: clamp(0.8rem, 2.5vw, 1rem);
-  letter-spacing: 0.18em;
-  margin-top: 0.5rem;
+  font-size: clamp(0.72rem, 3vw, 1rem);
+  letter-spacing: 0.12em;
+  margin-top: 0.35rem;
 }
 
 .status {
   color: #402f00;
   font-family: "Special Elite", serif;
-  font-size: 1rem;
-  margin: 0.75rem 0 0;
-  min-height: 1.5rem;
+  font-size: clamp(0.9rem, 3.6vw, 1rem);
+  margin: 0.5rem 0 0;
+  min-height: 1.2rem;
 }
 
 .safety-sign.is-resetting {
@@ -187,5 +193,32 @@ body {
   .safety-sign .confetti {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .safety-sign {
+    border-width: 0.42rem;
+    padding: 0.75rem 0.68rem 0.8rem;
+  }
+
+  .sign-top {
+    font-size: 0.9rem;
+  }
+
+  .sign-mid {
+    font-size: 0.82rem;
+  }
+
+  .days {
+    border-width: 0.28rem;
+    font-size: clamp(2.5rem, 24vw, 5.2rem);
+    min-width: 6.3rem;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    align-items: start;
   }
 }
