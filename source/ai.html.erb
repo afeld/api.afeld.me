@@ -37,6 +37,7 @@ title: Days Since AI
     var timeSince = document.getElementById("time-since");
     var status = document.getElementById("status");
     var sign = document.querySelector(".safety-sign");
+    var statusTimeoutId;
 
     function nowMs() {
       return Date.now();
@@ -98,9 +99,12 @@ title: Days Since AI
       sign.classList.add("is-resetting");
 
       status.textContent = "Incident report filed. Counter reset to 0.";
-      window.setTimeout(function () {
+      if (statusTimeoutId) {
+        window.clearTimeout(statusTimeoutId);
+      }
+      statusTimeoutId = window.setTimeout(function () {
         status.textContent = "";
-      }, 2000);
+      }, 10000);
 
       for (var i = 0; i < 14; i += 1) {
         var paper = document.createElement("span");
