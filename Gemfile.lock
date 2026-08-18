@@ -19,7 +19,7 @@ GEM
       public_suffix (>= 2.0.2, < 8.0)
     afm (1.0.0)
     ast (2.4.3)
-    async (2.44.0)
+    async (2.44.1)
       console (~> 1.29)
       fiber-annotation
       io-event (~> 1.11)
@@ -50,7 +50,8 @@ GEM
       ffi (>= 1.15.0)
       logger
     eventmachine (1.2.7)
-    execjs (2.10.1)
+    execjs (2.10.2)
+      json (>= 2)
     fast_blank (1.0.1)
     fastimage (2.4.1)
     ffi (1.17.4-arm64-darwin)
@@ -81,7 +82,7 @@ GEM
     http_parser.rb (0.8.1)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
-    io-event (1.19.4)
+    io-event (1.19.5)
     json (2.21.2)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
@@ -151,16 +152,15 @@ GEM
       ast (~> 2.4.1)
       racc
     parslet (2.0.0)
-    pdf-reader (2.15.1)
+    pdf-reader (2.16.0)
       Ascii85 (>= 1.0, < 3.0, != 2.0.0)
       afm (>= 0.2.1, < 2)
       hashery (~> 2.0)
-      ruby-rc4
       ttfunk
     prism (1.9.0)
     public_suffix (7.0.5)
     racc (1.8.1)
-    rack (3.1.21)
+    rack (3.1.22)
     rack-livereload (0.6.1)
       rack (>= 3.0, < 3.2)
     rackup (2.3.1)
@@ -203,7 +203,6 @@ GEM
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.47.1, < 2.0)
     ruby-progressbar (1.13.0)
-    ruby-rc4 (0.1.5)
     sassc (2.4.0)
       ffi (~> 1.9)
     securerandom (0.4.1)
@@ -220,9 +219,9 @@ GEM
     standard-performance (1.9.0)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.26.0)
-    temple (0.10.4)
+    temple (0.10.7)
     thor (1.5.0)
-    tilt (2.8.0)
+    tilt (2.9.0)
     toml (0.3.0)
       parslet (>= 1.8.0, < 3.0.0)
     ttfunk (1.7.0)
@@ -238,7 +237,7 @@ GEM
     uri (1.1.1)
     webrick (1.9.2)
     yell (2.2.2)
-    zeitwerk (2.8.2)
+    zeitwerk (2.8.3)
 
 PLATFORMS
   arm64-darwin-25
