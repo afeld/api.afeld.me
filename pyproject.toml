@@ -3,6 +3,10 @@ name = "api-afeld-me"
 version = "0.1.0"
 description = "Python dependencies for tense checking"
 dependencies = [
+    # spaCy 3.8.15 adds the dependency, but is missing wheels for Python 3.14
+    # https://github.com/explosion/spaCy/issues/13971
+    # https://github.com/explosion/spaCy/issues/13949
+    "click>=8.2.1,<9.0.0",
     # needed for installing spaCy model
     "pip",
     "pytest~=9.0",
