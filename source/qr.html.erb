@@ -1,0 +1,966 @@
+---
+layout: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<style>:root{color-scheme:light dark}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif}</style>
+<title>QR Codes</title>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="QR Codes">
+<meta name="theme-color" content="#f1f2f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111217" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F1F2F0;
+    --paper-outer:#E4E6E2;
+    --surface:#FFFFFF;
+    --ink:#14161A;
+    --ink-soft:#5B6169;
+    --ink-faint:#8B9098;
+    --line:#D9DBD9;
+    --accent:#2F4CFF;
+    --accent-soft:#E7EAFF;
+    --accent-ink:#FFFFFF;
+    --danger:#B23A3A;
+    --danger-soft:#F6E4E2;
+    --shadow: 0 1px 2px rgba(20,22,26,0.05), 0 8px 24px -12px rgba(20,22,26,0.18);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#111217;
+      --paper-outer:#0A0B0E;
+      --surface:#1A1B21;
+      --ink:#ECEDEF;
+      --ink-soft:#9CA0AA;
+      --ink-faint:#6C707A;
+      --line:#2A2C33;
+      --accent:#8296FF;
+      --accent-soft:#232849;
+      --accent-ink:#0F1013;
+      --danger:#FF8A82;
+      --danger-soft:#3A2226;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -14px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#111217;
+    --paper-outer:#0A0B0E;
+    --surface:#1A1B21;
+    --ink:#ECEDEF;
+    --ink-soft:#9CA0AA;
+    --ink-faint:#6C707A;
+    --line:#2A2C33;
+    --accent:#8296FF;
+    --accent-soft:#232849;
+    --accent-ink:#0F1013;
+    --danger:#FF8A82;
+    --danger-soft:#3A2226;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -14px rgba(0,0,0,0.6);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper-outer);
+    color:var(--ink);
+  }
+  h1,h2,h3,p{margin:0;}
+  button{font-family:inherit;}
+  input{font-family:inherit;}
+  ::selection{background:var(--accent-soft);}
+
+  .shell{
+    max-width:480px;
+    margin:0 auto;
+    height:100vh;
+    height:100dvh;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    overflow:hidden;
+  }
+  @media (min-width:521px){
+    body{ padding:32px 16px; }
+    .shell{
+      height:calc(100vh - 64px);
+      height:calc(100dvh - 64px);
+      border:1px solid var(--line);
+      border-radius:22px;
+      box-shadow:var(--shadow);
+    }
+    .fab{ position:absolute; }
+  }
+
+  .mono{ font-family:"IBM Plex Mono", ui-monospace, "SF Mono", monospace; }
+  .eyebrow{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:0.09em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- finder mark ---------- */
+  .finder{ display:block; flex-shrink:0; }
+  .finder rect{ fill:none; stroke:currentColor; }
+  .finder .core{ fill:currentColor; stroke:none; }
+
+  /* ---------- list ---------- */
+  .list-scroll{
+    flex:1;
+    overflow-y:auto;
+    padding:calc(22px + env(safe-area-inset-top, 0px)) 16px calc(96px + env(safe-area-inset-bottom, 0px));
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:22px 20px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    text-align:left;
+    animation: rise 0.32s ease backwards;
+  }
+  @keyframes rise{
+    from{ opacity:0; transform:translateY(6px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .card-type-icon{
+    width:40px; height:40px;
+    border-radius:11px;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .card-main{
+    flex:1;
+    min-width:0;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:16px;
+    background:none;
+    border:none;
+    padding:0;
+    text-align:left;
+    cursor:pointer;
+    color:inherit;
+  }
+  .card-text{
+    min-width:0;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .card-name{
+    font-size:21px;
+    font-weight:600;
+    line-height:1.25;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    word-break:break-word;
+  }
+  .card-meta-row{ display:flex; align-items:center; gap:8px; min-width:0; }
+  .example-tag{
+    flex-shrink:0;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    border:1px dashed var(--line);
+    border-radius:6px;
+    padding:2px 7px;
+  }
+  .card-meta{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:15.5px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    min-width:0;
+  }
+  .icon-btn{
+    width:42px; height:42px;
+    border-radius:11px;
+    border:1px solid transparent;
+    background:transparent;
+    color:var(--ink-faint);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .icon-btn:hover{ background:var(--paper-outer); color:var(--ink-soft); }
+  .icon-btn:active{ transform:scale(0.94); }
+  .icon-btn:focus-visible, .card-main:focus-visible, button:focus-visible, input:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+  }
+
+  .card-menu-wrap{ position:relative; flex-shrink:0; }
+  .card-menu{
+    position:absolute;
+    top:calc(100% + 6px);
+    right:0;
+    min-width:168px;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    box-shadow:var(--shadow);
+    padding:6px;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    z-index:5;
+  }
+  .card-menu-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 11px;
+    border-radius:8px;
+    border:none;
+    background:none;
+    font-family:inherit;
+    font-size:14px;
+    font-weight:500;
+    color:var(--ink);
+    text-align:left;
+    cursor:pointer;
+  }
+  .card-menu-item:hover{ background:var(--paper-outer); }
+  .card-menu-item.danger{ color:var(--danger); }
+  .card-menu-item.danger:hover{ background:var(--danger-soft); }
+
+  .confirm-row{ display:flex; gap:6px; flex-shrink:0; }
+  .confirm-btn{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    padding:9px 11px;
+    border-radius:9px;
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--ink-soft);
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .confirm-btn.danger{ background:var(--danger-soft); color:var(--danger); border-color:transparent; }
+
+  .empty-state{
+    margin-top:12vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+    color:var(--ink-soft);
+    padding:0 24px;
+  }
+  .empty-state .finder{ color:var(--ink-faint); width:34px; height:34px; margin-bottom:6px; }
+  .empty-state h2{ font-size:17px; font-weight:600; color:var(--ink); }
+  .empty-state p{ font-size:13.5px; line-height:1.5; max-width:30ch; }
+
+  .footnote{
+    flex-shrink:0;
+    text-align:center;
+    padding:8px 16px calc(14px + env(safe-area-inset-bottom, 0px));
+    font-family:"IBM Plex Mono", monospace;
+    font-size:10.5px;
+    letter-spacing:0.03em;
+    color:var(--ink-faint);
+  }
+
+  /* ---------- FAB ---------- */
+  .fab{
+    position:fixed;
+    right:20px;
+    bottom:calc(20px + env(safe-area-inset-bottom, 0px));
+    width:54px; height:54px;
+    border-radius:16px;
+    background:var(--accent);
+    color:var(--accent-ink);
+    border:none;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow);
+    cursor:pointer;
+  }
+  .fab:active{ transform:scale(0.95); }
+
+  /* ---------- form ---------- */
+  .screen{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+    animation: slide-in 0.28s ease backwards;
+  }
+  @keyframes slide-in{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .screen-top{
+    display:flex; align-items:center; gap:8px;
+    padding:16px 16px 4px;
+    flex-shrink:0;
+  }
+  .back-btn{
+    display:flex; align-items:center; gap:6px;
+    background:none; border:none; cursor:pointer;
+    color:var(--ink-soft);
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    padding:6px 8px 6px 4px;
+    border-radius:8px;
+  }
+  .back-btn:hover{ background:var(--paper-outer); color:var(--ink); }
+
+  .form-body{ flex:1; overflow-y:auto; padding:8px 20px calc(24px + env(safe-area-inset-bottom, 0px)); }
+  .form-heading{ font-size:22px; font-weight:700; margin-bottom:18px; text-wrap:balance; }
+  .field{ margin-bottom:18px; }
+  .field label{
+    display:block;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:7px;
+  }
+  .field input{
+    width:100%;
+    font-size:16px;
+    padding:11px 13px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--ink);
+  }
+  .field input::placeholder{ color:var(--ink-faint); }
+  .field-error{
+    margin-top:6px;
+    font-size:12.5px;
+    color:var(--danger);
+  }
+  .field-hint{
+    margin-top:6px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11.5px;
+    color:var(--ink-faint);
+    word-break:break-all;
+  }
+
+  .segmented{
+    display:flex;
+    gap:6px;
+    margin-bottom:18px;
+  }
+  .segment{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    padding:10px 4px 8px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--ink-soft);
+    cursor:pointer;
+  }
+  .segment.active{
+    border-color:var(--accent);
+    background:var(--accent-soft);
+    color:var(--accent);
+  }
+  .segment span{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:10.5px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+  }
+
+
+  .form-actions{ display:flex; gap:10px; }
+  .btn{
+    flex:1;
+    font-size:14.5px;
+    font-weight:600;
+    padding:13px;
+    border-radius:11px;
+    border:1px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{ background:var(--accent); color:var(--accent-ink); }
+  .btn-primary:disabled{ opacity:0.4; cursor:not-allowed; }
+  .btn-ghost{ background:transparent; border-color:var(--line); color:var(--ink-soft); }
+
+  /* ---------- present ----------
+     Forced to a fixed light/white look regardless of theme: this screen's
+     job is to be seen (and scanned) by someone else, so it always runs at
+     max emitted brightness rather than following dark mode. */
+  .present{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    background:#ffffff;
+    animation: fade-in 0.35s ease backwards;
+  }
+  @keyframes fade-in{ from{opacity:0;} to{opacity:1;} }
+  .present-top{ padding:16px 16px 0; flex-shrink:0; }
+  .present .back-btn{ color:#5B6169; }
+  .present .back-btn:hover{ background:#F1F2F0; color:#14161A; }
+  .present-body{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:16px 28px calc(28px + env(safe-area-inset-bottom, 0px));
+  }
+  .qr-card{
+    width:min(72vw, 300px);
+    height:min(72vw, 300px);
+    background:#ffffff;
+    border-radius:18px;
+    border:1px solid #E7E8E6;
+    padding:20px;
+    position:relative;
+    overflow:hidden;
+  }
+  .qr-card svg{ display:block; width:100%; height:100%; position:relative; z-index:1; }
+  @media (prefers-reduced-motion: reduce){
+    .card, .screen, .present{ animation:none; }
+  }
+  .present-name{ font-size:23px; font-weight:700; text-align:center; text-wrap:balance; color:#14161A; }
+  .present-meta{
+    display:flex; align-items:center; gap:8px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    color:#5B6169;
+    max-width:100%;
+  }
+  .present-payload{
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:280px;
+  }
+  .present-tip{
+    font-size:12px;
+    color:#8B9098;
+    text-align:center;
+    max-width:26ch;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  var h = React.createElement;
+  var useState = React.useState, useEffect = React.useEffect, useMemo = React.useMemo, useRef = React.useRef;
+
+  var STORAGE_KEY = "scanline.entries.v1";
+
+  var TYPES = {
+    url:   { label:"Website", nounLabel:"Website URL", placeholder:"yoursite.com", inputType:"url", inputMode:"url" },
+    email: { label:"Email",   nounLabel:"Email address", placeholder:"you@example.com", inputType:"email", inputMode:"email",
+             extraLabel:"Subject (optional)", extraPlaceholder:"e.g. Let's connect" },
+    phone: { label:"Phone",   nounLabel:"Phone number", placeholder:"+1 555 010 1234", inputType:"tel", inputMode:"tel",
+             extraLabel:"Contact name (optional)", extraPlaceholder:"e.g. Aidan Feldman" }
+  };
+
+  /* ---------------- data helpers ---------------- */
+
+  function uid(){
+    return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  }
+
+  function duplicateName(name){
+    return /\(copy\)$/.test(name) ? name : (name + " (copy)");
+  }
+
+  function seedExamples(){
+    return [
+      { id: uid(), name:"Example: Portfolio site", type:"url", value:"example.com", isExample:true },
+      { id: uid(), name:"Example: Email", type:"email", value:"hello@example.com", extra:"Hi from your QR code", isExample:true },
+      { id: uid(), name:"Example: Phone", type:"phone", value:"+1 555 010 1234", extra:"Alex Example", isExample:true }
+    ];
+  }
+
+  function loadEntries(){
+    try{
+      var raw = window.localStorage.getItem(STORAGE_KEY);
+      if(raw === null){
+        var seeded = seedExamples();
+        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(seeded));
+        return seeded;
+      }
+      var parsed = JSON.parse(raw);
+      if(!Array.isArray(parsed)) return [];
+      return parsed;
+    }catch(e){
+      return [];
+    }
+  }
+
+  function saveEntries(entries){
+    try{ window.localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); }catch(e){}
+  }
+
+  function normalizeUrl(v){
+    var t = v.trim();
+    if(!/^[a-zA-Z][a-zA-Z0-9+.-]*:\/\//.test(t)) t = "https://" + t;
+    return t;
+  }
+
+  function normalizeTelDigits(v){
+    var t = v.trim();
+    var plus = t.charAt(0) === "+" ? "+" : "";
+    return plus + t.replace(/[^0-9]/g, "");
+  }
+
+  function vcardEscape(s){
+    return String(s).replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
+  }
+
+  function contactNameFor(entry){
+    var extra = (entry.extra || "").trim();
+    return extra || entry.name;
+  }
+
+  function buildVCard(name, phoneValue){
+    return [
+      "BEGIN:VCARD",
+      "VERSION:3.0",
+      "FN:" + vcardEscape(name),
+      "TEL;TYPE=CELL:" + normalizeTelDigits(phoneValue),
+      "END:VCARD"
+    ].join("\r\n");
+  }
+
+  function buildPayload(entry){
+    if(entry.type === "url") return normalizeUrl(entry.value);
+    if(entry.type === "email"){
+      var subject = (entry.extra || "").trim();
+      return "mailto:" + entry.value.trim() + (subject ? "?subject=" + encodeURIComponent(subject) : "");
+    }
+    if(entry.type === "phone") return buildVCard(contactNameFor(entry), entry.value);
+    return entry.value;
+  }
+
+  function validateField(type, value){
+    var v = (value || "").trim();
+    if(type === "url") return v.length > 0 && !/\s/.test(v);
+    if(type === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    if(type === "phone") return v.replace(/[^0-9]/g, "").length >= 7;
+    return false;
+  }
+
+  /* ---------------- QR rendering ---------------- */
+
+  function computeQrModel(text){
+    if(!text) return null;
+    for(var typeNumber = 1; typeNumber <= 40; typeNumber++){
+      try{
+        var qr = window.qrcode(typeNumber, "M");
+        qr.addData(text);
+        qr.make();
+        var count = qr.getModuleCount();
+        var margin = 4;
+        var size = count + margin * 2;
+        var d = "";
+        for(var row = 0; row < count; row++){
+          for(var col = 0; col < count; col++){
+            if(qr.isDark(row, col)){
+              d += "M" + (col + margin) + "," + (row + margin) + "h1v1h-1z";
+            }
+          }
+        }
+        return { d: d, size: size };
+      }catch(e){ /* try next type number */ }
+    }
+    return null;
+  }
+
+  function QrSvg(props){
+    var model = useMemo(function(){ return computeQrModel(props.text); }, [props.text]);
+    if(!model) return null;
+    return h("svg", { viewBox: "0 0 " + model.size + " " + model.size, role:"img", "aria-label": props.label || "QR code" },
+      h("rect", { x:0, y:0, width:model.size, height:model.size, fill:"#ffffff" }),
+      h("path", { d: model.d, fill:"#0A0A0A" })
+    );
+  }
+
+  /* ---------------- icons ---------------- */
+
+  function Icon(paths, extra){
+    return function(props){
+      var p = props || {};
+      var children = paths.map(function(d, i){ return h("path", { key:i, d:d }); });
+      if(extra) children = children.concat(extra);
+      return h("svg", {
+        viewBox:"0 0 24 24", width:p.size||20, height:p.size||20,
+        fill:"none", stroke:"currentColor", strokeWidth:1.75,
+        strokeLinecap:"round", strokeLinejoin:"round"
+      }, children);
+    };
+  }
+
+  var IconGlobe = Icon(["M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z","M3.6 9h16.8","M3.6 15h16.8","M12 3a14.5 14.5 0 0 1 0 18","M12 3a14.5 14.5 0 0 0 0 18"]);
+  var IconMail = Icon(["M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z","m3.5 6 8.5 7 8.5-7"]);
+  var IconPhone = Icon(["M7.5 3.5c.7 1.6 1.1 2.9.8 3.8-.3.9-1.3 1.4-1.9 2 .9 2.6 3.2 4.9 5.8 5.8.6-.6 1.1-1.6 2-1.9.9-.3 2.2.1 3.8.8.4 1.6.2 3.4-.5 4.1-1 1-3.2 1.2-6.1-.2-2.7-1.3-5.4-4-6.7-6.7-1.4-2.9-1.2-5.1-.2-6.1.7-.7 2.5-.9 4.1-.5Z"]);
+  var IconPlus = Icon(["M12 5v14","M5 12h14"]);
+  var IconArrowLeft = Icon(["M19 12H5","m11 6-6 6 6 6"]);
+  var IconPencil = Icon(["M4 20h4L18.5 9.5a2.1 2.1 0 0 0-3-3L5 17v3Z","m13.5 7 3 3"]);
+  var IconTrash = Icon(["M5 7h14","M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2","M7 7l1 13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1l1-13","M10 11v6","M14 11v6"]);
+  var IconCopy = Icon(["M9.5 9.5h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Z","M5.5 14.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v1"]);
+
+  function IconMore(props){
+    var p = props || {};
+    var size = p.size || 20;
+    return h("svg", { viewBox:"0 0 24 24", width:size, height:size, fill:"currentColor" },
+      h("circle", { cx:12, cy:6, r:1.8 }),
+      h("circle", { cx:12, cy:12, r:1.8 }),
+      h("circle", { cx:12, cy:18, r:1.8 })
+    );
+  }
+
+  var TYPE_ICON = { url: IconGlobe, email: IconMail, phone: IconPhone };
+
+  function FinderMark(props){
+    var size = (props && props.size) || 22;
+    return h("svg", { className:"finder", viewBox:"0 0 22 22", width:size, height:size },
+      h("rect", { x:1, y:1, width:20, height:20, rx:4, strokeWidth:2 }),
+      h("rect", { className:"core", x:7, y:7, width:8, height:8, rx:1.5 })
+    );
+  }
+
+  /* ---------------- shared bits ---------------- */
+
+  function displayValue(entry){
+    if(entry.type === "phone") return entry.value;
+    return entry.value.replace(/^https?:\/\//, "");
+  }
+
+  /* ---------------- list screen ---------------- */
+
+  function EntryCard(props){
+    var entry = props.entry;
+    var index = props.index;
+    var TypeIcon = TYPE_ICON[entry.type];
+    var confirming = props.confirmingDelete;
+    var s = useState(false); var menuOpen = s[0], setMenuOpen = s[1];
+    var menuRef = useRef(null);
+
+    useEffect(function(){
+      if(!menuOpen) return;
+      function handleOutside(e){
+        if(menuRef.current && !menuRef.current.contains(e.target)) setMenuOpen(false);
+      }
+      document.addEventListener("mousedown", handleOutside);
+      document.addEventListener("touchstart", handleOutside);
+      return function(){
+        document.removeEventListener("mousedown", handleOutside);
+        document.removeEventListener("touchstart", handleOutside);
+      };
+    }, [menuOpen]);
+
+    function choose(fn){
+      return function(){
+        setMenuOpen(false);
+        fn();
+      };
+    }
+
+    return h("div", { className:"card", style:{ animationDelay: (index * 35) + "ms" } },
+      h("button", { className:"card-main", onClick: function(){ props.onOpen(entry.id); }, "aria-label": "Show QR code for " + entry.name },
+        h("div", { className:"card-type-icon" }, h(TypeIcon, { size:19 })),
+        h("div", { className:"card-text" },
+          h("span", { className:"card-name" }, entry.name),
+          h("div", { className:"card-meta-row" },
+            entry.isExample ? h("span", { className:"example-tag" }, "Example") : null,
+            h("span", { className:"card-meta" }, displayValue(entry))
+          )
+        )
+      ),
+      confirming
+        ? h("div", { className:"confirm-row" },
+            h("button", { className:"confirm-btn", onClick: function(){ props.onCancelDelete(); } }, "Keep"),
+            h("button", { className:"confirm-btn danger", onClick: function(){ props.onConfirmDelete(entry.id); } }, "Delete")
+          )
+        : h("div", { className:"card-menu-wrap", ref:menuRef },
+            h("button", {
+              className:"icon-btn", "aria-label":"More actions for " + entry.name,
+              "aria-haspopup":"menu", "aria-expanded":menuOpen,
+              onClick:function(){ setMenuOpen(function(v){ return !v; }); }
+            }, h(IconMore,{size:20})),
+            menuOpen
+              ? h("div", { className:"card-menu", role:"menu" },
+                  h("button", { className:"card-menu-item", role:"menuitem", onClick:choose(function(){ props.onEdit(entry.id); }) }, h(IconPencil,{size:16}), "Edit"),
+                  h("button", { className:"card-menu-item", role:"menuitem", onClick:choose(function(){ props.onDuplicate(entry.id); }) }, h(IconCopy,{size:16}), "Duplicate"),
+                  h("button", { className:"card-menu-item danger", role:"menuitem", onClick:choose(function(){ props.onAskDelete(entry.id); }) }, h(IconTrash,{size:16}), "Delete")
+                )
+              : null
+          )
+    );
+  }
+
+  function ListScreen(props){
+    var entries = props.entries;
+    var confirmId = props.confirmId;
+
+    if(entries.length === 0){
+      return h(React.Fragment, null,
+        h("div", { className:"empty-state" },
+          h(FinderMark, { size:34 }),
+          h("h2", null, "No codes yet"),
+          h("p", null, "Add a website, email, or phone number and hand your phone to someone to scan.")
+        ),
+        h("button", { className:"fab", "aria-label":"Add a new code", onClick:props.onAdd }, h(IconPlus,{size:24}))
+      );
+    }
+
+    return h(React.Fragment, null,
+      h("div", { className:"list-scroll" },
+        entries.map(function(entry, i){
+          return h(EntryCard, {
+            key: entry.id,
+            entry: entry,
+            index: i,
+            confirmingDelete: confirmId === entry.id,
+            onOpen: props.onOpen,
+            onEdit: props.onEdit,
+            onDuplicate: props.onDuplicate,
+            onAskDelete: props.onAskDelete,
+            onCancelDelete: props.onCancelDelete,
+            onConfirmDelete: props.onConfirmDelete
+          });
+        }),
+        h("div", { className:"footnote" }, "Stored only on this device — nothing leaves your phone.")
+      ),
+      h("button", { className:"fab", "aria-label":"Add a new code", onClick:props.onAdd }, h(IconPlus,{size:24}))
+    );
+  }
+
+  /* ---------------- form screen ---------------- */
+
+  function FormScreen(props){
+    var editing = props.editing;
+    var initial = editing || props.prefill || { name:"", type:"url", value:"", extra:"" };
+    var s = useState(initial.name); var name = s[0], setName = s[1];
+    var s2 = useState(initial.type); var type = s2[0], setType = s2[1];
+    var s3 = useState(initial.value); var value = s3[0], setValue = s3[1];
+    var s4 = useState(false); var touched = s4[0], setTouched = s4[1];
+    var s5 = useState(initial.extra || ""); var extra = s5[0], setExtra = s5[1];
+
+    var nameValid = name.trim().length > 0;
+    var valueValid = validateField(type, value);
+    var formValid = nameValid && valueValid;
+
+    var payload = valueValid ? buildPayload({ type:type, value:value, name:name.trim(), extra:extra.trim() }) : null;
+
+    function handleSubmit(e){
+      e.preventDefault();
+      if(!formValid){ setTouched(true); return; }
+      props.onSave({
+        id: editing ? editing.id : uid(),
+        name: name.trim(),
+        type: type,
+        value: value.trim(),
+        extra: extra.trim(),
+        isExample: false
+      });
+    }
+
+    var meta = TYPES[type];
+    var effectivePhoneName = extra.trim() || name.trim();
+
+    return h("div", { className:"screen" },
+      h("div", { className:"screen-top" },
+        h("button", { className:"back-btn", onClick:props.onCancel }, h(IconArrowLeft,{size:16}), "Back")
+      ),
+      h("form", { className:"form-body", onSubmit:handleSubmit },
+        h("h1", { className:"form-heading" }, editing ? "Edit code" : "New code"),
+
+        h("div", { className:"field" },
+          h("label", { htmlFor:"f-name" }, "Name"),
+          h("input", { id:"f-name", type:"text", placeholder:"e.g. Work email", value:name,
+            onChange:function(e){ setName(e.target.value); }, autoComplete:"off" }),
+          (touched && !nameValid) ? h("div", { className:"field-error" }, "Give it a name so you can find it later.") : null
+        ),
+
+        h("div", { className:"segmented" },
+          Object.keys(TYPES).map(function(key){
+            var TypeIcon = TYPE_ICON[key];
+            var active = type === key;
+            return h("button", {
+              key:key, type:"button",
+              className:"segment" + (active ? " active" : ""),
+              onClick:function(){ setType(key); setExtra(""); },
+              "aria-pressed": active
+            }, h(TypeIcon,{size:18}), h("span", null, TYPES[key].label));
+          })
+        ),
+
+        h("div", { className:"field" },
+          h("label", { htmlFor:"f-value" }, meta.nounLabel),
+          h("input", { id:"f-value", type:meta.inputType, inputMode:meta.inputMode, placeholder:meta.placeholder,
+            value:value, onChange:function(e){ setValue(e.target.value); }, autoComplete:"off" }),
+          (touched && !valueValid)
+            ? h("div", { className:"field-error" }, "That doesn't look like a valid " + meta.label.toLowerCase() + " yet.")
+            : (payload
+                ? h("div", { className:"field-hint" },
+                    type === "phone"
+                      ? ("Creates a contact card" + (effectivePhoneName ? " for " + effectivePhoneName : ""))
+                      : "Encodes: " + payload)
+                : null)
+        ),
+
+        meta.extraLabel
+          ? h("div", { className:"field" },
+              h("label", { htmlFor:"f-extra" }, meta.extraLabel),
+              h("input", { id:"f-extra", type:"text", placeholder:meta.extraPlaceholder, value:extra,
+                onChange:function(e){ setExtra(e.target.value); }, autoComplete:"off" })
+            )
+          : null,
+
+        h("div", { className:"form-actions" },
+          h("button", { type:"button", className:"btn btn-ghost", onClick:props.onCancel }, "Cancel"),
+          h("button", { type:"submit", className:"btn btn-primary" }, editing ? "Save changes" : "Add code")
+        )
+      )
+    );
+  }
+
+  /* ---------------- present screen ---------------- */
+
+  function PresentScreen(props){
+    var entry = props.entry;
+    var payload = useMemo(function(){ return buildPayload(entry); }, [entry.type, entry.value, entry.extra, entry.name]);
+    var TypeIcon = TYPE_ICON[entry.type];
+    var summaryText = entry.type === "phone" ? ("Contact card — " + contactNameFor(entry)) : payload;
+
+    return h("div", { className:"present" },
+      h("div", { className:"present-top" },
+        h("button", { className:"back-btn", onClick:props.onClose }, h(IconArrowLeft,{size:16}), "Back")
+      ),
+      h("div", { className:"present-body" },
+        h("div", { className:"qr-card" },
+          h(QrSvg, { text:payload, label:"QR code for " + entry.name })
+        ),
+        h("h1", { className:"present-name" }, entry.name),
+        h("div", { className:"present-meta" },
+          h(TypeIcon, { size:14 }),
+          h("span", { className:"present-payload" }, summaryText)
+        ),
+        h("p", { className:"present-tip" }, "Shown at full white for visibility — turn up your phone's brightness too, if you can.")
+      )
+    );
+  }
+
+  /* ---------------- app ---------------- */
+
+  function App(){
+    var s1 = useState(loadEntries); var entries = s1[0], setEntries = s1[1];
+    var s2 = useState({ screen:"list" }); var view = s2[0], setView = s2[1];
+    var s3 = useState(null); var confirmId = s3[0], setConfirmId = s3[1];
+    var firstRun = useRef(true);
+
+    useEffect(function(){
+      if(firstRun.current){ firstRun.current = false; return; }
+      saveEntries(entries);
+    }, [entries]);
+
+    function upsertEntry(entry){
+      setEntries(function(prev){
+        var exists = prev.some(function(e){ return e.id === entry.id; });
+        if(exists) return prev.map(function(e){ return e.id === entry.id ? entry : e; });
+        return prev.concat([entry]);
+      });
+      setView({ screen:"list" });
+    }
+
+    function deleteEntry(id){
+      setEntries(function(prev){ return prev.filter(function(e){ return e.id !== id; }); });
+      setConfirmId(null);
+    }
+
+    var entryById = useMemo(function(){
+      var map = {};
+      entries.forEach(function(e){ map[e.id] = e; });
+      return map;
+    }, [entries]);
+
+    var body;
+    if(view.screen === "form"){
+      var editing = view.editId ? entryById[view.editId] : null;
+      var duplicateSource = (!editing && view.duplicateFromId) ? entryById[view.duplicateFromId] : null;
+      var prefill = duplicateSource ? {
+        name: duplicateName(duplicateSource.name),
+        type: duplicateSource.type,
+        value: duplicateSource.value,
+        extra: duplicateSource.extra || ""
+      } : null;
+      body = h(FormScreen, {
+        key: view.editId || (view.duplicateFromId ? ("dup-" + view.duplicateFromId) : "new"),
+        editing: editing,
+        prefill: prefill,
+        onCancel: function(){ setView({ screen:"list" }); },
+        onSave: upsertEntry
+      });
+    } else if(view.screen === "present" && entryById[view.entryId]){
+      body = h(PresentScreen, {
+        key: view.entryId,
+        entry: entryById[view.entryId],
+        onClose: function(){ setView({ screen:"list" }); }
+      });
+    } else {
+      body = h(ListScreen, {
+        entries: entries,
+        confirmId: confirmId,
+        onAdd: function(){ setConfirmId(null); setView({ screen:"form", editId:null }); },
+        onOpen: function(id){ setConfirmId(null); setView({ screen:"present", entryId:id }); },
+        onEdit: function(id){ setConfirmId(null); setView({ screen:"form", editId:id }); },
+        onDuplicate: function(id){ setConfirmId(null); setView({ screen:"form", editId:null, duplicateFromId:id }); },
+        onAskDelete: function(id){ setConfirmId(id); },
+        onCancelDelete: function(){ setConfirmId(null); },
+        onConfirmDelete: deleteEntry
+      });
+    }
+
+    return h("div", { className:"shell" }, body);
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+})();
+</script>
+</body>
+</html>
